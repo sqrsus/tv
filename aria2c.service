@@ -1,0 +1,12 @@
+[Unit]
+Description=aria2c
+After=network.target
+ 
+[Service]
+Type=simple
+ExecStartPre=/bin/sleep 30
+ExecStart=/usr/bin/aria2c --conf-path=/home/rsus/aria2c/aria2.conf
+Restart=on-failure
+ 
+[Install]
+WantedBy=multi-user.target
