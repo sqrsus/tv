@@ -1,0 +1,28 @@
+name: Download and Upload File
+
+on:
+  schedule:
+    # 每天凌晨运行 (UTC时间)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  download-and-upload:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Download file
+      run: |
+        curl -o all.yaml "https://bestsub.bestrui.ggff.net/share/bestsub/cdcefaa4-1f0d-462e-ba76-627b344989f2/speed.yaml"
+        # 或者使用 wget
+        # wget -O downloaded_file.ext "URL_TO_DOWNLOAD"
+        
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add all.yaml
+        git commit -m "Update downloaded file [$(date +'%Y-%m-%d %H:%M:%S')]"
+        git push
