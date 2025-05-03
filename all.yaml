@@ -1,617 +1,92 @@
 proxies:
-    - alterId: 64
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8 US 000 | ⬇️ 5.51 MB/s"
-      port: 52082
-      server: 120.198.71.216
-      tls: false
-      type: vmess
-      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    - alterId: 64
-      cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 002 | ⬇️ 3.61 MB/s"
-      port: 46759
-      server: 120.198.71.216
-      skip-cert-verify: false
-      tls: false
-      type: vmess
-      udp: true
-      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    - name: "\U0001F1ED\U0001F1F0 HK 003 | ⬇️ 4.67 MB/s"
-      password: b6200af42ccadea353f5b5856dd20d70
-      port: 39001
-      server: 183.240.196.93
-      skip-cert-verify: true
-      sni: 183.240.196.93
-      type: trojan
-    - name: "\U0001F1FA\U0001F1F8 US 005 | ⬇️ 4.57 MB/s"
-      password: 4533de8a-ad5b-41d8-ab1d-50fd93579d77
-      port: 10465
-      server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-      sni: q08m.vgraxiw73s.hasyaf.cn
-      type: trojan
-    - name: "\U0001F1ED\U0001F1F0 HK 006 | ⬇️ 4.87 MB/s"
-      password: b6200af42ccadea353f5b5856dd20d70
-      port: 39001
-      server: 113.99.140.184
-      skip-cert-verify: true
-      sni: 113.99.140.184
-      type: trojan
-    - cipher: aes-256-cfb
-      name: "\U0001F1E8\U0001F1F3 CN 008 | ⬇️ 3.09 MB/s"
-      password: amazonskr05
-      port: 443
-      server: 54.238.28.127
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 000 | ⬇️ 2.85 MB/s"
+      password: 5e43391e-e155-4b2a-8d9b-6e34fa3fded4
+      port: 36578
+      server: h123k.zzxxca.top
       type: ss
-    - name: "\U0001F1E8\U0001F1F3 CN 010 | ⬇️ 4.18 MB/s"
-      password: b6200af42ccadea353f5b5856dd20d70
-      port: 39001
-      server: 120.233.128.68
-      skip-cert-verify: true
-      sni: 120.233.128.68
-      type: trojan
-    - name: "\U0001F1FA\U0001F1F8 US 014 | ⬇️ 2.51 MB/s"
-      network: ws
-      port: 2096
-      server: 104.16.243.18
-      servername: fei.989618.xyz
-      tls: true
-      type: vless
-      uuid: e53892eb-3eaa-4fdc-b88b-167160764eb3
-      ws-opts:
-        headers:
-            Host: fei.989618.xyz
-        path: /?ed=2560
-    - client-fingerprint: random
-      name: "\U0001F1FA\U0001F1F8 US 016 | ⬇️ 2.12 MB/s"
-      network: ws
-      port: 443
-      server: 104.16.156.225
-      servername: autumn.norjson.top
-      skip-cert-verify: false
-      tls: true
-      type: vless
       udp: true
-      uuid: f40b19a1-5515-4c93-804c-334873d38449
-      ws-opts:
-        headers:
-            Host: autumn.norjson.top
-        path: /?ed=2560
-    - client-fingerprint: random
-      name: "\U0001F1FA\U0001F1F8 US 017 | ⬇️ 3.04 MB/s"
-      network: ws
-      port: 2053
-      server: 172.64.159.24
-      servername: ball.757718.xyz
-      tls: true
-      type: vless
-      udp: true
-      uuid: 4f3662cc-c677-43d7-a5cc-ecc21dd286c3
-      ws-opts:
-        headers:
-            Host: ball.757718.xyz
-        path: /?ed=2560
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 018 | ⬇️ 2.50 MB/s"
-      network: tcp
-      port: 46716
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: agaungzhou01.bumbleshrimp.com
-      servername: www.nvidia.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1ED\U0001F1F0 HK 019 | ⬇️ 2.83 MB/s"
-      network: ws
-      port: 80
-      server: 0b17b6cf-2c23-f38e-114f-8f1f3bcd06a3.castlepeakhospital.moe
-      skip-cert-verify: true
-      tls: false
-      type: vmess
-      udp: true
-      uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
-      ws-opts:
-        headers:
-            Host: tms.dingtalk.com
-        path: /
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 021 | ⬇️ 2.99 MB/s"
-      network: tcp
-      port: 46716
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: agaungzhou01.bumbleshrimp.com
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - cipher: aes-256-cfb
-      name: "\U0001F1F8\U0001F1EC SG 024 | ⬇️ 2.51 MB/s"
-      password: qawszxc123
-      port: 443
-      server: 54.169.242.181
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 001 | ⬇️ 6.03 MB/s"
+      password: 5e43391e-e155-4b2a-8d9b-6e34fa3fded4
+      port: 30921
+      server: h123k.zzxxca.top
       type: ss
-    - name: "\U0001F1E8\U0001F1F3 CN 026 | ⬇️ 4.47 MB/s"
-      password: fb972039-929d-4bc7-b991-5ed8a9a99cab
-      port: 41178
-      server: 29992d435afde2eb426efbcfd1bcc533.v1.cac.node-is.green
-      skip-cert-verify: true
-      sni: hk13.bilibili.com
-      type: trojan
       udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 028 | ⬇️ 2.33 MB/s"
-      network: tcp
-      port: 35853
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenyang001.dynu.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - alterId: 1
-      cipher: auto
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1EF\U0001F1F5 JP 032 | ⬇️ 2.82 MB/s"
-      network: tcp
-      port: 28787
-      server: 5vpif-g05.jp06-7c5a-vm0.entry.fr0307a.art
-      servername: 5vpif-g05.jp06-7c5a-vm0.entry.fr0307a.art
-      tls: true
-      type: vmess
-      uuid: b0e1254b-6ac6-3d12-bd6e-bd719eaab486
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 033 | ⬇️ 3.62 MB/s"
-      network: tcp
-      port: 1443
-      reality-opts:
-        public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-        short-id: 1a
-      server: t13.qifei.app
-      servername: www.amazon.com
-      tls: true
-      type: vless
-      uuid: ef23ddd0-14c5-39c2-9880-af55ce892363
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 002 | ⬇️ 5.89 MB/s"
+      password: 5e43391e-e155-4b2a-8d9b-6e34fa3fded4
+      port: 40112
+      server: h123k.zzxxca.top
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 004 | ⬇️ 8.76 MB/s"
+      password: 5e43391e-e155-4b2a-8d9b-6e34fa3fded4
+      port: 52872
+      server: h123k.zzxxca.top
+      type: ss
+      udp: true
+    - cipher: 2022-blake3-aes-128-gcm
+      name: "\U0001F1ED\U0001F1F0 HK 012 | ⬇️ 5.42 MB/s"
+      password: MDhhMTdjZDI0MjI2ZWRlNg==:ZDRlZWFhN2ItNDNjNi00OQ==
+      port: 29527
+      server: hzhz1.sssyun.xyz
+      type: ss
     - cipher: chacha20-ietf
-      name: "\U0001F1E8\U0001F1F3 CN 036 | ⬇️ 3.51 MB/s"
+      name: "\U0001F1E8\U0001F1F3 CN 014 | ⬇️ 4.77 MB/s"
       obfs: tls1.2_ticket_auth
-      obfs-param: ""
+      obfs-param: mei10-dskaluiekkjh.yogurt8.us
       password: sGWdzYDx5J
       port: 43125
       protocol: auth_aes128_md5
       protocol-param: ""
-      server: anactorinstanceofjudgingsomethin.suannai.us
+      server: nfx9.godeove.xyz
       type: ssr
       udp: true
+    - cipher: aes-128-gcm
+      name: "\U0001F1EF\U0001F1F5 JP 019 | ⬇️ 7.49 MB/s"
+      password: YzRlNjE4YjNiZDk0NDE1NDZlMmU5NGE1MmU1ZjBlZWY=
+      port: 25642
+      server: cdn.jp2.cocoduck.vip
+      type: ss
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 040 | ⬇️ 5.12 MB/s"
+      name: "\U0001F1EF\U0001F1F5 JP 024 | ⬇️ 14.37 MB/s"
       network: tcp
-      port: 28680
+      port: 38472
       reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenzhou05.mysynology.net
-      servername: www.nvidia.com
+        public-key: FvCU8D-cnUHkBS0mGjCeP2Te6GVYyP33aYHw3NmMTHo
+      server: 45.192.243.109
+      servername: www.lovelive-anime.jp
       skip-cert-verify: false
       tls: true
       type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1F3 CN 042 | ⬇️ 7.33 MB/s"
-      password: da78a73e-f63c-49b6-aada-8adc5b2caf33
-      port: 16945
-      server: hm.huamao888.top
-      type: ss
-      udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 043 | ⬇️ 2.62 MB/s"
-      network: tcp
-      port: 28680
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenzhou05.mysynology.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - name: "\U0001F1EF\U0001F1F5 JP 045 | ⬇️ 3.67 MB/s"
-      password: "74260671232757400"
-      port: 443
-      server: in-honeybee.shiner427.skin
-      sni: in-honeybee.shiner427.skin
-      type: trojan
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 053 | ⬇️ 3.83 MB/s"
-      network: tcp
-      port: 11555
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: test123.zlqhdns.top
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 054 | ⬇️ 3.62 MB/s"
-      network: tcp
-      port: 15842
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: beiyong.dynuddns.net
-      servername: www.yahoo.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 056 | ⬇️ 3.08 MB/s"
-      network: tcp
-      port: 62157
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenzhou02.mysynology.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1F3 CN 057 | ⬇️ 5.61 MB/s"
-      password: d16c5bdd-2cb1-4565-a3b9-693c71a23a71
-      port: 16944
-      server: hm.huamao888.top
-      type: ss
-      udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 059 | ⬇️ 4.21 MB/s"
-      network: tcp
-      port: 1443
-      reality-opts:
-        public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-        short-id: 1a
-      server: t13.qifei.app
-      servername: www.amazon.com
-      tls: true
-      type: vless
-      uuid: ef23ddd0-14c5-39c2-9880-af55ce892363
-    - name: "\U0001F1EF\U0001F1F5 JP 060 | ⬇️ 3.26 MB/s"
-      password: "74260671232757400"
-      port: 443
-      server: correct-sheepdog.shiner427.skin
-      sni: correct-sheepdog.shiner427.skin
-      type: trojan
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 061 | ⬇️ 7.22 MB/s"
-      network: tcp
-      port: 11555
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: test123.zlqhdns.top
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - name: "\U0001F1F9\U0001F1FC TW 062 | ⬇️ 3.88 MB/s"
-      password: ef23ddd0-14c5-39c2-9880-af55ce892363
-      port: 51121
-      server: t4.qifei.app
-      skip-cert-verify: true
-      sni: t4.qifei.app
-      type: trojan
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1F3 CN 063 | ⬇️ 17.26 MB/s"
-      password: da78a73e-f63c-49b6-aada-8adc5b2caf33
-      port: 16944
-      server: hm.huamao888.top
-      type: ss
-      udp: true
-    - name: "\U0001F1EF\U0001F1F5 JP 064 | ⬇️ 2.68 MB/s"
-      password: "74260671232757400"
-      port: 443
-      server: useful-jennet.shiner427.skin
-      sni: useful-jennet.shiner427.skin
-      type: trojan
+      uuid: 4acae8ef-fb1d-4483-c79f-97f351e69260
     - alterId: 0
       cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 065 | ⬇️ 2.16 MB/s"
-      network: ws
-      port: 39903
-      server: free-relay.themars.top
+      name: "\U0001F1F9\U0001F1FC TW 025 | ⬇️ 5.86 MB/s"
+      port: 3690
+      server: e8ba38a4-submo0-syap8d-dbk8.b.fosant.com
       tls: false
       type: vmess
-      udp: true
-      uuid: a49e8546-7660-436d-b5b6-2fc535355762
-      ws-opts:
-        headers:
-            Host: www.cctv.com
-        path: /cctv1.m3u8
-    - name: "\U0001F1EF\U0001F1F5 JP 066 | ⬇️ 2.67 MB/s"
-      password: "74260671232757400"
-      port: 443
-      server: sharing-grouper.shiner427.skin
-      sni: sharing-grouper.shiner427.skin
-      type: trojan
-    - name: "\U0001F1F8\U0001F1EC SG 067 | ⬇️ 2.88 MB/s"
-      password: "74260671232757400"
-      port: 443
-      server: quick-alien.shiner427.skin
-      sni: quick-alien.shiner427.skin
-      type: trojan
-    - alterId: 1
-      cipher: auto
-      country: ' JP'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1EF\U0001F1F5 JP 068 | ⬇️ 2.87 MB/s"
-      network: tcp
-      port: 21583
-      server: jp01-alt-vm0.entry.srthdw.art
-      skip-cert-verify: true
-      tls: true
-      type: vmess
-      uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
+      uuid: 45845d5e-0605-11f0-8cf9-f23c93136cb3
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 069 | ⬇️ 3.05 MB/s"
+      name: "\U0001F1EF\U0001F1F5 JP 029 | ⬇️ 5.29 MB/s"
       network: tcp
-      port: 25135
+      port: 38472
       reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: zhee01.dynu.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - alterId: 1
-      cipher: auto
-      name: "\U0001F1EF\U0001F1F5 JP 070 | ⬇️ 3.47 MB/s"
-      port: 21585
-      server: lbzyo-g05.jp01-0986-vm0.entry.fr0307a.art
-      servername: lbzyo-g05.jp01-0986-vm0.entry.fr0307a.art
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: 1e174713-1ea5-336a-a643-c0de59d0bd43
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 073 | ⬇️ 2.40 MB/s"
-      network: tcp
-      port: 31735
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenyang001.dynu.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F9\U0001F1FC TW 074 | ⬇️ 4.78 MB/s"
-      network: tcp
-      port: 15700
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: vip.jddns0202.top
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 075 | ⬇️ 3.00 MB/s"
-      network: tcp
-      port: 62157
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenzhou02.mysynology.net
-      servername: www.nvidia.com
+        public-key: FvCU8D-cnUHkBS0mGjCeP2Te6GVYyP33aYHw3NmMTHo
+      server: 45.192.243.109
+      servername: www.lovelive-anime.jp
       skip-cert-verify: false
       tls: true
       type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 076 | ⬇️ 2.08 MB/s"
-      network: tcp
-      port: 31800
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: agaungzhou01.bumbleshrimp.com
-      servername: www.nvidia.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 078 | ⬇️ 4.44 MB/s"
-      network: tcp
-      port: 28680
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenzhou05.mysynology.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - name: "\U0001F1F8\U0001F1EC SG 079 | ⬇️ 2.87 MB/s"
-      password: "74260671232757400"
-      port: 443
-      server: supreme-penguin.shiner427.skin
-      sni: supreme-penguin.shiner427.skin
-      type: trojan
-    - name: "\U0001F1EF\U0001F1F5 JP 082 | ⬇️ 2.64 MB/s"
-      password: "74260671232757400"
-      port: 443
-      server: relaxed-airedale.shiner427.skin
-      sni: relaxed-airedale.shiner427.skin
-      type: trojan
-    - cipher: aes-256-cfb
-      name: "\U0001F1EF\U0001F1F5 JP 085 | ⬇️ 2.13 MB/s"
-      password: amazonskr05
-      port: 443
-      server: 43.202.40.45
-      type: ss
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F9\U0001F1FC TW 087 | ⬇️ 2.58 MB/s"
-      network: tcp
-      port: 47531
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: bsuqian01.dynu.net
-      servername: gateway.icloud.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F8\U0001F1EC SG 088 | ⬇️ 2.77 MB/s"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: 4jbsqjuINxDyH4n7Vhq9GwQdxvauilqi29iH6m5ol1I
-        short-id: b5b6c16c6c639771
-      server: c8217-b2a.h2.49d2.dje11.3.b297.djjsvip.cfd
-      servername: osxapps.itunes.apple.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 3b6d894e-da21-43c6-a5f0-a3d45a33e6cf
+      uuid: 4acae8ef-fb1d-4483-c79f-97f351e69260
     - alterId: 0
       cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 090 | ⬇️ 3.16 MB/s"
-      network: ws
-      port: 35214
-      server: jp4.g2.moonbase.life
-      servername: jp4.g2.moonbase.life
-      skip-cert-verify: true
-      tls: true
-      type: vmess
-      udp: true
-      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
-      ws-opts:
-        headers:
-            Host: web.xcjs.info
-        path: /home
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1EF\U0001F1F5 JP 091 | ⬇️ 3.28 MB/s"
-      password: 9fe1c37d-9edf-418a-b5f7-bad1dddacb2c
-      port: 23335
-      server: link.karleynetwork.xyz
-      type: ss
-      udp: true
-    - name: "\U0001F1EF\U0001F1F5 JP 092 | ⬇️ 2.81 MB/s"
-      password: af182b96-3107-4e67-ac0c-1cd720d744cc
-      port: 12357
-      server: 1202jp.czczcloud.top
-      skip-cert-verify: true
-      sni: www.baidu.com
-      type: trojan
-    - cipher: chacha20-ietf
-      name: "\U0001F1E8\U0001F1F3 CN 093 | ⬇️ 3.38 MB/s"
-      obfs: plain
-      obfs-param: None
-      password: myssojbk
-      port: 23334
-      protocol: auth_aes128_md5
-      protocol-param: 10787:IjcJ8nPZd0pq
-      server: 183.240.179.190
-      type: ssr
-      udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F8\U0001F1EC SG 094 | ⬇️ 2.32 MB/s"
-      network: tcp
-      port: 44003
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenyang001.dynu.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 097 | ⬇️ 2.73 MB/s"
-      network: ws
-      port: 35241
-      server: jp1.vip2.g2.moonbase.life
-      servername: jp1.vip2.g2.moonbase.life
-      skip-cert-verify: true
-      tls: true
-      type: vmess
-      udp: true
-      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
-      ws-opts:
-        headers:
-            Host: web.xcjs.info
-        path: /home
-    - name: "\U0001F1E8\U0001F1F3 CN 099 | ⬇️ 5.67 MB/s"
-      password: af182b96-3107-4e67-ac0c-1cd720d744cc
-      port: 30011
-      server: 1500tw.czczcloud.top
-      skip-cert-verify: true
-      sni: www.baidu.com
-      type: trojan
-      udp: true
-    - cipher: aes-256-cfb
-      name: "\U0001F1F0\U0001F1F7 KR 104 | ⬇️ 2.72 MB/s"
-      password: amazonskr05
-      port: 443
-      server: 43.202.0.189
-      type: ss
-      udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 106 | ⬇️ 7.12 MB/s"
-      network: tcp
-      port: 24318
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: test123.zlqhdns.top
-      servername: www.nvidia.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - country: SI
-      name: "\U0001F1FA\U0001F1F8 US 107 | ⬇️ 4.15 MB/s"
-      password: 8849efe5-f652-4c30-b467-178828c5fc73
-      port: 22271
-      server: aafrtpfxr.jpl03i9zjfegelp.5xfsur8v62.gosdk.xyz
-      skip-cert-verify: true
-      sni: q08m.vgraxiw73s.hasyaf.cn
-      type: trojan
-      udp: true
-    - name: "\U0001F1E8\U0001F1F3 CN 108 | ⬇️ 6.15 MB/s"
-      password: 0f5ec4b0-6227-4c22-906b-f194367630db
-      port: 27002
-      server: 183.2.150.90
-      skip-cert-verify: true
-      sni: q08m.vgraxiw73s.hasyaf.cn
-      type: trojan
-      udp: true
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 109 | ⬇️ 4.84 MB/s"
+      name: "\U0001F1E8\U0001F1F3 CN 030 | ⬇️ 6.41 MB/s"
       network: ws
       port: 35246
       server: jp6.vip2.g2.moonbase.life
@@ -625,22 +100,13 @@ proxies:
         headers:
             Host: web.xcjs.info
         path: /home
-    - country: SI
-      name: "\U0001F1FA\U0001F1F8 US 110 | ⬇️ 7.79 MB/s"
-      password: 8849efe5-f652-4c30-b467-178828c5fc73
-      port: 22271
-      server: aafrtpfxr.jpl03i9zjfegelp.5xfsur8v62.gosdk.xyz
-      skip-cert-verify: true
-      sni: q08m.vgraxiw73s.hasyaf.cn
-      type: trojan
-      udp: true
     - alterId: 0
       cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 112 | ⬇️ 3.60 MB/s"
+      name: "\U0001F1E8\U0001F1F3 CN 032 | ⬇️ 3.96 MB/s"
       network: ws
-      port: 35242
-      server: jp2.vip2.g2.moonbase.life
-      servername: jp2.vip2.g2.moonbase.life
+      port: 35241
+      server: jp1.vip2.g2.moonbase.life
+      servername: jp1.vip2.g2.moonbase.life
       skip-cert-verify: true
       tls: true
       type: vmess
@@ -650,251 +116,36 @@ proxies:
         headers:
             Host: web.xcjs.info
         path: /home
-    - cipher: aes-256-cfb
-      name: "\U0001F1F0\U0001F1F7 KR 114 | ⬇️ 5.98 MB/s"
-      password: amazonskr05
-      port: 443
-      server: 54.238.144.68
-      type: ss
-    - name: "\U0001F1F9\U0001F1FC TW 115 | ⬇️ 2.34 MB/s"
-      password: exaxgqkKkd0TAMrCxeonWg==
-      port: 1443
-      server: twmoon1-cdn-route.couldflare-cdn.com
-      skip-cert-verify: false
-      sni: twmoon1-cdn-route.couldflare-cdn.com
-      tls: true
-      type: http
-      username: mrwdfNTD8M79LCukCieldrqZWqs=
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F8\U0001F1EC SG 116 | ⬇️ 2.04 MB/s"
-      network: tcp
-      port: 56127
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: agaungzhou01.bumbleshrimp.com
-      servername: www.yahoo.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      delay: 1788
-      flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 117 | ⬇️ 3.82 MB/s"
-      network: tcp
-      port: 27631
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: bsuqian01.dynu.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      delay: 648
-      flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 118 | ⬇️ 5.45 MB/s"
-      network: tcp
-      port: 45883
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: gysz0000.dynu.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - name: "\U0001F1E8\U0001F1F3 CN 119 | ⬇️ 3.28 MB/s"
-      password: 8f23af6b-ddac-4e7c-b328-e6ca3c50c057
-      port: 22269
-      server: 163.177.47.36
-      skip-cert-verify: true
-      sni: q08m.vgraxiw73s.hasyaf.cn
-      type: trojan
-      udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F9\U0001F1FC TW 120 | ⬇️ 3.31 MB/s"
-      network: tcp
-      port: 24050
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: zhee01.dynu.net
-      servername: www.yahoo.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 121 | ⬇️ 4.00 MB/s"
-      network: tcp
-      port: 62157
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenzhou02.mysynology.net
-      servername: www.nvidia.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: safari
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 122 | ⬇️ 3.23 MB/s"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: qZ5y_AZ8yXJV66BNQb2pIN42W-6cUKLQ-qedO1fr1Gw
-        short-id: 82cc37043da301b2
-      server: c8217-b2a.h3.49d2.5e11.613.b297.djjsvip.cfd
-      servername: iosapps.itunes.apple.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 3b6d894e-da21-43c6-a5f0-a3d45a33e6cf
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 123 | ⬇️ 4.38 MB/s"
-      network: tcp
-      port: 31735
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenyang001.dynu.net
-      servername: www.nvidia.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - name: "\U0001F1E8\U0001F1F3 CN 124 | ⬇️ 3.87 MB/s"
-      password: 0a815ecd-800e-46f1-b11f-cf3b886e27fb
-      port: 22269
-      server: 183.2.150.98
-      skip-cert-verify: true
-      sni: q08m.vgraxiw73s.hasyaf.cn
-      type: trojan
-      udp: true
-    - cipher: aes-256-cfb
-      name: "\U0001F1ED\U0001F1F0 HK 125 | ⬇️ 3.32 MB/s"
-      password: qawszxc123
-      port: 443
-      server: 18.142.249.18
-      type: ss
-    - name: "\U0001F1E8\U0001F1F3 CN 127 | ⬇️ 4.18 MB/s"
-      password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-      port: 8313
-      server: 183.232.235.2
-      skip-cert-verify: true
-      sni: hk-13-568.flztjc.net
-      type: trojan
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F9\U0001F1FC TW 129 | ⬇️ 6.33 MB/s"
-      network: tcp
-      port: 12477
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: gysz0000.dynu.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 130 | ⬇️ 2.30 MB/s"
-      network: tcp
-      port: 35853
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: zhee01.dynu.net
-      servername: www.nvidia.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F9\U0001F1FC TW 136 | ⬇️ 3.39 MB/s"
-      network: tcp
-      port: 15700
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: zhee01.dynu.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - alpn:
-        - h3
-      client-fingerprint: random
-      name: "\U0001F1F0\U0001F1F7 KR 137 | ⬇️ 2.55 MB/s"
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 033 | ⬇️ 5.94 MB/s"
       network: ws
-      port: 12223
-      server: 211.228.233.195
-      servername: ed.sosocn.filegear-sg.me
+      port: 35211
+      server: jp1.g2.moonbase.life
+      servername: jp1.g2.moonbase.life
+      skip-cert-verify: true
       tls: true
-      type: vless
+      type: vmess
       udp: true
-      uuid: 699f6733-5766-42f0-a05b-da23c5ee3817
+      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
       ws-opts:
         headers:
-            Host: ed.sosocn.filegear-sg.me
-        path: /?ed=2560
-    - client-fingerprint: chrome
-      delay: 1474
-      flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 141 | ⬇️ 2.97 MB/s"
-      network: tcp
-      port: 31800
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: agaungzhou01.bumbleshrimp.com
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - name: "\U0001F1E9\U0001F1EA DE 146 | ⬇️ 3.74 MB/s"
-      password: 3b6d894e-da21-43c6-a5f0-a3d45a33e6cf
-      port: 1
-      server: 138.2.179.192
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-      udp: true
+            Host: web.xcjs.info
+        path: /home
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1F3 CN 148 | ⬇️ 5.62 MB/s"
-      password: 724b7d22-abfd-48da-a2d0-fad045f47bf4
-      port: 16911
-      server: hm.huamao888.top
+      name: "\U0001F1E8\U0001F1F3 CN 035 | ⬇️ 2.03 MB/s"
+      password: b2a2cac1-debb-4bb4-b1a7-e4a0e368724c
+      port: 30001
+      server: gdgs.tarioblink.me
       type: ss
       udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 149 | ⬇️ 2.16 MB/s"
-      network: tcp
-      port: 24318
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: test123.zlqhdns.top
-      servername: www.nvidia.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - alterId: 2
-      cipher: auto
-      name: "\U0001F1F0\U0001F1F7 KR 150 | ⬇️ 3.96 MB/s"
-      port: 11214
-      server: 14.wogg1.top
-      tls: false
-      type: vmess
-      uuid: 7234ac18-c61d-3d60-a866-057af106620c
     - alterId: 0
       cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 152 | ⬇️ 4.88 MB/s"
+      name: "\U0001F1E8\U0001F1F3 CN 040 | ⬇️ 4.44 MB/s"
       network: ws
-      port: 35215
-      server: jp5.g2.moonbase.life
-      servername: jp5.g2.moonbase.life
+      port: 35216
+      server: jp6.g2.moonbase.life
+      servername: jp6.g2.moonbase.life
       skip-cert-verify: true
       tls: true
       type: vmess
@@ -904,287 +155,189 @@ proxies:
         headers:
             Host: web.xcjs.info
         path: /home
-    - mport: 50000-53000
-      name: "\U0001F1EF\U0001F1F5 JP 153 | ⬇️ 5.05 MB/s"
-      password: 3b6d894e-da21-43c6-a5f0-a3d45a33e6cf
-      port: 50000
-      ports: 50000-53000
-      server: 131.186.42.162
+    - name: "\U0001F1E8\U0001F1F3 CN 041 | ⬇️ 4.46 MB/s"
+      password: 948c61c0-385a-4927-b4cf-46c65e064f9c
+      port: 27401
+      server: 58.254.186.233
       skip-cert-verify: true
-      sni: www.microsoft.com
-      type: hysteria2
-      udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 154 | ⬇️ 4.00 MB/s"
-      network: tcp
-      port: 35659
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenzhou05.mysynology.net
-      servername: gateway.icloud.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 155 | ⬇️ 3.93 MB/s"
-      network: tcp
-      port: 41279
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: csuzhou01.1cooldns.com
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 156 | ⬇️ 4.36 MB/s"
-      network: tcp
-      port: 48121
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: beiyong.dynuddns.net
-      servername: www.nvidia.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - name: "\U0001F1FA\U0001F1F8 US 158 | ⬇️ 7.42 MB/s"
-      password: 4533de8a-ad5b-41d8-ab1d-50fd93579d77
-      port: 10465
-      server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
       sni: q08m.vgraxiw73s.hasyaf.cn
       type: trojan
-    - client-fingerprint: random
-      name: "\U0001F1F8\U0001F1EC SG 159 | ⬇️ 2.35 MB/s"
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 042 | ⬇️ 2.78 MB/s"
+      password: ac5df4c1-21a1-49ed-8d41-b1a889c9937e
+      port: 27001
+      server: 183.2.150.90
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 048 | ⬇️ 6.89 MB/s"
+      network: ws
+      port: 35142
+      server: sg2.vip2.g2.moonbase.life
+      servername: sg2.vip2.g2.moonbase.life
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+      ws-opts:
+        headers:
+            Host: web.xcjs.info
+        path: /home
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 049 | ⬇️ 7.93 MB/s"
+      network: ws
+      port: 35114
+      server: sg4.g2.moonbase.life
+      servername: sg4.g2.moonbase.life
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+      ws-opts:
+        headers:
+            Host: web.xcjs.info
+        path: /home
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 050 | ⬇️ 5.87 MB/s"
+      network: ws
+      port: 35144
+      server: sg4.vip2.g2.moonbase.life
+      servername: sg4.vip2.g2.moonbase.life
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+      ws-opts:
+        headers:
+            Host: web.xcjs.info
+        path: /home
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 052 | ⬇️ 14.76 MB/s"
+      network: ws
+      port: 35112
+      server: sg2.g2.moonbase.life
+      servername: sg2.g2.moonbase.life
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+      ws-opts:
+        headers:
+            Host: web.xcjs.info
+        path: /home
+    - name: "\U0001F1F8\U0001F1EC SG 053 | ⬇️ 2.84 MB/s"
       network: ws
       port: 40029
       server: 43.128.95.110
       servername: 111.workerscf.dpdns.org
       tls: true
       type: vless
-      udp: true
       uuid: 6dfdd5a6-4e19-461c-84d3-81cbbdee179b
       ws-opts:
         headers:
             Host: 111.workerscf.dpdns.org
         path: /?ed=2560
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1FB\U0001F1F3 VN 161 | ⬇️ 4.77 MB/s"
-      network: tcp
-      port: 36387
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: test123.zlqhdns.top
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - name: "\U0001F1EF\U0001F1F5 JP 164 | ⬇️ 2.30 MB/s"
-      network: ws
-      port: 9950
-      server: 43.134.167.135
-      servername: 111.workerscf.dpdns.org
-      tls: true
-      type: vless
-      uuid: 6dfdd5a6-4e19-461c-84d3-81cbbdee179b
-      ws-opts:
-        headers:
-            Host: 111.workerscf.dpdns.org
-        path: /?ed=2560
-    - auth: 132cabb2
-      name: "\U0001F1FA\U0001F1F8 US 165 | ⬇️ 3.07 MB/s"
-      password: 132cabb2
-      port: 9676
-      server: 104.168.22.226
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-    - mport: 50000-53000
-      name: "\U0001F1FA\U0001F1F8 US 167 | ⬇️ 2.73 MB/s"
-      password: 3b6d894e-da21-43c6-a5f0-a3d45a33e6cf
-      port: 50000
-      ports: 50000-53000
-      server: 152.67.235.182
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-      udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F8\U0001F1EC SG 168 | ⬇️ 5.16 MB/s"
-      network: tcp
-      port: 29877
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: beiyong.dynuddns.net
-      servername: www.nvidia.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      delay: 2717
-      flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 170 | ⬇️ 3.73 MB/s"
-      network: tcp
-      port: 41572
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: vip.jddns0202.top
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - name: "\U0001F1E8\U0001F1F3 CN 172 | ⬇️ 11.90 MB/s"
-      password: af182b96-3107-4e67-ac0c-1cd720d744cc
-      port: 20077
-      server: 1300kr.czczcloud.top
-      skip-cert-verify: true
-      sni: www.baidu.com
-      type: trojan
-      udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 176 | ⬇️ 4.27 MB/s"
-      network: tcp
-      port: 33782
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenzhou05.mysynology.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - mport: 50000-53000
-      name: "\U0001F1E6\U0001F1FA AU 178 | ⬇️ 3.90 MB/s"
-      password: 3b6d894e-da21-43c6-a5f0-a3d45a33e6cf
-      port: 50000
-      ports: 50000-53000
-      server: 159.13.38.138
-      skip-cert-verify: true
-      sni: www.hoyoverse.com
-      type: hysteria2
-      udp: true
-    - mport: 50000-53000
-      name: "\U0001F1E6\U0001F1FA AU 179 | ⬇️ 2.55 MB/s"
-      password: 3b6d894e-da21-43c6-a5f0-a3d45a33e6cf
-      port: 50000
-      ports: 50000-53000
-      server: 168.138.28.237
-      skip-cert-verify: true
-      sni: www.hoyoverse.com
-      type: hysteria2
-      udp: true
-    - auth: 5CBqBe6MeDg6GajcllBiDg==
-      delay: 2213
-      name: "\U0001F1FA\U0001F1F8 US 180 | ⬇️ 3.95 MB/s"
-      password: 5CBqBe6MeDg6GajcllBiDg==
-      port: 61001
-      server: 23-95-68-190.nip.io
-      skip-cert-verify: true
-      sni: 23-95-68-190.nip.io
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1EE\U0001F1F3 IN 184 | ⬇️ 2.35 MB/s"
-      password: "74260671232757400"
-      port: 443
-      server: desired-tuna.shiner427.skin
-      sni: desired-tuna.shiner427.skin
-      type: trojan
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 187 | ⬇️ 6.18 MB/s"
-      network: tcp
-      port: 14548
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: vip.jddns0202.top
-      servername: www.nvidia.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 188 | ⬇️ 2.40 MB/s"
-      network: tcp
-      port: 27631
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: bsuqian01.dynu.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 191 | ⬇️ 4.69 MB/s"
-      network: tcp
-      port: 54220
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: zhee01.dynu.net
-      servername: www.nvidia.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - mport: 50000-53000
-      name: "\U0001F1FA\U0001F1F8 US 192 | ⬇️ 2.79 MB/s"
-      password: 3b6d894e-da21-43c6-a5f0-a3d45a33e6cf
-      port: 50000
-      ports: 50000-53000
-      server: 144.24.54.157
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-      udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 193 | ⬇️ 5.27 MB/s"
-      network: tcp
-      port: 25135
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: zhee01.dynu.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - name: "\U0001F1EE\U0001F1F3 IN 194 | ⬇️ 2.17 MB/s"
-      password: "74260671232757400"
-      port: 443
-      server: sensible-monkey.shiner427.skin
-      sni: sensible-monkey.shiner427.skin
-      type: trojan
-    - client-fingerprint: chrome
-      delay: 994
-      flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 196 | ⬇️ 3.20 MB/s"
-      network: tcp
-      port: 35853
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenyang001.dynu.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
     - alterId: 0
       cipher: auto
-      name: "\U0001F1F9\U0001F1ED TH 199 | ⬇️ 5.60 MB/s"
-      port: 39212
-      server: dddd.zj-zz-bgp.qunimade.lol
+      name: "\U0001F1E8\U0001F1F3 CN 054 | ⬇️ 18.19 MB/s"
+      network: ws
+      port: 35113
+      server: sg3.g2.moonbase.life
+      servername: sg3.g2.moonbase.life
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+      ws-opts:
+        headers:
+            Host: web.xcjs.info
+        path: /home
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1F0\U0001F1F7 KR 055 | ⬇️ 8.48 MB/s"
+      port: 11213
+      server: 13.wogg1.top
       tls: false
       type: vmess
-      uuid: ec31bf35-41a0-4178-9c6a-77623b159076
+      uuid: 7234ac18-c61d-3d60-a866-057af106620c
     - alterId: 0
       cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 200 | ⬇️ 4.39 MB/s"
+      name: "\U0001F1E8\U0001F1F3 CN 056 | ⬇️ 19.22 MB/s"
+      network: ws
+      port: 35141
+      server: sg1.vip2.g2.moonbase.life
+      servername: sg1.vip2.g2.moonbase.life
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+      ws-opts:
+        headers:
+            Host: web.xcjs.info
+        path: /home
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 058 | ⬇️ 20.13 MB/s"
+      network: ws
+      port: 35143
+      server: sg3.vip2.g2.moonbase.life
+      servername: sg3.vip2.g2.moonbase.life
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+      ws-opts:
+        headers:
+            Host: web.xcjs.info
+        path: /home
+    - name: "\U0001F1E8\U0001F1F3 CN 060 | ⬇️ 7.56 MB/s"
+      password: f09259b2-f0ad-424d-a107-7fc3889e7219
+      port: 22269
+      server: 58.254.186.222
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 064 | ⬇️ 2.37 MB/s"
+      network: ws
+      port: 35245
+      server: jp5.vip2.g2.moonbase.life
+      servername: jp5.vip2.g2.moonbase.life
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+      ws-opts:
+        headers:
+            Host: web.xcjs.info
+        path: /home
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 066 | ⬇️ 9.98 MB/s"
+      port: 11217
+      server: 17.wogg1.top
+      tls: false
+      type: vmess
+      uuid: 7234ac18-c61d-3d60-a866-057af106620c
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 069 | ⬇️ 17.18 MB/s"
       network: ws
       port: 35146
       server: sg6.vip2.g2.moonbase.life
@@ -1198,94 +351,170 @@ proxies:
         headers:
             Host: web.xcjs.info
         path: /home
-    - mport: 50000-53000
-      name: "\U0001F1FA\U0001F1F8 US 202 | ⬇️ 3.48 MB/s"
-      password: 3b6d894e-da21-43c6-a5f0-a3d45a33e6cf
-      port: 50000
-      ports: 50000-53000
-      server: 141.148.158.54
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-      udp: true
-    - mport: 50000-53000
-      name: "\U0001F1FA\U0001F1F8 US 204 | ⬇️ 3.44 MB/s"
-      password: 3b6d894e-da21-43c6-a5f0-a3d45a33e6cf
-      port: 50000
-      ports: 50000-53000
-      server: 129.153.71.226
-      skip-cert-verify: true
-      sni: www.microsoft.com
-      type: hysteria2
-      udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 209 | ⬇️ 9.14 MB/s"
-      network: tcp
-      port: 13989
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: csuzhou01.1cooldns.com
-      servername: gateway.icloud.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - cipher: aes-256-cfb
-      name: "\U0001F1FA\U0001F1F8 US 210 | ⬇️ 6.71 MB/s"
-      password: awsps0501
-      port: 443
-      server: 54.245.21.23
-      type: ss
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 213 | ⬇️ 3.46 MB/s"
-      network: tcp
-      port: 25135
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: zhee01.dynu.net
-      servername: www.nvidia.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - mport: 50000-53000
-      name: "\U0001F1F0\U0001F1F7 KR 215 | ⬇️ 8.32 MB/s"
-      password: 3b6d894e-da21-43c6-a5f0-a3d45a33e6cf
-      port: 50000
-      ports: 50000-53000
-      server: 152.70.246.135
-      skip-cert-verify: true
-      sni: www.hoyoverse.com
-      type: hysteria2
-      udp: true
-    - mport: 50000-53000
-      name: "\U0001F1F0\U0001F1F7 KR 218 | ⬇️ 9.62 MB/s"
-      password: 3b6d894e-da21-43c6-a5f0-a3d45a33e6cf
-      port: 50000
-      ports: 50000-53000
-      server: 146.56.180.104
-      skip-cert-verify: true
-      sni: www.hoyoverse.com
-      type: hysteria2
-      udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 219 | ⬇️ 8.14 MB/s"
-      network: tcp
-      port: 27631
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: bsuqian01.dynu.net
-      servername: www.nvidia.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - name: "\U0001F1F8\U0001F1EC SG 221 | ⬇️ 2.24 MB/s"
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 070 | ⬇️ 19.63 MB/s"
       network: ws
-      port: 40029
-      server: 43.128.95.110
+      port: 35116
+      server: sg6.g2.moonbase.life
+      servername: sg6.g2.moonbase.life
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+      ws-opts:
+        headers:
+            Host: web.xcjs.info
+        path: /home
+    - alpn:
+        - h3
+      client-fingerprint: random
+      name: "\U0001F1F0\U0001F1F7 KR 075 | ⬇️ 5.35 MB/s"
+      network: ws
+      port: 12223
+      server: 211.228.233.195
+      servername: ed.sosocn.filegear-sg.me
+      tls: true
+      type: vless
+      udp: true
+      uuid: 699f6733-5766-42f0-a05b-da23c5ee3817
+      ws-opts:
+        headers:
+            Host: ed.sosocn.filegear-sg.me
+        path: /?ed=2560
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1EF\U0001F1F5 JP 078 | ⬇️ 14.61 MB/s"
+      password: 9fe1c37d-9edf-418a-b5f7-bad1dddacb2c
+      port: 23335
+      server: link.karleynetwork.xyz
+      type: ss
+      udp: true
+    - alpn:
+        - h3
+      client-fingerprint: random
+      name: "\U0001F1F0\U0001F1F7 KR 083 | ⬇️ 6.35 MB/s"
+      network: ws
+      port: 50000
+      server: 210.99.119.3
+      servername: ed.sosocn.filegear-sg.me
+      tls: true
+      type: vless
+      udp: true
+      uuid: 699f6733-5766-42f0-a05b-da23c5ee3817
+      ws-opts:
+        headers:
+            Host: ed.sosocn.filegear-sg.me
+        path: /?ed=2560
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 085 | ⬇️ 16.20 MB/s"
+      network: ws
+      port: 35115
+      server: sg5.g2.moonbase.life
+      servername: sg5.g2.moonbase.life
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+      ws-opts:
+        headers:
+            Host: web.xcjs.info
+        path: /home
+    - name: "\U0001F1F0\U0001F1F7 KR 086 | ⬇️ 4.70 MB/s"
+      network: ws
+      port: 30012
+      server: 220.118.248.123
+      servername: v0.bgm2024.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 55520747-311e-4015-83ce-be46e2060ce3
+      ws-opts:
+        headers:
+            host: v0.bgm2024.dpdns.org
+        path: /?ed=2560
+    - alpn:
+        - h3
+      client-fingerprint: random
+      name: "\U0001F1F0\U0001F1F7 KR 087 | ⬇️ 5.95 MB/s"
+      network: ws
+      port: 12280
+      server: 121.151.51.114
+      servername: ed.sosocn.filegear-sg.me
+      tls: true
+      type: vless
+      udp: true
+      uuid: 699f6733-5766-42f0-a05b-da23c5ee3817
+      ws-opts:
+        headers:
+            Host: ed.sosocn.filegear-sg.me
+        path: /?ed=2560
+    - name: "\U0001F1E8\U0001F1F3 CN 089 | ⬇️ 2.87 MB/s"
+      password: b4e3c24b-67d9-4787-b0e5-16294678a318
+      port: 27202
+      server: 125.94.45.119
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1FA\U0001F1F8 US 101 | ⬇️ 10.93 MB/s"
+      password: 9fe1c37d-9edf-418a-b5f7-bad1dddacb2c
+      port: 23340
+      server: link.karleynetwork.xyz
+      type: ss
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 104 | ⬇️ 2.84 MB/s"
+      password: b6200af42ccadea353f5b5856dd20d70
+      port: 39001
+      server: 120.233.128.68
+      skip-cert-verify: true
+      sni: 120.233.128.68
+      type: trojan
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1F0\U0001F1F7 KR 107 | ⬇️ 9.71 MB/s"
+      port: 11212
+      server: 12.wogg1.top
+      tls: false
+      type: vmess
+      uuid: 7234ac18-c61d-3d60-a866-057af106620c
+    - client-fingerprint: random
+      name: "\U0001F1F3\U0001F1F1 NL 137 | ⬇️ 4.81 MB/s"
+      network: ws
+      port: 5003
+      server: 45.154.98.99
+      servername: 0229.patterdeng.pp.ua
+      tls: true
+      type: vless
+      udp: true
+      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+      ws-opts:
+        headers:
+            Host: 0229.patterdeng.pp.ua
+        path: /?ed=2560
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 140 | ⬇️ 3.85 MB/s"
+      password: ef23ddd0-14c5-39c2-9880-af55ce892363
+      port: 59623
+      server: t2.qifei.app
+      skip-cert-verify: true
+      sni: t2.qifei.app
+      type: trojan
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 149 | ⬇️ 4.12 MB/s"
+      password: 74afe64d-a409-4cce-8e39-4c86b15edbd4
+      port: 43456
+      server: 148.135.119.212
+      skip-cert-verify: true
+      type: trojan
+    - name: "\U0001F1EF\U0001F1F5 JP 152 | ⬇️ 5.23 MB/s"
+      network: ws
+      port: 9950
+      server: 43.134.167.135
       servername: 111.workerscf.dpdns.org
       tls: true
       type: vless
@@ -1294,21 +523,713 @@ proxies:
         headers:
             Host: 111.workerscf.dpdns.org
         path: /?ed=2560
-    - fast-open: true
-      name: "\U0001F1F7\U0001F1FA RU 223 | ⬇️ 5.03 MB/s"
-      password: dongtaiwang.com
-      port: 10011
-      server: hy2.694463.xyz
+    - name: "\U0001F1E8\U0001F1F3 CN 153 | ⬇️ 33.31 MB/s"
+      password: 0f5ec4b0-6227-4c22-906b-f194367630db
+      port: 27002
+      server: 183.2.150.90
       skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-    - mport: 50000-53000
-      name: "\U0001F1F2\U0001F1FD MX 225 | ⬇️ 9.51 MB/s"
-      password: 3b6d894e-da21-43c6-a5f0-a3d45a33e6cf
-      port: 50000
-      ports: 50000-53000
-      server: 140.84.178.54
-      skip-cert-verify: true
-      sni: www.microsoft.com
-      type: hysteria2
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
       udp: true
+    - client-fingerprint: random
+      name: "\U0001F1F0\U0001F1F7 KR 154 | ⬇️ 4.66 MB/s"
+      network: ws
+      port: 30012
+      server: 118.47.65.248
+      servername: 0229.patterdeng.pp.ua
+      tls: true
+      type: vless
+      udp: true
+      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+      ws-opts:
+        headers:
+            Host: 0229.patterdeng.pp.ua
+        path: /?ed=2560
+    - client-fingerprint: random
+      name: "\U0001F1EF\U0001F1F5 JP 156 | ⬇️ 4.00 MB/s"
+      network: ws
+      port: 12508
+      server: 150.230.97.136
+      servername: 0229.patterdeng.pp.ua
+      tls: true
+      type: vless
+      udp: true
+      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+      ws-opts:
+        headers:
+            Host: 0229.patterdeng.pp.ua
+        path: /?ed=2560
+    - name: "\U0001F1E6\U0001F1F9 AT 163 | ⬇️ 2.49 MB/s"
+      network: ws
+      port: 443
+      server: 212.183.88.136
+      servername: v0.bgm2024.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 55520747-311e-4015-83ce-be46e2060ce3
+      ws-opts:
+        headers:
+            host: v0.bgm2024.dpdns.org
+        path: /?ed=2560
+    - alterId: 0
+      cipher: auto
+      delay: 1951
+      name: "\U0001F1FA\U0001F1F8 US 167 | ⬇️ 2.79 MB/s"
+      port: 5229
+      server: a1e2c206-svp0g0-ta64ri-1qzi1.cu.plebai.net
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 8f99107c-f091-11ee-9935-f23c9164ca5d
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 179 | ⬇️ 3.48 MB/s"
+      network: ws
+      port: 35145
+      server: sg5.vip2.g2.moonbase.life
+      servername: sg5.vip2.g2.moonbase.life
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+      ws-opts:
+        headers:
+            Host: web.xcjs.info
+        path: /home
+    - alpn:
+        - h3
+      client-fingerprint: random
+      name: "\U0001F1FA\U0001F1F8 US 183 | ⬇️ 2.66 MB/s"
+      network: ws
+      port: 2083
+      server: 27.50.48.186
+      servername: ed.sosocn.filegear-sg.me
+      tls: true
+      type: vless
+      udp: true
+      uuid: 699f6733-5766-42f0-a05b-da23c5ee3817
+      ws-opts:
+        headers:
+            Host: ed.sosocn.filegear-sg.me
+        path: /?ed=2560
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 186 | ⬇️ 13.06 MB/s"
+      network: ws
+      port: 10501
+      server: ssm.pimax.com
+      servername: ssm.pimax.com
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 68876abb-0e56-4beb-b959-34a4bc57a6a2
+      ws-opts:
+        headers:
+            Host: ssm.pimax.com
+        path: /fkgevws
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 189 | ⬇️ 3.68 MB/s"
+      network: ws
+      port: 443
+      server: xg1a8.waimaohots.com
+      servername: xg1a8.waimaohots.com
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 75acd1f2-5c7c-4f15-b229-54bc44362023
+      ws-opts:
+        headers:
+            Host: xg1a8.waimaohots.com
+        path: /api/v1/graphql
+    - cipher: chacha20-ietf
+      name: "\U0001F1E8\U0001F1F3 CN 195 | ⬇️ 7.41 MB/s"
+      obfs: plain
+      obfs-param: None
+      password: myssojbk
+      port: 21333
+      protocol: auth_aes128_md5
+      protocol-param: 10787:IjcJ8nPZd0pq
+      server: 183.240.179.190
+      type: ssr
+      udp: true
+    - name: "\U0001F1EF\U0001F1F5 JP 196 | ⬇️ 40.65 MB/s"
+      password: 6677dbff-9e5a-4809-999c-efa742f6f11f
+      port: 22271
+      server: 183.2.150.90
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+    - cipher: chacha20-ietf
+      name: "\U0001F1E8\U0001F1F3 CN 198 | ⬇️ 8.41 MB/s"
+      obfs: tls1.2_ticket_auth
+      obfs-param: insomnia.yogurt8.us
+      password: sGWdzYDx5J
+      port: 43125
+      protocol: auth_aes128_md5
+      protocol-param: ""
+      server: insomnia.yogurt8.us
+      type: ssr
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 212 | ⬇️ 2.72 MB/s"
+      password: 71e5de08-5e03-4db5-b530-b6e09a945d98
+      port: 33505
+      server: 58.254.186.233
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 215 | ⬇️ 39.21 MB/s"
+      password: 4565f6de-6a86-40c6-94ab-b5c389c1df2f
+      port: 22271
+      server: 183.2.150.64
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - alterId: 0
+      cipher: none
+      name: "\U0001F1FA\U0001F1F8 US 227 | ⬇️ 4.10 MB/s"
+      network: ws
+      port: 3306
+      server: ora.aihi.uk
+      servername: ora.aihi.uk
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 979e39d7-fdf8-4e51-afb6-4d181c56170f
+      ws-opts:
+        headers:
+            Host: ora.aihi.uk
+        path: /ray
+    - name: "\U0001F1F0\U0001F1F7 KR 228 | ⬇️ 2.11 MB/s"
+      network: ws
+      port: 18888
+      server: 183.106.162.127
+      servername: v0.bgm2024.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 55520747-311e-4015-83ce-be46e2060ce3
+      ws-opts:
+        headers:
+            host: v0.bgm2024.dpdns.org
+        path: /?ed=2560
+    - name: "\U0001F1F0\U0001F1F7 KR 233 | ⬇️ 2.62 MB/s"
+      network: ws
+      port: 18888
+      server: 183.106.162.127
+      servername: v0.bgm2024.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 55520747-311e-4015-83ce-be46e2060ce3
+      ws-opts:
+        headers:
+            host: v0.bgm2024.dpdns.org
+        path: /?ed=2560
+    - name: "\U0001F1FA\U0001F1F8 US 236 | ⬇️ 6.11 MB/s"
+      network: ws
+      port: 443
+      server: www.visa.com.tw
+      servername: rn.insbot.filegear-sg.me
+      tls: true
+      type: vless
+      uuid: 513c3d38-8f6c-43e6-9d05-bc18ff0fe96b
+      ws-opts:
+        headers:
+            Host: rn.insbot.filegear-sg.me
+        path: /rn
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 237 | ⬇️ 3.84 MB/s"
+      password: 40a03f54-bac2-4066-85ea-aa5bd022c9fc
+      port: 16947
+      server: hm.huamao888.top
+      type: ss
+      udp: true
+    - name: "\U0001F1EF\U0001F1F5 JP 238 | ⬇️ 3.40 MB/s"
+      password: exaxgqkKkd0TAMrCxeonWg==
+      port: 443
+      server: jp104-cdn-route.couldflare-cdn.com
+      tls: true
+      type: http
+      udp: true
+      username: mrwdfNTD8M79LCukCieldrqZWqs=
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 243 | ⬇️ 5.57 MB/s"
+      password: a4625e53-7b8d-4d32-877e-2c2bb4b5aa7e
+      port: 16944
+      server: hm.huamao888.top
+      type: ss
+      udp: true
+    - name: "\U0001F1ED\U0001F1F0 HK 245 | ⬇️ 5.81 MB/s"
+      password: b6200af42ccadea353f5b5856dd20d70
+      port: 39001
+      server: 113.99.140.184
+      skip-cert-verify: true
+      sni: 113.99.140.184
+      type: trojan
+    - client-fingerprint: chrome
+      grpc-opts:
+        grpc-service-name: '@proprojec------------@proprojec--------@proprojec-------@proprojec------@proprojec------@proprojec--------'
+      name: "\U0001F1FA\U0001F1F3 UN 250 | ⬇️ 2.06 MB/s"
+      network: grpc
+      port: 14214
+      reality-opts:
+        public-key: X8lk3QnowM9tBY7qp-l4z6YLIm89dooWWAn4UKWX7Uo
+        short-id: 3521f7eb2ecd9665
+      server: 157.180.79.133
+      servername: yahoo.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: eb3000a1-693a-492a-af31-b145398fdeb9
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 251 | ⬇️ 2.10 MB/s"
+      network: ws
+      port: 22643
+      server: tk.hzlt.tkddns.xyz
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+      ws-headers:
+        Host: zxjp-c.tkong.cc
+      ws-path: /
+    - name: "\U0001F1E8\U0001F1F3 CN 258 | ⬇️ 39.06 MB/s"
+      password: 491f59f1-4a36-40b2-97b7-c704bab887a3
+      port: 22271
+      server: 183.2.150.98
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 262 | ⬇️ 2.12 MB/s"
+      network: ws
+      port: 2087
+      server: 103.21.244.5
+      servername: ghh.wsthh.site
+      tls: true
+      type: vless
+      uuid: 4527ff0c-8ac2-452a-95cb-c2d29e5a8421
+      ws-opts:
+        headers:
+            Host: ghh.wsthh.site
+        path: /?ed=2560
+    - cipher: aes-256-cfb
+      client-fingerprint: chrome
+      name: "\U0001F1F8\U0001F1EC SG 263 | ⬇️ 4.39 MB/s"
+      obfs: tls1.2_ticket_auth
+      obfs-param: sg2-cdn-route.couldflare-cdn.com
+      password: uiACqrIr
+      port: 56138
+      protocol: origin
+      protocol-param: ""
+      server: cm2.xcone.xyz
+      type: ssr
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 266 | ⬇️ 14.05 MB/s"
+      network: ws
+      port: 22642
+      server: tk.hzlt.tkddns.xyz
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+      ws-headers:
+        Host: zxjp-b.tkong.cc
+      ws-path: /
+    - name: "\U0001F1E8\U0001F1F3 CN 270 | ⬇️ 31.53 MB/s"
+      password: b37191d5-640b-41de-970e-6516d5f8eb37
+      port: 27001
+      server: 183.2.150.64
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 275 | ⬇️ 2.31 MB/s"
+      port: 443
+      server: abc.theyyszmn.sbs
+      servername: abc.theyyszmn.sbs
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 3d84a668-0588-447b-fbe1-058deb5baf93
+    - name: "\U0001F1F3\U0001F1F1 NL 276 | ⬇️ 3.05 MB/s"
+      network: ws
+      port: 5010
+      server: 45.154.98.99
+      servername: 0229.patterdeng.pp.ua
+      tls: true
+      type: vless
+      udp: true
+      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+      ws-opts:
+        headers:
+            Host: 0229.patterdeng.pp.ua
+        path: /proxyip=45.154.98.99:5010
+    - name: "\U0001F1E8\U0001F1F3 CN 278 | ⬇️ 18.85 MB/s"
+      password: 8a7bd4ba-bdc0-4713-9e34-3fe51a95b9fa
+      port: 27401
+      server: 183.2.150.90
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 280 | ⬇️ 2.24 MB/s"
+      network: ws
+      port: 443
+      server: 104.24.159.174
+      servername: vmess.yxxc.cn
+      tls: true
+      type: vless
+      uuid: 621a5d75-7cfa-4677-8826-c4acec005dcf
+      ws-opts:
+        headers:
+            Host: vmess.yxxc.cn
+        path: /?ed=2560
+    - name: "\U0001F1FA\U0001F1F8 US 290 | ⬇️ 3.77 MB/s"
+      network: ws
+      port: 443
+      server: 160.79.105.193
+      servername: 0229.patterdeng.pp.ua
+      tls: true
+      type: vless
+      udp: true
+      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+      ws-opts:
+        headers:
+            Host: 0229.patterdeng.pp.ua
+        path: /proxyip=160.79.105.193:443
+    - name: "\U0001F1F3\U0001F1F1 NL 296 | ⬇️ 2.82 MB/s"
+      password: "74260671232757400"
+      port: 443
+      server: correct-lynx.shiner427.skin
+      sni: correct-lynx.shiner427.skin
+      type: trojan
+    - name: "\U0001F1EF\U0001F1F5 JP 303 | ⬇️ 2.41 MB/s"
+      network: ws
+      port: 9950
+      server: 43.134.167.135
+      servername: 111.workerscf.dpdns.org
+      tls: true
+      type: vless
+      uuid: 6dfdd5a6-4e19-461c-84d3-81cbbdee179b
+      ws-opts:
+        headers:
+            Host: 111.workerscf.dpdns.org
+        path: /?ed=2560
+    - name: "\U0001F1E8\U0001F1F3 CN 304 | ⬇️ 2.76 MB/s"
+      password: 15f1f596-cbae-4a93-8cc5-54d7f1917f14
+      port: 27002
+      server: 183.2.150.98
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 305 | ⬇️ 8.80 MB/s"
+      password: dd84159b-94ca-4133-800d-e1e61c2b51d5
+      port: 27301
+      server: 183.240.116.252
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 307 | ⬇️ 4.56 MB/s"
+      network: ws
+      port: 443
+      server: 172.67.212.82
+      servername: 6ercvbnm.131.pp.ua
+      tls: true
+      type: vless
+      uuid: f82fb954-06a1-4f0b-9180-17e07585b61f
+      ws-opts:
+        headers:
+            Host: 6ercvbnm.131.pp.ua
+        path: /0HKVAwzpuQtCNTI3SlZor0
+    - name: "\U0001F1E8\U0001F1F3 CN 309 | ⬇️ 9.38 MB/s"
+      password: 4aacfad1-5a56-4401-86df-9e039a7f34be
+      port: 27301
+      server: 183.240.116.224
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 310 | ⬇️ 4.72 MB/s"
+      network: ws
+      port: 443
+      server: cg1c14.waimaoglobaldirect.cc
+      servername: cg1c14.waimaoglobaldirect.cc
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: be8e3136-b874-4085-bd23-ec3699300490
+      ws-opts:
+        headers:
+            Host: cg1c14.waimaoglobaldirect.cc
+        path: /api/v1/graphql
+    - cipher: aes-128-gcm
+      name: "\U0001F1E8\U0001F1F3 CN 312 | ⬇️ 6.15 MB/s"
+      password: 2b5597ec-d990-4aaf-b4f9-c19308873901
+      port: 40034
+      server: kefu.neter2.top
+      type: ss
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 313 | ⬇️ 7.14 MB/s"
+      password: df3b9fb4-14c5-40a6-a739-572d7d1a424f
+      port: 27301
+      server: 58.254.186.233
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - name: "\U0001F1ED\U0001F1F0 HK 317 | ⬇️ 6.09 MB/s"
+      password: b6200af42ccadea353f5b5856dd20d70
+      port: 39001
+      server: 183.240.196.93
+      skip-cert-verify: true
+      sni: 183.240.196.93
+      type: trojan
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 324 | ⬇️ 3.12 MB/s"
+      network: ws
+      port: 443
+      server: 5.10.246.53
+      servername: keji.madcity.lol
+      tls: true
+      type: vless
+      uuid: 87603b79-0ec8-4192-9152-795e0efd956f
+      ws-opts:
+        headers:
+            Host: keji.madcity.lol
+        path: /?ed=2560
+    - name: "\U0001F1E8\U0001F1F3 CN 328 | ⬇️ 6.11 MB/s"
+      password: c10d0450-aa96-4c4d-aae4-14baf2e00bd5
+      port: 27002
+      server: 183.2.150.64
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - cipher: aes-128-gcm
+      name: "\U0001F1E8\U0001F1F3 CN 336 | ⬇️ 7.74 MB/s"
+      password: 2b5597ec-d990-4aaf-b4f9-c19308873901
+      port: 45969
+      server: kefu.neter2.top
+      type: ss
+      udp: true
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 338 | ⬇️ 12.77 MB/s"
+      network: ws
+      port: 22643
+      raw:
+        add: tk.hzlt.tkddns.xyz
+        aid: 2
+        alpn: ""
+        fp: ""
+        host: zxjp-c.tkong.cc
+        id: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+        net: ws
+        path: /
+        port: 22643
+        ps: 3|82 |  4.3MB/s
+        scy: auto
+        sni: zxjp-c.tkong.cc
+        tls: tls
+        type: none
+        v: "2"
+      server: tk.hzlt.tkddns.xyz
+      servername: zxjp-c.tkong.cc
+      tls: true
+      type: vmess
+      uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+      ws-opts:
+        headers:
+            Host: zxjp-c.tkong.cc
+        path: /
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 344 | ⬇️ 7.43 MB/s"
+      password: 2b5597ec-d990-4aaf-b4f9-c19308873901
+      port: 41121
+      server: kefu.neter2.top
+      type: ss
+      udp: true
+    - alterId: 0
+      cipher: auto
+      ip-version: dual
+      name: "\U0001F1FA\U0001F1F8 US 360 | ⬇️ 2.88 MB/s"
+      network: tcp
+      port: 5228
+      server: b514723d-suz340-sw0fy8-4c42.cu.plebai.net
+      type: vmess
+      udp: true
+      uuid: 1758c288-c39d-3d20-f34f-f4c62bc1d8d4
+    - client-fingerprint: random
+      name: "\U0001F1FA\U0001F1F8 US 361 | ⬇️ 3.94 MB/s"
+      network: ws
+      port: 443
+      server: 69.84.182.51
+      servername: vless.caoni.nyc.mn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 8ffb65a7-8474-4db2-859f-285f10f487cd
+      ws-opts:
+        headers:
+            Host: vless.caoni.nyc.mn
+        path: /?ed=2048
+    - cipher: aes-256-gcm
+      name: "\U0001F1ED\U0001F1F0 HK 363 | ⬇️ 2.75 MB/s"
+      password: 5941dd2a-0e68-46a1-8d32-fa92344b2614
+      port: 52773
+      server: jsyd.piaomiaoxu.net
+      type: ss
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F7\U0001F1FA RU 364 | ⬇️ 2.05 MB/s"
+      network: ws
+      port: 22443
+      server: 45.5921688.xyz
+      servername: 45.5921688.xyz
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 71a7db14-1b6f-5aec-9e5d-9bd5f8beabab
+      ws-opts:
+        headers:
+            Host: 45.5921688.xyz
+        path: /trojan-panel-websocket-path
+    - client-fingerprint: ""
+      flow: ""
+      mode: ""
+      name: "\U0001F1FA\U0001F1F8 US 374 | ⬇️ 2.00 MB/s"
+      network: ws
+      port: 80
+      server: 170.114.46.6
+      servername: ""
+      tls: false
+      type: vless
+      udp: false
+      uuid: b5540249-9ac4-4037-aacd-79c71052864f
+      ws-opts:
+        headers:
+            Host: free.pranithsandaruwan.cfd
+        path: /
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 376 | ⬇️ 7.10 MB/s"
+      password: 2b5597ec-d990-4aaf-b4f9-c19308873901
+      port: 41102
+      server: kefu.neter2.top
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 381 | ⬇️ 8.27 MB/s"
+      password: 2b5597ec-d990-4aaf-b4f9-c19308873901
+      port: 41101
+      server: kefu.neter2.top
+      type: ss
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 382 | ⬇️ 3.31 MB/s"
+      password: c9a620fd-2a10-4301-ae3b-97525dac4078
+      port: 21865
+      server: bg.guangsu888.cc
+      skip-cert-verify: true
+      sni: bg.guangsu888.cc
+      type: trojan
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1EC\U0001F1E7 GB 388 | ⬇️ 2.55 MB/s"
+      network: ws
+      port: 443
+      server: xg1a7.waimaohots.com
+      servername: xg1a7.waimaohots.com
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 75acd1f2-5c7c-4f15-b229-54bc44362023
+      ws-opts:
+        headers:
+            Host: xg1a7.waimaohots.com
+        path: /api/v1/graphql
+    - name: "\U0001F1E8\U0001F1F3 CN 390 | ⬇️ 12.29 MB/s"
+      password: c88bcf68-8b48-4142-b136-e80f84cd573f
+      port: 27301
+      server: 183.2.150.90
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 394 | ⬇️ 3.65 MB/s"
+      network: tcp
+      port: 5228
+      server: 1c265908-svn5s0-t28b6o-ef48.cu.plebai.net
+      skip-cert-verify: true
+      tls: false
+      type: vmess
+      uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+      ws-headers:
+        Host: 1c265908-svn5s0-t28b6o-ef48.cu.plebai.net
+      ws-path: /
+    - name: "\U0001F1F0\U0001F1F7 KR 397 | ⬇️ 5.25 MB/s"
+      network: ws
+      port: 30012
+      server: 220.118.248.123
+      servername: v0.bgm2024.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 55520747-311e-4015-83ce-be46e2060ce3
+      ws-opts:
+        headers:
+            host: v0.bgm2024.dpdns.org
+        path: /?ed=2560
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 399 | ⬇️ 7.68 MB/s"
+      port: 41109
+      server: kefu.neter2.top
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 2b5597ec-d990-4aaf-b4f9-c19308873901
+    - name: "\U0001F1FA\U0001F1F8 US 402 | ⬇️ 3.04 MB/s"
+      port: 443
+      server: 98cac2fa-svp0g0-t1bnjq-1krtb.los.gotochinatown.net
+      tls: true
+      type: socks5
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 405 | ⬇️ 3.95 MB/s"
+      network: tcp
+      port: 17235
+      server: 79e892f2-sv2sg0-t6eg6k-1pckg.cm5.p5pv.com
+      skip-cert-verify: true
+      tls: false
+      type: vmess
+      uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
+      ws-headers:
+        Host: 79e892f2-sv2sg0-t6eg6k-1pckg.cm5.p5pv.com
+      ws-path: /
