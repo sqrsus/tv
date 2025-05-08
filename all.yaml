@@ -1,1034 +1,287 @@
 proxies:
-    - cipher: aes-128-gcm
-      name: "\U0001F1ED\U0001F1F0 HK 000 | ⬇️ 3.63 MB/s"
-      password: 5cd15dbb-b3be-40b5-b9b2-192ede567d0a
-      plugin: obfs
-      plugin-opts:
-        host: 1672cefd64ed64b8232391cca43d4d2a.baidu.com
-        mode: http
-      port: 36602
-      server: gd.bjnet2.com
-      type: ss
+    - alterId: 64
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 001 | ⬇️ 7.20 MB/s"
+      port: 41554
+      server: 183.236.51.38
+      tls: false
+      type: vmess
+      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1ED\U0001F1F0 HK 001 | ⬇️ 3.11 MB/s"
-      password: f0963a51-5e31-4959-b416-596162be330b
-      port: 17101
-      server: nodeseek.trafficmanager.net
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1ED\U0001F1F0 HK 002 | ⬇️ 2.29 MB/s"
-      password: f0963a51-5e31-4959-b416-596162be330b
-      port: 17101
-      server: brookseek.trafficmanager.net
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1ED\U0001F1F0 HK 003 | ⬇️ 4.35 MB/s"
-      password: f0963a51-5e31-4959-b416-596162be330b
-      port: 17102
-      server: brookseek.trafficmanager.net
-      type: ss
-      udp: true
-    - name: "\U0001F1F8\U0001F1EC SG 009 | ⬇️ 6.62 MB/s"
-      password: 5654ffb8
-      port: 30951
-      server: 142.91.98.233
-      skip-cert-verify: true
-      sni: www.bing.com
-      tfo: false
-      type: hysteria2
-    - country: "\U0001F1ED\U0001F1F0HK"
-      name: "\U0001F1ED\U0001F1F0 HK 011 | ⬇️ 2.93 MB/s"
-      password: d4c22fd9-1474-4e9f-baf7-80b162f3e60c
-      port: 12002
-      server: cn1.cdn.xfltd-cdn.top
-      skip-cert-verify: true
-      sni: cdn.alibaba.com
-      type: trojan
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1ED\U0001F1F0 HK 012 | ⬇️ 4.31 MB/s"
+      name: "\U0001F1ED\U0001F1F0 HK 002 | ⬇️ 8.76 MB/s"
       password: cd785144-b27e-4a8a-93a8-7ab8cdec77a3
       port: 23331
       server: link.karleynetwork.xyz
       type: ss
       udp: true
-    - country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 015 | ⬇️ 2.60 MB/s"
-      password: f5129da8-e01f-40d9-9c67-ec63f0f6110e
-      port: 27201
-      server: 183.2.150.64
-      sni: q08m.vgraxiw73s.hasyaf.cn
-      type: trojan
-    - name: "\U0001F1ED\U0001F1F0 HK 016 | ⬇️ 2.02 MB/s"
-      password: 8a20645c-ecda-4f55-afff-c91958251c64
-      port: 46188
-      server: 78a39e4a2b99640155a1359e9324ad5e.v1.cac.node-is.green
-      skip-cert-verify: true
-      sni: hk14.bilibili.com
-      type: trojan
-      udp: true
-    - name: "\U0001F1E8\U0001F1F3 CN 017 | ⬇️ 5.77 MB/s"
-      password: AptTIBh44PcQ0ZHQJ5xqUf90qU
-      port: 25355
-      server: ddns.xyxy.dpdns.org
-      skip-cert-verify: true
-      sni: bing.com
-      tfo: false
-      type: hysteria2
-    - name: "\U0001F1ED\U0001F1F0 HK 018 | ⬇️ 2.66 MB/s"
-      password: 8a20645c-ecda-4f55-afff-c91958251c64
-      port: 45936
-      server: 98dba3ffb43c7ed7bd07ea2f5d8751b2.v1.cac.node-is.green
-      skip-cert-verify: true
-      sni: hk14.bilibili.com
-      type: trojan
-      udp: true
-    - name: "\U0001F1F8\U0001F1EC SG 019 | ⬇️ 6.35 MB/s"
-      password: BKeSJrhWzNIFIRs8RI6Un18Do
-      port: 29813
-      server: 173.234.15.100
-      skip-cert-verify: true
-      sni: bing.com
-      tfo: false
-      type: hysteria2
-    - name: "\U0001F1ED\U0001F1F0 HK 022 | ⬇️ 2.33 MB/s"
-      password: 8a20645c-ecda-4f55-afff-c91958251c64
-      port: 44029
-      server: 6f49b02693fc2c5adec9a7534c4e3978.v1.cac.node-is.green
-      skip-cert-verify: true
-      sni: hk13.bilibili.com
-      type: trojan
-      udp: true
-    - client-fingerprint: ios
-      delay: 1072
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 026 | ⬇️ 2.62 MB/s"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: d0lNmb2Ao0UELGAQ037dgn_dtoOxHuPMEwo9Z4zhLzE
-        short-id: 4d84e084
-      server: pq.aws13.yydjc.top
-      servername: cdn-dynmedia-1.microsoft.com
-      tls: true
-      type: vless
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
-    - country: HK
-      name: "\U0001F1ED\U0001F1F0 HK 028 | ⬇️ 2.40 MB/s"
-      password: d4c22fd9-1474-4e9f-baf7-80b162f3e60c
-      port: 12001
-      server: cn1.cdn.xfltd-cdn.top
-      skip-cert-verify: true
-      sni: cdn.alibaba.com
-      type: trojan
-      udp: true
-    - mport: 36000-37000
-      name: "\U0001F1EF\U0001F1F5 JP 031 | ⬇️ 6.42 MB/s"
-      password: 1bdb1b16-d241-4700-adb3-d0a4ff79480c
-      port: 36000
-      ports: 36000-37000
-      server: jp1.interld123456789.com
-      skip-cert-verify: true
-      sni: 1231231.1234567890spcloud.com
-      type: hysteria2
-      udp: true
-    - auth: 0A1DDFE6-A16A-43FA-A6E3-70EDE4EA61C3
-      name: "\U0001F1EF\U0001F1F5 JP 034 | ⬇️ 5.75 MB/s"
-      password: 0A1DDFE6-A16A-43FA-A6E3-70EDE4EA61C3
-      port: 7270
-      server: jp4.dexlos.com
-      sni: jp4.dexlos.com
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1E8\U0001F1F3 CN 035 | ⬇️ 2.10 MB/s"
-      password: 8a20645c-ecda-4f55-afff-c91958251c64
-      port: 49781
-      server: eebe3d25d3291163e6a349fda6c92eef.v1.cac.node-is.green
-      skip-cert-verify: true
-      sni: tw1.bilibili.com
-      type: trojan
-      udp: true
-    - delay: 994
-      name: "\U0001F1E8\U0001F1F3 CN 036 | ⬇️ 3.37 MB/s"
-      password: b6200af42ccadea353f5b5856dd20d70
-      port: 39001
-      server: 183.240.196.93
-      skip-cert-verify: true
-      sni: 183.240.196.93
-      type: trojan
-    - client-fingerprint: ios
-      delay: 1072
-      flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 038 | ⬇️ 2.88 MB/s"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: d0lNmb2Ao0UELGAQ037dgn_dtoOxHuPMEwo9Z4zhLzE
-        short-id: 4d84e084
-      server: pq.aws13.yydjc.top
-      servername: cdn-dynmedia-1.microsoft.com
-      tls: true
-      type: vless
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
-    - cipher: aes-128-gcm
-      name: "\U0001F1EF\U0001F1F5 JP 041 | ⬇️ 2.29 MB/s"
-      password: 5cd15dbb-b3be-40b5-b9b2-192ede567d0a
-      plugin: obfs
-      plugin-opts:
-        host: 1672cefd64ed64b8232391cca43d4d2a.baidu.com
-        mode: http
-      port: 36612
-      server: sh.bjnet2.com
-      type: ss
-    - name: "\U0001F1E8\U0001F1F3 CN 042 | ⬇️ 2.81 MB/s"
-      password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
-      port: 35000
-      server: gzyd.cg.xxality.cn
-      sni: cgsg2.hysality.com
-      type: trojan
-      udp: true
-    - client-fingerprint: ios
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 043 | ⬇️ 3.26 MB/s"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: d0lNmb2Ao0UELGAQ037dgn_dtoOxHuPMEwo9Z4zhLzE
-        short-id: 4d84e084
-      server: pq.aws13.yydjc.top
-      servername: cdn-dynmedia-1.microsoft.com
-      tls: true
-      type: vless
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
-    - name: "\U0001F1ED\U0001F1F0 HK 045 | ⬇️ 2.60 MB/s"
-      password: 89b0687d-db9f-4af3-8100-a5e584754bda
-      port: 23878
-      server: gy.tangu.win
-      skip-cert-verify: true
-      sni: m.ctrip.com
-      type: trojan
-      udp: true
-    - cipher: aes-128-gcm
-      name: "\U0001F1EF\U0001F1F5 JP 047 | ⬇️ 3.42 MB/s"
-      password: 5cd15dbb-b3be-40b5-b9b2-192ede567d0a
-      plugin: obfs
-      plugin-opts:
-        host: 1672cefd64ed64b8232391cca43d4d2a.baidu.com
-        mode: http
-      port: 36609
-      server: gd.bjnet2.com
-      type: ss
-    - country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 050 | ⬇️ 2.67 MB/s"
-      password: 24fa9487-34eb-4e27-b516-e572a82170c5
-      port: 27401
-      server: 183.2.150.64
-      sni: q08m.vgraxiw73s.hasyaf.cn
-      type: trojan
-    - name: "\U0001F1F8\U0001F1EC SG 053 | ⬇️ 17.79 MB/s"
-      password: 8a20645c-ecda-4f55-afff-c91958251c64
-      port: 40057
-      server: a8e1eefcf7d6de77ddc39373842c8f0b.v1.cac.node-is.green
-      skip-cert-verify: true
-      sni: sg1.bilibili.com
-      type: trojan
-      udp: true
-    - name: "\U0001F1E8\U0001F1F3 CN 054 | ⬇️ 3.87 MB/s"
-      password: b6200af42ccadea353f5b5856dd20d70
-      port: 39001
-      server: 113.99.140.184
-      skip-cert-verify: true
-      sni: 113.99.140.184
-      type: trojan
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 055 | ⬇️ 4.29 MB/s"
-      network: tcp
-      port: 443
-      server: pq.hinet.tw3.yydjc.top
-      servername: download.yydjc.top
-      tls: true
-      type: vless
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F8\U0001F1EC SG 056 | ⬇️ 2.01 MB/s"
-      port: 443
-      reality-opts:
-        public-key: USd1Iznfu9nwnvIfz5CPcrnhXoQX1e1C1fCPNB9mbAk
-        short-id: 36fb8090
-      server: pq.aws56.yydjc.top
-      servername: iosapps.itunes.apple.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1EF\U0001F1F5 JP 057 | ⬇️ 34.79 MB/s"
-      password: f0963a51-5e31-4959-b416-596162be330b
-      port: 17402
-      server: brookseek.trafficmanager.net
-      type: ss
-      udp: true
-    - name: "\U0001F1EF\U0001F1F5 JP 058 | ⬇️ 2.48 MB/s"
-      password: 89b0687d-db9f-4af3-8100-a5e584754bda
-      port: 23875
-      server: jsb.tangu.win
-      skip-cert-verify: true
-      sni: m.ctrip.com
-      type: trojan
-      udp: true
-    - client-fingerprint: firefox
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 059 | ⬇️ 2.82 MB/s"
-      network: tcp
-      port: 10002
-      reality-opts:
-        public-key: xnzUvDQZ4B45lUi40lFKOLWiJdPQW8LzhGsGandvvlc
-        short-id: ad081079
-      server: jp2.interld123456789.com
-      servername: addons.mozilla.org
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 1bdb1b16-d241-4700-adb3-d0a4ff79480c
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1EF\U0001F1F5 JP 062 | ⬇️ 5.49 MB/s"
-      password: f0963a51-5e31-4959-b416-596162be330b
-      port: 17402
-      server: nodeseek.trafficmanager.net
-      type: ss
-      udp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1EF\U0001F1F5 JP 065 | ⬇️ 2.95 MB/s"
-      password: cacb4d4fa26f4eed25e4d17a6370083c
-      port: 443
-      server: tky02.sqx001.com
-      skip-cert-verify: true
-      sni: tky02.sqx001.com
-      tls: true
-      type: http
-      udp: true
-      username: dmpyoary@mayorlogistic.com
-    - name: "\U0001F1F8\U0001F1EC SG 066 | ⬇️ 4.28 MB/s"
-      password: 8a20645c-ecda-4f55-afff-c91958251c64
-      port: 41486
-      server: 381762307315db02c5fa8db34398e432.v1.cac.node-is.green
-      skip-cert-verify: true
-      sni: sg1.bilibili.com
-      type: trojan
-      udp: true
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      delay: 820
-      name: "\U0001F1F0\U0001F1F7 KR 070 | ⬇️ 4.37 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 146.56.164.36
-      skip-cert-verify: true
-      sni: api.push.apple.com
-      type: hysteria2
-    - alterId: 64
-      cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 071 | ⬇️ 3.22 MB/s"
-      port: 30052
-      server: 183.236.51.38
+    - name: "\U0001F1FA\U0001F1F8 US 003 | ⬇️ 3.35 MB/s"
+      network: ws
+      port: 80
+      server: www.speedtest.net
+      servername: redfree8mahsang6.redfree8.ir
       skip-cert-verify: false
       tls: false
-      type: vmess
-      udp: true
-      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    - name: "\U0001F1E8\U0001F1F3 CN 073 | ⬇️ 2.40 MB/s"
-      password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-      port: 443
-      server: taifo02a.kbservice.club
-      sni: 45.32.28.232
-      type: trojan
-      udp: true
-    - name: "\U0001F1E8\U0001F1F3 CN 074 | ⬇️ 2.89 MB/s"
-      password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-      port: 443
-      server: taifo01a.kbservice.club
-      sni: 45.32.28.232
-      type: trojan
-    - country: HK
-      name: "\U0001F1ED\U0001F1F0 HK 075 | ⬇️ 4.70 MB/s"
-      password: d4c22fd9-1474-4e9f-baf7-80b162f3e60c
-      port: 12031
-      server: cn2.cdn.xfltd-cdn.top
-      skip-cert-verify: true
-      sni: cdn.alibaba.com
-      type: trojan
-      udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F8\U0001F1EC SG 076 | ⬇️ 2.57 MB/s"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: USd1Iznfu9nwnvIfz5CPcrnhXoQX1e1C1fCPNB9mbAk
-        short-id: 36fb8090
-      server: pq.aws56.yydjc.top
-      servername: iosapps.itunes.apple.com
-      skip-cert-verify: false
-      tls: true
       type: vless
       udp: true
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 078 | ⬇️ 2.46 MB/s"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: asLJREsp9L0JbURQPIhFxc6bZIgpunEOjOJeHv3YcEs
-        short-id: b0fbe0f0
-      server: pq.aws54.yydjc.top
-      servername: download-porter.hoyoverse.com
-      tls: true
-      type: vless
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
+      uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+      ws-opts:
+        headers:
+            Host: redfree8mahsang6.redfree8.ir
+        path: /TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1F3 CN 079 | ⬇️ 6.13 MB/s"
+      name: "\U0001F1E8\U0001F1F3 CN 004 | ⬇️ 20.97 MB/s"
       password: 887f01da-5b52-4dff-a80f-efe3380ac35f
       port: 50555
       server: chiyu.myfczy169.top
       type: ss
       udp: true
-    - name: "\U0001F1E8\U0001F1F3 CN 080 | ⬇️ 4.24 MB/s"
-      password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-      port: 3462
-      server: a04.taipeicitygovernment.com.ua
-      sni: 45.32.28.232
-      type: trojan
-    - client-fingerprint: chrome
-      delay: 538
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 081 | ⬇️ 3.07 MB/s"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: 0UFjUVBI4nT-rTdQewzCmsYLrs_a4-qTq2ksWpDanXw
-        short-id: c6306490
-      server: pq.aws53.yydjc.top
-      servername: buylite.tv.apple.com
-      tls: true
-      type: vless
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
-    - client-fingerprint: chrome
-      name: "\U0001F1EF\U0001F1F5 JP 084 | ⬇️ 2.25 MB/s"
-      password: cacb4d4fa26f4eed25e4d17a6370083c
-      port: 443
-      server: tky03.sqx001.com
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: dmpyoary@mayorlogistic.com
-    - client-fingerprint: ios
-      delay: 950
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 085 | ⬇️ 4.00 MB/s"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: ybBxu1pW3O9Me954LCDfXgHW6lIYepAbnla82yaZ5HE
-        short-id: 6a1faecb
-      server: pq.aws12.yydjc.top
-      servername: download-porter.hoyoverse.com
-      tls: true
-      type: vless
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
-    - name: "\U0001F1F9\U0001F1FC TW 089 | ⬇️ 2.30 MB/s"
-      password: exaxgqkKkd0TAMrCxeonWg==
-      port: 1443
-      server: twmoon1-cdn-route.couldflare-cdn.com
-      skip-cert-verify: false
-      sni: twmoon1-cdn-route.couldflare-cdn.com
-      tls: true
-      type: http
-      username: mrwdfNTD8M79LCukCieldrqZWqs=
-    - delay: 391
-      name: "\U0001F1EF\U0001F1F5 JP 092 | ⬇️ 2.05 MB/s"
-      password: c84d3d1b-bdc9-45f7-9a00-89f0134bbd65
-      port: 22271
-      server: 183.2.150.98
-      skip-cert-verify: false
-      sni: q08m.vgraxiw73s.hasyaf.cn
-      type: trojan
-      udp: true
-    - name: "\U0001F1FA\U0001F1F8 US 094 | ⬇️ 2.64 MB/s"
-      obfs: salamander
-      obfs-password: LNAnPYDfFyesRAVn
-      password: 6aa8bd0f-8141-4a1f-99ac-9f65860066f4
-      port: 24438
-      ports: 21000-26000
-      server: mg1.gywanglug.xyz
-      skip-cert-verify: true
-      sni: mg1.gywanglug.xyz
-      type: hysteria2
-    - name: "\U0001F1FA\U0001F1F8 US 096 | ⬇️ 3.04 MB/s"
-      obfs: salamander
-      obfs-password: LNAnPYDfFyesRAVn
-      password: 6aa8bd0f-8141-4a1f-99ac-9f65860066f4
-      port: 24023
-      ports: 21000-26000
-      server: mg3.gywanglug.xyz
-      skip-cert-verify: true
-      sni: mg3.gywanglug.xyz
-      type: hysteria2
-    - name: "\U0001F1FA\U0001F1F8 US 097 | ⬇️ 2.72 MB/s"
-      obfs: salamander
-      obfs-password: LNAnPYDfFyesRAVn
-      password: 357edade-8e86-4e83-87f5-0dcb8bf343d7
-      port: 23928
-      ports: 21000-26000
-      server: mg1.gywanglug.xyz
-      skip-cert-verify: true
-      sni: mg1.gywanglug.xyz
-      type: hysteria2
-    - name: "\U0001F1F8\U0001F1EC SG 099 | ⬇️ 2.17 MB/s"
-      password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-      port: 443
-      server: sg.singaporenodeserverone.co.ua
-      sni: 45.32.28.232
-      type: trojan
-    - name: "\U0001F1F0\U0001F1F7 KR 101 | ⬇️ 4.58 MB/s"
-      password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-      port: 2050
-      server: 02a.seoulcitygovernment.com.ua
-      sni: 45.32.28.232
-      type: trojan
-      udp: true
-    - name: "\U0001F1FA\U0001F1F8 US 104 | ⬇️ 5.38 MB/s"
-      obfs: salamander
-      obfs-password: LNAnPYDfFyesRAVn
-      password: 357edade-8e86-4e83-87f5-0dcb8bf343d7
-      port: 22484
-      ports: 21000-26000
-      server: mg3.gywanglug.xyz
-      skip-cert-verify: true
-      sni: mg3.gywanglug.xyz
-      type: hysteria2
-    - alpn:
-        - h3
-      congestion-controller: bbr
-      delay: 1052
-      disable-sni: false
-      name: "\U0001F1FA\U0001F1F8 US 105 | ⬇️ 4.65 MB/s"
-      password: 357edade-8e86-4e83-87f5-0dcb8bf343d7
-      port: 443
-      reduce-rtt: false
-      request-timeout: 0
-      server: mg6.gywanglug.xyz
-      skip-cert-verify: false
-      sni: mg6.gywanglug.xyz
-      type: tuic
-      udp-relay-mode: native
-      uuid: 357edade-8e86-4e83-87f5-0dcb8bf343d7
-      version: 5
-    - name: "\U0001F1FA\U0001F1F8 US 106 | ⬇️ 2.42 MB/s"
-      obfs: salamander
-      obfs-password: LNAnPYDfFyesRAVn
-      password: 6aa8bd0f-8141-4a1f-99ac-9f65860066f4
-      port: 25277
-      ports: 21000-26000
-      server: mg3.gywanglug.xyz
-      skip-cert-verify: true
-      sni: mg3.gywanglug.xyz
-      type: hysteria2
-    - delay: 809
-      name: "\U0001F1E8\U0001F1F3 CN 107 | ⬇️ 3.94 MB/s"
+    - delay: 1189
+      name: "\U0001F1E8\U0001F1F3 CN 007 | ⬇️ 2.36 MB/s"
       password: b6200af42ccadea353f5b5856dd20d70
       port: 39001
       server: 120.233.128.68
       skip-cert-verify: true
       sni: 120.233.128.68
       type: trojan
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      delay: 593
-      name: "\U0001F1FA\U0001F1F8 US 108 | ⬇️ 3.06 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 64.181.243.177
-      skip-cert-verify: true
-      sni: tv.apple.com
-      type: hysteria2
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      name: "\U0001F1F0\U0001F1F7 KR 110 | ⬇️ 3.44 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 193.123.249.0
-      skip-cert-verify: true
-      sni: api.push.apple.com
-      type: hysteria2
     - alterId: 0
       cipher: auto
-      delay: 811
-      name: "\U0001F1F8\U0001F1EC SG 113 | ⬇️ 4.74 MB/s"
-      network: ws
-      port: 35142
-      server: sg2.vip2.g2.moonbase.life
-      servername: sg2.vip2.g2.moonbase.life
+      name: "\U0001F1E8\U0001F1F3 CN 008 | ⬇️ 2.54 MB/s"
+      network: tcp
+      port: 41024
+      server: 183.236.51.38
       skip-cert-verify: true
-      tls: true
-      type: vmess
-      udp: true
-      uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
-      ws-opts:
-        headers:
-            Host: web.xcjs.info
-        path: /home
-    - name: "\U0001F1E8\U0001F1F3 CN 114 | ⬇️ 7.28 MB/s"
-      password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-      port: 3462
-      server: a02.taipeicitygovernment.chernovtsy.ua
-      sni: 45.32.28.232
-      type: trojan
-    - alterId: 2
-      cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 115 | ⬇️ 4.24 MB/s"
-      port: 41882
-      server: us2.relay.jdclouds.xyz
-      tls: false
-      type: vmess
-      udp: true
-      uuid: edcb72d6-b67f-3c83-ad3d-cdf424d98593
-    - name: "\U0001F1FA\U0001F1F8 US 119 | ⬇️ 2.69 MB/s"
-      obfs: salamander
-      obfs-password: LNAnPYDfFyesRAVn
-      password: 6aa8bd0f-8141-4a1f-99ac-9f65860066f4
-      port: 22077
-      ports: 21000-26000
-      server: mg1.gywanglug.xyz
-      skip-cert-verify: true
-      sni: mg1.gywanglug.xyz
-      type: hysteria2
-    - alterId: 64
-      cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 122 | ⬇️ 2.86 MB/s"
-      port: 55002
-      server: 183.237.84.53
       tls: false
       type: vmess
       uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    - cipher: aes-128-gcm
-      delay: 1065
-      name: "\U0001F1FA\U0001F1F8 US 124 | ⬇️ 4.11 MB/s"
-      password: 5cd15dbb-b3be-40b5-b9b2-192ede567d0a
-      plugin: obfs
-      plugin-opts:
-        host: 1672cefd64ed64b8232391cca43d4d2a.baidu.com
-        mode: http
-      port: 36608
-      server: sh.bjnet2.com
-      type: ss
-    - alpn:
-        - h3
-      auth: 569dda85-bc76-4f8b-ae03-609d97f9e76c
-      delay: 2035
-      name: "\U0001F1FA\U0001F1F8 US 125 | ⬇️ 2.05 MB/s"
-      password: 569dda85-bc76-4f8b-ae03-609d97f9e76c
-      port: 5750
-      server: 143.198.48.33
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-    - client-fingerprint: edge
-      delay: 1554
-      flow: xtls-rprx-vision
-      name: "\U0001F1F0\U0001F1F7 KR 127 | ⬇️ 2.22 MB/s"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: 8nT5x5OM-97ibWMfu5y0mrvWdmuwVeg_f_RE5Ycl_yw
-        short-id: c5835b1f
-      server: 193.123.226.5
-      servername: buylite.music.apple.com
-      tls: true
-      type: vless
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
-    - alterId: 2
-      cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 128 | ⬇️ 4.14 MB/s"
-      port: 41881
-      server: us1.relay.jdclouds.xyz
-      tls: false
-      type: vmess
-      udp: true
-      uuid: edcb72d6-b67f-3c83-ad3d-cdf424d98593
-    - auth: 357edade-8e86-4e83-87f5-0dcb8bf343d7
-      delay: 808
-      name: "\U0001F1FA\U0001F1F8 US 129 | ⬇️ 2.14 MB/s"
-      obfs: salamander
-      obfs-password: LNAnPYDfFyesRAVn
-      password: 357edade-8e86-4e83-87f5-0dcb8bf343d7
-      port: 22524
-      ports: 21000-26000
-      server: mg3.gywanglug.xyz
-      skip-cert-verify: true
-      sni: mg3.gywanglug.xyz
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1FA\U0001F1F8 US 134 | ⬇️ 2.54 MB/s"
-      obfs: salamander
-      obfs-password: LNAnPYDfFyesRAVn
-      password: 6aa8bd0f-8141-4a1f-99ac-9f65860066f4
-      port: 23607
-      ports: 21000-26000
-      server: mg1.gywanglug.xyz
-      skip-cert-verify: true
-      sni: mg1.gywanglug.xyz
-      type: hysteria2
-    - auth: nfsn666
-      delay: 1362
-      name: "\U0001F1FA\U0001F1F8 US 135 | ⬇️ 2.07 MB/s"
-      password: nfsn666
-      port: 8888
-      server: sj-arm.nfsn666.gq
-      skip-cert-verify: true
-      sni: sj-arm.nfsn666.gq
-      type: hysteria2
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      name: "\U0001F1EF\U0001F1F5 JP 141 | ⬇️ 2.19 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 217.142.230.50
-      skip-cert-verify: true
-      sni: www.apple.com
-      type: hysteria2
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      delay: 1113
-      name: "\U0001F1EF\U0001F1F5 JP 142 | ⬇️ 2.19 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 217.142.233.165
-      skip-cert-verify: true
-      sni: www.apple.com
-      type: hysteria2
-    - name: "\U0001F1FA\U0001F1F8 US 143 | ⬇️ 2.09 MB/s"
+      ws-headers:
+        Host: 183.236.51.38
+      ws-path: /
+    - delay: 1009
+      name: "\U0001F1FA\U0001F1F8 US 010 | ⬇️ 4.98 MB/s"
       network: ws
-      port: 81
-      server: 210.61.97.241
-      servername: 0229.patterdeng.pp.ua
-      tls: true
-      type: vless
-      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-      ws-opts:
-        headers:
-            Host: 0229.patterdeng.pp.ua
-        path: /?ed
-    - auth: 9e7a0efe-e7fd-42f2-9f66-092fa9285da7
-      name: "\U0001F1EF\U0001F1F5 JP 144 | ⬇️ 2.26 MB/s"
-      password: 9e7a0efe-e7fd-42f2-9f66-092fa9285da7
-      port: 10100
-      server: jpvl.681687.xyz
-      skip-cert-verify: true
-      sni: jpvl.681687.xyz
-      type: hysteria2
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      delay: 676
-      name: "\U0001F1FA\U0001F1F8 US 146 | ⬇️ 2.62 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 146.235.201.189
-      skip-cert-verify: true
-      sni: tv.apple.com
-      type: hysteria2
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      delay: 956
-      name: "\U0001F1FA\U0001F1F8 US 150 | ⬇️ 3.69 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 192.9.249.178
-      skip-cert-verify: true
-      sni: tv.apple.com
-      type: hysteria2
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      delay: 674
-      name: "\U0001F1FA\U0001F1F8 US 152 | ⬇️ 3.42 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 138.2.229.162
-      skip-cert-verify: true
-      sni: tv.apple.com
-      type: hysteria2
-    - alpn:
-        - h3
-      auth: b72e0a66-c660-4a26-9acc-8f106cee0ab9
-      name: "\U0001F1E6\U0001F1FA AU 153 | ⬇️ 3.71 MB/s"
-      password: b72e0a66-c660-4a26-9acc-8f106cee0ab9
-      port: 52111
-      server: 170.64.222.252
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-    - name: "\U0001F1FA\U0001F1F8 US 154 | ⬇️ 3.83 MB/s"
-      network: ws
-      port: 81
-      server: 210.61.97.241
-      servername: 0229.patterdeng.pp.ua
-      tls: true
-      type: vless
-      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-      ws-opts:
-        headers:
-            Host: 0229.patterdeng.pp.ua
-        path: /?ed
-    - auth: dongtaiwang.com
-      delay: 831
-      name: "\U0001F1EB\U0001F1F7 FR 156 | ⬇️ 3.03 MB/s"
-      password: dongtaiwang.com
-      port: 4489
-      server: hy2-1.694463.xyz
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-    - cipher: aes-128-gcm
-      name: "\U0001F1FA\U0001F1F8 US 157 | ⬇️ 7.26 MB/s"
-      password: 5cd15dbb-b3be-40b5-b9b2-192ede567d0a
-      plugin: obfs
-      plugin-opts:
-        host: 1672cefd64ed64b8232391cca43d4d2a.baidu.com
-        mode: http
-      port: 36608
-      server: gd.bjnet2.com
-      type: ss
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      delay: 561
-      name: "\U0001F1FA\U0001F1F8 US 158 | ⬇️ 2.22 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 192.18.133.190
-      skip-cert-verify: true
-      sni: tv.apple.com
-      type: hysteria2
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 55
-      fast-open: true
-      name: "\U0001F1EB\U0001F1F7 FR 159 | ⬇️ 4.05 MB/s"
-      port: 46938
-      protocol: udp
-      server: 195.154.200.178
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      up: 11
-    - client-fingerprint: edge
-      delay: 1554
-      flow: xtls-rprx-vision
-      name: "\U0001F1F0\U0001F1F7 KR 160 | ⬇️ 3.15 MB/s"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: 8nT5x5OM-97ibWMfu5y0mrvWdmuwVeg_f_RE5Ycl_yw
-        short-id: c5835b1f
-      server: 193.123.226.5
-      servername: buylite.music.apple.com
-      tls: true
-      type: vless
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      name: "\U0001F1E6\U0001F1FA AU 163 | ⬇️ 2.91 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 159.13.35.245
-      skip-cert-verify: true
-      sni: api.push.apple.com
-      type: hysteria2
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      name: "\U0001F1FA\U0001F1F8 US 164 | ⬇️ 2.93 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 155.248.211.95
-      skip-cert-verify: true
-      sni: tv.apple.com
-      type: hysteria2
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1EF\U0001F1F5 JP 166 | ⬇️ 4.29 MB/s"
-      password: cd785144-b27e-4a8a-93a8-7ab8cdec77a3
-      port: 23335
-      server: link.karleynetwork.xyz
-      type: ss
-      udp: true
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      name: "\U0001F1F8\U0001F1EC SG 167 | ⬇️ 2.62 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 140.245.46.17
-      skip-cert-verify: true
-      sni: www.apple.com
-      type: hysteria2
-    - client-fingerprint: ios
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 169 | ⬇️ 5.40 MB/s"
-      port: 443
-      reality-opts:
-        public-key: Rwqxz0M2DjcW39poMFeZzfjlYZf2PwxxQ0UEI4CSZik
-        short-id: 6891d99c
-      server: pq.aws14.yydjc.top
-      servername: www.mi.com
+      port: 80
+      server: 104.17.147.22
       skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
-    - auth: 357edade-8e86-4e83-87f5-0dcb8bf343d7
-      name: "\U0001F1FA\U0001F1F8 US 171 | ⬇️ 2.38 MB/s"
-      password: 357edade-8e86-4e83-87f5-0dcb8bf343d7
-      port: 23324
-      ports: 21000-26000
-      server: mg2.gywanglug.xyz
-      skip-cert-verify: true
-      sni: mg2.gywanglug.xyz
-      type: hysteria2
-      udp: true
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      name: "\U0001F1F8\U0001F1EC SG 172 | ⬇️ 2.15 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 140.245.37.170
-      skip-cert-verify: true
-      sni: www.apple.com
-      type: hysteria2
-    - name: "\U0001F1FA\U0001F1F8 US 174 | ⬇️ 2.92 MB/s"
-      obfs: salamander
-      obfs-password: LNAnPYDfFyesRAVn
-      password: 357edade-8e86-4e83-87f5-0dcb8bf343d7
-      port: 22148
-      ports: 21000-26000
-      server: mg1.gywanglug.xyz
-      skip-cert-verify: true
-      sni: mg1.gywanglug.xyz
-      type: hysteria2
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      name: "\U0001F1E6\U0001F1FA AU 177 | ⬇️ 2.73 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 152.69.180.226
-      skip-cert-verify: true
-      sni: api.push.apple.com
-      type: hysteria2
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0 HK 178 | ⬇️ 5.63 MB/s"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: E7siAVurojsISFT8AAx-QmWFlvgaifbJANnT4Xms4n0
-        short-id: 884e9b89
-      server: pq.aws11.yydjc.top
-      servername: download-porter.hoyoverse.com
-      tls: true
-      type: vless
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1FA\U0001F1F8 US 179 | ⬇️ 4.50 MB/s"
-      password: f0963a51-5e31-4959-b416-596162be330b
-      port: 17502
-      server: brookseek.trafficmanager.net
-      type: ss
-      udp: true
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      delay: 1071
-      name: "\U0001F1F8\U0001F1EC SG 180 | ⬇️ 2.51 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 140.245.35.78
-      skip-cert-verify: true
-      sni: www.apple.com
-      type: hysteria2
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      delay: 773
-      name: "\U0001F1FA\U0001F1F8 US 183 | ⬇️ 2.77 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 129.146.95.165
-      skip-cert-verify: true
-      sni: www.apple.com
-      type: hysteria2
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1FA\U0001F1F8 US 184 | ⬇️ 3.32 MB/s"
-      password: f0963a51-5e31-4959-b416-596162be330b
-      port: 17501
-      server: brookseek.trafficmanager.net
-      type: ss
-      udp: true
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1ED\U0001F1F0 HK 189 | ⬇️ 2.17 MB/s"
-      port: 37805
-      server: 120.232.153.63
-      skip-cert-verify: true
       tls: false
-      type: vmess
+      type: vless
+      uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+      ws-opts:
+        headers:
+            Host: redfree8mahsang6.redfree8.ir
+        path: /?ed=#TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
+    - delay: 886
+      name: "\U0001F1FA\U0001F1F8 US 011 | ⬇️ 6.84 MB/s"
+      network: ws
+      port: 443
+      server: 172.64.147.0
+      servername: 8786500.xyz
+      tls: true
+      type: vless
       udp: true
-      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+      uuid: abd8e96d-d4fc-4d42-bf5f-8f04ada22323
+      ws-opts:
+        headers:
+            Host: 8786500.xyz
+        path: /?ed=2560
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 015 | ⬇️ 6.95 MB/s"
+      password: 046260a3-76bc-41f1-a2ba-22824b9fb419
+      port: 11135
+      server: qqa813.198139.xyz
+      type: ss
+    - alterId: 1
+      cipher: auto
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1EF\U0001F1F5 JP 017 | ⬇️ 4.68 MB/s"
+      port: 21583
+      server: 5zc21-g03.jp03-7d22-vm0.entry.fr0307a.art
+      servername: 5zc21-g03.jp03-7d22-vm0.entry.fr0307a.art
+      tls: true
+      type: vmess
+      uuid: 6e5f11f9-0cc1-3997-b245-56279f9894a5
+    - name: "\U0001F1E8\U0001F1F3 CN 022 | ⬇️ 7.41 MB/s"
+      password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
+      port: 35000
+      server: gzyd.cg.xxality.cn
+      sni: cgsg2.hysality.com
+      type: trojan
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1F9\U0001F1FC TW 027 | ⬇️ 2.61 MB/s"
+      password: 95afdd5b-fa29-49d1-bcd7-b89162520b89
+      port: 11125
+      server: qqa813.198139.xyz
+      type: ss
+      udp: true
+    - country: ' CN'
+      name: "\U0001F1E8\U0001F1F3 CN 028 | ⬇️ 5.87 MB/s"
+      password: 24fa9487-34eb-4e27-b516-e572a82170c5
+      port: 27401
+      server: 183.2.150.64
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
     - client-fingerprint: chrome
-      name: "\U0001F1F9\U0001F1ED TH 192 | ⬇️ 2.65 MB/s"
+      name: "\U0001F1EF\U0001F1F5 JP 030 | ⬇️ 3.35 MB/s"
       password: cacb4d4fa26f4eed25e4d17a6370083c
       port: 443
-      server: th01.sqx001.com
+      server: tky02.sqx001.com
       skip-cert-verify: true
       tls: true
       type: http
       udp: true
       username: dmpyoary@mayorlogistic.com
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      delay: 1251
-      name: "\U0001F1F0\U0001F1F7 KR 193 | ⬇️ 5.51 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 193.122.98.107
+    - name: "\U0001F1E8\U0001F1F3 CN 032 | ⬇️ 5.14 MB/s"
+      password: b6200af42ccadea353f5b5856dd20d70
+      port: 39001
+      server: 113.99.140.184
       skip-cert-verify: true
-      sni: api.push.apple.com
-      type: hysteria2
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      name: "\U0001F1FA\U0001F1F8 US 194 | ⬇️ 2.77 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 192.9.130.120
-      skip-cert-verify: true
-      sni: www.apple.com
-      type: hysteria2
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      name: "\U0001F1F8\U0001F1EC SG 199 | ⬇️ 3.47 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 152.69.220.212
-      skip-cert-verify: true
-      sni: api.push.apple.com
-      type: hysteria2
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1ED\U0001F1F0 HK 200 | ⬇️ 5.25 MB/s"
-      password: cd785144-b27e-4a8a-93a8-7ab8cdec77a3
-      port: 23331
-      server: link.karleynetwork.xyz
-      type: ss
+      sni: 113.99.140.184
+      type: trojan
       udp: true
-    - auth: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      name: "\U0001F1F8\U0001F1EC SG 201 | ⬇️ 3.42 MB/s"
-      password: 9466263a-4b8e-4647-99b2-d2a363f001cd
-      port: 35000
-      server: 140.245.36.207
+    - alterId: 0
+      cipher: auto
+      delay: 2208
+      name: "\U0001F1E8\U0001F1F3 CN 035 | ⬇️ 3.35 MB/s"
+      port: 47883
+      server: 120.198.44.126
+      tls: false
+      type: vmess
+      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    - client-fingerprint: chrome
+      name: "\U0001F1ED\U0001F1F0 HK 040 | ⬇️ 5.49 MB/s"
+      network: tcp
+      port: 41078
+      reality-opts:
+        public-key: BsBpv3VObzs8hFB178lSOEkkzbOR1jYcU1WrUYDqrhY
+        short-id: b3
+      server: 95.135.153.17
+      servername: apple.com
       skip-cert-verify: true
-      sni: www.apple.com
-      type: hysteria2
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1EF\U0001F1F5 JP 208 | ⬇️ 18.29 MB/s"
-      password: cd785144-b27e-4a8a-93a8-7ab8cdec77a3
-      port: 23335
-      server: link.karleynetwork.xyz
-      type: ss
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 3beed68e-0ec8-4acf-b6a7-ea5d3224de30
+    - name: "\U0001F1E8\U0001F1F3 CN 041 | ⬇️ 8.06 MB/s"
+      password: 6953ec87-8304-468e-a1ad-1c5ec7092651
+      port: 22269
+      server: 183.240.116.224
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+    - client-fingerprint: chrome
+      flow: ""
+      name: "\U0001F1FA\U0001F1F8 US 050 | ⬇️ 5.73 MB/s"
+      network: tcp
+      port: 60003
+      reality-opts:
+        public-key: yCwQoZlOYiIylo54M55Bv27T3lFS12Ja9z12hhwIpk4
+        short-id: 5d
+      server: a.19990409.xyz
+      servername: tesla.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: 7c33b0d5-48ab-4740-9402-e26fe76bdc7a
+    - client-fingerprint: chrome
+      name: "\U0001F1EF\U0001F1F5 JP 052 | ⬇️ 6.47 MB/s"
+      network: tcp
+      port: 15493
+      reality-opts:
+        public-key: bnyccN-N4Yh5Wf7Ir4teJfqC1Pi6h1ORbZTtnxoxGFg
+        short-id: "30"
+      server: 139.162.108.193
+      servername: yahoo.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: 16003d11-87d6-4912-91ec-34f82fc28e4d
+    - client-fingerprint: chrome
+      flow: ""
+      name: "\U0001F1ED\U0001F1F0 HK 054 | ⬇️ 3.77 MB/s"
+      network: tcp
+      port: 60002
+      reality-opts:
+        public-key: eE7iwqUQ6oF6yNFQr5FEZsWSf6FpLv7WnJt3GvcFozs
+        short-id: 9bc1
+      server: a.19990409.xyz
+      servername: tesla.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: 31a00133-15c9-4778-85c2-842764e4cd47
+    - client-fingerprint: chrome
+      name: "\U0001F1F5\U0001F1ED PH 058 | ⬇️ 2.72 MB/s"
+      password: cacb4d4fa26f4eed25e4d17a6370083c
+      port: 443
+      server: manila01.sqx001.com
+      skip-cert-verify: true
+      tls: true
+      type: http
       udp: true
+      username: dmpyoary@mayorlogistic.com
+    - name: "\U0001F1E8\U0001F1F3 CN 059 | ⬇️ 3.91 MB/s"
+      password: b6200af42ccadea353f5b5856dd20d70
+      port: 39001
+      server: 183.240.196.93
+      skip-cert-verify: true
+      sni: 183.240.196.93
+      type: trojan
+    - name: "\U0001F1FA\U0001F1F8 US 060 | ⬇️ 3.92 MB/s"
+      network: ws
+      port: 26657
+      server: 101.32.15.176
+      servername: edcck.ambercc.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            Host: edcck.ambercc.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - name: "\U0001F1FA\U0001F1F8 US 061 | ⬇️ 7.23 MB/s"
+      network: ws
+      port: 81
+      server: 210.61.97.241
+      servername: 0229.patterdeng.pp.ua
+      tls: true
+      type: vless
+      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+      ws-opts:
+        headers:
+            Host: 0229.patterdeng.pp.ua
+        path: /?ed
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 062 | ⬇️ 5.74 MB/s"
+      network: tcp
+      port: 3687
+      server: 183.240.179.184
+      skip-cert-verify: true
+      tls: false
+      type: vmess
+      uuid: df7bed3c-06eb-11f0-8ebc-f23c93141fad
+      ws-headers:
+        Host: 183.240.179.184
+      ws-path: /
+    - client-fingerprint: chrome
+      flow: ""
+      name: "\U0001F1FA\U0001F1F8 US 063 | ⬇️ 2.91 MB/s"
+      network: tcp
+      port: 60003
+      reality-opts:
+        public-key: yCwQoZlOYiIylo54M55Bv27T3lFS12Ja9z12hhwIpk4
+        short-id: 5d
+      server: a.19990409.xyz
+      servername: tesla.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: 7c33b0d5-48ab-4740-9402-e26fe76bdc7a
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 209 | ⬇️ 3.85 MB/s"
+      name: "\U0001F1E8\U0001F1F3 CN 064 | ⬇️ 2.22 MB/s"
       network: tcp
       port: 49970
       reality-opts:
@@ -1039,59 +292,138 @@ proxies:
       tls: true
       type: vless
       uuid: 38cd39ff-624b-48e0-9d4f-6604aa649e0f
-    - fast-open: true
-      name: "\U0001F1F7\U0001F1FA RU 210 | ⬇️ 6.47 MB/s"
-      password: dongtaiwang.com
-      port: 10011
-      server: hy2.694463.xyz
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
     - client-fingerprint: chrome
-      delay: 644
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 212 | ⬇️ 9.82 MB/s"
+      flow: ""
+      name: "\U0001F1ED\U0001F1F0 HK 066 | ⬇️ 2.92 MB/s"
       network: tcp
-      port: 443
+      port: 60001
       reality-opts:
-        public-key: asLJREsp9L0JbURQPIhFxc6bZIgpunEOjOJeHv3YcEs
-        short-id: b0fbe0f0
-      server: pq.aws54.yydjc.top
-      servername: download-porter.hoyoverse.com
+        public-key: qZgPHnCqaQcD48zReb3pnI2FJkmywfd0XP_flJ9R7is
+        short-id: 565da4f37a92349d
+      server: a.19990409.xyz
+      servername: tesla.com
+      skip-cert-verify: false
       tls: true
       type: vless
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
-    - alpn:
-        - h3
-      auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-      name: "\U0001F1E8\U0001F1E6 CA 214 | ⬇️ 3.55 MB/s"
-      password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-      port: 45979
-      server: 40.233.80.61
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-      udp: true
-    - auth: dongtaiwang.com
-      delay: 1360
-      name: "\U0001F1F7\U0001F1FA RU 216 | ⬇️ 5.94 MB/s"
-      password: dongtaiwang.com
-      port: 10011
-      server: hy2.694463.xyz
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-    - auth: dongtaiwang.com
-      delay: 1360
-      name: "\U0001F1F7\U0001F1FA RU 217 | ⬇️ 5.36 MB/s"
-      password: dongtaiwang.com
-      port: 10011
-      server: hy2.694463.xyz
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
+      uuid: f22dd970-c577-4c39-af92-03433dd446b0
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1FA\U0001F1F8 US 218 | ⬇️ 9.88 MB/s"
+      name: "\U0001F1ED\U0001F1F0 HK 073 | ⬇️ 3.02 MB/s"
+      password: 046260a3-76bc-41f1-a2ba-22824b9fb419
+      port: 26641
+      server: qqa813.198139.xyz
+      type: ss
+    - client-fingerprint: chrome
+      flow: ""
+      name: "\U0001F1ED\U0001F1F0 HK 076 | ⬇️ 2.90 MB/s"
+      network: tcp
+      port: 60002
+      reality-opts:
+        public-key: eE7iwqUQ6oF6yNFQr5FEZsWSf6FpLv7WnJt3GvcFozs
+        short-id: 9bc1
+      server: a.19990409.xyz
+      servername: tesla.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: 31a00133-15c9-4778-85c2-842764e4cd47
+    - client-fingerprint: random
+      name: "\U0001F1EF\U0001F1F5 JP 078 | ⬇️ 3.40 MB/s"
+      network: ws
+      port: 14220
+      server: 218.51.125.182
+      servername: mikuyo.bpd67081tsq.ddns-ip.net
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: be21e25f-5919-4e6b-b443-bfa45273de5d
+      ws-opts:
+        headers:
+            Host: mikuyo.bpd67081tsq.ddns-ip.net
+        path: /?ed=2560
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1EF\U0001F1F5 JP 079 | ⬇️ 13.92 MB/s"
+      password: cd785144-b27e-4a8a-93a8-7ab8cdec77a3
+      port: 23335
+      server: link.karleynetwork.xyz
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1F8\U0001F1EC SG 080 | ⬇️ 6.32 MB/s"
+      password: 7109ea8e-0410-4ece-875e-49b2afbf55fc
+      port: 45637
+      server: gya.tangu.win
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      client-fingerprint: chrome
+      name: "\U0001F1F8\U0001F1EC SG 083 | ⬇️ 15.15 MB/s"
+      obfs: tls1.2_ticket_auth
+      obfs-param: sg2-cdn-route.couldflare-cdn.com
+      password: uiACqrIr
+      port: 56138
+      protocol: origin
+      protocol-param: ""
+      server: cm2.xcone.xyz
+      type: ssr
+    - cipher: aes-256-cfb
+      delay: 1146
+      name: "\U0001F1FA\U0001F1F8 US 084 | ⬇️ 7.13 MB/s"
+      password: awsps0501
+      port: 443
+      server: 54.245.32.133
+      type: ss
+    - client-fingerprint: chrome
+      name: "\U0001F1F9\U0001F1ED TH 085 | ⬇️ 3.06 MB/s"
+      password: cacb4d4fa26f4eed25e4d17a6370083c
+      port: 443
+      server: th01.sqx001.com
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: dmpyoary@mayorlogistic.com
+    - client-fingerprint: random
+      name: "\U0001F1EF\U0001F1F5 JP 092 | ⬇️ 3.27 MB/s"
+      network: ws
+      port: 10014
+      server: 211.213.102.88
+      servername: mikuyo.bpd67081tsq.ddns-ip.net
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: be21e25f-5919-4e6b-b443-bfa45273de5d
+      ws-opts:
+        headers:
+            Host: mikuyo.bpd67081tsq.ddns-ip.net
+        path: /?ed=2560
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1E8\U0001F1F3 CN 093 | ⬇️ 2.08 MB/s"
+      network: tcp
+      port: 49970
+      reality-opts:
+        public-key: y22Kj8gVHf5eaYzzCREBff4NlVz4m5PBJOXLrUcdFXg
+        short-id: 1fb600be
+      server: 8.210.101.238
+      servername: microsoft.com
+      tls: true
+      type: vless
+      uuid: 38cd39ff-624b-48e0-9d4f-6604aa649e0f
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 095 | ⬇️ 2.89 MB/s"
+      network: tcp
+      port: 37805
+      server: 120.232.153.63
+      skip-cert-verify: true
+      tls: false
+      type: vmess
+      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+      ws-headers:
+        Host: 120.232.153.63
+      ws-path: /
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1FA\U0001F1F8 US 096 | ⬇️ 10.38 MB/s"
       password: cd785144-b27e-4a8a-93a8-7ab8cdec77a3
       port: 23340
       server: link.karleynetwork.xyz
@@ -1099,130 +431,1003 @@ proxies:
       udp: true
     - alterId: 0
       cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 219 | ⬇️ 5.50 MB/s"
-      network: tcp
-      port: 3687
-      server: 1cea2198-sukw00-sv3y7m-1glq.a.fosant.com
+      name: "\U0001F1ED\U0001F1F0 HK 097 | ⬇️ 3.46 MB/s"
+      port: 54652
+      server: 183.236.51.38
       skip-cert-verify: true
       tls: false
       type: vmess
-      uuid: df7bed3c-06eb-11f0-8ebc-f23c93141fad
-      ws-headers:
-        Host: 1cea2198-sukw00-sv3y7m-1glq.a.fosant.com
+      udp: true
+      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    - name: "\U0001F1F0\U0001F1F7 KR 100 | ⬇️ 6.25 MB/s"
+      network: ws
+      port: 10894
+      server: 59.29.143.247
+      servername: 0229.patterdeng.pp.ua
+      tls: true
+      type: vless
+      udp: true
+      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+      ws-opts:
+        headers:
+            Host: 0229.patterdeng.pp.ua
+        path: /?ed=2560
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1ED\U0001F1F0 HK 111 | ⬇️ 17.87 MB/s"
+      network: ws
+      port: 8682
+      server: 31765d5b-sw5og0-svxjab-17z95.hkt.plebai.net
+      tls: false
+      type: vmess
+      uuid: 0a335fd6-be0b-11ec-8dfa-f23c91cfbbc9
+      ws-opts:
+        headers:
+            Host: broadcastlv.chat.bilibili.com
+        path: /
+    - delay: 790
+      name: "\U0001F1FA\U0001F1F8 US 114 | ⬇️ 5.09 MB/s"
+      network: ws
+      port: 80
+      server: 172.66.44.193
+      skip-cert-verify: false
+      tls: false
+      type: vless
+      uuid: 10d9df89-9a20-4110-9711-bca119490ee9
+      ws-opts:
+        headers:
+            Host: masaleini.mahsaamini.dpdns.org
+        path: /
+    - alpn:
+        - h3%2Ch2%2Chttp%2F1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 115 | ⬇️ 10.35 MB/s"
+      network: ws
+      port: 19281
+      server: 23.105.199.91
+      servername: madcity2.777999.lol
+      skip-cert-verify: true
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 0fc8452a-17f9-47de-95dd-65de502d39da
+      ws-opts:
+        headers:
+            Host: madcity2.777999.lol
+        path: /?ed=2560
+    - name: "\U0001F1FA\U0001F1F8 US 117 | ⬇️ 6.39 MB/s"
+      network: ws
+      port: 2053
+      server: 104.16.190.87
+      servername: bitget1.asdasd.click
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+        path: /?ed=2560
+    - client-fingerprint: random
+      delay: 978
+      name: "\U0001F1F0\U0001F1F7 KR 119 | ⬇️ 5.85 MB/s"
+      network: ws
+      port: 50000
+      server: 39.123.114.106
+      servername: 0229.patterdeng.pp.ua
+      tls: true
+      type: vless
+      udp: true
+      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+      ws-opts:
+        headers:
+            Host: 0229.patterdeng.pp.ua
+        path: /?ed=2560
+    - alterId: 0
+      cipher: auto
+      country: ' US'
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1FA\U0001F1F8 US 120 | ⬇️ 5.40 MB/s"
+      network: tcp
+      port: 443
+      server: node4.ourfast.asia
+      servername: node4.ourfast.asia
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      uuid: 3a57f77e-9193-4373-b86a-69d1ca8d3bfa
       ws-path: /
+    - client-fingerprint: random
+      name: "\U0001F1EF\U0001F1F5 JP 122 | ⬇️ 3.78 MB/s"
+      network: ws
+      port: 12508
+      server: 150.230.97.136
+      servername: 0229.patterdeng.pp.ua
+      skip-cert-verify: true
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+      ws-opts:
+        headers:
+            Host: 0229.patterdeng.pp.ua
+        path: /?ed=2560
+    - alterId: 0
+      cipher: auto
+      delay: 1158
+      name: "\U0001F1FA\U0001F1F8 US 123 | ⬇️ 10.01 MB/s"
+      port: 5228
+      server: 41875af0-sum4g0-t1smj4-u6bc.cu.plebai.net
+      tls: false
+      type: vmess
+      uuid: 21747146-3507-11ed-bb74-f23c9164ca5d
+    - alterId: 0
+      cipher: auto
+      delay: 1543
+      name: "\U0001F1FA\U0001F1F8 US 124 | ⬇️ 9.85 MB/s"
+      port: 5229
+      server: ca4da9c8-sw3ts0-sz6btt-1fee.cu.plebai.net
+      tls: false
+      type: vmess
+      udp: true
+      uuid: fceba144-0aa0-11ee-bf3c-f23c9164ca5d
+    - name: "\U0001F1E9\U0001F1EA DE 127 | ⬇️ 3.86 MB/s"
+      network: ws
+      port: 2053
+      server: 104.24.34.42
+      servername: www.pjw5.top
+      tls: true
+      type: vless
+      uuid: 7ca28380-8f51-4eaa-89c9-6243bdf7f500
+      ws-opts:
+        headers:
+            Host: www.pjw5.top
+        path: /?ed=2560
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7 KR 136 | ⬇️ 3.26 MB/s"
+      password: cacb4d4fa26f4eed25e4d17a6370083c
+      port: 443
+      server: kr01.sqx001.com
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: dmpyoary@mayorlogistic.com
+    - name: "\U0001F1FA\U0001F1F8 US 137 | ⬇️ 3.96 MB/s"
+      network: ws
+      port: 8443
+      server: 162.159.152.139
+      servername: www.pjw5.top
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 812d7dde-5f48-47eb-acc8-9c94c04550c2
+      ws-opts:
+        headers:
+            Host: www.pjw5.top
+        path: /?ed=2560
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1FB\U0001F1F3 VN 140 | ⬇️ 2.68 MB/s"
+      password: 046260a3-76bc-41f1-a2ba-22824b9fb419
+      port: 13642
+      server: gya.tangu.win
+      type: ss
+      udp: true
+    - country: US
+      delay: 662
+      name: "\U0001F1FA\U0001F1F8 US 141 | ⬇️ 4.33 MB/s"
+      password: 696cfe79
+      port: 443
+      server: 192.9.132.79
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 142 | ⬇️ 6.42 MB/s"
+      network: ws
+      port: 443
+      server: 104.16.95.143
+      servername: bitget1.asdasd.click
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+        path: /?ed=2560
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 143 | ⬇️ 11.02 MB/s"
+      password: 046260a3-76bc-41f1-a2ba-22824b9fb419
+      port: 11145
+      server: qqa813.198139.xyz
+      type: ss
+    - name: "\U0001F1FA\U0001F1F8 US 145 | ⬇️ 3.97 MB/s"
+      network: ws
+      port: 10912
+      server: 116.47.10.236
+      servername: sx.ylks0033.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: sx.ylks0033.dpdns.org
+        path: /?ed=2560
+    - delay: 391
+      name: "\U0001F1EF\U0001F1F5 JP 146 | ⬇️ 18.75 MB/s"
+      password: c84d3d1b-bdc9-45f7-9a00-89f0134bbd65
+      port: 22271
+      server: 183.2.150.98
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 147 | ⬇️ 8.01 MB/s"
+      network: ws
+      port: 2087
+      server: 104.16.82.210
+      servername: bitget1.asdasd.click
+      tls: true
+      type: vless
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+        path: /?ed=2560
+    - delay: 1561
+      name: "\U0001F1FA\U0001F1F8 US 148 | ⬇️ 5.64 MB/s"
+      network: ws
+      port: 443
+      server: 103.21.244.246
+      servername: 8786500.xyz
+      tls: true
+      type: vless
+      uuid: 384f8d6e-3553-4849-b5db-42854468230b
+      ws-opts:
+        headers:
+            Host: 8786500.xyz
+        path: /?ed=2560
+    - name: "\U0001F1FA\U0001F1F8 US 152 | ⬇️ 8.88 MB/s"
+      password: 71e5de08-5e03-4db5-b530-b6e09a945d98
+      port: 33505
+      server: 58.254.186.233
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 155 | ⬇️ 6.94 MB/s"
+      password: ef23ddd0-14c5-39c2-9880-af55ce892363
+      port: 51725
+      server: t1.qifei.app
+      skip-cert-verify: true
+      sni: t1.qifei.app
+      type: trojan
+      udp: true
+    - delay: 640
+      name: "\U0001F1FA\U0001F1F8 US 159 | ⬇️ 7.35 MB/s"
+      network: ws
+      port: 2087
+      server: 104.16.82.210
+      servername: bitget1.asdasd.click
+      tls: true
+      type: vless
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+        path: /?ed=2560
+    - name: "\U0001F1FA\U0001F1F8 US 160 | ⬇️ 7.88 MB/s"
+      network: ws
+      port: 8443
+      server: 104.24.40.146
+      servername: bitget1.asdasd.click
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+        path: /?ed=2560
+    - name: "\U0001F1FA\U0001F1F8 US 168 | ⬇️ 7.90 MB/s"
+      network: ws
+      port: 2083
+      server: 192.0.54.221
+      servername: edcck.ambercc.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            Host: edcck.ambercc.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - name: "\U0001F1FA\U0001F1F8 US 170 | ⬇️ 6.64 MB/s"
+      network: ws
+      port: 12001
+      server: 45.154.98.124
+      servername: sx.ylks0033.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: sx.ylks0033.dpdns.org
+        path: /?ed=2560
+    - name: "\U0001F1E9\U0001F1EA DE 173 | ⬇️ 9.25 MB/s"
+      network: ws
+      port: 80
+      server: 104.24.229.98
+      skip-cert-verify: false
+      tls: false
+      type: vless
+      uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+      ws-opts:
+        headers:
+            Host: REEdfREe8MahSaNg2.rEDOrG.IR
+        path: /TM@AZAFBAYJAB1
+    - name: "\U0001F1FA\U0001F1F8 US 176 | ⬇️ 9.32 MB/s"
+      network: ws
+      port: 8443
+      server: 104.24.40.146
+      servername: bitget1.asdasd.click
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+        path: /?ed=2560
+    - name: "\U0001F1FA\U0001F1F8 US 181 | ⬇️ 2.66 MB/s"
+      network: ws
+      port: 55555
+      server: 128.14.140.2
+      servername: sx.ylks0033.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: sx.ylks0033.dpdns.org
+        path: /?ed=2560
+    - name: "\U0001F1FA\U0001F1F8 US 187 | ⬇️ 4.85 MB/s"
+      network: ws
+      port: 10099
+      server: 146.56.136.39
+      servername: sx.ylks0033.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: sx.ylks0033.dpdns.org
+        path: /?ed=2560
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "\U0001F1F8\U0001F1EC SG 220 | ⬇️ 10.41 MB/s"
+      name: "\U0001F1E9\U0001F1EA DE 188 | ⬇️ 4.44 MB/s"
       network: tcp
       port: 443
-      reality-opts:
-        public-key: USd1Iznfu9nwnvIfz5CPcrnhXoQX1e1C1fCPNB9mbAk
-        short-id: 36fb8090
-      server: pq.aws56.yydjc.top
-      servername: iosapps.itunes.apple.com
+      server: 204.10.194.78
+      servername: yfnl1.xn--4gq62f52gppi29k.com
       tls: true
       type: vless
-      uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
-    - alterId: 0
-      cipher: auto
-      client-fingerprint: chrome
+      uuid: b8bd42a9-551f-419d-b70d-4aefdd2cb074
+    - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8 US 222 | ⬇️ 4.24 MB/s"
+      name: "\U0001F1E9\U0001F1EA DE 190 | ⬇️ 6.75 MB/s"
       network: tcp
-      port: 22952
-      reality-opts:
-        public-key: kHtBu5SWzLuz79nw0LkDkH4luWft_A-M6MNq4LA-RB4
-        short-id: null
-      server: mg55.gywanglug.xyz
-      servername: www.apple.com.cn
-      skip-cert-verify: true
+      port: 443
+      server: 204.10.194.78
+      servername: yfnl1.xn--4gq62f52gppi29k.com
       tls: true
       type: vless
-      udp: true
-      uuid: 6aa8bd0f-8141-4a1f-99ac-9f65860066f4
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 100
-      fast-open: true
-      name: "\U0001F1F7\U0001F1FA RU 223 | ⬇️ 5.07 MB/s"
-      port: 10803
-      ports: 10803
-      protocol: udp
-      server: 185.22.155.71
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      up: 80
-    - name: "\U0001F1FA\U0001F1F8 US 224 | ⬇️ 6.73 MB/s"
-      obfs: salamander
-      obfs-password: LNAnPYDfFyesRAVn
-      password: 357edade-8e86-4e83-87f5-0dcb8bf343d7
-      port: 25103
-      ports: 21000-26000
-      server: mg3.gywanglug.xyz
-      skip-cert-verify: true
-      sni: mg3.gywanglug.xyz
-      type: hysteria2
-    - alpn:
-        - h3
-      auth: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
-      name: "\U0001F1FA\U0001F1F8 US 225 | ⬇️ 6.22 MB/s"
-      password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
-      port: 47262
-      server: 64.181.207.162
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-      udp: true
-    - cipher: aes-256-cfb
-      delay: 1146
-      name: "\U0001F1FA\U0001F1F8 US 226 | ⬇️ 3.17 MB/s"
-      password: awsps0501
-      port: 443
-      server: 54.245.32.133
+      uuid: b8bd42a9-551f-419d-b70d-4aefdd2cb074
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1FA\U0001F1F8 US 193 | ⬇️ 3.37 MB/s"
+      password: 7109ea8e-0410-4ece-875e-49b2afbf55fc
+      port: 45532
+      server: gya.tangu.win
       type: ss
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 197 | ⬇️ 9.03 MB/s"
+      port: 8888
+      server: sf3.epicbrowser.net
+      skip-cert-verify: false
+      tls: true
+      type: http
+    - name: "\U0001F1FA\U0001F1F8 US 198 | ⬇️ 9.99 MB/s"
+      password: 1a4181d3-5dc4-423b-92a3-aceb8a6c1487
+      port: 33505
+      server: 183.240.116.252
+      skip-cert-verify: true
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1F0\U0001F1F7 KR 199 | ⬇️ 2.82 MB/s"
+      network: tcp
+      port: 21082
+      reality-opts:
+        public-key: tf7ZDGaue4C43MM0ECIfjOS-0kk7XMSqfnaSY4Er5Fc
+        short-id: 758719a6080f2767
+      server: tw-ty-line1-2-2.sudatech.store
+      servername: learn.microsoft.com
+      tls: true
+      type: vless
+      uuid: e7adaa99-8363-3ec4-b849-307c99005405
+    - cipher: chacha20-ietf
+      name: "\U0001F1E8\U0001F1F3 CN 200 | ⬇️ 9.76 MB/s"
+      obfs: plain
+      obfs-param: None
+      password: myssojbk
+      port: 21333
+      protocol: auth_aes128_md5
+      protocol-param: 10787:IjcJ8nPZd0pq
+      server: 183.240.179.190
+      type: ssr
+      udp: true
+    - client-fingerprint: chrome
+      flow: ""
+      name: "\U0001F1FA\U0001F1F8 US 204 | ⬇️ 5.62 MB/s"
+      network: tcp
+      port: 65526
+      reality-opts:
+        public-key: 3GAr9Fs6P5bywULijTKlogAPlzyNxVCPTDS40-h7b2Q
+        short-id: aa30e15d
+      server: 1.19990409.xyz
+      servername: tesla.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: 6286ecbd-29c3-4e94-9494-dcccae30b498
+    - client-fingerprint: chrome
+      delay: 1034
+      name: "\U0001F1F3\U0001F1F1 NL 208 | ⬇️ 7.46 MB/s"
+      network: ws
+      port: 443
+      server: 104.21.69.44
+      servername: cr77.hedieh.dpdns.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: f12977e6-d296-4d94-9aaf-d31770b70f84
+      ws-opts:
+        headers:
+            Host: cr77.hedieh.dpdns.org
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPPS25.137-93-14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+        path: /
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 210 | ⬇️ 5.85 MB/s"
+      network: tcp
+      port: 443
+      server: 135.148.206.76
+      servername: 147135010072.sec21org.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
+    - country: ' US'
+      name: "\U0001F1FA\U0001F1F8 US 211 | ⬇️ 2.48 MB/s"
+      password: ypDt8RkT7J
+      port: 43118
+      server: 89.187.181.172
+      skip-cert-verify: true
+      type: trojan
+      udp: true
     - alterId: 0
       cipher: auto
-      client-fingerprint: chrome
+      country: ZZ
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1FA\U0001F1F8 US 213 | ⬇️ 7.69 MB/s"
+      network: ws
+      port: 443
+      server: 104.16.0.0
+      servername: attendance-determine-hunt-studying.trycloudflare.com
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      uuid: 01f75b6a-935f-466c-ba3d-9f561d9bf191
+      ws-opts:
+        headers:
+            HOST: attendance-determine-hunt-studying.trycloudflare.com
+        path: /01f75b6a-935f-466c-ba3d-9f561d9bf191-vm?ed=2048
+    - client-fingerprint: chrome
+      delay: 975
       flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8 US 229 | ⬇️ 5.55 MB/s"
+      name: "\U0001F1FA\U0001F1F8 US 216 | ⬇️ 5.24 MB/s"
       network: tcp
-      port: 24292
+      port: 5747
       reality-opts:
-        public-key: kHtBu5SWzLuz79nw0LkDkH4luWft_A-M6MNq4LA-RB4
-        short-id: null
-      server: mg55.gywanglug.xyz
-      servername: www.apple.com.cn
+        public-key: Hz9Q2IggjMF2Dv4NsEUfYI19dWDVIg-AwB1FIs7VNVE
+      server: 143.198.48.33
+      servername: www.iij.ad.jp
+      tls: true
+      type: vless
+      uuid: 569dda85-bc76-4f8b-ae03-609d97f9e76c
+    - alterId: 2
+      cipher: auto
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1FA\U0001F1F8 US 220 | ⬇️ 10.42 MB/s"
+      network: ws
+      port: 22641
+      server: tk.hzlt.tkddns.xyz
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+      ws-opts:
+        headers:
+            Host: zxjp-a.tkong.cc
+        path: /
+    - name: "\U0001F1E7\U0001F1F7 BR 221 | ⬇️ 6.54 MB/s"
+      network: ws
+      port: 443
+      server: 185.133.35.115
+      servername: 0229.patterdeng.pp.ua
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+      ws-opts:
+        headers:
+            Host: 0229.patterdeng.pp.ua
+        path: /proxyip=185.133.35.115:443
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 222 | ⬇️ 6.88 MB/s"
+      network: ws
+      port: 443
+      server: 188.114.96.4
+      servername: MyphOTOgRApicpIcTUre.iR
       skip-cert-verify: true
       tls: true
       type: vless
       udp: true
-      uuid: 357edade-8e86-4e83-87f5-0dcb8bf343d7
-    - alterId: 0
+      uuid: 4d91916f-a7fd-419b-8b90-640bb8d4b3f2
+      ws-opts:
+        headers:
+            Host: myphotograpicpicture.ir
+        path: /I4OZ4PupsElhvJ7c
+    - delay: 2804
+      name: "\U0001F1FA\U0001F1F8 US 224 | ⬇️ 6.99 MB/s"
+      network: ws
+      port: 443
+      server: 185.133.35.115
+      servername: 0229.patterdeng.pp.ua
+      tls: true
+      type: vless
+      udp: true
+      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+      ws-opts:
+        headers:
+            Host: 0229.patterdeng.pp.ua
+        path: /proxyip=185.133.35.115:443
+    - alterId: 2
       cipher: auto
-      client-fingerprint: edge
+      name: "\U0001F1EB\U0001F1F7 FR 225 | ⬇️ 8.34 MB/s"
+      network: ws
+      port: 30825
+      server: v25.heduian.link
+      skip-cert-verify: true
+      tls: false
+      type: vmess
+      udp: true
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      ws-opts:
+        headers:
+            Host: v25.heduian.link
+        path: /oooo
+    - client-fingerprint: qq
       flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8 US 230 | ⬇️ 4.96 MB/s"
+      name: "\U0001F1FA\U0001F1F8 US 227 | ⬇️ 5.84 MB/s"
       network: tcp
-      port: 21841
+      port: 21853
       reality-opts:
         public-key: yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8
-        short-id: null
-      server: mg44.gywanglug.xyz
-      servername: www.apple.com.cn
+      server: 64.23.131.38
+      servername: southernpalmskenya.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: 98fb73f1-4806-4b2d-95e7-e455bdc3f87b
+    - name: "\U0001F1ED\U0001F1F0 HK 229 | ⬇️ 5.31 MB/s"
+      network: ws
+      password: Aimer
+      port: 2083
+      server: 27.50.48.126
+      skip-cert-verify: true
+      sni: tyep.esslh.filegear-sg.me
+      tfo: false
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: tyep.esslh.filegear-sg.me
+        path: /?ed=2560
+    - name: "\U0001F1FA\U0001F1E6 UA 233 | ⬇️ 3.54 MB/s"
+      network: ws
+      port: 443
+      server: de02.abvpn.ru
+      servername: de02.abvpn.ru
       skip-cert-verify: true
       tls: true
       type: vless
       udp: true
-      uuid: 6aa8bd0f-8141-4a1f-99ac-9f65860066f4
-    - name: "\U0001F1FA\U0001F1F8 US 232 | ⬇️ 7.25 MB/s"
-      obfs: salamander
-      obfs-password: LNAnPYDfFyesRAVn
-      password: 357edade-8e86-4e83-87f5-0dcb8bf343d7
-      port: 25969
-      ports: 21000-26000
-      server: mg1.gywanglug.xyz
+      uuid: 588f094b-431b-422c-b80b-007945037072
+      ws-opts:
+        headers:
+            host: de02.abvpn.ru
+        path: /websocket
+    - client-fingerprint: chrome
+      flow: ""
+      name: "\U0001F1FA\U0001F1F8 US 236 | ⬇️ 3.44 MB/s"
+      network: tcp
+      port: 65528
+      reality-opts:
+        public-key: ZqEic2SlBuXpEW7HW7D4WAe2H3rWPTIqqqIx3vxKijo
+        short-id: 018f65bf
+      server: 1.19990409.xyz
+      servername: tesla.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: 3c96949f-d73f-4a38-9f6e-ba47a8e0f6bb
+    - client-fingerprint: chrome
+      flow: ""
+      name: "\U0001F1FA\U0001F1F8 US 240 | ⬇️ 3.96 MB/s"
+      network: tcp
+      port: 65527
+      reality-opts:
+        public-key: SvDnUeu715X-8wErimPJmE2i9UR6nNuPD_3YWHpaB2c
+        short-id: a08f6e
+      server: 1.19990409.xyz
+      servername: tesla.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: 1df2c193-31f0-4643-9ac7-6283e248399d
+    - name: "\U0001F1EB\U0001F1F7 FR 241 | ⬇️ 6.64 MB/s"
+      network: ws
+      port: 8080
+      server: tgju.org
+      skip-cert-verify: false
+      tls: false
+      type: vless
+      uuid: 51fda508-20aa-419e-b4c3-3a6202411412
+      ws-opts:
+        headers:
+            Host: 18.6na7PY43IT.zuLaiR.Org.
+        path: /?ed=2048
+    - delay: 428
+      name: "\U0001F1F0\U0001F1F7 KR 242 | ⬇️ 4.68 MB/s"
+      network: ws
+      port: 50000
+      server: 112.164.234.135
+      servername: 0229.patterdeng.pp.ua
+      tls: true
+      type: vless
+      udp: true
+      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+      ws-opts:
+        headers:
+            Host: 0229.patterdeng.pp.ua
+        path: /?ed=2560
+    - client-fingerprint: chrome
+      name: "\U0001F1E7\U0001F1EC BG 244 | ⬇️ 5.32 MB/s"
+      network: ws
+      port: 443
+      server: 104.21.69.44
+      servername: cr77.hedieh.dpdns.org
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: f12977e6-d296-4d94-9aaf-d31770b70f84
+      ws-opts:
+        headers:
+            Host: cr77.hedieh.dpdns.org
+        path: /
+    - country: ' CN'
+      name: "\U0001F1FA\U0001F1F8 US 245 | ⬇️ 6.01 MB/s"
+      password: aa97ae5c-02e8-4c50-8982-24df274a3c1c
+      port: 27101
+      server: 45.146.232.171
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+    - country: ' HK'
+      name: "\U0001F1FA\U0001F1F8 US 246 | ⬇️ 5.58 MB/s"
+      password: bbaaab2e-1cd5-46d3-b1e4-511fcff2f0e9
+      port: 27103
+      server: 45.146.232.171
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+    - name: "\U0001F1FA\U0001F1F8 US 248 | ⬇️ 3.26 MB/s"
+      network: ws
+      port: 443
+      server: rustam.ns.cloudflare.com
+      servername: sx.ylks0033.dpdns.org
       skip-cert-verify: true
-      sni: mg1.gywanglug.xyz
-      type: hysteria2
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: sx.ylks0033.dpdns.org
+        path: /?ed=2560
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 249 | ⬇️ 3.01 MB/s"
+      password: cacb4d4fa26f4eed25e4d17a6370083c
+      port: 443
+      server: la2.sqx001.com
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: dmpyoary@mayorlogistic.com
+    - allowInsecure: ""
+      name: "\U0001F1FA\U0001F1F8 US 253 | ⬇️ 6.86 MB/s"
+      network: ws
+      password: 5453ae26-250d-4e79-b4ec-016baf806865
+      port: 443
+      server: 172.67.205.22
+      skip-cert-verify: false
+      sni: 1SSdDdFfffHhHJJJJ.20220420.Pp.uA
+      tls: true
+      type: trojan
+      ws-opts:
+        headers:
+            Host: 1ssdddffffhhhjjjj.20220420.pp.ua
+        path: /OYzPAeaZdXUq2d6J3gc4aj
+    - name: "\U0001F1FA\U0001F1F8 US 254 | ⬇️ 2.80 MB/s"
+      network: ws
+      port: 10099
+      server: 146.56.136.39
+      servername: sx.ylks0033.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: sx.ylks0033.dpdns.org
+        path: /?ed=2560
+    - name: "\U0001F1E8\U0001F1F3 CN 256 | ⬇️ 7.13 MB/s"
+      password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+      port: 8313
+      server: 183.232.235.2
+      skip-cert-verify: true
+      sni: hk-13-568.flztjc.net
+      type: trojan
+    - alpn:
+        - h3
+      name: "\U0001F1E8\U0001F1F3 CN 258 | ⬇️ 6.80 MB/s"
+      network: ws
+      password: bpb-trojan
+      port: 443
+      server: 35.201.203.106
+      skip-cert-verify: true
+      sni: skwygx.top
+      type: trojan
+      ws-opts:
+        headers:
+            Host: skwygx.top
+        path: /tr?ed=2560
+    - country: ' TW'
+      name: "\U0001F1F9\U0001F1FC TW 265 | ⬇️ 4.39 MB/s"
+      password: 4872e712-0f3b-41ef-b669-266718c8f2ca
+      port: 27201
+      server: 45.146.232.171
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+    - country: ' HK'
+      name: "\U0001F1ED\U0001F1F0 HK 268 | ⬇️ 3.45 MB/s"
+      password: 12a9348b-0837-45c2-8841-3e42d242378b
+      port: 42881
+      server: 45.146.232.171
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+    - name: "\U0001F1FA\U0001F1F8 US 270 | ⬇️ 4.93 MB/s"
+      network: ws
+      port: 443
+      server: 172.67.163.14
+      servername: 1QQsSS.2031.PP.UA
+      tls: true
+      type: vless
+      uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+      ws-opts:
+        headers:
+            Host: 1QQsSS.2031.PP.UA
+        path: /XcQF058rNJ3gc4aj
+    - alterId: 0
+      cipher: auto
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1FA\U0001F1F8 US 271 | ⬇️ 4.87 MB/s"
+      network: ws
+      port: 443
+      server: 1wweerttt.131.pp.ua
+      servername: 1WWeeRtTt.131.PP.ua
+      tls: true
+      type: vmess
+      uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+      ws-opts:
+        headers:
+            host: 1WWeeRtTt.131.PP.ua
+        path: /h7Rcu0y30lhjdVjJ3gc4aj
+    - name: "\U0001F1FA\U0001F1F8 US 273 | ⬇️ 5.26 MB/s"
+      network: ws
+      port: 443
+      server: 172.67.163.14
+      servername: 1QQsSS.2031.PP.UA
+      tls: true
+      type: vless
+      uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+      ws-opts:
+        headers:
+            Host: 1QQsSS.2031.PP.UA
+        path: /XcQF058rNJ3gc4aj
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 276 | ⬇️ 12.53 MB/s"
+      network: ws
+      port: 30829
+      server: v29.heduian.link
+      tls: false
+      type: vmess
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      ws-opts:
+        headers:
+            Host: ocbc.com
+        path: /oooo
+    - country: ' SG'
+      name: "\U0001F1F8\U0001F1EC SG 277 | ⬇️ 3.56 MB/s"
+      password: 02b2d554-ea0e-4aba-b8cc-dd53bf9fdd7b
+      port: 27401
+      server: 45.146.232.171
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+    - client-fingerprint: chrome
+      flow: ""
+      name: "\U0001F1FA\U0001F1F8 US 280 | ⬇️ 6.45 MB/s"
+      network: tcp
+      port: 65526
+      reality-opts:
+        public-key: 3GAr9Fs6P5bywULijTKlogAPlzyNxVCPTDS40-h7b2Q
+        short-id: aa30e15d
+      server: 1.19990409.xyz
+      servername: tesla.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: 6286ecbd-29c3-4e94-9494-dcccae30b498
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 281 | ⬇️ 7.64 MB/s"
+      network: ws
+      port: 443
+      server: tx.st0722.top
+      servername: tx.st0722.top
+      tls: true
+      type: vmess
+      uuid: 44fec25f-d1dc-40d1-a93d-93e7562e2b9a
+      ws-opts:
+        headers:
+            Host: tx.st0722.top
+        path: /bb
+    - flow: ""
+      mode: ""
+      name: "\U0001F1FA\U0001F1F8 US 282 | ⬇️ 7.24 MB/s"
+      network: ws
+      port: 443
+      server: 104.21.22.133
+      servername: 1SsdDdfFffHhHJjJJ.20220420.PP.ua
+      tls: true
+      type: vless
+      udp: false
+      uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+      ws-opts:
+        headers:
+            Host: 1ssdddffffhhhjjjj.20220420.pp.ua
+        path: /XcQF058rNJ3gc4aj
+    - name: "\U0001F1FA\U0001F1F8 US 285 | ⬇️ 8.03 MB/s"
+      network: ws
+      password: f82fb954-06a1-4f0b-9180-17e07585b61f
+      port: 443
+      server: 104.21.23.162
+      skip-cert-verify: false
+      sni: 6tghjk.131.pp.ua
+      type: trojan
+      ws-opts:
+        headers:
+            Host: 6tghjk.131.pp.ua
+        path: '%2FYu29UN3Yz8hcnI3SlZor0'
+    - flow: ""
+      mode: ""
+      name: "\U0001F1FA\U0001F1F8 US 287 | ⬇️ 8.10 MB/s"
+      network: ws
+      port: 443
+      server: 104.21.82.39
+      servername: 5rty.191288.xyz
+      tls: true
+      type: vless
+      udp: false
+      uuid: fefba36d-5142-42f1-b14d-db5249511d93
+      ws-opts:
+        headers:
+            Host: 5rty.191288.xyz
+        path: /dRTvoZIiPpwkqKrjE
+    - client-fingerprint: chrome
+      name: "\U0001F1F2\U0001F1FD MX 289 | ⬇️ 2.27 MB/s"
+      password: cacb4d4fa26f4eed25e4d17a6370083c
+      port: 443
+      server: mx01.sqx001.com
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: dmpyoary@mayorlogistic.com
+    - country: ' JP'
+      name: "\U0001F1FA\U0001F1F8 US 291 | ⬇️ 7.62 MB/s"
+      password: 081c5d59-38d0-4e3a-97d4-03f175d41762
+      port: 27002
+      server: 45.146.232.171
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+    - country: ' JP'
+      name: "\U0001F1FA\U0001F1F8 US 292 | ⬇️ 6.60 MB/s"
+      password: 06088081-efb3-4647-a77d-15337d422ffb
+      port: 22271
+      server: 45.146.232.171
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+    - client-fingerprint: chrome
+      flow: ""
+      name: "\U0001F1FA\U0001F1F8 US 293 | ⬇️ 5.43 MB/s"
+      network: tcp
+      port: 65528
+      reality-opts:
+        public-key: ZqEic2SlBuXpEW7HW7D4WAe2H3rWPTIqqqIx3vxKijo
+        short-id: 018f65bf
+      server: 1.19990409.xyz
+      servername: tesla.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: 3c96949f-d73f-4a38-9f6e-ba47a8e0f6bb
+    - client-fingerprint: chrome
+      flow: ""
+      name: "\U0001F1FA\U0001F1F8 US 294 | ⬇️ 4.09 MB/s"
+      network: tcp
+      port: 65527
+      reality-opts:
+        public-key: SvDnUeu715X-8wErimPJmE2i9UR6nNuPD_3YWHpaB2c
+        short-id: a08f6e
+      server: 1.19990409.xyz
+      servername: tesla.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: 1df2c193-31f0-4643-9ac7-6283e248399d
