@@ -1,48 +1,26 @@
 proxies:
-    - name: "\U0001F1E8\U0001F1F3 CN 005 | ⬇️ 10.98 MB/s"
+    - name: "\U0001F1FA\U0001F1F8 US 002 | ⬇️ 8.74 MB/s"
+      network: ws
+      port: 2086
+      server: www.speedtest.net
+      servername: domain2025.dpdns.org
+      tls: false
+      type: vless
+      udp: true
+      uuid: 7fed5bf9-a1de-41a0-ab89-694265c4895f
+      ws-opts:
+        headers:
+            Host: domain2025.dpdns.org
+        path: /3wvlyke7dbeif74o?ed=2560
+    - name: "\U0001F1E8\U0001F1F3 CN 004 | ⬇️ 24.90 MB/s"
       password: 85f133142f04dbf6547da33895cfabb3
       port: 39001
       server: 113.99.140.184
       skip-cert-verify: true
       sni: www.yrtok.com
       type: trojan
-    - alterId: 0
-      cipher: auto
-      delay: 2530
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1E8\U0001F1F3 CN 011 | ⬇️ 15.79 MB/s"
-      network: tcp
-      port: 15229
-      server: 4f895d15-sva740-syx1ku-1o8ak.cm.plebai.net
-      skip-cert-verify: true
-      type: vmess
-      uuid: 8bb68d04-6973-11ee-b518-f23c9164ca5d
-    - auth: 9b6419f8-8120-442e-a48c-6bf52aef0abf
-      down: 20
-      name: "\U0001F1F8\U0001F1EC SG 012 | ⬇️ 2.34 MB/s"
-      password: 9b6419f8-8120-442e-a48c-6bf52aef0abf
-      port: 60007
-      server: gy3.mlshu.top
-      skip-cert-verify: true
-      sni: gy3.mlshu.top
-      type: hysteria2
-      udp: true
-      up: 20
-    - name: "\U0001F1FA\U0001F1F8 US 013 | ⬇️ 8.92 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.133
-      skip-cert-verify: false
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: sk.laoyoutiao.link
-        path: /
     - delay: 798
-      name: "\U0001F1FA\U0001F1F8 US 016 | ⬇️ 5.70 MB/s"
+      name: "\U0001F1FA\U0001F1F8 US 005 | ⬇️ 2.23 MB/s"
       network: ws
       port: 8880
       server: 156.238.18.197
@@ -55,88 +33,10 @@ proxies:
             User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
         path: /
       xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1F0\U0001F1F7 KR 017 | ⬇️ 2.78 MB/s"
+    - name: "\U0001F1FA\U0001F1F8 US 007 | ⬇️ 4.40 MB/s"
       network: ws
       port: 8880
-      server: 91.193.58.7
-      tls: false
-      type: vless
-      udp: true
-      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-      ws-opts:
-        headers:
-            Host: steep.skyfigure.top
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 018 | ⬇️ 3.65 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.4
-      tls: false
-      type: vless
-      udp: true
-      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-      ws-opts:
-        headers:
-            Host: steep.skyfigure.top
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    - client-fingerprint: chrome
-      name: "\U0001F1E8\U0001F1E6 CA 019 | ⬇️ 10.89 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.179
-      tls: false
-      type: vless
-      udp: true
-      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-      ws-opts:
-        headers:
-            Host: steep.skyfigure.top
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    - client-fingerprint: chrome
-      name: "\U0001F1F0\U0001F1F7 KR 020 | ⬇️ 3.98 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.235
-      tls: false
-      type: vless
-      udp: true
-      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-      ws-opts:
-        headers:
-            Host: steep.skyfigure.top
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    - delay: 1255
-      name: "\U0001F1FA\U0001F1F8 US 021 | ⬇️ 6.12 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.247
-      type: vless
-      udp: true
-      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-      ws-opts:
-        headers:
-            Host: steep.skyfigure.top
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-        path: /Telegram @WangCai2 /?ed=2560
-      xudp: true
-    - name: "\U0001F1FA\U0001F1F8 US 022 | ⬇️ 4.74 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.236
-      skip-cert-verify: false
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: /
-    - name: "\U0001F1FA\U0001F1F8 US 024 | ⬇️ 4.99 MB/s"
-      network: ws
-      port: 8880
-      server: 156.238.18.1
+      server: 156.238.18.80
       skip-cert-verify: false
       tls: false
       type: vless
@@ -145,212 +45,7 @@ proxies:
         headers:
             Host: yd.laoyoutiao.link
         path: /
-    - name: "\U0001F1FA\U0001F1F8 US 026 | ⬇️ 3.55 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.2
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: sk.laoyoutiao.link
-        path: /
-    - cipher: aes-256-gcm
-      name: "\U0001F1F8\U0001F1EC SG 027 | ⬇️ 3.14 MB/s"
-      password: 8V6YUTE50KU37V7Z
-      port: 16010
-      server: ti3hyra4.slashdevslashnetslashtun.net
-      tfo: false
-      type: ss
-      udp: true
-    - name: "\U0001F1FA\U0001F1F8 US 028 | ⬇️ 4.66 MB/s"
-      network: ws
-      port: 8880
-      server: 156.238.18.170
-      skip-cert-verify: false
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: yd.laoyoutiao.link
-        path: /
-    - name: "\U0001F1FA\U0001F1F8 US 029 | ⬇️ 7.28 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.108
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: /
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1EF\U0001F1F5 JP 034 | ⬇️ 14.50 MB/s"
-      network: ws
-      port: 80
-      server: a8aed529-1960-4a84-695a-58bb33a7d896.castlepeakhospital.moe
-      skip-cert-verify: true
-      tls: false
-      type: vmess
-      udp: true
-      uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
-      ws-opts:
-        headers:
-            Host: tms.dingtalk.com
-        path: /
-    - name: "\U0001F1F8\U0001F1EC SG 035 | ⬇️ 6.83 MB/s"
-      password: 9f125839-3a31-4d55-89fd-b59d250efa53
-      port: 22311
-      server: sg1.bppp.shop
-      skip-cert-verify: true
-      sni: sg1.bppp.shop
-      type: anytls
-      udp: true
-    - client-fingerprint: firefox
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 037 | ⬇️ 8.91 MB/s"
-      network: tcp
-      port: 56702
-      reality-opts:
-        public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
-        short-id: 792147b8
-      server: jp4.interld123456789.com
-      servername: addons.mozilla.org
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: bebe731b-fb6a-47d9-b1fa-e2a89d55d8d9
-    - delay: 266
-      name: "\U0001F1E8\U0001F1F3 CN 038 | ⬇️ 3.75 MB/s"
-      network: ws
-      port: 12005
-      server: 193.200.134.20
-      servername: steep.skyfigure.top
-      skip-cert-verify: true
-      tfo: false
-      tls: true
-      type: vless
-      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-      ws-opts:
-        headers:
-            Host: steep.skyfigure.top
-        path: /Telegram @pgkj666 /?ed=2560
-    - client-fingerprint: chrome
-      name: "\U0001F1EF\U0001F1F5 JP 039 | ⬇️ 2.76 MB/s"
-      password: 25d55ad283aa400af464c76d713c07ad
-      port: 4990
-      server: 103.232.213.170
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: tqqlqvxj@mayorlogistic.com
-    - delay: 266
-      name: "\U0001F1E8\U0001F1F3 CN 041 | ⬇️ 3.96 MB/s"
-      network: ws
-      port: 12005
-      server: 193.200.134.20
-      servername: steep.skyfigure.top
-      skip-cert-verify: true
-      tfo: false
-      tls: true
-      type: vless
-      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-      ws-opts:
-        headers:
-            Host: steep.skyfigure.top
-        path: /Telegram @pgkj666 /?ed=2560
-    - client-fingerprint: chrome
-      name: "\U0001F1EF\U0001F1F5 JP 042 | ⬇️ 2.93 MB/s"
-      password: 25d55ad283aa400af464c76d713c07ad
-      port: 4399
-      server: 156.231.117.17
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: tqqlqvxj@mayorlogistic.com
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1F0\U0001F1F7 KR 044 | ⬇️ 26.98 MB/s"
-      network: ws
-      port: 20000
-      server: 2fea6447-81c4-2d7d-d592-a4f729209777.7head.icu
-      skip-cert-verify: true
-      tls: false
-      type: vmess
-      udp: true
-      uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
-      ws-opts:
-        headers:
-            Host: tms.dingtalk.com
-        path: /
-    - delay: 923
-      name: "\U0001F1F8\U0001F1EC SG 050 | ⬇️ 2.53 MB/s"
-      network: ws
-      port: 48130
-      server: 8.219.59.132
-      servername: steep.skyfigure.top
-      skip-cert-verify: true
-      tfo: false
-      tls: true
-      type: vless
-      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-      ws-opts:
-        headers:
-            Host: steep.skyfigure.top
-        path: /Telegram @pgkj666 /?ed=2560
-    - name: "\U0001F1F9\U0001F1FC TW 051 | ⬇️ 7.03 MB/s"
-      password: exaxgqkKkd0TAMrCxeonWg==
-      port: 1443
-      server: twmoon1-cdn-route.couldflare-cdn.com
-      skip-cert-verify: false
-      sni: twmoon1-cdn-route.couldflare-cdn.com
-      tls: true
-      type: http
-      username: mrwdfNTD8M79LCukCieldrqZWqs=
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1ED\U0001F1F0 HK 055 | ⬇️ 6.84 MB/s"
-      network: ws
-      port: 80
-      server: 9351cca4-e594-cbfa-a6de-3c1ee2315694.castlepeakhospital.moe
-      skip-cert-verify: true
-      tls: false
-      type: vmess
-      udp: true
-      uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
-      ws-opts:
-        headers:
-            Host: tms.dingtalk.com
-        path: /
-    - name: "\U0001F1EC\U0001F1E7 GB 061 | ⬇️ 2.23 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.78
-      servername: cs.laoyoutiao.link
-      skip-cert-verify: false
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: cs.laoyoutiao.link
-        path: /
-    - cipher: aes-256-cfb
-      name: "\U0001F1F0\U0001F1F7 KR 064 | ⬇️ 4.14 MB/s"
-      password: qwerREWQ@@
-      port: 4857
-      server: 125.141.26.12
-      type: ss
-    - name: "\U0001F1FA\U0001F1F8 US 065 | ⬇️ 2.81 MB/s"
+    - name: "\U0001F1FA\U0001F1F8 US 008 | ⬇️ 12.37 MB/s"
       network: ws
       port: 8880
       server: 91.193.58.172
@@ -363,7 +58,137 @@ proxies:
             Host: us.laoyoutiao.link
         path: /
     - client-fingerprint: chrome
-      name: "\U0001F1E8\U0001F1E6 CA 067 | ⬇️ 3.09 MB/s"
+      name: "\U0001F1FA\U0001F1F8 US 010 | ⬇️ 5.78 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.241
+      tls: false
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - name: "\U0001F1EC\U0001F1E7 GB 011 | ⬇️ 10.07 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.79
+      servername: us.laoyoutiao.link
+      skip-cert-verify: true
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: /
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7 KR 012 | ⬇️ 10.25 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.254
+      tls: false
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - name: "\U0001F1FA\U0001F1F8 US 013 | ⬇️ 9.53 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.2
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: sk.laoyoutiao.link
+        path: /
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 014 | ⬇️ 4.05 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.192
+      tls: false
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 015 | ⬇️ 5.15 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.55
+      tls: false
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 016 | ⬇️ 10.50 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.203
+      tls: false
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7 KR 017 | ⬇️ 7.62 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.80
+      tls: false
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - client-fingerprint: chrome
+      name: "\U0001F1F8\U0001F1EC SG 018 | ⬇️ 9.06 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.193
+      tls: false
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7 KR 020 | ⬇️ 2.65 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.7
+      tls: false
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - client-fingerprint: chrome
+      name: "\U0001F1E8\U0001F1E6 CA 021 | ⬇️ 8.41 MB/s"
       network: ws
       port: 8880
       server: 91.193.58.94
@@ -375,111 +200,305 @@ proxies:
         headers:
             Host: steep.skyfigure.top
         path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    - delay: 1077
-      name: "\U0001F1EF\U0001F1F5 JP 068 | ⬇️ 2.16 MB/s"
+    - delay: 1255
+      name: "\U0001F1FA\U0001F1F8 US 023 | ⬇️ 3.34 MB/s"
       network: ws
-      port: 36636
-      server: 14.43.209.58
-      servername: steep.skyfigure.top
-      skip-cert-verify: true
-      tfo: false
-      tls: true
+      port: 8880
+      server: 91.193.58.247
       type: vless
-      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-      ws-opts:
-        headers:
-            Host: steep.skyfigure.top
-        path: /Telegram @pgkj666 /?ed=2560
-    - auth: c05490c8-ca69-4c45-b2e8-adf3c3090da4
-      delay: 2028
-      name: "\U0001F1FA\U0001F1F8 US 069 | ⬇️ 9.16 MB/s"
-      password: c05490c8-ca69-4c45-b2e8-adf3c3090da4
-      port: 35000
-      server: 64.181.243.177
-      skip-cert-verify: true
-      sni: tv.apple.com
-      type: hysteria2
       udp: true
-    - delay: 1077
-      name: "\U0001F1EF\U0001F1F5 JP 070 | ⬇️ 3.34 MB/s"
-      network: ws
-      port: 36636
-      server: 14.43.209.58
-      servername: steep.skyfigure.top
-      skip-cert-verify: true
-      tfo: false
-      tls: true
-      type: vless
       uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
       ws-opts:
         headers:
             Host: steep.skyfigure.top
-        path: /Telegram @pgkj666 /?ed=2560
-    - name: "\U0001F1E8\U0001F1F3 CN 073 | ⬇️ 10.29 MB/s"
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+        path: /Telegram @WangCai2 /?ed=2560
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1E8\U0001F1E6 CA 026 | ⬇️ 5.47 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.161
+      tls: false
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - client-fingerprint: chrome
+      name: "\U0001F1E8\U0001F1E6 CA 028 | ⬇️ 4.21 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.39
+      tls: false
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - name: "\U0001F1FA\U0001F1F8 US 032 | ⬇️ 10.06 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.108
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: /
+    - client-fingerprint: chrome
+      name: "\U0001F1E8\U0001F1E6 CA 034 | ⬇️ 2.01 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.19
+      tls: false
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - name: "\U0001F1F8\U0001F1EC SG 036 | ⬇️ 10.45 MB/s"
+      password: 9f125839-3a31-4d55-89fd-b59d250efa53
+      port: 22311
+      server: sg1.bppp.shop
+      skip-cert-verify: true
+      sni: sg1.bppp.shop
+      type: anytls
+      udp: true
+    - alterId: 64
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 039 | ⬇️ 3.35 MB/s"
+      network: tcp
+      port: 49554
+      server: 183.236.51.38
+      skip-cert-verify: true
+      tls: false
+      type: vmess
+      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+      ws-headers:
+        Host: 183.236.51.38
+      ws-path: /
+    - name: "\U0001F1E8\U0001F1F3 CN 041 | ⬇️ 3.35 MB/s"
+      password: 85f133142f04dbf6547da33895cfabb3
+      port: 39001
+      server: 203.156.253.12
+      skip-cert-verify: true
+      sni: www.yrtok.com
+      type: trojan
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 043 | ⬇️ 3.87 MB/s"
+      port: 49174
+      server: 120.234.102.229
+      skip-cert-verify: true
+      tfo: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    - alterId: 0
+      cipher: auto
+      delay: 2530
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1E8\U0001F1F3 CN 044 | ⬇️ 26.18 MB/s"
+      network: tcp
+      port: 15229
+      server: 4f895d15-sva740-syx1ku-1o8ak.cm.plebai.net
+      skip-cert-verify: true
+      type: vmess
+      uuid: 8bb68d04-6973-11ee-b518-f23c9164ca5d
+    - name: "\U0001F1F9\U0001F1FC TW 045 | ⬇️ 10.94 MB/s"
+      password: exaxgqkKkd0TAMrCxeonWg==
+      port: 1443
+      server: twmoon1-cdn-route.couldflare-cdn.com
+      skip-cert-verify: false
+      sni: twmoon1-cdn-route.couldflare-cdn.com
+      tls: true
+      type: http
+      username: mrwdfNTD8M79LCukCieldrqZWqs=
+    - name: "\U0001F1F8\U0001F1EC SG 058 | ⬇️ 5.09 MB/s"
+      network: ws
+      port: 443
+      server: 160.22.79.155
+      servername: steep.skyfigure.top
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: /telegramU0001F1E8U0001F1F3@pgkj666
+    - name: "\U0001F1FA\U0001F1F8 US 059 | ⬇️ 11.15 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.225
+      skip-cert-verify: false
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: /
+    - name: "\U0001F1FA\U0001F1F8 US 061 | ⬇️ 8.96 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.236
+      skip-cert-verify: false
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: /
+    - client-fingerprint: chrome
+      name: "\U0001F1E8\U0001F1E6 CA 062 | ⬇️ 16.39 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.146
+      tls: false
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7 KR 064 | ⬇️ 2.12 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.20
+      tls: false
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - client-fingerprint: chrome
+      name: "\U0001F1F5\U0001F1ED PH 065 | ⬇️ 2.79 MB/s"
+      password: 25d55ad283aa400af464c76d713c07ad
+      port: 8339
+      server: 165.154.33.173
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: tqqlqvxj@mayorlogistic.com
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7 KR 067 | ⬇️ 6.09 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.202
+      tls: false
+      type: vless
+      udp: true
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - client-fingerprint: random
+      name: "\U0001F1EF\U0001F1F5 JP 068 | ⬇️ 6.32 MB/s"
+      network: ws
+      port: 32180
+      server: 122.250.215.82
+      servername: mot.gike.dpdns.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 90df9b87-9f01-4580-b582-a1bba20b39c6
+      ws-opts:
+        headers:
+            Host: mot.gike.dpdns.org
+        path: /?ed=2560
+    - name: "\U0001F1E8\U0001F1F3 CN 072 | ⬇️ 26.77 MB/s"
       password: 85f133142f04dbf6547da33895cfabb3
       port: 39001
       server: 125.94.40.221
       skip-cert-verify: true
       sni: www.yrtok.com
       type: trojan
-    - cipher: aes-256-gcm
-      name: "\U0001F1F8\U0001F1EC SG 076 | ⬇️ 3.55 MB/s"
-      password: 8IVKTJXPRKSTVD1Y
-      port: 16001
-      server: ti3hyra4.slashdevslashnetslashtun.net
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F1F8\U0001F1EC SG 077 | ⬇️ 5.73 MB/s"
-      password: 2X695KKWDBIB7DY8
-      port: 16013
-      server: ti3hyra4.slashdevslashnetslashtun.net
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      delay: 773
-      name: "\U0001F1EF\U0001F1F5 JP 079 | ⬇️ 3.54 MB/s"
-      password: 4IPHOU3162L56APM
-      port: 18016
-      server: ti3hyra4.slashdevslashnetslashtun.net
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F1ED\U0001F1F0 HK 083 | ⬇️ 2.48 MB/s"
-      password: I9QUAIWD2YOI8NGR
-      port: 15014
-      server: 8tv68qhq.slashdevslashnetslashtun.net
-      type: ss
-      udp: true
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8 US 084 | ⬇️ 3.66 MB/s"
-      port: 30052
-      server: 183.236.51.38
-      skip-cert-verify: true
-      tls: false
-      type: vmess
-      udp: true
-      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    - auth: nfsn666
-      name: "\U0001F1EC\U0001F1E7 GB 085 | ⬇️ 3.05 MB/s"
-      password: nfsn666
-      port: 8888
-      server: 130.162.182.250
-      skip-cert-verify: true
-      sni: ld-arm.nfsn666.gq
-      type: hysteria2
     - client-fingerprint: chrome
-      name: "\U0001F1EE\U0001F1E9 ID 091 | ⬇️ 3.09 MB/s"
-      password: 25d55ad283aa400af464c76d713c07ad
-      port: 8443
-      server: 165.154.150.51
-      skip-cert-verify: true
-      tls: true
-      type: http
+      name: "\U0001F1E8\U0001F1E6 CA 073 | ⬇️ 4.12 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.179
+      tls: false
+      type: vless
       udp: true
-      username: tqqlqvxj@mayorlogistic.com
-    - name: "\U0001F1E9\U0001F1EA DE 093 | ⬇️ 9.37 MB/s"
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    - delay: 1077
+      name: "\U0001F1EF\U0001F1F5 JP 075 | ⬇️ 4.86 MB/s"
+      network: ws
+      port: 36636
+      server: 14.43.209.58
+      servername: steep.skyfigure.top
+      skip-cert-verify: true
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: /Telegram @pgkj666 /?ed=2560
+    - name: "\U0001F1F0\U0001F1F7 KR 077 | ⬇️ 7.87 MB/s"
+      network: ws
+      port: 8880
+      server: 185.238.228.39
+      servername: ip.langmanshanxi.top
+      skip-cert-verify: false
+      tls: false
+      type: vless
+      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+      ws-opts:
+        headers:
+            Host: ip.langmanshanxi.top
+        path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    - name: "\U0001F1FA\U0001F1F8 US 078 | ⬇️ 3.56 MB/s"
+      network: ws
+      port: 8880
+      server: 104.129.164.39
+      tls: false
+      type: vless
+      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+      ws-opts:
+        headers:
+            Host: ip.langmanshanxi.top
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
+    - name: "\U0001F1F0\U0001F1F7 KR 081 | ⬇️ 2.62 MB/s"
+      network: ws
+      port: 8880
+      server: 185.238.228.39
+      servername: ip.langmanshanxi.top
+      skip-cert-verify: false
+      tls: false
+      type: vless
+      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+      ws-opts:
+        headers:
+            Host: ip.langmanshanxi.top
+        path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    - name: "\U0001F1E9\U0001F1EA DE 084 | ⬇️ 2.49 MB/s"
       network: ws
       port: 8880
       server: 185.238.228.39
@@ -491,7 +510,17 @@ proxies:
             Host: ip.langmanshanxi.top
         path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
     - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 095 | ⬇️ 5.24 MB/s"
+      name: "\U0001F1F9\U0001F1ED TH 085 | ⬇️ 3.37 MB/s"
+      password: 25d55ad283aa400af464c76d713c07ad
+      port: 8300
+      server: 128.1.79.134
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: tqqlqvxj@mayorlogistic.com
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 086 | ⬇️ 4.11 MB/s"
       network: ws
       port: 8880
       server: 104.129.164.39
@@ -506,67 +535,16 @@ proxies:
             Host: ip.langmanshanxi.top
         path: "/Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
     - cipher: aes-256-gcm
-      name: "\U0001F1F8\U0001F1EC SG 097 | ⬇️ 3.78 MB/s"
-      password: 0NN1RSBUDFDQSUCW
-      port: 16005
-      server: 8tv68qhq.slashdevslashnetslashtun.net
+      country: ZZ
+      name: "\U0001F1FA\U0001F1F8 US 087 | ⬇️ 3.83 MB/s"
+      password: 7DGTEIEWQP5EJMK7
+      port: 17002
+      server: 23.185.248.12
       type: ss
-      udp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1F9\U0001F1ED TH 099 | ⬇️ 2.74 MB/s"
-      password: 25d55ad283aa400af464c76d713c07ad
-      port: 8300
-      server: 128.1.79.134
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: tqqlqvxj@mayorlogistic.com
-    - name: "\U0001F1FA\U0001F1F3 UN 100 | ⬇️ 8.34 MB/s"
+    - name: "\U0001F1F0\U0001F1F7 KR 088 | ⬇️ 3.84 MB/s"
       network: ws
-      port: 8880
-      server: 185.238.228.39
-      servername: ip.langmanshanxi.top
-      skip-cert-verify: false
-      tls: false
-      type: vless
-      udp: true
-      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-      ws-opts:
-        headers:
-            Host: ip.langmanshanxi.top
-        path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    - name: "\U0001F1FA\U0001F1F8 US 107 | ⬇️ 6.89 MB/s"
-      network: ws
-      port: 2052
-      server: 104.21.75.66
-      servername: domain2025.dpdns.org
-      tls: false
-      type: vless
-      udp: true
-      uuid: 7fed5bf9-a1de-41a0-ab89-694265c4895f
-      ws-opts:
-        headers:
-            Host: domain2025.dpdns.org
-        path: /qjzafwvfues0fyic?ed=2560
-    - cipher: aes-256-cfb
-      name: "\U0001F1F0\U0001F1F7 KR 109 | ⬇️ 15.67 MB/s"
-      password: qwerREWQ@@
-      port: 15098
-      server: 125.141.31.72
-      type: ss
-    - name: "\U0001F1FA\U0001F1F8 US 111 | ⬇️ 6.09 MB/s"
-      password: d9fe1f5e-8f0f-41b6-95f6-d90aa0404924
-      port: 45551
-      server: 75.127.13.83
-      skip-cert-verify: true
-      sni: www.bing.com
-      tfo: false
-      type: hysteria2
-    - name: "\U0001F1F0\U0001F1F7 KR 112 | ⬇️ 2.07 MB/s"
-      network: ws
-      port: 10986
-      server: 121.162.197.175
+      port: 30060
+      server: 183.96.245.165
       servername: steep.skyfigure.top
       skip-cert-verify: true
       tls: true
@@ -575,141 +553,174 @@ proxies:
       uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
       ws-opts:
         headers:
-            host: steep.skyfigure.top
-        path: /telegram@pgkj666/?ed=2560security=tls
-    - cipher: aes-256-gcm
-      delay: 1360
-      name: "\U0001F1E8\U0001F1F3 CN 113 | ⬇️ 5.49 MB/s"
-      password: 0S43J3FD6L7IEKGQ
-      port: 15008
-      server: 8tv68qhq.slashdevslashnetslashtun.net
-      type: ss
-    - client-fingerprint: chrome
-      name: "\U0001F1F5\U0001F1ED PH 114 | ⬇️ 3.09 MB/s"
-      password: 25d55ad283aa400af464c76d713c07ad
-      port: 8339
-      server: 165.154.33.173
-      skip-cert-verify: true
+            Host: steep.skyfigure.top
+        path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
+    - client-fingerprint: random
+      name: "\U0001F1F0\U0001F1F7 KR 094 | ⬇️ 6.77 MB/s"
+      network: ws
+      port: 19948
+      server: 183.97.185.24
+      servername: mot.gike.dpdns.org
       tls: true
-      type: http
+      type: vless
       udp: true
-      username: tqqlqvxj@mayorlogistic.com
-    - delay: 1302
+      uuid: 90df9b87-9f01-4580-b582-a1bba20b39c6
+      ws-opts:
+        headers:
+            Host: mot.gike.dpdns.org
+        path: /?ed=2560
+    - fast-open: true
+      name: "\U0001F1F7\U0001F1FA RU 095 | ⬇️ 4.82 MB/s"
+      password: dongtaiwang.com
+      port: 30033
+      server: 46.17.41.217
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+    - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: 55
       fast-open: true
-      name: "\U0001F1F7\U0001F1FA RU 120 | ⬇️ 4.50 MB/s"
+      name: "\U0001F1F7\U0001F1FA RU 099 | ⬇️ 5.63 MB/s"
+      port: 62003
+      protocol: udp
+      server: 176.32.35.226
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      up: 11
+    - delay: 2626
+      name: "\U0001F1F1\U0001F1EE LI 100 | ⬇️ 4.71 MB/s"
+      obfs: salamander
+      obfs-password: Bia-Telegram__SiNAVM-SiNAVM__Telegram__SiNAVM-SiNAVM
+      password: Bia-SiNAVM-Telegram-SiNAVM-Bia-SiNAVM
+      port: 80
+      server: sinavm.sinavm.ir
+      skip-cert-verify: false
+      sni: sinavm.sinavm.ir
+      tfo: false
+      type: hysteria2
+    - fast-open: true
+      name: "\U0001F1F7\U0001F1FA RU 107 | ⬇️ 3.10 MB/s"
       password: dongtaiwang.com
       port: 30033
       server: 46.29.163.171
       skip-cert-verify: true
       sni: www.bing.com
       type: hysteria2
-    - cipher: aes-256-gcm
-      country: RU
-      name: "\U0001F1F7\U0001F1FA RU 124 | ⬇️ 3.57 MB/s"
-      password: e04ae67d4e4cd165
-      port: 3012
-      server: 185.22.153.235
-      type: ss
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8 US 125 | ⬇️ 2.53 MB/s"
-      port: 41491
-      server: 120.232.153.41
-      skip-cert-verify: true
-      tls: false
-      type: vmess
+    - client-fingerprint: random
+      name: "\U0001F1F0\U0001F1F7 KR 109 | ⬇️ 7.06 MB/s"
+      network: ws
+      port: 17262
+      server: 211.61.33.122
+      servername: mot.gike.dpdns.org
+      tls: true
+      type: vless
       udp: true
-      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    - auth: c05490c8-ca69-4c45-b2e8-adf3c3090da4
-      delay: 1738
-      name: "\U0001F1E9\U0001F1EA DE 126 | ⬇️ 7.54 MB/s"
-      password: c05490c8-ca69-4c45-b2e8-adf3c3090da4
-      port: 35000
-      server: 141.147.19.58
-      skip-cert-verify: true
-      sni: api.push.apple.com
-      type: hysteria2
-      udp: true
-    - alterId: 0
-      cipher: auto
-      http-opts:
+      uuid: 90df9b87-9f01-4580-b582-a1bba20b39c6
+      ws-opts:
         headers:
-            Host:
-                - d1.awsstatic.com
+            Host: mot.gike.dpdns.org
+        path: /?ed=2560
+    - name: "\U0001F1EB\U0001F1F7 FR 111 | ⬇️ 6.80 MB/s"
+      password: dongtaiwang.com
+      port: 31180
+      server: 51.159.111.32
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria2
+    - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: 55
+      fast-open: true
+      name: "\U0001F1EB\U0001F1F7 FR 112 | ⬇️ 6.48 MB/s"
+      port: 46938
+      protocol: udp
+      server: 195.154.200.178
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      up: 11
+    - alterId: 0
+      cipher: auto
+      country: ' US'
+      h2-opts: {}
+      http-opts:
         method: GET
         path:
             - /
-      name: "\U0001F1FA\U0001F1F8 US 128 | ⬇️ 4.18 MB/s"
+      name: "\U0001F1FA\U0001F1F8 US 113 | ⬇️ 6.01 MB/s"
       network: http
       port: 2095
-      server: ::ffff:8e5d:fd31
-      skip-cert-verify: false
-      tls: false
-      type: vmess
-      udp: true
-      uuid: 21284025-a32f-4f90-aaba-55b5d22b0070
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8 US 130 | ⬇️ 2.25 MB/s"
-      port: 46920
-      server: 183.238.90.8
+      server: 0000:0000:0000:0000:0000:ffff:8e5d:fd31
+      servername: d1.awsstatic.com
       skip-cert-verify: true
-      tls: false
       type: vmess
+      uuid: 21284025-a32f-4f90-aaba-55b5d22b0070
+    - client-fingerprint: random
+      name: "\U0001F1F0\U0001F1F7 KR 116 | ⬇️ 2.14 MB/s"
+      network: ws
+      port: 14703
+      server: 123.99.81.34
+      servername: oty.myto.ip-ddns.com
+      tls: true
+      type: vless
       udp: true
-      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    - name: "\U0001F1FA\U0001F1F8 US 131 | ⬇️ 5.79 MB/s"
+      uuid: 7033139c-1d54-4aa8-b074-68ca2c06aeb6
+      ws-opts:
+        headers:
+            Host: oty.myto.ip-ddns.com
+        path: /?ed=2560
+    - auth: d9fe1f5e-8f0f-41b6-95f6-d90aa0404924
+      name: "\U0001F1FA\U0001F1F8 US 118 | ⬇️ 4.50 MB/s"
+      password: d9fe1f5e-8f0f-41b6-95f6-d90aa0404924
+      port: 45551
+      server: 75.127.13.83
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+    - delay: 1660
+      name: "\U0001F1FA\U0001F1F8 US 119 | ⬇️ 5.42 MB/s"
       network: ws
       port: 80
-      server: 141.193.213.157
+      server: 141.193.213.190
       servername: cs.laoyoutiao.link
-      skip-cert-verify: false
-      tls: false
       type: vless
       udp: true
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
             Host: cs.laoyoutiao.link
+            User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
         path: /
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 132 | ⬇️ 2.25 MB/s"
-      network: tcp
-      port: 33919
-      server: 183.236.51.38
-      skip-cert-verify: true
-      tls: false
-      type: vmess
-      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-      ws-headers:
-        Host: 183.236.51.38
-      ws-path: /
+      xudp: true
     - cipher: aes-256-gcm
-      name: "\U0001F1F8\U0001F1EA SE 133 | ⬇️ 4.55 MB/s"
+      name: "\U0001F1F8\U0001F1EA SE 121 | ⬇️ 5.71 MB/s"
       password: IRA2YI28FF6CMZ53
       port: 20035
       server: 185.186.78.220
       type: ss
       udp: true
-    - name: "\U0001F1F0\U0001F1F7 KR 134 | ⬇️ 2.57 MB/s"
-      network: ws
-      port: 13783
-      server: 106.240.106.61
-      servername: steep.skyfigure.top
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-      ws-opts:
-        headers:
-            host: steep.skyfigure.top
-        path: /telegram@pgkj666/?ed=2560
-    - delay: 798
+    - cipher: chacha20-ietf-poly1305
+      country: RU
+      name: "\U0001F1F7\U0001F1FA RU 123 | ⬇️ 3.28 MB/s"
+      password: tnKqNWtiGbq7qIda6N7MQ4
+      port: 11902
+      server: 94.159.96.245
+      type: ss
+    - cipher: aes-256-cfb
+      country: ' CN'
+      name: "\U0001F1E8\U0001F1F3 CN 125 | ⬇️ 2.19 MB/s"
+      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+      port: 38388
+      server: 103.186.154.35
+      type: ss
+    - delay: 872
       down: ""
       fingerprint: ""
-      name: "\U0001F1EB\U0001F1F7 FR 139 | ⬇️ 6.05 MB/s"
+      name: "\U0001F1EB\U0001F1F7 FR 126 | ⬇️ 6.13 MB/s"
       obfs: ""
       obfs-password: ""
       password: dongtaiwang.com
@@ -719,176 +730,102 @@ proxies:
       sni: www.bing.com
       type: hysteria2
       up: ""
-    - cipher: aes-256-gcm
-      name: "\U0001F1F1\U0001F1F9 LT 140 | ⬇️ 6.33 MB/s"
-      password: DTTFVV7XSR369ZK2
-      port: 20036
-      server: 185.237.185.77
-      type: ss
-      udp: true
-    - name: "\U0001F1E8\U0001F1E6 CA 141 | ⬇️ 8.25 MB/s"
-      network: ws
-      port: 443
-      server: 160.123.255.246
-      servername: vz.ylks0033.dpdns.org
+    - name: "\U0001F1EE\U0001F1E9 ID 138 | ⬇️ 2.15 MB/s"
+      password: 25d55ad283aa400af464c76d713c07ad
+      port: 8443
+      server: 165.154.150.51
       skip-cert-verify: true
       tls: true
-      type: vless
+      type: http
       udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            Host: vz.ylks0033.dpdns.org
-        path: /?ed=2560
-    - alterId: 0
-      cipher: auto
-      country: ' US'
-      h2-opts: {}
-      http-opts:
-        method: GET
-        path:
-            - /
-      name: "\U0001F1FA\U0001F1F8 US 142 | ⬇️ 6.29 MB/s"
-      network: http
-      port: 2095
-      server: 0000:0000:0000:0000:0000:ffff:8e5d:fd31
-      servername: d1.awsstatic.com
-      skip-cert-verify: true
-      type: vmess
-      uuid: 21284025-a32f-4f90-aaba-55b5d22b0070
-    - cipher: aes-256-gcm
-      name: "\U0001F1ED\U0001F1F0 HK 143 | ⬇️ 6.64 MB/s"
-      password: LG27D8VYEWK9IPJR
-      port: 15012
-      server: 8tv68qhq.slashdevslashnetslashtun.net
-      type: ss
-      udp: true
-    - name: "\U0001F1E8\U0001F1E6 CA 145 | ⬇️ 4.05 MB/s"
+      username: tqqlqvxj@mayorlogistic.com
+    - name: "\U0001F1FA\U0001F1F8 US 140 | ⬇️ 7.27 MB/s"
       network: ws
-      port: 443
-      server: 160.123.255.246
-      servername: vz.ylks0033.dpdns.org
-      skip-cert-verify: false
-      tls: true
+      port: 80
+      server: 141.193.213.157
+      servername: cs.laoyoutiao.link
       type: vless
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
-            Host: vz.ylks0033.dpdns.org
-        path: /?ed=2560
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 146 | ⬇️ 3.44 MB/s"
-      port: 49174
-      server: 120.234.102.229
-      skip-cert-verify: true
-      tfo: false
-      tls: false
-      type: vmess
-      udp: true
-      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    - cipher: aes-256-gcm
-      name: "\U0001F1EF\U0001F1F5 JP 148 | ⬇️ 2.35 MB/s"
-      password: C9M5L8MQ65YENJ6T
-      port: 18012
-      server: ti3hyra4.slashdevslashnetslashtun.net
+            Host: cs.laoyoutiao.link
+        path: /
+    - cipher: aes-256-cfb
+      country: ' CN'
+      name: "\U0001F1E8\U0001F1F3 CN 145 | ⬇️ 3.23 MB/s"
+      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+      port: 38388
+      server: 103.186.154.19
       type: ss
-      udp: true
     - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F8\U0001F1EA SE 155 | ⬇️ 5.43 MB/s"
-      port: 443
-      reality-opts:
-        public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
-        short-id: 7a2b
-      server: 13.53.217.148
-      servername: zula.ir
-      skip-cert-verify: false
+      name: "\U0001F1E6\U0001F1FA AU 157 | ⬇️ 2.51 MB/s"
+      password: 25d55ad283aa400af464c76d713c07ad
+      port: 8330
+      server: 45.77.239.139
+      skip-cert-verify: true
       tls: true
-      type: vless
+      type: http
       udp: true
-      uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
-    - delay: 1144
-      down: ""
-      fingerprint: ""
-      name: "\U0001F1FA\U0001F1F8 US 157 | ⬇️ 5.14 MB/s"
-      obfs: ""
-      obfs-password: ""
-      password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
-      port: 47262
-      server: 64.181.207.162
+      username: tqqlqvxj@mayorlogistic.com
+    - name: "\U0001F1E8\U0001F1F3 CN 159 | ⬇️ 11.51 MB/s"
+      password: ba7a37e3-033a-e1ab-06f6-9027aa4630f5
+      port: 15229
+      server: e0fc3fd6-sxc9s0-t5cryd-4w8.cu.plebai.net
+      skip-cert-verify: true
+      sni: e0fc3fd6-sxc9s0-t5cryd-4w8.cu.plebai.net
+      type: trojan
+    - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: 55 Mbps
+      name: "\U0001F1F7\U0001F1FA RU 162 | ⬇️ 2.46 MB/s"
+      port: 10803
+      server: 185.22.155.71
       skip-cert-verify: true
       sni: www.bing.com
-      type: hysteria2
-      up: ""
-    - alterId: 2
-      cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 158 | ⬇️ 2.69 MB/s"
+      type: hysteria
+      up: 11 Mbps
+    - name: "\U0001F1F9\U0001F1FC TW 165 | ⬇️ 3.57 MB/s"
       network: ws
-      port: 22643
-      server: tk.hzlt.tkddns.xyz
+      password: Ng35283528
+      port: 443
+      server: gozargah5.cloudflare3-80.hosting-ip.com
+      skip-cert-verify: true
+      sni: c2.validbv3528.eu.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: c2.validbv3528.eu.org
+        path: /?ed=2560
+    - alterId: 0
+      cipher: auto
+      country: ZZ
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1E8\U0001F1E6 CA 168 | ⬇️ 9.34 MB/s"
+      network: ws
+      port: 443
+      server: node3.ourfast.asia
+      servername: node3.ourfast.asia
       skip-cert-verify: true
       tls: true
       type: vmess
-      uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-      ws-headers:
-        Host: zxjp-c.tkong.cc
-      ws-path: /
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EC\U0001F1E7 GB 160 | ⬇️ 7.11 MB/s"
-      port: 443
-      reality-opts:
-        public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
-        short-id: 7a2b
-      server: 35.178.206.253
-      servername: zula.ir
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
-    - alterId: 0
-      cipher: aes-256-gcm
-      name: "\U0001F1ED\U0001F1F0 HK 161 | ⬇️ 2.38 MB/s"
-      password: ENYGONDU94UW1G6X
-      port: 15010
-      server: 8tv68qhq.slashdevslashnetslashtun.net
-      skip-cert-verify: true
-      tls: true
-      type: ss
-    - delay: 1545
-      name: "\U0001F1FA\U0001F1F8 US 163 | ⬇️ 4.25 MB/s"
-      password: e668cd78-6892-11eb-a8bf-f23c91cfbbc9
-      port: 15229
-      server: 6722d765-sx4v40-syqpvr-20qs.cu.plebai.net
-      skip-cert-verify: true
-      sni: 6722d765-sx4v40-syqpvr-20qs.cu.plebai.net
-      type: trojan
-    - auth: dongtaiwang.com
-      name: "\U0001F1EB\U0001F1F7 FR 171 | ⬇️ 7.10 MB/s"
-      password: dongtaiwang.com
-      port: 31180
-      server: 51.159.111.32
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria2
-    - name: "\U0001F1F8\U0001F1EC SG 172 | ⬇️ 2.54 MB/s"
-      network: ws
-      port: 9000
-      server: 47.245.91.197
-      servername: steep.skyfigure.top
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      uuid: f60ec35b-b0c6-496b-acc5-d378b3e4ba00
       ws-opts:
         headers:
-            Host: steep.skyfigure.top
-        path: "/Telegram\U0001F1E8\U0001F1F3 @pgkj666 /?ed=2560"
+            HOST: node3.ourfast.asia
+        path: /
+    - country: ' US'
+      name: "\U0001F1FA\U0001F1F8 US 169 | ⬇️ 7.48 MB/s"
+      password: ypDt8RkT7J
+      port: 43118
+      server: 89.187.181.172
+      skip-cert-verify: true
+      type: trojan
+      udp: true
     - ip-version: dual
-      name: "\U0001F1ED\U0001F1F0 HK 175 | ⬇️ 17.88 MB/s"
+      name: "\U0001F1ED\U0001F1F0 HK 172 | ⬇️ 24.55 MB/s"
       password: 2c605663-b89a-5734-a9d6-97d4743d72cf
       port: 8313
       server: dozo01.flztjc.top
@@ -898,110 +835,13 @@ proxies:
       type: trojan
     - alpn:
         - h3
-      auth_str: dongtaiwang.com
-      down: 55 Mbps
-      name: "\U0001F1F7\U0001F1FA RU 176 | ⬇️ 3.15 MB/s"
-      port: 10803
-      server: 185.22.155.71
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria
-      up: 11 Mbps
-    - name: "\U0001F1F8\U0001F1EC SG 177 | ⬇️ 2.65 MB/s"
-      network: ws
-      port: 9000
-      server: 47.245.91.197
-      servername: steep.skyfigure.top
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-      ws-opts:
-        headers:
-            Host: steep.skyfigure.top
-        path: "/Telegram\U0001F1E8\U0001F1F3 @pgkj666 /?ed=2560"
-    - alpn:
-        - h3
       auth-str: dongtaiwang.com
-      auth_str: dongtaiwang.com
-      delay: 1020
-      down: 1000 Mbps
-      name: "\U0001F1F7\U0001F1FA RU 180 | ⬇️ 7.13 MB/s"
-      port: 62003
-      server: 176.32.35.226
-      servername: apple.com
-      skip-cert-verify: true
-      type: hysteria
-      up: 1000 Mbps
-    - delay: 1090
-      name: "\U0001F1EF\U0001F1F5 JP 181 | ⬇️ 2.56 MB/s"
-      network: ws
-      port: 10986
-      server: 121.162.197.175
-      servername: steep.skyfigure.top
-      tls: true
-      type: vless
-      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-      ws-opts:
-        headers:
-            Host: steep.skyfigure.top
-        path: /Telegram @pgkj666 /?ed=2560
-    - alterId: 2
-      cipher: auto
-      delay: 2274
-      name: "\U0001F1E8\U0001F1E6 CA 183 | ⬇️ 12.31 MB/s"
-      network: ws
-      port: 30825
-      server: v25.heduian.link
-      servername: baidu.com
-      skip-cert-verify: true
-      tls: false
-      type: vmess
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-      ws-opts:
-        headers:
-            Host: v25.heduian.link
-        path: /oooo
-    - delay: 1535
-      name: "\U0001F1E9\U0001F1EA DE 185 | ⬇️ 9.24 MB/s"
-      network: ws
-      port: 8080
-      server: Join.EXPRESSVPN_420.cloud1.hosting-ip.com
-      type: vless
-      udp: true
-      uuid: 590807f7-75af-48fd-b815-d6364760b352
-      ws-opts:
-        headers:
-            Host: dE-sNaPp.MaStErSrV.iR.aCaDeMiGrOuP.Ir.
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-        path: /EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420?ed=2048
-      xudp: true
-    - alpn:
-        - h3
-      auth-str: dongtaiwang.com
-      auth_str: dongtaiwang.com
-      delay: 1182
-      down: "55"
-      name: "\U0001F1EB\U0001F1F7 FR 186 | ⬇️ 5.46 MB/s"
-      obfs: ""
-      port: 46938
-      protocol: ""
-      server: 195.154.200.178
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      up: "11"
-    - alpn:
-        - h3
-      auth-str: dongtaiwang.com
-      auth_str: dongtaiwang.com
-      delay: 1454
+      delay: "1454"
       down: "100"
-      name: "\U0001F1EB\U0001F1F7 FR 189 | ⬇️ 9.05 MB/s"
+      name: "\U0001F1EB\U0001F1F7 FR 173 | ⬇️ 10.19 MB/s"
       obfs: ""
       port: 15010
-      protocol: ""
+      protocol: udp
       server: 195.154.200.40
       skip-cert-verify: true
       sni: apple.com
@@ -1009,108 +849,204 @@ proxies:
       up: "100"
     - alpn:
         - h3
+        - h2
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 175 | ⬇️ 9.41 MB/s"
+      network: ws
+      port: 443
+      server: 5.10.246.73
+      servername: mc1.777999.lol
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: ba902158-fce5-4b33-8cb0-ef32bf6d05f3
+      ws-opts:
+        headers:
+            Host: mc1.777999.lol
+        path: /
+    - alpn:
+        - h3
       auth-str: dongtaiwang.com
-      auth_str: dongtaiwang.com
-      delay: 2794
-      down: 100
-      name: "\U0001F1EB\U0001F1F7 FR 193 | ⬇️ 9.69 MB/s"
+      delay: "2794"
+      down: "100"
+      name: "\U0001F1F3\U0001F1F1 NL 176 | ⬇️ 10.16 MB/s"
       port: 14241
       protocol: udp
       server: 51.159.226.1
       skip-cert-verify: true
       sni: apple.com
       type: hysteria
-      udp: true
-      up: 100
-    - alterId: 0
-      cipher: auto
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1F7\U0001F1FA RU 195 | ⬇️ 4.64 MB/s"
+      udp: "true"
+      up: "100"
+    - name: "\U0001F1E9\U0001F1EA DE 177 | ⬇️ 10.89 MB/s"
       network: ws
-      port: 80
-      server: eedp257bubu2wefy3.lovebaipiao.net
-      type: vmess
-      uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-      ws-opts:
-        headers:
-            Host: www.apple.com
-        path: /iphone
-    - name: "\U0001F1EE\U0001F1F3 IN 196 | ⬇️ 3.77 MB/s"
-      network: ws
-      port: 2053
-      server: 45.112.195.46
-      servername: 0926.qiang2000.link
-      skip-cert-verify: true
-      tls: true
+      port: 8880
+      server: 45.12.30.239
+      skip-cert-verify: false
+      tls: false
       type: vless
-      udp: true
-      uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
+      uuid: telegram_JOkerrVPN_JOKERrvpn
       ws-opts:
         headers:
-            host: 0926.qiang2000.link
-        path: telegram@wangcai2/?ed=2560
+            Host: joker.ahang-alpha.IR
+        path: /@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN?ed=2048
     - alpn:
-        - h1
-      client-fingerprint: chrome
+        - ""
+      alterId: "0"
+      cipher: auto
+      delay: 1146
+      http-opts:
+        headers:
+            Host:
+                - d1.awsstatic.com
+        path:
+            - /
+      name: "\U0001F1FA\U0001F1F8 US 182 | ⬇️ 3.59 MB/s"
+      network: http
+      port: 2095
+      server: ::ffff:8e5d:fd31
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 21284025-a32f-4f90-aaba-55b5d22b0070
+      xudp: true
+    - client-fingerprint: firefox
       flow: xtls-rprx-vision
-      name: "\U0001F1F1\U0001F1FB LV 197 | ⬇️ 5.10 MB/s"
+      name: "\U0001F1F3\U0001F1F1 NL 184 | ⬇️ 3.02 MB/s"
       network: tcp
-      port: 6003
+      port: 8440
       reality-opts:
-        public-key: EnZCoW0ZE047unVnwVg6jOTWxCvAbj3OrweS_ANYCVg
-        short-id: 34d8ddb4971913eb
-      server: cs_office.hideshots.eu
-      servername: t.me
+        public-key: y6JSkggQ__RA_nmCJpX1_ddSQC6vzDUPaN7KyvjVuic
+      server: neht.zeparo-love.ir
+      servername: refersion.com
+      skip-cert-verify: false
       tls: true
       type: vless
-      udp: true
-      uuid: e34e5748-c75c-4847-bbc9-a389da28a1a2
-    - alterId: 0
-      cipher: auto
-      country: CY
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1FA\U0001F1F8 US 198 | ⬇️ 7.96 MB/s"
-      network: ws
-      port: 2086
-      server: csgo.com
-      servername: ustoucjjnid18sj6us.lovebaipiao.com
-      skip-cert-verify: true
-      type: vmess
-      uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-      ws-opts:
-        headers:
-            HOST: ustoucjjnid18sj6us.lovebaipiao.com
-        path: /
-    - alterId: 0
-      cipher: auto
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1F9\U0001F1F7 TR 199 | ⬇️ 8.90 MB/s"
-      network: ws
-      port: 80
-      server: cdn2.bpcdn.cc
-      type: vmess
-      uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-      ws-opts:
-        headers:
-            Host: tk1.bk5jh4t6w.jiesk4pdqcqjo16j.xyz
-        path: /
+      uuid: b357d11e-48ff-483f-969e-e72c380341f5
     - cipher: aes-256-gcm
-      name: "\U0001F1F5\U0001F1EA PE 201 | ⬇️ 4.15 MB/s"
-      password: S6JUA5C7P0AXRICB
-      port: 20009
-      server: 185.47.252.16
+      name: "\U0001F1E6\U0001F1F7 AR 185 | ⬇️ 4.26 MB/s"
+      password: PUNRP0UEK54U8GNA
+      port: 20006
+      server: 31.40.212.221
       type: ss
       udp: true
+    - cipher: aes-256-gcm
+      name: "\U0001F1EC\U0001F1F9 GT 188 | ⬇️ 4.89 MB/s"
+      password: 22PUWAVDVEOSAZPL
+      port: 20007
+      server: 185.47.254.177
+      type: ss
+      udp: true
+    - client-fingerprint: chrome
+      delay: 2063
+      name: "\U0001F1F9\U0001F1F7 TR 190 | ⬇️ 7.91 MB/s"
+      network: tcp
+      port: 55555
+      reality-opts:
+        public-key: smklD4EyRKJ7tf3rlqBDxQNSA1jT_9WlKCfZzPzFZw4
+        short-id: 839f6e
+      server: grtsgsj.subscripshn.sbs
+      servername: stackoverflow.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: SAVTEAM3
+      xudp: true
+    - name: "\U0001F1E9\U0001F1EA DE 191 | ⬇️ 9.19 MB/s"
+      network: ws
+      port: 80
+      server: Zmaoz.Faculty.Ucdavis.Edu
+      servername: Zmaoz.Faculty.Ucdavis.Edu.
+      skip-cert-verify: false
+      tls: false
+      type: vless
+      uuid: Parsashonam-250
+      ws-opts:
+        headers:
+            Host: Parsashonam-DE.ir
+        path: /@Parsashonam?ed=2048
+    - alterId: 0
+      cipher: auto
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1F8\U0001F1EC SG 197 | ⬇️ 5.96 MB/s"
+      network: ws
+      port: 443
+      server: new3.huvicloud.com
+      servername: new3.huvicloud.com
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: a10476b9-1c07-4de3-9d84-c51d24be599f
+      ws-opts:
+        headers:
+            Host: new3.huvicloud.com
+        path: /a10476b9-1c07-4de3-9d84-c51d24be599f
+    - name: "\U0001F1ED\U0001F1F0 HK 198 | ⬇️ 4.88 MB/s"
+      password: 9f125839-3a31-4d55-89fd-b59d250efa53
+      port: 22311
+      server: hk2.bppp.shop
+      skip-cert-verify: true
+      sni: hk2.bppp.shop
+      type: anytls
+      udp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1EC\U0001F1E7 GB 199 | ⬇️ 7.61 MB/s"
+      network: tcp
+      port: 3000
+      reality-opts:
+        public-key: zzbexZUufjA8hDluJTujyHRAxTEpljvFytrMO_6AKWw
+        short-id: c0fae980
+      server: 158.220.94.91
+      servername: yahoo.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: bd39598b-b9a9-40b2-a8dd-ab1df5627dc5
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1E8\U0001F1E6 CA 202 | ⬇️ 12.91 MB/s"
+      network: ws
+      port: 30825
+      server: v25.heduian.link
+      tls: false
+      type: vmess
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      ws-opts:
+        headers:
+            Host: baidu.com
+        path: /oooo
+    - client-fingerprint: chrome
+      delay: 1240
+      name: "\U0001F1FA\U0001F1F8 US 204 | ⬇️ 2.07 MB/s"
+      password: 25d55ad283aa400af464c76d713c07ad
+      port: 4999
+      server: 146.71.78.145
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: tqqlqvxj@mayorlogistic.com
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 206 | ⬇️ 5.87 MB/s"
+      password: 25d55ad283aa400af464c76d713c07ad
+      port: 8330
+      server: 66.55.65.54
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: tqqlqvxj@mayorlogistic.com
     - client-fingerprint: firefox
       delay: 2798
       http-opts:
         headers: {}
         path:
             - /
-      name: "\U0001F1FA\U0001F1F8 US 202 | ⬇️ 4.11 MB/s"
+      name: "\U0001F1FA\U0001F1F8 US 208 | ⬇️ 5.70 MB/s"
       network: tcp
       port: 443
       reality-opts:
@@ -1123,112 +1059,7 @@ proxies:
       udp: true
       uuid: 9835fbea-cfb1-402a-bdc6-16ca140c6788
       xudp: true
-    - alterId: 0
-      cipher: auto
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1F7\U0001F1FA RU 204 | ⬇️ 5.08 MB/s"
-      network: ws
-      port: 80
-      server: eedp257bubu2wefy2.lovebaipiao.net
-      type: vmess
-      uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-      ws-opts:
-        headers:
-            Host: www.apple.com
-        path: /iphone
-    - alterId: 0
-      cipher: auto
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1F9\U0001F1F7 TR 207 | ⬇️ 7.67 MB/s"
-      network: ws
-      port: 80
-      server: cdn1.bpcdn.cc
-      type: vmess
-      uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-      ws-opts:
-        headers:
-            Host: tk1.bk5jh4t6w.jiesk4pdqcqjo16j.xyz
-        path: /
-    - client-fingerprint: firefox
-      delay: 1833
-      name: "\U0001F1EC\U0001F1E7 GB 212 | ⬇️ 4.28 MB/s"
-      network: tcp
-      port: 34045
-      reality-opts:
-        public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-        short-id: e8ab71d0
-      server: 158.41.97.218
-      servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-      tls: true
-      type: vless
-      udp: true
-      uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-    - client-fingerprint: chrome
-      name: "\U0001F1EC\U0001F1E7 GB 217 | ⬇️ 4.46 MB/s"
-      network: tcp
-      port: 3000
-      reality-opts:
-        public-key: zzbexZUufjA8hDluJTujyHRAxTEpljvFytrMO_6AKWw
-        short-id: c0fae980
-      server: 158.220.94.91
-      servername: yahoo.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: bd39598b-b9a9-40b2-a8dd-ab1df5627dc5
-    - client-fingerprint: chrome
-      delay: 1240
-      name: "\U0001F1FA\U0001F1F8 US 219 | ⬇️ 2.56 MB/s"
-      password: 25d55ad283aa400af464c76d713c07ad
-      port: 4999
-      server: 146.71.78.145
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: tqqlqvxj@mayorlogistic.com
-    - client-fingerprint: chrome
-      delay: 1334
-      name: "\U0001F1EF\U0001F1F5 JP 224 | ⬇️ 2.14 MB/s"
-      network: ws
-      port: 33083
-      server: 182.213.59.227
-      servername: steep.skyfigure.top
-      tls: true
-      type: vless
-      udp: true
-      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-      ws-opts:
-        headers:
-            Host: steep.skyfigure.top
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-        path: /telegram@pgkj666/?ed=2560
-      xudp: true
-    - alpn:
-        - h3%2Ch2%2Chttp%2F1.1
-      client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 225 | ⬇️ 5.57 MB/s"
-      network: ws
-      port: 2096
-      server: c.c.ccccccccccccccccccccccccccccccccccccccccccc.cc
-      servername: us.ccccccccccccccccccccccccccccccccccccccccccc.cc
-      tls: true
-      type: vless
-      udp: true
-      uuid: 1d4d10ca-93ef-439d-91cc-3f5c6399e558
-      ws-opts:
-        headers:
-            Host: us.ccccccccccccccccccccccccccccccccccccccccccc.cc
-        path: /
-    - cipher: aes-256-gcm
-      name: "\U0001F1ED\U0001F1F0 HK 229 | ⬇️ 6.79 MB/s"
-      password: 4KGHWKCKQAJOVPHO
-      port: 15003
-      server: 8tv68qhq.slashdevslashnetslashtun.net
-      type: ss
-    - name: "\U0001F1EE\U0001F1F9 IT 236 | ⬇️ 2.17 MB/s"
+    - name: "\U0001F1EE\U0001F1F9 IT 218 | ⬇️ 2.07 MB/s"
       password: 25d55ad283aa400af464c76d713c07ad
       port: 8200
       server: 185.47.172.230
@@ -1237,18 +1068,84 @@ proxies:
       type: http
       udp: true
       username: tqqlqvxj@mayorlogistic.com
-    - client-fingerprint: chrome
-      name: "\U0001F1EA\U0001F1F8 ES 238 | ⬇️ 6.41 MB/s"
-      password: 25d55ad283aa400af464c76d713c07ad
-      port: 8330
-      server: 103.240.146.143
-      skip-cert-verify: true
+    - name: "\U0001F1F0\U0001F1F7 KR 219 | ⬇️ 2.14 MB/s"
+      network: ws
+      port: 25079
+      server: 121.154.68.40
+      servername: steep.skyfigure.top
+      skip-cert-verify: false
       tls: true
-      type: http
+      type: vless
+      uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+      ws-opts:
+        headers:
+            Host: steep.skyfigure.top
+        path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1EC\U0001F1E7 GB 220 | ⬇️ 3.63 MB/s"
+      network: ws
+      port: 8080
+      server: tci2.tiamoci.us.kg
+      tls: false
+      type: vmess
       udp: true
-      username: tqqlqvxj@mayorlogistic.com
+      uuid: 749c4694-c824-4d51-b210-cc54d5925444
+      ws-opts:
+        headers:
+            Host: tci2.tiamoci.us.kg
+        path: /
+    - alpn:
+        - http/1.1
+      name: "\U0001F1FA\U0001F1F8 US 223 | ⬇️ 3.61 MB/s"
+      network: ws
+      port: 443
+      server: 104.21.78.243
+      servername: cCVBNhJ.7282728.XYZ
+      tls: true
+      type: vless
+      udp: true
+      uuid: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+      ws-opts:
+        headers:
+            Host: ccvbnhj.7282728.xyz
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+        path: /6r23FpdcA4KNAXX
+      xudp: true
+    - alpn:
+        - http/1.1
+      name: "\U0001F1FA\U0001F1F8 US 225 | ⬇️ 2.70 MB/s"
+      network: ws
+      port: 443
+      server: 172.67.149.43
+      servername: 7d33510a-5dA0-4F85-b1d5-5321a9eaA72a.890603.pP.uA
+      tls: true
+      type: vless
+      udp: true
+      uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+      ws-opts:
+        headers:
+            Host: 7d33510a-5da0-4f85-b1d5-5321a9eaa72a.890603.pp.ua
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+        path: /XcQF058rNJ3gc4aj
+      xudp: true
+    - alpn:
+        - http%2F1.1
+      name: "\U0001F1FA\U0001F1F8 US 226 | ⬇️ 4.88 MB/s"
+      network: ws
+      password: 82bacaef-f56f-4ac4-9db3-d4754a06d1ef
+      port: 443
+      server: xcdfvgbhy6.457.pp.ua
+      skip-cert-verify: true
+      sni: xCdFvgBHy6.457.Pp.uA
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: xCdFvgBHy6.457.Pp.uA
+        path: /ZZAdBLCxFJcxuB8N6K0sBs
     - client-fingerprint: chrome
-      name: "\U0001F1E9\U0001F1EA DE 243 | ⬇️ 2.59 MB/s"
+      name: "\U0001F1E9\U0001F1EA DE 228 | ⬇️ 2.49 MB/s"
       password: 25d55ad283aa400af464c76d713c07ad
       port: 8443
       server: 156.226.175.105
@@ -1257,73 +1154,70 @@ proxies:
       type: http
       udp: true
       username: tqqlqvxj@mayorlogistic.com
-    - cipher: chacha20-ietf-poly1305
-      country: SE
-      name: "\U0001F1F3\U0001F1F1 NL 244 | ⬇️ 7.47 MB/s"
-      password: AtJ-4iUgavARtZiWZ4YV8w
-      port: 55557
-      server: homa.cybsecguru.com
-      type: ss
-    - name: "\U0001F1F9\U0001F1F7 TR 245 | ⬇️ 6.12 MB/s"
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1FA\U0001F1F8 US 229 | ⬇️ 3.24 MB/s"
+      network: tcp
+      port: 33718
+      reality-opts:
+        public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
+      server: 31.59.111.49
+      servername: icloud.cdn-apple.com
+      tfo: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: e657e5fb-c417-4d3f-d84e-a3a8f010f9fa
+    - client-fingerprint: chrome
+      name: "\U0001F1EC\U0001F1E7 GB 230 | ⬇️ 7.93 MB/s"
+      network: tcp
+      port: 3000
+      reality-opts:
+        public-key: zzbexZUufjA8hDluJTujyHRAxTEpljvFytrMO_6AKWw
+        short-id: c0fae980
+      server: 158.220.94.91
+      servername: yahoo.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: bd39598b-b9a9-40b2-a8dd-ab1df5627dc5
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1FA\U0001F1F8 US 231 | ⬇️ 5.45 MB/s"
+      network: tcp
+      port: 33718
+      reality-opts:
+        public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
+      server: 31.59.111.49
+      servername: icloud.cdn-apple.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: e657e5fb-c417-4d3f-d84e-a3a8f010f9fa
+    - client-fingerprint: chrome
+      delay: 2098
+      name: "\U0001F1F8\U0001F1EA SE 233 | ⬇️ 2.32 MB/s"
       password: 25d55ad283aa400af464c76d713c07ad
       port: 8300
-      server: 103.215.218.174
+      server: 103.45.246.184
       skip-cert-verify: true
       tls: true
       type: http
       udp: true
       username: tqqlqvxj@mayorlogistic.com
     - client-fingerprint: chrome
-      delay: 1629
-      name: "\U0001F1EB\U0001F1F7 FR 248 | ⬇️ 2.21 MB/s"
+      delay: 1796
+      name: "\U0001F1EE\U0001F1F1 IL 236 | ⬇️ 2.59 MB/s"
       password: 25d55ad283aa400af464c76d713c07ad
       port: 8300
-      server: 45.143.5.60
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: tqqlqvxj@mayorlogistic.com
-    - alterId: 0
-      cipher: auto
-      country: US
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1FA\U0001F1F8 US 251 | ⬇️ 10.74 MB/s"
-      network: ws
-      port: 2086
-      server: 141.193.213.7
-      servername: hkrg0nf30ik5piq1zr.lovebaipiao.com
-      skip-cert-verify: true
-      type: vmess
-      uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-      ws-opts:
-        headers:
-            HOST: hkrg0nf30ik5piq1zr.lovebaipiao.com
-        path: /
-    - client-fingerprint: chrome
-      delay: 2118
-      name: "\U0001F1F8\U0001F1E6 SA 254 | ⬇️ 2.77 MB/s"
-      password: 25d55ad283aa400af464c76d713c07ad
-      port: 4990
-      server: 156.244.12.140
+      server: 185.162.124.132
       skip-cert-verify: true
       tls: true
       type: http
       udp: true
       username: tqqlqvxj@mayorlogistic.com
     - client-fingerprint: chrome
-      name: "\U0001F1E7\U0001F1ED BH 255 | ⬇️ 2.59 MB/s"
-      password: 25d55ad283aa400af464c76d713c07ad
-      port: 8331
-      server: 154.205.146.29
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: tqqlqvxj@mayorlogistic.com
-    - client-fingerprint: chrome
-      name: "\U0001F1FB\U0001F1F3 VN 256 | ⬇️ 2.65 MB/s"
+      name: "\U0001F1FB\U0001F1F3 VN 239 | ⬇️ 2.70 MB/s"
       password: 25d55ad283aa400af464c76d713c07ad
       port: 8300
       server: 42.119.60.199
@@ -1333,7 +1227,153 @@ proxies:
       udp: true
       username: tqqlqvxj@mayorlogistic.com
     - client-fingerprint: chrome
-      name: "\U0001F1E7\U0001F1EC BG 257 | ⬇️ 2.67 MB/s"
+      name: "\U0001F1FA\U0001F1F8 US 240 | ⬇️ 2.46 MB/s"
+      password: 25d55ad283aa400af464c76d713c07ad
+      port: 8300
+      server: 165.154.206.214
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: tqqlqvxj@mayorlogistic.com
+    - ip-version: dual
+      name: "\U0001F1FA\U0001F1F8 US 241 | ⬇️ 2.72 MB/s"
+      network: ws
+      password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
+      port: 443
+      server: 172.67.204.120
+      sni: ddcDe.890603.XYz
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            host: ddcde.890603.xyz
+        path: /COp52Dbu3dvwvDWUxOqxq
+    - client-fingerprint: chrome
+      name: "\U0001F1F7\U0001F1FA RU 244 | ⬇️ 2.95 MB/s"
+      password: 25d55ad283aa400af464c76d713c07ad
+      port: 443
+      server: 194.87.197.196
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: tqqlqvxj@mayorlogistic.com
+    - client-fingerprint: chrome
+      name: "\U0001F1E6\U0001F1EA AE 248 | ⬇️ 2.36 MB/s"
+      password: 25d55ad283aa400af464c76d713c07ad
+      port: 8330
+      server: 165.154.108.92
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: tqqlqvxj@mayorlogistic.com
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 249 | ⬇️ 11.26 MB/s"
+      network: ws
+      port: 443
+      server: www.vpslook.com
+      servername: wapkp01.5201314.cfd
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 4993f14e-5f9b-4249-dc43-99f4fdea84be
+      ws-opts:
+        headers:
+            Host: wapkp01.5201314.cfd
+        path: /4993f14e
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1EE\U0001F1F9 IT 251 | ⬇️ 4.65 MB/s"
+      network: ws
+      port: 30805
+      server: v5.heduian.link
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      ws-opts:
+        headers:
+            Host: ocbc.com
+        path: /oooo
+    - alpn:
+        - http/1.1
+      name: "\U0001F1FA\U0001F1F8 US 258 | ⬇️ 7.56 MB/s"
+      network: ws
+      port: 443
+      server: 104.21.71.205
+      servername: 7d33510a-5dA0-4F85-b1d5-5321a9eaA72a.890603.pP.uA
+      tls: true
+      type: vless
+      udp: true
+      uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+      ws-opts:
+        headers:
+            Host: 7d33510a-5da0-4f85-b1d5-5321a9eaa72a.890603.pp.ua
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+        path: /XcQF058rNJ3gc4aj
+      xudp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 259 | ⬇️ 10.25 MB/s"
+      network: ws
+      port: 443
+      server: cf.fovi.tk
+      servername: cf.fovi.tk
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      udp: true
+      uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+      ws-opts:
+        headers:
+            Host: foxlux.fovi.tk
+        path: /eisasqa
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F3 UN 261 | ⬇️ 2.71 MB/s"
+      password: 25d55ad283aa400af464c76d713c07ad
+      port: 8330
+      server: 64.176.16.32
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: tqqlqvxj@mayorlogistic.com
+    - name: "\U0001F1FA\U0001F1F8 US 263 | ⬇️ 2.76 MB/s"
+      network: ws
+      password: 15b24b56-d667-4fa8-b548-f3dc942fb461
+      port: 443
+      server: 104.21.15.232
+      skip-cert-verify: true
+      sni: ab2c7f0b-bf1b-4eb3-9884-256f4de3d.2030.pp.ua
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: ab2c7f0b-bf1b-4eb3-9884-256f4de3d.2030.pp.ua
+        path: /4p35eUnmGxQ8YJFJxz
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1E9\U0001F1EA DE 267 | ⬇️ 10.91 MB/s"
+      network: ws
+      port: 443
+      server: 190.93.245.137
+      servername: WWW.EsfahAnsimaN.infO.
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: c2a8a1c3-6d93-4aec-90ce-e53bfb4c1f67
+      ws-opts:
+        headers:
+            Host: WWW.EsfahAnsimaN.infO.
+        path: /TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
+    - client-fingerprint: chrome
+      name: "\U0001F1F5\U0001F1F1 PL 268 | ⬇️ 3.00 MB/s"
       password: 25d55ad283aa400af464c76d713c07ad
       port: 8300
       server: 194.87.108.40
@@ -1342,12 +1382,23 @@ proxies:
       type: http
       udp: true
       username: tqqlqvxj@mayorlogistic.com
+    - name: "\U0001F1FA\U0001F1F3 UN 269 | ⬇️ 11.16 MB/s"
+      network: ws
+      port: 2053
+      server: 66.235.200.17
+      servername: waphk.ovo2024.dpdns.org
+      tls: true
+      type: vless
+      uuid: 920d2c36-fb41-4fd3-abd3-9bb11224b704
+      ws-opts:
+        headers:
+            Host: waphk.ovo2024.dpdns.org
+        path: 248cbff8
     - client-fingerprint: chrome
-      delay: 1796
-      name: "\U0001F1EE\U0001F1F1 IL 262 | ⬇️ 3.00 MB/s"
+      name: "\U0001F1FF\U0001F1E6 ZA 270 | ⬇️ 2.77 MB/s"
       password: 25d55ad283aa400af464c76d713c07ad
       port: 8300
-      server: 185.162.124.132
+      server: 139.84.240.81
       skip-cert-verify: true
       tls: true
       type: http
