@@ -1,16 +1,33 @@
 proxies:
-    - name: "\U0001F1E8\U0001F1F3 CN 001 | ⬇️ 6.94 MB/s"
+    - name: "\U0001F1FA\U0001F1F8 US 000 | ⬇️ 2.77 MB/s"
       network: ws
       port: 8880
-      server: 156.238.18.150
+      server: 91.193.58.25
       tls: false
       type: vless
+      udp: true
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
         headers:
-            Host: yd.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - name: "\U0001F1FA\U0001F1F8 US 003 | ⬇️ 15.40 MB/s"
+            Host: kjgx.laoyoutiao.link
+        max-early-data: 2560
+        path: /Telegram@WangCai2/
+    - name: "\U0001F1FA\U0001F1F8 US 003 | ⬇️ 6.91 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.7
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: kjgx.laoyoutiao.link
+        max-early-data: 2560
+        path: /Telegram@WangCai2/
+    - name: "\U0001F1FA\U0001F1F8 US 004 | ⬇️ 7.48 MB/s"
       network: ws
       port: 8880
       server: 91.193.58.14
@@ -24,10 +41,10 @@ proxies:
             Host: tw.laoyoutiao.link
         max-early-data: 2048
         path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2/"
-    - name: "\U0001F1E8\U0001F1F3 CN 004 | ⬇️ 3.64 MB/s"
+    - name: "\U0001F1E8\U0001F1F3 CN 006 | ⬇️ 10.62 MB/s"
       network: ws
       port: 8880
-      server: 156.238.18.200
+      server: 156.238.18.222
       tls: false
       type: vless
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -35,34 +52,21 @@ proxies:
         headers:
             Host: us.laoyoutiao.link
         path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - name: "\U0001F1FA\U0001F1F8 US 006 | ⬇️ 2.61 MB/s"
+    - name: "\U0001F1EC\U0001F1E7 GB 007 | ⬇️ 8.20 MB/s"
       network: ws
       port: 8880
-      server: 156.238.18.197
+      server: 91.193.58.207
       tls: false
       type: vless
-      udp: true
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
-            Host: yd.laoyoutiao.link
-        path: /
-    - delay: 1057
-      name: "\U0001F1FA\U0001F1F8 US 007 | ⬇️ 11.04 MB/s"
+            Host: us.laoyoutiao.link
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
+    - name: "\U0001F1FA\U0001F1F8 US 008 | ⬇️ 2.38 MB/s"
       network: ws
       port: 8880
-      server: 156.238.18.87
-      skip-cert-verify: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: yd.laoyoutiao.link
-        path: /TelegramU0001F1E8U0001F1F3
-    - name: "\U0001F1FA\U0001F1F8 US 008 | ⬇️ 4.15 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.133
+      server: 91.193.58.196
       tls: false
       type: vless
       udp: true
@@ -70,8 +74,20 @@ proxies:
       ws-opts:
         headers:
             Host: sk.laoyoutiao.link
-        path: /
-    - name: "\U0001F1EC\U0001F1E7 GB 010 | ⬇️ 7.94 MB/s"
+        path: /TelegramU0001F1E8U0001F1F3
+    - name: "\U0001F1FA\U0001F1F8 US 009 | ⬇️ 2.10 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.127
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: sk.laoyoutiao.link
+        path: "/Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /"
+    - name: "\U0001F1EC\U0001F1E7 GB 010 | ⬇️ 6.89 MB/s"
       network: ws
       port: 8880
       server: 91.193.58.66
@@ -82,21 +98,7 @@ proxies:
         headers:
             Host: kjgx.laoyoutiao.link
         path: /Telegram@WangCai2/?ed
-    - name: "\U0001F1FA\U0001F1F8 US 011 | ⬇️ 4.33 MB/s"
-      network: ws
-      port: 8880
-      server: 156.238.18.132
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: jp.laoyoutiao.link
-        max-early-data: 2560
-        path: /Telegram@WangCai2/
-    - name: "\U0001F1FA\U0001F1F8 US 012 | ⬇️ 4.04 MB/s"
+    - name: "\U0001F1FA\U0001F1F8 US 013 | ⬇️ 5.45 MB/s"
       network: ws
       port: 8880
       server: 91.193.58.69
@@ -108,230 +110,40 @@ proxies:
         headers:
             Host: us.laoyoutiao.link
         path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2
-    - name: "\U0001F1FA\U0001F1F8 US 013 | ⬇️ 3.53 MB/s"
+    - name: "\U0001F1FA\U0001F1F8 US 014 | ⬇️ 2.26 MB/s"
       network: ws
       port: 8880
-      server: 91.193.58.121
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: sk.laoyoutiao.link
-        path: /Telegram @MxlShare @WangCai2 /
-    - name: "\U0001F1FA\U0001F1F8 US 014 | ⬇️ 2.36 MB/s"
-      network: ws
-      port: 8880
-      server: 156.238.18.157
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: jp.laoyoutiao.link
-        max-early-data: 2560
-        path: /Telegram@WangCai2/
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8 US 016 | ⬇️ 27.85 MB/s"
-      network: ws
-      port: 8080
-      server: 47.79.94.25
-      skip-cert-verify: true
-      tls: false
-      type: vmess
-      uuid: b36d992c-786b-4136-96d6-c37641207d47
-      ws-opts:
-        path: /
-    - name: "\U0001F1FA\U0001F1F8 US 017 | ⬇️ 20.98 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.245
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "/Telegram\U0001F1E8\U0001F1F3"
-    - name: "\U0001F1ED\U0001F1F0 HK 018 | ⬇️ 2.90 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.168
+      server: 91.193.58.4
       skip-cert-verify: false
-      tls: false
       type: vless
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
         headers:
             Host: kjgx.laoyoutiao.link
-        max-early-data: 2560
-        path: /Telegram@WangCai2/
-    - name: "\U0001F1FA\U0001F1F8 US 019 | ⬇️ 2.31 MB/s"
+        path: /Telegram@WangCai2/?ed
+    - delay: 1057
+      name: "\U0001F1FA\U0001F1F8 US 016 | ⬇️ 3.89 MB/s"
       network: ws
       port: 8880
-      server: 156.238.18.160
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: sg.laoyoutiao.link
-        max-early-data: 2048
-        path: /Telegram@WangCai2/
-    - alterId: 2
-      cipher: auto
-      country: ' CN'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1E8\U0001F1F3 CN 023 | ⬇️ 5.98 MB/s"
-      network: ws
-      port: 30807
-      server: v7.heduian.link
-      servername: ocbc.com
-      skip-cert-verify: true
-      type: vmess
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-      ws-opts:
-        headers:
-            HOST: ocbc.com
-        path: /oooo
-    - name: "\U0001F1EF\U0001F1F5 JP 026 | ⬇️ 3.71 MB/s"
-      network: ws
-      password: d6b8011a-c725-435a-9fec-bf6d3530392c
-      port: 2083
-      server: 156.238.18.196
-      skip-cert-verify: true
-      sni: vle.amclubdns.dpdns.org
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            Host: vle.amclubdns.dpdns.org
-        path: /?ed=2560&PROT_TYPE=trojan
-    - name: "\U0001F1EF\U0001F1F5 JP 028 | ⬇️ 5.11 MB/s"
-      network: ws
-      password: d6b8011a-c725-435a-9fec-bf6d3530392c
-      port: 2053
-      server: 156.238.18.112
-      skip-cert-verify: true
-      sni: vle.amclubdns.dpdns.org
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            Host: vle.amclubdns.dpdns.org
-        path: /?ed=2560&PROT_TYPE=trojan
-    - name: "\U0001F1EC\U0001F1E7 GB 032 | ⬇️ 3.69 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.43
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - name: "\U0001F1E8\U0001F1F3 CN 033 | ⬇️ 5.49 MB/s"
-      network: ws
-      port: 8880
-      server: 156.238.18.211
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - name: "\U0001F1E8\U0001F1F3 CN 035 | ⬇️ 5.84 MB/s"
-      network: ws
-      port: 8880
-      server: 156.238.18.112
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - cipher: aes-256-gcm
-      name: "\U0001F1FA\U0001F1F8 US 037 | ⬇️ 3.30 MB/s"
-      password: vGCBLG1SUe7YdXI1fPhdsA==
-      port: 36529
-      server: jpiplc.deuen.com
-      type: ss
-    - cipher: aes-256-gcm
-      name: "\U0001F1E8\U0001F1F3 CN 038 | ⬇️ 10.24 MB/s"
-      password: 9bfdde71b4c0
-      plugin: v2ray-plugin
-      plugin-opts:
-        host: newroot2v1.dsjsapp.com
-        mode: websocket
-        mux: true
-        path: /cauejypbltqt
-        skip-cert-verify: false
-        tls: true
-      port: 636
-      server: 103.103.245.158
-      tfo: false
-      type: ss
-    - name: "\U0001F1FA\U0001F1F8 US 039 | ⬇️ 9.45 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.41
-      skip-cert-verify: false
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: sk.laoyoutiao.link
-        path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
-    - name: "\U0001F1F9\U0001F1FC TW 041 | ⬇️ 14.43 MB/s"
-      password: exaxgqkKkd0TAMrCxeonWg==
-      port: 1443
-      server: twmoon1-cdn-route.couldflare-cdn.com
-      skip-cert-verify: false
-      sni: twmoon1-cdn-route.couldflare-cdn.com
-      tls: true
-      type: http
-      username: mrwdfNTD8M79LCukCieldrqZWqs=
-    - delay: 1660
-      name: "\U0001F1FA\U0001F1F8 US 042 | ⬇️ 3.22 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.172
-      servername: us.laoyoutiao.link
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
-        path: /
-      xudp: true
-    - delay: 1806
-      name: "\U0001F1FA\U0001F1F8 US 044 | ⬇️ 4.38 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.192
+      server: 156.238.18.87
       skip-cert-verify: false
       type: vless
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
-            Host: us.laoyoutiao.link
-        path: /Telegram@MxlShare@WangCai2/?ed
-    - name: "\U0001F1FA\U0001F1F8 US 047 | ⬇️ 9.60 MB/s"
+            Host: yd.laoyoutiao.link
+        path: /TelegramU0001F1E8U0001F1F3
+    - name: "\U0001F1FA\U0001F1F8 US 018 | ⬇️ 10.02 MB/s"
+      network: ws
+      port: 8880
+      server: 156.238.18.76
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: yd.laoyoutiao.link
+        path: /Telegram @MxlShare @WangCai2 /?ed
+    - name: "\U0001F1FA\U0001F1F8 US 019 | ⬇️ 3.21 MB/s"
       network: ws
       port: 8880
       server: 156.238.18.254
@@ -343,19 +155,18 @@ proxies:
         headers:
             Host: yd.laoyoutiao.link
         path: /TelegramU0001F1E8U0001F1F3
-    - name: "\U0001F1FA\U0001F1F8 US 049 | ⬇️ 5.38 MB/s"
+    - name: "\U0001F1E8\U0001F1F3 CN 020 | ⬇️ 3.74 MB/s"
       network: ws
       port: 8880
-      server: 91.193.58.172
+      server: 156.238.18.211
       tls: false
       type: vless
-      udp: true
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
             Host: us.laoyoutiao.link
-        path: /
-    - name: "\U0001F1ED\U0001F1F0 HK 052 | ⬇️ 4.75 MB/s"
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
+    - name: "\U0001F1ED\U0001F1F0 HK 021 | ⬇️ 3.75 MB/s"
       network: ws
       port: 8880
       server: 91.193.58.248
@@ -367,7 +178,98 @@ proxies:
         headers:
             Host: sk.laoyoutiao.link
         path: /TelegramU0001F1E8U0001F1F3?ed=2048@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
-    - name: "\U0001F1FA\U0001F1F8 US 053 | ⬇️ 3.45 MB/s"
+    - cipher: aes-256-gcm
+      name: "\U0001F1F8\U0001F1EC SG 022 | ⬇️ 5.59 MB/s"
+      password: 6cf9eafa-c869-4a93-965e-527d250939e7
+      port: 17869
+      server: ddns.kuaiyun1.cn
+      type: ss
+      udp: true
+    - alterId: 0
+      cipher: auto
+      delay: 1003
+      name: "\U0001F1E8\U0001F1F3 CN 023 | ⬇️ 3.29 MB/s"
+      network: ws
+      port: 80
+      server: 5019a345-t049s0-t1kmeg-mv7m.hkt.tcpbbr.net
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 94d40708-8273-11ea-8fc9-f23c913c8d2b
+      ws-opts:
+        headers:
+            Host: broadcastlv.chat.bilibili.com
+        path: /
+    - name: "\U0001F1FA\U0001F1F8 US 024 | ⬇️ 3.68 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.172
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: /
+    - name: "\U0001F1ED\U0001F1F0 HK 025 | ⬇️ 3.98 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.98
+      skip-cert-verify: false
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: tw.laoyoutiao.link
+        path: /
+    - alterId: 2
+      cipher: auto
+      country: CN
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1E8\U0001F1F3 CN 026 | ⬇️ 5.94 MB/s"
+      network: ws
+      port: 30807
+      server: v7.heduian.link
+      servername: ocbc.com
+      skip-cert-verify: true
+      type: vmess
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      ws-opts:
+        headers:
+            HOST: ocbc.com
+        path: /oooo
+    - client-fingerprint: randomized
+      name: "\U0001F1FA\U0001F1F8 US 028 | ⬇️ 5.36 MB/s"
+      network: ws
+      port: 2083
+      server: 156.238.18.196
+      servername: vle.amclubsdns.dpdns.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+      ws-opts:
+        headers:
+            Host: vle.amclubsdns.dpdns.org
+        path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+    - cipher: aes-256-gcm
+      name: "\U0001F1EF\U0001F1F5 JP 029 | ⬇️ 2.50 MB/s"
+      password: 6cf9eafa-c869-4a93-965e-527d250939e7
+      port: 39030
+      server: ddns.kuaiyun1.cn
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "\U0001F1ED\U0001F1F0 HK 030 | ⬇️ 2.49 MB/s"
+      password: 6cf9eafa-c869-4a93-965e-527d250939e7
+      port: 32975
+      server: ddns.kuaiyun1.cn
+      type: ss
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 032 | ⬇️ 6.42 MB/s"
       network: ws
       port: 8880
       server: 91.193.58.163
@@ -381,239 +283,17 @@ proxies:
             Host: kjgx.laoyoutiao.link
         max-early-data: 2560
         path: /Telegram@WangCai2/
-    - name: "\U0001F1EC\U0001F1E7 GB 056 | ⬇️ 3.29 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.207
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - name: "\U0001F1EC\U0001F1E7 GB 059 | ⬇️ 4.30 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.151
-      servername: sk.laoyoutiao.link
-      skip-cert-verify: false
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: sk.laoyoutiao.link
-        path: /TelegramU0001F1E8U0001F1F3
-    - name: "\U0001F1FA\U0001F1F8 US 060 | ⬇️ 10.16 MB/s"
-      password: 96ccaa92-f487-4673-b8f5-a6ee167d6f39
-      port: 11683
-      server: yume-us.legeth.xyz
-      skip-cert-verify: true
-      sni: yume-us.legeth.xyz
-      type: hysteria2
-    - name: "\U0001F1FA\U0001F1F8 US 061 | ⬇️ 5.70 MB/s"
-      network: ws
-      port: 8880
-      server: 156.238.18.76
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: yd.laoyoutiao.link
-        path: /Telegram @MxlShare @WangCai2 /?ed
-    - name: "\U0001F1ED\U0001F1F0 HK 062 | ⬇️ 16.50 MB/s"
-      password: <password>
-      port: 443
-      server: da63c714-sxaf40-t1bnjq-1krtb.hkt2.cdnhuawei.com
-      tls: true
-      type: socks5
-      username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-    - name: "\U0001F1ED\U0001F1F0 HK 063 | ⬇️ 8.03 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.98
-      skip-cert-verify: false
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: tw.laoyoutiao.link
-        path: /
     - cipher: aes-256-gcm
-      country: ' HK'
-      name: "\U0001F1ED\U0001F1F0 HK 064 | ⬇️ 3.59 MB/s"
-      password: 941cbc4237e0
-      plugin: v2ray-plugin
-      plugin-opts:
-        host: kh36v1.dsjsapp.com
-        mode: websocket
-        mux: true
-        path: /tkzhhylcfuf
-        skip-cert-verify: false
-        tls: true
-      port: 636
-      server: 121.127.231.239
+      name: "\U0001F1ED\U0001F1F0 HK 033 | ⬇️ 4.83 MB/s"
+      password: 6cf9eafa-c869-4a93-965e-527d250939e7
+      port: 15815
+      server: ddns.kuaiyun1.cn
       type: ss
-    - client-fingerprint: randomized
-      name: "\U0001F1FA\U0001F1F8 US 065 | ⬇️ 3.67 MB/s"
-      network: ws
-      port: 2053
-      server: 156.238.18.112
-      servername: vle.amclubsapp.dpdns.org
-      tls: true
-      type: vless
       udp: true
-      uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-      ws-opts:
-        headers:
-            Host: vle.amclubsapp.dpdns.org
-        path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-    - name: "\U0001F1FA\U0001F1F8 US 069 | ⬇️ 3.41 MB/s"
-      network: ws
-      port: 80
-      server: 141.193.213.37
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare+@WangCai2+/?ed=2560"
-    - name: "\U0001F1FA\U0001F1F8 US 079 | ⬇️ 5.96 MB/s"
-      network: ws
-      port: 80
-      server: 141.193.213.114
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare+@WangCai2+/?ed=2560"
-    - name: "\U0001F1FA\U0001F1F8 US 080 | ⬇️ 2.50 MB/s"
-      network: ws
-      port: 80
-      server: 141.193.213.254
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare+@WangCai2+/?ed=2560"
-    - name: "\U0001F1FA\U0001F1F8 US 083 | ⬇️ 3.40 MB/s"
+    - name: "\U0001F1FA\U0001F1F8 US 034 | ⬇️ 2.72 MB/s"
       network: ws
       port: 8880
-      server: 88.216.69.177
-      tls: false
-      type: vless
-      udp: true
-      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: ip.langmanshanxi.top
-        max-early-data: 2560
-        path: /Telegram@WangCai2/
-    - name: "\U0001F1FA\U0001F1F8 US 084 | ⬇️ 5.30 MB/s"
-      network: ws
-      port: 80
-      server: 141.193.213.213
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare+@WangCai2+/?ed=2560"
-    - name: "\U0001F1FA\U0001F1F8 US 087 | ⬇️ 4.69 MB/s"
-      network: ws
-      port: 8880
-      server: 159.112.235.63
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: jp.laoyoutiao.link
-        max-early-data: 2560
-        path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /
-    - name: "\U0001F1FA\U0001F1F8 US 091 | ⬇️ 5.04 MB/s"
-      network: ws
-      port: 8880
-      server: 89.116.161.177
-      tls: false
-      type: vless
-      udp: true
-      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: ip.langmanshanxi.top
-        max-early-data: 2560
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /"
-    - name: "\U0001F1F8\U0001F1E8 SC 092 | ⬇️ 5.29 MB/s"
-      network: ws
-      port: 8880
-      server: 154.83.2.251
-      servername: cf.d3z.net
-      skip-cert-verify: true
-      tls: false
-      type: vless
-      udp: true
-      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-      ws-opts:
-        headers:
-            Host: cf.d3z.net
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    - name: "\U0001F1FA\U0001F1F8 US 094 | ⬇️ 3.33 MB/s"
-      network: ws
-      port: 8880
-      server: 192.200.160.251
-      servername: cf.d3z.net
-      skip-cert-verify: false
-      tls: false
-      type: vless
-      udp: true
-      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-      ws-opts:
-        headers:
-            Host: cf.d3z.net
-        path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-    - name: "\U0001F1FA\U0001F1F8 US 096 | ⬇️ 5.18 MB/s"
-      network: ws
-      port: 8880
-      server: 135.84.76.63
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: jp.laoyoutiao.link
-        max-early-data: 2560
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /"
-    - name: "\U0001F1FA\U0001F1F8 US 099 | ⬇️ 7.09 MB/s"
-      network: ws
-      port: 80
-      server: 141.193.213.52
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare+@WangCai2+/?ed=2560"
-    - name: "\U0001F1FA\U0001F1F8 US 100 | ⬇️ 3.68 MB/s"
-      network: ws
-      port: 8880
-      server: 91.193.58.52
+      server: 91.193.58.85
       tls: false
       type: vless
       udp: true
@@ -624,38 +304,65 @@ proxies:
             Host: kjgx.laoyoutiao.link
         max-early-data: 2560
         path: /Telegram@WangCai2/
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 100
-      fast-open: true
-      name: "\U0001F1F3\U0001F1F1 NL 101 | ⬇️ 3.61 MB/s"
-      port: 37519
-      ports: 10000-20000
-      protocol: udp
-      server: 109.104.153.91
+    - name: "\U0001F1FA\U0001F1F8 US 035 | ⬇️ 5.66 MB/s"
+      network: ws
+      port: 443
+      server: 104.18.26.90
+      servername: barayeiranmahsang.ghormehsabzi.dpdns.org
       skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      up: 80
-    - name: "\U0001F1FA\U0001F1F8 US 104 | ⬇️ 11.45 MB/s"
+      tls: true
+      type: vless
+      udp: true
+      uuid: e6236ebc-7334-4bed-977f-0c20bcdfcc00
+      ws-opts:
+        headers:
+            host: barayeiranmahsang.ghormehsabzi.dpdns.org
+        path: /
+    - alterId: 2
+      cipher: auto
+      country: ' HK'
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1ED\U0001F1F0 HK 037 | ⬇️ 3.59 MB/s"
       network: ws
       port: 80
-      server: 104.18.26.90
-      servername: blaze-can-118.blazecanada.site
+      server: 00967073-sv4n40-td5fm5-4dl0.hk3.p5pv.com
+      servername: broadcastlv.chat.bilibili.com
+      skip-cert-verify: true
+      type: vmess
+      uuid: 56b05600-e140-11ec-a3de-f23c91cfbbc9
+      ws-headers:
+        HOST: broadcastlv.chat.bilibili.com
+      ws-path: /
+    - name: "\U0001F1E8\U0001F1F3 CN 038 | ⬇️ 4.74 MB/s"
+      network: ws
+      port: 8880
+      server: 156.238.18.207
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: yd.laoyoutiao.link
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
+    - name: "\U0001F1ED\U0001F1F0 HK 040 | ⬇️ 2.09 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.168
       skip-cert-verify: false
       tls: false
       type: vless
-      udp: true
-      uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
         headers:
-            Host: blaze-can-118.blazecanada.site
-        path: /?ed=2560
-    - name: "\U0001F1FA\U0001F1F8 US 105 | ⬇️ 10.16 MB/s"
+            Host: kjgx.laoyoutiao.link
+        max-early-data: 2560
+        path: /Telegram@WangCai2/
+    - name: "\U0001F1FA\U0001F1F8 US 041 | ⬇️ 4.79 MB/s"
       network: ws
-      port: 80
-      server: 141.193.213.16
+      port: 8880
+      server: 91.193.58.230
       tls: false
       type: vless
       udp: true
@@ -663,10 +370,254 @@ proxies:
       ws-opts:
         early-data-header-name: Sec-WebSocket-Protocol
         headers:
-            Host: us.laoyoutiao.link
+            Host: kjgx.laoyoutiao.link
         max-early-data: 2560
-        path: "/Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /"
-    - name: "\U0001F1FA\U0001F1F8 US 108 | ⬇️ 5.59 MB/s"
+        path: /Telegram@WangCai2/
+    - name: "\U0001F1FA\U0001F1F8 US 042 | ⬇️ 4.83 MB/s"
+      network: ws
+      port: 8880
+      server: 156.238.18.132
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: jp.laoyoutiao.link
+        max-early-data: 2560
+        path: /Telegram@WangCai2/
+    - cipher: aes-256-gcm
+      name: "\U0001F1F9\U0001F1ED TH 043 | ⬇️ 4.57 MB/s"
+      password: 6cf9eafa-c869-4a93-965e-527d250939e7
+      port: 48494
+      server: ddns.kuaiyun1.cn
+      type: ss
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 048 | ⬇️ 2.08 MB/s"
+      network: ws
+      port: 8880
+      server: 156.238.18.157
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: jp.laoyoutiao.link
+        max-early-data: 2560
+        path: /Telegram@WangCai2/
+    - name: "\U0001F1EF\U0001F1F5 JP 050 | ⬇️ 9.23 MB/s"
+      network: ws
+      password: d6b8011a-c725-435a-9fec-bf6d3530392c
+      port: 2083
+      server: 156.238.18.196
+      skip-cert-verify: true
+      sni: vle.amclubdns.dpdns.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: vle.amclubdns.dpdns.org
+        path: /?ed=2560&PROT_TYPE=trojan
+    - name: "\U0001F1FA\U0001F1F8 US 051 | ⬇️ 5.00 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.121
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: sk.laoyoutiao.link
+        path: /Telegram @MxlShare @WangCai2 /
+    - delay: 1414
+      name: "\U0001F1FA\U0001F1F8 US 054 | ⬇️ 7.82 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.162
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: sk.laoyoutiao.link
+        path: /Telegram
+    - cipher: aes-256-cfb
+      name: "\U0001F1E8\U0001F1F3 CN 057 | ⬇️ 12.14 MB/s"
+      password: qwerREWQ@@
+      port: 15098
+      server: p222.panda001.net
+      type: ss
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 058 | ⬇️ 2.40 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.245
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: "/Telegram\U0001F1E8\U0001F1F3"
+    - delay: 1806
+      name: "\U0001F1FA\U0001F1F8 US 062 | ⬇️ 14.00 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.192
+      skip-cert-verify: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: /Telegram@MxlShare@WangCai2/?ed
+    - name: "\U0001F1FA\U0001F1F8 US 064 | ⬇️ 5.87 MB/s"
+      network: ws
+      port: 8880
+      server: 92.53.191.177
+      tls: false
+      type: vless
+      udp: true
+      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: ip.langmanshanxi.top
+        max-early-data: 2560
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /"
+    - name: "\U0001F1E9\U0001F1EA DE 066 | ⬇️ 4.49 MB/s"
+      network: ws
+      port: 8880
+      server: 45.80.111.20
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
+    - name: "\U0001F1F0\U0001F1F7 KR 067 | ⬇️ 4.55 MB/s"
+      network: ws
+      port: 8880
+      server: 135.84.79.177
+      skip-cert-verify: false
+      tls: false
+      type: vless
+      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+      ws-opts:
+        headers:
+            Host: ip.langmanshanxi.top
+        path: /TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
+    - name: "\U0001F1FA\U0001F1F8 US 069 | ⬇️ 4.33 MB/s"
+      network: ws
+      port: 8880
+      server: 114.129.43.168
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: kjgx.laoyoutiao.link
+        max-early-data: 2560
+        path: /Telegram@WangCai2/
+    - name: "\U0001F1FA\U0001F1F8 US 072 | ⬇️ 4.75 MB/s"
+      network: ws
+      port: 80
+      server: 141.193.213.206
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare+@WangCai2+/?ed=2560"
+    - name: "\U0001F1FA\U0001F1F8 US 076 | ⬇️ 3.47 MB/s"
+      network: ws
+      port: 80
+      server: 141.193.213.213
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare+@WangCai2+/?ed=2560"
+    - name: "\U0001F1FA\U0001F1F8 US 077 | ⬇️ 3.60 MB/s"
+      network: ws
+      port: 80
+      server: 141.193.213.20
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: cs.laoyoutiao.link
+        max-early-data: 2560
+        path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2/"
+    - delay: 389
+      name: "\U0001F1FA\U0001F1F8 US 080 | ⬇️ 2.44 MB/s"
+      network: ws
+      port: 8880
+      server: 25.129.196.156
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: kjgx.laoyoutiao.link
+        max-early-data: 2560
+        path: /Telegram @WangCai2 /
+    - name: "\U0001F1FA\U0001F1F8 US 085 | ⬇️ 2.62 MB/s"
+      network: ws
+      port: 80
+      server: 141.193.213.52
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare+@WangCai2+/?ed=2560"
+    - name: "\U0001F1FA\U0001F1F8 US 088 | ⬇️ 4.54 MB/s"
+      network: ws
+      port: 8880
+      server: 176.124.223.213
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: jp.laoyoutiao.link
+        max-early-data: 2560
+        path: /
+    - name: "\U0001F1FA\U0001F1F8 US 091 | ⬇️ 3.97 MB/s"
+      network: ws
+      password: d6b8011a-c725-435a-9fec-bf6d3530392c
+      port: 2087
+      server: 156.238.18.112
+      skip-cert-verify: true
+      sni: vle.amclubsvip.dpdns.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: vle.amclubsvip.dpdns.org
+        path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+    - name: "\U0001F1FA\U0001F1F8 US 093 | ⬇️ 4.32 MB/s"
       network: ws
       port: 8880
       server: 45.67.215.177
@@ -680,21 +631,38 @@ proxies:
             Host: ip.langmanshanxi.top
         max-early-data: 2560
         path: /Telegram@WangCai2/
-    - name: "\U0001F1E8\U0001F1F3 CN 110 | ⬇️ 3.15 MB/s"
+    - name: "\U0001F1FA\U0001F1F8 US 095 | ⬇️ 2.57 MB/s"
       network: ws
       port: 8880
-      server: 156.238.18.13
+      server: 91.193.58.52
       tls: false
       type: vless
+      udp: true
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
         headers:
-            Host: yd.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - name: "\U0001F1E8\U0001F1F3 CN 111 | ⬇️ 3.88 MB/s"
+            Host: kjgx.laoyoutiao.link
+        max-early-data: 2560
+        path: /Telegram@WangCai2/
+    - name: "\U0001F1EF\U0001F1F5 JP 096 | ⬇️ 2.97 MB/s"
+      network: ws
+      port: 8443
+      server: 156.238.18.220
+      servername: vle.amclubsdns.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+      ws-opts:
+        headers:
+            host: vle.amclubsdns.dpdns.org
+        path: /
+    - name: "\U0001F1E8\U0001F1F3 CN 097 | ⬇️ 19.61 MB/s"
       network: ws
       port: 8880
-      server: 156.238.18.222
+      server: 156.238.18.200
       tls: false
       type: vless
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -702,58 +670,101 @@ proxies:
         headers:
             Host: us.laoyoutiao.link
         path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - name: "\U0001F1FA\U0001F1F8 US 114 | ⬇️ 4.31 MB/s"
+    - name: "\U0001F1FA\U0001F1F8 US 098 | ⬇️ 6.35 MB/s"
       network: ws
       port: 8880
-      server: 91.193.58.127
+      server: 135.84.76.63
       tls: false
       type: vless
       udp: true
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
         headers:
-            Host: sk.laoyoutiao.link
+            Host: jp.laoyoutiao.link
+        max-early-data: 2560
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /"
+    - name: "\U0001F1FA\U0001F1F8 US 099 | ⬇️ 7.07 MB/s"
+      network: ws
+      port: 8880
+      server: 205.233.181.213
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: jp.laoyoutiao.link
+        max-early-data: 2560
+        path: /
+    - name: "\U0001F1FA\U0001F1F8 US 100 | ⬇️ 10.13 MB/s"
+      network: ws
+      port: 80
+      server: 141.193.213.16
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: us.laoyoutiao.link
+        max-early-data: 2560
         path: "/Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /"
-    - name: "\U0001F1FA\U0001F1F8 US 115 | ⬇️ 14.40 MB/s"
+    - cipher: aes-256-gcm
+      name: "\U0001F1F0\U0001F1F7 KR 101 | ⬇️ 11.78 MB/s"
+      password: 6cf9eafa-c869-4a93-965e-527d250939e7
+      port: 30967
+      server: ddns.kuaiyun1.cn
+      type: ss
+      udp: true
+    - delay: 598
+      name: "\U0001F1E8\U0001F1E6 CA 102 | ⬇️ 10.00 MB/s"
       network: ws
       port: 80
       server: 104.18.26.90
       servername: blaze-can-118.blazecanada.site
-      skip-cert-verify: false
       tls: false
       type: vless
       udp: true
       uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
       ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
         headers:
             Host: blaze-can-118.blazecanada.site
-        path: /?ed=2560
-    - name: "\U0001F1FA\U0001F1F8 US 116 | ⬇️ 17.30 MB/s"
+        max-early-data: 2560
+        path: /
+    - name: "\U0001F1EF\U0001F1F5 JP 103 | ⬇️ 13.55 MB/s"
       network: ws
       password: d6b8011a-c725-435a-9fec-bf6d3530392c
-      port: 2087
+      port: 2053
       server: 156.238.18.112
       skip-cert-verify: true
-      sni: vle.amclubsvip.dpdns.org
+      sni: vle.amclubdns.dpdns.org
       type: trojan
       udp: true
       ws-opts:
         headers:
-            Host: vle.amclubsvip.dpdns.org
-        path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-    - name: "\U0001F1FA\U0001F1F8 US 122 | ⬇️ 2.71 MB/s"
+            Host: vle.amclubdns.dpdns.org
+        path: /?ed=2560&PROT_TYPE=trojan
+    - delay: 598
+      name: "\U0001F1E8\U0001F1E6 CA 110 | ⬇️ 3.41 MB/s"
       network: ws
-      port: 8880
-      server: 154.83.2.177
+      port: 80
+      server: 104.18.26.90
+      servername: blaze-can-118.blazecanada.site
       tls: false
       type: vless
       udp: true
-      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+      uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
       ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
         headers:
-            Host: ip.langmanshanxi.top
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560fp=chrome"
-    - name: "\U0001F1FA\U0001F1F8 US 125 | ⬇️ 5.59 MB/s"
+            Host: blaze-can-118.blazecanada.site
+        max-early-data: 2560
+        path: /
+    - name: "\U0001F1FA\U0001F1F8 US 112 | ⬇️ 3.35 MB/s"
       network: ws
       port: 8880
       server: 216.24.57.20
@@ -765,65 +776,19 @@ proxies:
         headers:
             Host: us.laoyoutiao.link
         path: /Telegram@WangCai2/?ed
-    - name: "\U0001F1FA\U0001F1F8 US 126 | ⬇️ 2.19 MB/s"
+    - delay: 1474
+      name: "\U0001F1FA\U0001F1F8 US 113 | ⬇️ 2.22 MB/s"
       network: ws
       port: 8880
-      server: 92.53.188.213
+      server: 103.245.228.251
       tls: false
       type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
       ws-opts:
         headers:
-            Host: jp.laoyoutiao.link
-        path: /
-    - name: "\U0001F1E8\U0001F1E6 CA 130 | ⬇️ 6.53 MB/s"
-      port: 45877
-      server: 104.248.105.52
-      skip-cert-verify: false
-      tls: false
-      type: vless
-      udp: true
-      uuid: 81ed7265-be10-498b-c96f-46789e81ac88
-    - delay: 2366
-      name: "\U0001F1FA\U0001F1F8 US 134 | ⬇️ 7.33 MB/s"
-      network: ws
-      port: 8880
-      server: 199.34.229.29
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: hk.laoyoutiao.link
-        path: /
-    - name: "\U0001F1FA\U0001F1F8 US 135 | ⬇️ 9.46 MB/s"
-      network: ws
-      port: 8880
-      server: 135.84.75.3
-      servername: bitget1.asdasd.click
-      skip-cert-verify: false
-      tls: false
-      type: vless
-      udp: true
-      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-      ws-opts:
-        headers:
-            Host: bitget1.asdasd.click
-        path: /TelegramU0001F1E8U0001F1F3
-    - name: "\U0001F1FA\U0001F1F3 UN 137 | ⬇️ 8.75 MB/s"
-      network: ws
-      port: 8880
-      server: 192.0.54.213
-      skip-cert-verify: false
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: jp.laoyoutiao.link
-        path: /
-    - name: "\U0001F1FA\U0001F1F8 US 141 | ⬇️ 2.76 MB/s"
+            Host: cf.d3z.net
+        path: /Telegram @WangCai2 /?ed=2560fp=chrome
+    - name: "\U0001F1FA\U0001F1F8 US 114 | ⬇️ 3.31 MB/s"
       network: ws
       port: 8880
       server: 199.34.229.213
@@ -835,76 +800,23 @@ proxies:
         headers:
             Host: jp.laoyoutiao.link
         path: /
-    - name: "\U0001F1EF\U0001F1F5 JP 144 | ⬇️ 11.56 MB/s"
-      network: ws
-      password: trojan
-      port: 443
-      server: 91.193.58.0
-      sni: wahaha.yingyangkuaixian.dpdns.org
-      type: trojan
-      ws-opts:
-        headers:
-            Host: wahaha.yingyangkuaixian.dpdns.org
-        path: /
-    - name: "\U0001F1FA\U0001F1F8 US 145 | ⬇️ 9.31 MB/s"
+    - delay: 660
+      name: "\U0001F1FA\U0001F1F8 US 115 | ⬇️ 7.83 MB/s"
       network: ws
       port: 8880
-      server: 45.153.7.63
+      server: 192.0.54.213
+      skip-cert-verify: false
       tls: false
       type: vless
-      udp: true
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
             Host: jp.laoyoutiao.link
-        path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560fp=chrome
-    - cipher: aes-256-cfb
-      country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 146 | ⬇️ 2.52 MB/s"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.155.20
-      type: ss
-    - name: "\U0001F1FA\U0001F1F8 US 147 | ⬇️ 2.41 MB/s"
-      network: ws
-      port: 8880
-      server: 5.10.214.20
-      tls: false
-      type: vless
-      udp: true
-      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-      ws-opts:
-        headers:
-            Host: ip.langmanshanxi.top
         path: /
-    - name: "\U0001F1FA\U0001F1F8 US 149 | ⬇️ 8.74 MB/s"
-      network: ws
-      port: 80
-      server: 141.193.213.211
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: /Telegram@WangCai2/?ed
-    - delay: 2795
-      name: "\U0001F1FA\U0001F1F8 US 151 | ⬇️ 4.73 MB/s"
-      network: ws
-      port: 80
-      server: 141.193.213.196
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: /Telegram
-    - name: "\U0001F1FA\U0001F1F8 US 155 | ⬇️ 8.47 MB/s"
+    - name: "\U0001F1FA\U0001F1F8 US 119 | ⬇️ 7.01 MB/s"
       network: ws
       port: 8880
-      server: 192.200.160.177
+      server: 199.34.230.177
       tls: false
       type: vless
       udp: true
@@ -912,34 +824,8 @@ proxies:
       ws-opts:
         headers:
             Host: ip.langmanshanxi.top
-        path: /Telegram
-    - name: "\U0001F1FA\U0001F1F8 US 158 | ⬇️ 8.83 MB/s"
-      network: ws
-      port: 443
-      server: 63.141.128.3
-      servername: 1n.bgm2024.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 55520747-311e-4015-83ce-be46e2060ce3
-      ws-opts:
-        headers:
-            host: 1n.bgm2024.dpdns.org
-        path: /?ed=2560
-    - name: "\U0001F1FA\U0001F1F8 US 159 | ⬇️ 4.12 MB/s"
-      network: ws
-      port: 8880
-      server: 185.16.110.251
-      skip-cert-verify: false
-      tls: false
-      type: vless
-      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-      ws-opts:
-        headers:
-            Host: cf.d3z.net
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560fp=chrome"
-    - name: "\U0001F1EF\U0001F1F5 JP 164 | ⬇️ 8.77 MB/s"
+        path: /Telegram @WangCai2 /?ed
+    - name: "\U0001F1EF\U0001F1F5 JP 120 | ⬇️ 4.41 MB/s"
       network: ws
       port: 8880
       server: 212.183.88.213
@@ -951,87 +837,104 @@ proxies:
         headers:
             Host: jp.laoyoutiao.link
         path: /
-    - name: "\U0001F1F0\U0001F1F7 KR 168 | ⬇️ 2.79 MB/s"
-      network: ws
-      port: 50000
-      server: 115.94.98.93
-      servername: 1n.bgm2024.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 55520747-311e-4015-83ce-be46e2060ce3
-      ws-opts:
-        headers:
-            host: 1n.bgm2024.dpdns.org
-        path: /?ed=2560
-    - name: "\U0001F1E8\U0001F1F3 CN 177 | ⬇️ 9.00 MB/s"
+    - name: "\U0001F1FA\U0001F1F8 US 121 | ⬇️ 4.23 MB/s"
       network: ws
       port: 8880
-      server: 156.238.18.207
+      server: 170.114.45.254
+      tls: false
+      type: vless
+      udp: true
+      uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
+      ws-opts:
+        headers:
+            Host: yg.bantony199.top
+        path: "/Telegram\U0001F1E8\U0001F1F3"
+    - cipher: aes-256-gcm
+      name: "\U0001F1FA\U0001F1F8 US 129 | ⬇️ 13.56 MB/s"
+      password: 6cf9eafa-c869-4a93-965e-527d250939e7
+      port: 29760
+      server: ddns.kuaiyun1.cn
+      type: ss
+      udp: true
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 132 | ⬇️ 2.07 MB/s"
+      network: ws
+      port: 30829
+      server: v29.heduian.link
+      servername: ocbc.com
+      skip-cert-verify: true
+      tls: false
+      type: vmess
+      udp: true
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      ws-opts:
+        headers:
+            Host: ocbc.com
+        path: /oooo
+    - name: "\U0001F1FA\U0001F1F8 US 133 | ⬇️ 6.35 MB/s"
+      network: ws
+      port: 8880
+      server: 5.10.214.20
+      tls: false
+      type: vless
+      udp: true
+      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+      ws-opts:
+        headers:
+            Host: ip.langmanshanxi.top
+        path: /
+    - delay: 1196
+      name: "\U0001F1FA\U0001F1F8 US 135 | ⬇️ 7.50 MB/s"
+      network: ws
+      password: d6b8011a-c725-435a-9fec-bf6d3530392c
+      port: 8443
+      server: 156.238.18.220
+      skip-cert-verify: true
+      sni: vle.amclubssss.dpdns.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: vle.amclubssss.dpdns.org
+        path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+    - name: "\U0001F1FA\U0001F1F8 US 138 | ⬇️ 3.67 MB/s"
+      network: ws
+      port: 8880
+      server: 209.94.90.251
+      tls: false
+      type: vless
+      udp: true
+      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+      ws-opts:
+        headers:
+            Host: cf.d3z.net
+        path: /
+    - name: "\U0001F1FA\U0001F1F8 US 142 | ⬇️ 6.66 MB/s"
+      network: ws
+      port: 8880
+      server: 185.16.110.213
+      skip-cert-verify: false
       tls: false
       type: vless
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
-            Host: yd.laoyoutiao.link
+            Host: jp.laoyoutiao.link
+        path: /
+    - name: "\U0001F1EC\U0001F1E7 GB 143 | ⬇️ 6.95 MB/s"
+      network: ws
+      port: 8880
+      server: 164.38.155.20
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
         path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - name: "\U0001F1F7\U0001F1FA RU 179 | ⬇️ 8.64 MB/s"
-      network: ws
-      password: tg-fq521free
-      port: 443
-      server: 45.67.215.95
-      skip-cert-verify: false
-      sni: torjan.xn--xhq44j.eu.org
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            Host: torjan.xn--xhq44j.eu.org
-        path: /
-    - name: "\U0001F1FA\U0001F1F8 US 180 | ⬇️ 7.81 MB/s"
-      network: ws
-      port: 443
-      server: 160.79.105.76
-      servername: 1v.bgm2024.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 55520747-311e-4015-83ce-be46e2060ce3
-      ws-opts:
-        headers:
-            Host: 1v.bgm2024.dpdns.org
-        path: /
     - client-fingerprint: randomized
-      name: "\U0001F1FA\U0001F1F8 US 181 | ⬇️ 7.72 MB/s"
-      network: ws
-      port: 2087
-      server: 103.160.204.36
-      servername: vle.amclubsapp.dpdns.org
-      tls: true
-      type: vless
-      udp: true
-      uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-      ws-opts:
-        headers:
-            Host: vle.amclubsapp.dpdns.org
-        path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-    - name: "\U0001F1E9\U0001F1EA DE 186 | ⬇️ 7.71 MB/s"
-      network: ws
-      port: 443
-      server: web.xhamster.biz.id
-      servername: web.xhamster.biz.id
-      tls: true
-      type: vless
-      udp: true
-      uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-      ws-opts:
-        headers:
-            Host: web.xhamster.biz.id
-        path: /Free-CF-Proxy-AE17
-    - client-fingerprint: randomized
-      name: "\U0001F1E8\U0001F1F3 CN 187 | ⬇️ 19.88 MB/s"
+      name: "\U0001F1E8\U0001F1F3 CN 144 | ⬇️ 5.21 MB/s"
       network: ws
       port: 2087
       server: 156.238.18.112
@@ -1045,130 +948,243 @@ proxies:
         headers:
             Host: vle.amclubsdns.dpdns.org
         path: /?ed=2560
-    - client-fingerprint: firefox
-      name: "\U0001F1FB\U0001F1F3 VN 188 | ⬇️ 4.57 MB/s"
-      port: 34045
-      reality-opts:
-        public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-        short-id: e8ab71d0
-      server: 160.250.65.148
-      servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-    - name: "\U0001F1FA\U0001F1F3 UN 189 | ⬇️ 8.85 MB/s"
+    - delay: 2795
+      name: "\U0001F1FA\U0001F1F8 US 145 | ⬇️ 6.66 MB/s"
       network: ws
-      password: tg-fq521free
-      port: 443
-      server: 194.76.18.129
-      skip-cert-verify: false
-      sni: torjan.xn--xhq44j.eu.org
-      type: trojan
-      udp: true
+      port: 80
+      server: 141.193.213.196
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
-            Host: torjan.xn--xhq44j.eu.org
-        path: /
-    - client-fingerprint: firefox
-      name: "\U0001F1FB\U0001F1F3 VN 190 | ⬇️ 2.63 MB/s"
-      port: 34045
-      reality-opts:
-        public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-        short-id: e8ab71d0
-      server: 160.250.65.148
-      servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-      skip-cert-verify: false
+            Host: us.laoyoutiao.link
+        path: /Telegram
+    - client-fingerprint: chrome
+      delay: 1254
+      name: "\U0001F1E9\U0001F1EA DE 148 | ⬇️ 6.27 MB/s"
+      network: ws
+      port: 443
+      server: cdnjs.com
+      servername: rayan-roof.atena.dpdns.org
       tls: true
       type: vless
       udp: true
-      uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-    - alterId: 0
-      name: "\U0001F1EE\U0001F1F3 IN 192 | ⬇️ 7.38 MB/s"
-      network: ws
-      password: ttfang
-      port: 2053
-      server: 166.0.244.206
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      tls: true
-      type: trojan
-      udp: true
-    - name: "\U0001F1FA\U0001F1F8 US 193 | ⬇️ 8.59 MB/s"
+      uuid: db400287-fb42-441d-8a76-5624a8a96f49
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: rayan-roof.atena.dpdns.org
+        max-early-data: 2560
+        path: /
+    - delay: 591
+      name: "\U0001F1FA\U0001F1F8 US 154 | ⬇️ 8.40 MB/s"
       network: ws
       port: 8880
-      server: 94.140.0.213
+      server: 135.84.75.3
+      servername: bitget1.asdasd.click
+      tls: false
+      type: vless
+      udp: true
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+        path: /TelegramU0001F1E8U0001F1F3
+    - name: "\U0001F1EB\U0001F1F7 FR 156 | ⬇️ 3.20 MB/s"
+      network: ws
+      port: 8880
+      server: 185.16.110.63
+      servername: sg.laoyoutiao.link
+      skip-cert-verify: false
       tls: false
       type: vless
       udp: true
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
-            Host: jp.laoyoutiao.link
-        path: /
-    - name: "\U0001F1FA\U0001F1F8 US 195 | ⬇️ 9.11 MB/s"
+            Host: sg.laoyoutiao.link
+        path: /Telegram
+    - name: "\U0001F1FA\U0001F1F8 US 163 | ⬇️ 9.53 MB/s"
       network: ws
       port: 443
-      server: 188.42.89.145
-      servername: rAyAn-12.LeIlA.DpDnS.OrG
+      server: www.pcmag.com
+      servername: 1x.ylks0033.dpdns.org
+      skip-cert-verify: true
       tls: true
       type: vless
-      uuid: 7a80a8d9-92f9-4f0a-8352-9005a8215ab8
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
       ws-opts:
         headers:
-            Host: rayan-12.leila.dpdns.org
-        path: /@Rayan_Configfp
-    - name: "\U0001F1FA\U0001F1F8 US 196 | ⬇️ 7.70 MB/s"
+            Host: 1x.ylks0033.dpdns.org
+        path: /
+    - delay: 2111
+      name: "\U0001F1FA\U0001F1F8 US 164 | ⬇️ 8.99 MB/s"
+      network: ws
+      port: 443
+      server: s.askkf.com
+      servername: s2.askkf.com
+      skip-cert-verify: true
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 81fae892-37b3-47d5-d047-b44b3395fa38
+      ws-opts:
+        headers:
+            Host: s2.askkf.com
+        path: /
+    - name: "\U0001F1FA\U0001F1F8 US 165 | ⬇️ 5.15 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.208
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: kjgx.laoyoutiao.link
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560fp=chrome"
+    - name: "\U0001F1FA\U0001F1F8 US 166 | ⬇️ 20.44 MB/s"
+      network: ws
+      port: 8880
+      server: 91.193.58.205
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: hk.laoyoutiao.link
+        path: /TelegramU0001F1E8U0001F1F3
+    - name: "\U0001F1F7\U0001F1FA RU 169 | ⬇️ 7.14 MB/s"
       network: ws
       password: tg-fq521free
       port: 443
-      server: 216.24.57.30
+      server: 45.67.215.95
+      skip-cert-verify: false
       sni: torjan.xn--xhq44j.eu.org
       type: trojan
+      udp: true
       ws-opts:
         headers:
             Host: torjan.xn--xhq44j.eu.org
         path: /
-    - cipher: aes-256-gcm
-      name: "\U0001F1FA\U0001F1F8 US 206 | ⬇️ 8.42 MB/s"
-      password: iUB0923RBA
-      port: 30067
-      server: 154.3.8.151
-      type: ss
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8 US 207 | ⬇️ 2.43 MB/s"
+    - name: "\U0001F1FA\U0001F1F8 US 175 | ⬇️ 2.08 MB/s"
       network: ws
-      port: 443
-      server: sSsdCVfBGNjkI.931.PP.Ua
-      tls: true
-      type: vmess
-      uuid: a4e8ec0a-75d0-4fc5-837a-4973ed3a9d3e
-      ws-opts:
-        headers:
-            Host: sSsdCVfBGNjkI.931.PP.Ua
-        path: /14Fziqw1hYgCXNutkS5H
-    - alpn:
-        - http%2F1.1
-      client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 211 | ⬇️ 9.69 MB/s"
-      network: ws
-      port: 443
-      server: 172.67.188.188
-      servername: SssXzAw.444652.XYZ
+      port: 50000
+      server: 115.94.98.93
+      servername: 1c.ylks0033.dpdns.org
+      skip-cert-verify: true
       tls: true
       type: vless
       udp: true
-      uuid: 0f7070cd-c91d-4532-a51f-56da4f0e94be
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
       ws-opts:
         headers:
-            Host: SssXzAw.444652.XYZ
-        path: /nSABZLQbEUSLppj7jCmY
+            Host: 1c.ylks0033.dpdns.org
+        path: /
+    - name: "\U0001F1F0\U0001F1F7 KR 177 | ⬇️ 3.33 MB/s"
+      network: ws
+      port: 34599
+      server: 124.57.36.207
+      servername: jp.laoyoutiao.link
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            host: jp.laoyoutiao.link
+        path: /
+    - name: "\U0001F1FA\U0001F1F3 UN 179 | ⬇️ 7.15 MB/s"
+      network: ws
+      password: d6b8011a-c725-435a-9fec-bf6d3530392c
+      port: 443
+      server: 154.83.2.200
+      skip-cert-verify: true
+      sni: vle.amclubdns.dpdns.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: vle.amclubdns.dpdns.org
+        path: /?ed=2560&PROT_TYPE=trojan
+    - name: "\U0001F1FA\U0001F1F8 US 182 | ⬇️ 9.28 MB/s"
+      network: ws
+      password: d6b8011a-c725-435a-9fec-bf6d3530392c
+      port: 2083
+      server: 103.160.204.4
+      skip-cert-verify: true
+      sni: vle.amclubssss.dpdns.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: vle.amclubssss.dpdns.org
+        path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+    - delay: 943
+      name: "\U0001F1FA\U0001F1F8 US 188 | ⬇️ 10.16 MB/s"
+      network: ws
+      password: d6b8011a-c725-435a-9fec-bf6d3530392c
+      port: 2096
+      server: 156.238.19.69
+      skip-cert-verify: true
+      sni: vle.amclubssss.dpdns.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: vle.amclubssss.dpdns.org
+        path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+    - alpn:
+        - http/1.1
+      name: "\U0001F1FA\U0001F1F8 US 192 | ⬇️ 7.14 MB/s"
+      network: ws
+      password: 0f7070cd-c91d-4532-a51f-56da4f0e94be
+      port: 443
+      server: iiiiop0.444752.xyz
+      skip-cert-verify: false
+      sni: iiiiop0.444752.xyz
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: iiiiop0.444752.xyz
+        path: /ctHoQlqeZn8pbEUSLppj7jCmY
+    - name: "\U0001F1FA\U0001F1F8 US 193 | ⬇️ 7.18 MB/s"
+      network: ws
+      password: 13e26f64-2e0c-4461-92cd-d83294cc18f0
+      port: 443
+      server: 172.67.185.107
+      skip-cert-verify: false
+      sni: WwwDe.00890604.XyZ
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: WwwDe.00890604.XyZ
+        path: /TDUxZUop9k44oPiit2OdWk0KwirdY
+    - alterId: 2
+      cipher: auto
+      delay: 2048
+      name: "\U0001F1EE\U0001F1F9 IT 194 | ⬇️ 5.21 MB/s"
+      network: ws
+      port: 30805
+      server: v5.heduian.link
+      tls: false
+      type: vmess
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      ws-opts:
+        headers:
+            Host: v5.heduian.link
+        path: /oooo
     - alpn:
         - http/1.1
       client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 215 | ⬇️ 10.32 MB/s"
+      name: "\U0001F1FA\U0001F1F8 US 196 | ⬇️ 7.54 MB/s"
       network: ws
       port: 443
       server: 104.21.9.71
@@ -1182,7 +1198,7 @@ proxies:
         headers:
             Host: ddDDdDDdDDF.777198.XyZ
         path: /OjdW89Bpg4ykd4O
-    - name: "\U0001F1FA\U0001F1F8 US 219 | ⬇️ 4.66 MB/s"
+    - name: "\U0001F1FA\U0001F1F8 US 199 | ⬇️ 5.87 MB/s"
       network: ws
       password: fa050497-fc2a-45ee-89c0-96670c4ecb65
       port: 443
@@ -1194,73 +1210,128 @@ proxies:
         headers:
             Host: Rrr4.8906004.xYZ
         path: /DZxb5QZyWgQPuXTwt
-    - name: "\U0001F1FA\U0001F1F8 US 220 | ⬇️ 5.82 MB/s"
+    - name: "\U0001F1FA\U0001F1F8 US 202 | ⬇️ 8.43 MB/s"
       network: ws
-      port: 4002
-      server: 45.145.42.229
-      servername: 1n.bgm2024.dpdns.org
-      skip-cert-verify: true
+      password: 0f7070cd-c91d-4532-a51f-56da4f0e94be
+      port: 443
+      server: iiiiop0.444752.xyz
+      sni: iiiiop0.444752.xyz
+      type: trojan
+      ws-opts:
+        headers:
+            Host: iiiiop0.444752.xyz
+        path: /ctHoQlqeZn8pbEUSLppj7jCmY
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 203 | ⬇️ 6.86 MB/s"
+      network: ws
+      port: 443
+      server: 104.21.13.36
+      servername: XcdvfGBnHU7.0890604.XyZ
+      skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: 55520747-311e-4015-83ce-be46e2060ce3
+      uuid: a7c9c017-db10-4d15-b01b-0634db498b57
       ws-opts:
         headers:
-            Host: 1n.bgm2024.dpdns.org
-        path: /
-    - name: "\U0001F1FA\U0001F1F8 US 221 | ⬇️ 6.61 MB/s"
+            Host: XcdvfGBnHU7.0890604.XyZ
+        path: /xZjr7v1DqrYyamxeTh7sLJtI1
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 206 | ⬇️ 7.31 MB/s"
       network: ws
-      port: 4002
-      server: 45.145.42.229
-      servername: 1v.bgm2024.dpdns.org
-      skip-cert-verify: true
+      port: 443
+      server: 104.21.13.36
+      servername: XcdvfGBnHU7.0890604.XyZ
+      skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: 55520747-311e-4015-83ce-be46e2060ce3
+      uuid: a7c9c017-db10-4d15-b01b-0634db498b57
       ws-opts:
         headers:
-            Host: 1v.bgm2024.dpdns.org
-        path: /
+            Host: XcdvfGBnHU7.0890604.XyZ
+        path: /xZjr7v1DqrYyamxeTh7sLJtI1
+    - client-fingerprint: firefox
+      name: "\U0001F1FB\U0001F1F3 VN 208 | ⬇️ 4.50 MB/s"
+      port: 34045
+      reality-opts:
+        public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+        short-id: e8ab71d0
+      server: 160.250.65.148
+      servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
     - alterId: 0
       cipher: auto
+      country: US
       h2-opts: {}
       http-opts: {}
-      name: "\U0001F1EB\U0001F1F7 FR 224 | ⬇️ 3.73 MB/s"
+      name: "\U0001F1FA\U0001F1F8 US 212 | ⬇️ 8.60 MB/s"
       network: ws
       port: 443
       server: cloudgetservice.mcloudservice.site
+      servername: Fra-Vp-123.BLaZECLOUD.Site
       skip-cert-verify: true
       tls: true
       type: vmess
       uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b
       ws-opts:
         headers:
-            Host: Fra-Vp-123.BLaZECLOUD.Site
+            HOST: Fra-Vp-123.BLaZECLOUD.Site
         path: /linvkws
-    - alterId: 0
-      name: "\U0001F1E8\U0001F1F3 CN 231 | ⬇️ 7.31 MB/s"
+    - alterId: 2
+      cipher: auto
+      country: ' HK'
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1ED\U0001F1F0 HK 216 | ⬇️ 6.08 MB/s"
       network: ws
-      password: ttfang
-      port: 81
-      server: 103.106.230.186
+      port: 80
+      server: 2071ea61-sv0xs0-sylfil-1gcq2.hk3.p5pv.com
+      servername: broadcastlv.chat.bilibili.com
       skip-cert-verify: true
-      sni: ttfang.fange.me
-      tls: true
-      type: trojan
-      udp: true
-    - alpn:
-        - http/1.1
-      name: "\U0001F1FA\U0001F1F8 US 233 | ⬇️ 8.69 MB/s"
+      type: vmess
+      uuid: 759bf004-6137-11ec-bd7c-f23c913c8d2b
+      ws-opts:
+        headers:
+            HOST: broadcastlv.chat.bilibili.com
+        path: /
+    - name: "\U0001F1FA\U0001F1F8 US 219 | ⬇️ 7.79 MB/s"
       network: ws
-      password: 07a3df8f-2a2c-42f8-ad92-65889d90f3bf
+      password: f108e0e2-5f12-42b6-9e67-1b2f073ffb2b
       port: 443
-      server: 172.67.135.37
+      server: 172.67.219.196
       skip-cert-verify: false
-      sni: rrrRrRRrT.459.pp.ua
+      sni: CCcvfgt6.852224.dpdns.org
       type: trojan
       udp: true
       ws-opts:
         headers:
-            Host: rrrRrRRrT.459.pp.ua
-        path: /znQImc22ijDwVOkZfoq
+            Host: CCcvfgt6.852224.dpdns.org
+        path: /CA5bMmr2JMum8sDKRwvFCJq
+    - alterId: 0
+      cipher: auto
+      country: US
+      delay: 1662
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1EB\U0001F1F7 FR 220 | ⬇️ 9.76 MB/s"
+      network: ws
+      port: 443
+      server: cloudgetservice.mcloudservice.site
+      servername: Fra-Vp-123.BLaZECLOUD.Site
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b
+      ws-opts:
+        headers:
+            HOST: Fra-Vp-123.BLaZECLOUD.Site
+        path: /linvkws
