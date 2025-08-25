@@ -1,19 +1,23 @@
 proxies:
-    - name: "\U0001F1E8\U0001F1F3 CN 001 | ⬇️ 5.42 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.222
+    - name: "\U0001F1ED\U0001F1F0 HK 000 | ⬇️ 9.06 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: XK52yierGckONMJWbJnuskD3unI
+      port: 12854
+      server: 47.242.195.121
+      skip-cert-verify: true
+      sni: bing.com
+      type: hysteria2
+    - name: "\U0001F1E8\U0001F1F3 CN 001 | ⬇️ 6.59 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: L60nS04NhsoMpN2DDGbnMqLP8DY
+      port: 11243
+      server: 47.76.83.25
+      skip-cert-verify: true
+      sni: bing.com
       tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - name: "\U0001F1E8\U0001F1F3 CN 002 | ⬇️ 5.48 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      type: hysteria2
+    - name: "\U0001F1E8\U0001F1F3 CN 002 | ⬇️ 3.53 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
-      server: 156.238.18.150
+      server: 156.238.18.207
       tls: false
       type: vless
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -21,7 +25,7 @@ proxies:
         headers:
             Host: yd.laoyoutiao.link
         path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - name: "\U0001F1E8\U0001F1F3 CN 003 | ⬇️ 2.41 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1E8\U0001F1F3 CN 003 | ⬇️ 4.44 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
       server: 156.238.18.211
@@ -32,99 +36,19 @@ proxies:
         headers:
             Host: us.laoyoutiao.link
         path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - delay: 2715
-      name: "\U0001F1FA\U0001F1F8 US 004 | ⬇️ 4.12 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1E8\U0001F1F3 CN 004 | ⬇️ 4.38 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
-      server: 156.238.18.5
+      server: 156.238.18.150
       tls: false
       type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: /Telegram
-    - delay: 2686
-      name: "\U0001F1FA\U0001F1F8 US 005 | ⬇️ 5.14 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.48
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: kjgx.laoyoutiao.link
-        path: /Telegram@WangCai2/
-    - delay: 1655
-      name: "\U0001F1FA\U0001F1F8 US 006 | ⬇️ 3.98 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.58
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: sg.laoyoutiao.link
-        path: /Telegram@WangCai2/
-    - delay: 2439
-      name: "\U0001F1FA\U0001F1F8 US 007 | ⬇️ 6.39 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.168
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: jp.laoyoutiao.link
-        path: /Telegram@WangCai2/
-    - delay: 2115
-      name: "\U0001F1FA\U0001F1F8 US 008 | ⬇️ 2.21 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.190
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: sg.laoyoutiao.link
-        path: /Telegram@节点狂魔2/
-    - delay: 2723
-      name: "\U0001F1FA\U0001F1F8 US 010 | ⬇️ 3.85 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.17
-      tls: false
-      type: vless
-      udp: true
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
             Host: yd.laoyoutiao.link
-        path: /Telegram@V2ray_Alpha
-    - delay: 1194
-      name: "\U0001F1FA\U0001F1F8 US 011 | ⬇️ 2.67 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.66
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: jp.laoyoutiao.link
-        path: /Telegram@WangCai2/
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
     - delay: 2312
-      name: "\U0001F1FA\U0001F1F8 US 012 | ⬇️ 4.03 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 005 | ⬇️ 2.50 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
       server: 156.238.18.156
@@ -136,8 +60,60 @@ proxies:
         headers:
             Host: us.laoyoutiao.link
         path: /Telegram
+    - delay: 1976
+      name: "\U0001F1FA\U0001F1F8 US 010 | ⬇️ 3.14 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.142
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+        path: /Telegram@WangCai2/
+    - delay: 2723
+      name: "\U0001F1FA\U0001F1F8 US 011 | ⬇️ 2.45 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.17
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: yd.laoyoutiao.link
+        path: /Telegram@V2ray_Alpha
+    - delay: 2718
+      name: "\U0001F1FA\U0001F1F8 US 013 | ⬇️ 2.75 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.63
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: /Telegram
+    - delay: 2439
+      name: "\U0001F1FA\U0001F1F8 US 015 | ⬇️ 4.92 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.168
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+        path: /Telegram@WangCai2/
     - delay: 2164
-      name: "\U0001F1FA\U0001F1F8 US 017 | ⬇️ 6.39 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 016 | ⬇️ 3.01 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
       server: 156.238.18.28
@@ -149,11 +125,37 @@ proxies:
         headers:
             Host: us.laoyoutiao.link
         path: /Telegram
-    - delay: 1763
-      name: "\U0001F1FA\U0001F1F8 US 019 | ⬇️ 10.12 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - delay: 2341
+      name: "\U0001F1FA\U0001F1F8 US 019 | ⬇️ 5.07 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
-      server: 156.238.18.24
+      server: 156.238.18.169
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+        path: /Telegram@WangCai2/?ed
+    - delay: 1768
+      name: "\U0001F1FA\U0001F1F8 US 020 | ⬇️ 5.52 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.13
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: yd.laoyoutiao.link
+        path: /Telegram @MxlShare @WangCai2 /
+    - delay: 1702
+      name: "\U0001F1FA\U0001F1F8 US 021 | ⬇️ 4.26 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.6
       tls: false
       type: vless
       udp: true
@@ -162,7 +164,7 @@ proxies:
         headers:
             Host: us.laoyoutiao.link
         path: /Telegram
-    - name: "\U0001F1FA\U0001F1F8 US 021 | ⬇️ 3.34 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1FA\U0001F1F8 US 022 | ⬇️ 4.23 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
       server: 156.238.18.143
@@ -176,24 +178,28 @@ proxies:
         headers:
             Host: yd.laoyoutiao.link
         path: /TelegramU0001F1E8U0001F1F3
-    - delay: 1768
-      name: "\U0001F1FA\U0001F1F8 US 022 | ⬇️ 2.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - alterId: 2
+      cipher: auto
+      country: ' HK'
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1ED\U0001F1F0 HK 028 | ⬇️ 4.90 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 8880
-      server: 156.238.18.13
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      port: 80
+      server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+      servername: broadcastlv.chat.bilibili.com
+      skip-cert-verify: true
+      type: vmess
+      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
       ws-opts:
         headers:
-            Host: yd.laoyoutiao.link
-        path: /Telegram @MxlShare @WangCai2 /
-    - delay: 1702
-      name: "\U0001F1FA\U0001F1F8 US 023 | ⬇️ 3.89 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+            HOST: broadcastlv.chat.bilibili.com
+        path: /
+    - delay: 1763
+      name: "\U0001F1FA\U0001F1F8 US 029 | ⬇️ 4.19 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
-      server: 156.238.18.6
+      server: 156.238.18.24
       tls: false
       type: vless
       udp: true
@@ -202,96 +208,26 @@ proxies:
         headers:
             Host: us.laoyoutiao.link
         path: /Telegram
-    - name: "\U0001F1E8\U0001F1F3 CN 024 | ⬇️ 2.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.112
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - name: "\U0001F1ED\U0001F1F0 HK 026 | ⬇️ 6.26 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1ED\U0001F1F0 HK 036 | ⬇️ 7.94 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: <password>
       port: 8443
       server: 9497cfdb-sx4v40-t1bnjq-1krtb.hkt.cdnhuawei.com
       tls: true
       type: http
       username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-    - alterId: 2
-      cipher: auto
-      name: "\U0001F1ED\U0001F1F0 HK 032 | ⬇️ 3.39 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-      skip-cert-verify: true
-      tls: false
-      type: vmess
-      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-      ws-headers:
-        Host: broadcastlv.chat.bilibili.com
-      ws-path: /
-    - name: "\U0001F1FA\U0001F1F8 US 035 | ⬇️ 4.44 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 141.193.213.16
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare+@WangCai2+/?ed=2560"
-    - name: "\U0001F1FA\U0001F1F8 US 036 | ⬇️ 5.57 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 50001
-      server: 221.139.39.51
-      servername: edgd.esslh.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
+    - auth: a16d62f6-048d-11f0-af5a-f23c93136cb3
+      name: "\U0001F1FA\U0001F1F8 US 037 | ⬇️ 6.15 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: a16d62f6-048d-11f0-af5a-f23c93136cb3
+      port: 1743
+      server: b9c3912b-t07z40-t1l1nh-d6ar.la.shifen.uk
+      sni: b9c3912b-t07z40-t1l1nh-d6ar.la.shifen.uk
+      type: hysteria2
       udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            Host: edgd.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - delay: 843
-      name: "\U0001F1FA\U0001F1F8 US 049 | ⬇️ 2.54 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 042 | ⬇️ 2.92 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
-      server: 141.11.202.29
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: hk.laoyoutiao.link
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
-        max-early-data: 2560
-        path: /Telegram @MxlShare @WangCai2 /
-      xudp: true
-    - name: "\U0001F1FA\U0001F1F8 US 054 | ⬇️ 12.53 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: bestcf.030101.xyz
-      servername: edgd.esslh.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edgd.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1FA\U0001F1F8 US 055 | ⬇️ 2.57 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 167.68.42.168
+      server: 91.193.58.163
       tls: false
       type: vless
       udp: true
@@ -302,175 +238,82 @@ proxies:
             Host: kjgx.laoyoutiao.link
         max-early-data: 2560
         path: /Telegram@WangCai2/
-    - auth: dongtaiwang.com
-      down: 100 Mbps
-      name: "\U0001F1EB\U0001F1F7 FR 056 | ⬇️ 10.47 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: dongtaiwang.com
-      port: 5355
-      server: 51.159.111.32
+    - delay: 1655
+      name: "\U0001F1FA\U0001F1F8 US 046 | ⬇️ 2.47 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.58
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: sg.laoyoutiao.link
+        path: /Telegram@WangCai2/
+    - name: "\U0001F1FA\U0001F1F8 US 049 | ⬇️ 3.03 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 80
+      server: 141.193.213.206
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare+@WangCai2+/?ed=2560"
+    - delay: 1194
+      name: "\U0001F1FA\U0001F1F8 US 050 | ⬇️ 3.76 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.66
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+        path: /Telegram@WangCai2/
+    - name: "\U0001F1F8\U0001F1EC SG 053 | ⬇️ 5.78 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: RzQrEkAmnGs86IhmSVUk9Q5cn9M
+      port: 30308
+      server: 47.236.104.81
       skip-cert-verify: true
-      sni: www.bing.com
+      sni: bing.com
       type: hysteria2
-      udp: true
-      up: 100 Mbps
-    - name: "\U0001F1EF\U0001F1F5 JP 057 | ⬇️ 2.74 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 10099
-      server: 146.56.136.39
-      servername: sv.ylka.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            host: sv.ylka.dpdns.org
-        path: /?ed=2560
-    - name: "\U0001F1FA\U0001F1F8 US 058 | ⬇️ 12.77 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 60002
-      server: 119.64.242.60
-      servername: sv.ylka.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            Host: sv.ylka.dpdns.org
-        path: /
-    - delay: 1195
-      name: "\U0001F1FA\U0001F1F8 US 064 | ⬇️ 2.91 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1E8\U0001F1F3 CN 056 | ⬇️ 3.56 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
-      server: 104.129.164.39
-      type: vless
-      udp: true
-      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: ip.langmanshanxi.top
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
-        max-early-data: 2560
-        path: /Telegram@ShadowProxy66 /
-      xudp: true
-    - delay: 1016
-      name: "\U0001F1FA\U0001F1F8 US 065 | ⬇️ 3.41 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 160.79.104.177
-      type: vless
-      udp: true
-      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-      ws-opts:
-        headers:
-            Host: ip.langmanshanxi.top
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36
-        path: /telegram
-      xudp: true
-    - name: "\U0001F1F0\U0001F1F7 KR 066 | ⬇️ 2.36 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 60002
-      server: 119.64.242.60
-      servername: sv1.ylka.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            host: sv1.ylka.dpdns.org
-        path: /?ed=2560
-    - delay: 776
-      name: "\U0001F1FA\U0001F1F8 US 069 | ⬇️ 9.15 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 141.193.213.114
+      server: 156.238.18.112
       tls: false
       type: vless
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
             Host: us.laoyoutiao.link
-        path: /Telegram @MxlShare @WangCai2 /
-    - delay: 2211
-      name: "\U0001F1FA\U0001F1F8 US 071 | ⬇️ 5.21 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 141.193.213.53
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: /Telegram
-    - delay: 1449
-      name: "\U0001F1FA\U0001F1F8 US 073 | ⬇️ 4.44 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 63.141.128.251
-      type: vless
-      udp: true
-      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-      ws-opts:
-        headers:
-            Host: cf.d3z.net
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
-        path: /Telegram @WangCai2 /?ed=2560fp=chrome
-      xudp: true
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 55
-      fast-open: true
-      name: "\U0001F1F3\U0001F1F1 NL 075 | ⬇️ 5.93 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      port: 49003
-      protocol: udp
-      server: 51.159.226.1
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      up: 11
-    - name: "\U0001F1FA\U0001F1F8 US 077 | ⬇️ 4.71 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 2087
-      server: 161.145.150.26
-      servername: edgd.esslh.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edgd.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - delay: 2291
-      name: "\U0001F1FA\U0001F1F8 US 078 | ⬇️ 4.97 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 209.94.90.254
-      servername: yg.bantony199.top
-      tls: false
-      type: vless
-      udp: true
-      uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
-      ws-opts:
-        headers:
-            Host: yg.bantony199.top
-        path: /TelegramU0001F1E8U0001F1F3
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
+    - cipher: aes-256-gcm
+      country: ' HK'
+      name: "\U0001F1ED\U0001F1F0 HK 058 | ⬇️ 4.25 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 9bfdde71b4c0
+      plugin: v2ray-plugin
+      plugin-opts:
+        host: newroot2v1.dsjsapp.com
+        mode: websocket
+        mux: true
+        path: /cauejypbltqt
+        skip-cert-verify: false
+        tls: true
+      port: 636
+      server: 103.103.245.158
+      type: ss
     - alterId: 2
       cipher: auto
       country: ' HK'
       h2-opts: {}
       http-opts: {}
-      name: "\U0001F1ED\U0001F1F0 HK 081 | ⬇️ 3.28 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1ED\U0001F1F0 HK 073 | ⬇️ 3.75 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 80
       server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
@@ -481,22 +324,111 @@ proxies:
       ws-headers:
         HOST: broadcastlv.chat.bilibili.com
       ws-path: /
-    - delay: 872
-      name: "\U0001F1FA\U0001F1F8 US 083 | ⬇️ 2.51 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - delay: 817
+      name: "\U0001F1FA\U0001F1F8 US 074 | ⬇️ 4.51 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
-      server: 141.11.203.3
+      server: 109.176.239.251
       type: vless
       udp: true
-      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: cf.d3z.net
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+        max-early-data: 2560
+        path: /Telegram @WangCai2 /
+      xudp: true
+    - auth: Yet-Another-Public-Config-1
+      delay: 2327
+      name: "\U0001F1F3\U0001F1F1 NL 080 | ⬇️ 2.26 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: salamander
+      obfs-password: Yet-Another-Public-Config-1
+      password: Yet-Another-Public-Config-1
+      port: 35200
+      server: yapc-1.adamhayward.co.uk
+      skip-cert-verify: false
+      sni: YAPC-1.afshin.ir
+      type: hysteria2
+    - cipher: aes-256-cfb
+      name: "\U0001F1EE\U0001F1EA IE 081 | ⬇️ 6.22 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: amazonskr05
+      port: 443
+      server: 34.251.108.96
+      type: ss
+    - delay: 2178
+      name: "\U0001F1FA\U0001F1F8 US 083 | ⬇️ 5.04 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 80
+      server: 141.193.213.213
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
-            Host: bitget1.asdasd.click
-            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
-        path: /Telegram
-      xudp: true
+            Host: us.laoyoutiao.link
+        path: /Telegram @MxlShare @WangCai2 /
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F3 UN 084 | ⬇️ 3.41 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 443
+      server: jquery.com
+      servername: rayan-karma.parvaneh.dpdns.org
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 60882caa-4e74-42a2-be70-220755fc1551
+      ws-opts:
+        headers:
+            Host: rayan-karma.parvaneh.dpdns.org
+        path: /?ed=2560
+    - alterId: 2
+      cipher: auto
+      country: ' HK'
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1ED\U0001F1F0 HK 086 | ⬇️ 5.66 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 80
+      server: hkt.gotochinatown.net
+      skip-cert-verify: true
+      type: vmess
+      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+      ws-path: /
+    - name: "\U0001F1E8\U0001F1F3 CN 089 | ⬇️ 5.80 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.222
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
+    - name: "\U0001F1FA\U0001F1F8 US 091 | ⬇️ 2.56 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 10193f1d-9a4d-457a-b668-bdeb240e092c
+      port: 34444
+      server: netcupus.alisaku.com
+      skip-cert-verify: true
+      sni: apps.apple.com
+      tls: false
+      type: hysteria2
+    - auth: dongtaiwang.com
+      down: 100 Mbps
+      name: "\U0001F1EB\U0001F1F7 FR 093 | ⬇️ 10.94 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: dongtaiwang.com
+      port: 5355
+      server: 51.159.111.32
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+      udp: true
+      up: 100 Mbps
     - delay: 2094
-      name: "\U0001F1FA\U0001F1F8 US 087 | ⬇️ 6.45 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 094 | ⬇️ 5.63 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
       server: 160.79.105.213
@@ -509,127 +441,18 @@ proxies:
             User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
         path: /
       xudp: true
-    - delay: 1352
-      name: "\U0001F1FA\U0001F1F8 US 089 | ⬇️ 4.29 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 192.200.160.251
-      type: vless
-      udp: true
-      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-      ws-opts:
-        headers:
-            Host: cf.d3z.net
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36
-        path: /TelegramU0001F1E8U0001F1F3 @WangCai2
-      xudp: true
-    - delay: 1754
-      name: "\U0001F1FA\U0001F1F8 US 090 | ⬇️ 6.34 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 141.193.213.154
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: /Telegram
-    - name: "\U0001F1F7\U0001F1FA RU 095 | ⬇️ 7.10 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 45.67.215.29
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: hk.laoyoutiao.link
-        path: /
-    - delay: 2622
-      name: "\U0001F1FA\U0001F1F8 US 096 | ⬇️ 5.99 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 141.193.213.251
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: /telegram @mxlshare @wangcai2 /
-    - delay: 2296
-      name: "\U0001F1FA\U0001F1F8 US 110 | ⬇️ 2.99 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 185.251.82.213
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: jp.laoyoutiao.link
-        path: /
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 117 | ⬇️ 8.89 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 72.167.243.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - name: "\U0001F1EC\U0001F1E7 GB 118 | ⬇️ 6.52 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 2053
-      server: 109.176.244.37
-      servername: sv1.ylka.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            host: sv1.ylka.dpdns.org
-        path: /?ed=2560
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 120 | ⬇️ 5.04 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 45.40.144.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - delay: 960
-      name: "\U0001F1FA\U0001F1F8 US 122 | ⬇️ 5.71 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 192.200.160.254
-      type: vless
-      udp: true
-      uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
-      ws-opts:
-        headers:
-            Host: yg.bantony199.top
-            User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17 (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
-        path: /Telegram
-      xudp: true
+    - auth: Yet-Another-Public-Config-1
+      name: "\U0001F1F3\U0001F1F1 NL 095 | ⬇️ 2.27 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: salamander
+      obfs-password: Yet-Another-Public-Config-1
+      password: Yet-Another-Public-Config-1
+      port: 35000
+      server: YAPC-1.adamhayward.co.uk
+      skip-cert-verify: false
+      sni: YAPC-1.afshin.ir
+      type: hysteria2
     - delay: 1019
-      name: "\U0001F1FA\U0001F1F8 US 129 | ⬇️ 8.21 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 096 | ⬇️ 4.43 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
       server: 130.250.137.29
@@ -642,21 +465,60 @@ proxies:
             User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36
         path: /TelegramU0001F1E8U0001F1F3
       xudp: true
-    - delay: 1166
-      name: "\U0001F1FA\U0001F1F8 US 130 | ⬇️ 7.67 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - delay: 1754
+      name: "\U0001F1FA\U0001F1F8 US 099 | ⬇️ 4.56 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 8880
-      server: 45.67.215.213
+      port: 80
+      server: 141.193.213.154
+      tls: false
       type: vless
       udp: true
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
-            Host: jp.laoyoutiao.link
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
+            Host: us.laoyoutiao.link
+        path: /Telegram
+    - delay: 2622
+      name: "\U0001F1FA\U0001F1F8 US 100 | ⬇️ 4.59 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 80
+      server: 141.193.213.251
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: /telegram @mxlshare @wangcai2 /
+    - delay: 608
+      name: "\U0001F1FA\U0001F1F8 US 101 | ⬇️ 6.24 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 80
+      server: 141.193.213.174
+      servername: us.laoyoutiao.link
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: /Telegram@WangCai2/?ed
+    - delay: 1679
+      name: "\U0001F1FA\U0001F1F8 US 107 | ⬇️ 2.92 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 199.34.230.251
+      tls: false
+      type: vless
+      udp: true
+      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+      ws-opts:
+        headers:
+            Host: cf.d3z.net
         path: /
-      xudp: true
-    - name: "\U0001F1FA\U0001F1F8 US 132 | ⬇️ 6.52 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1FA\U0001F1F8 US 108 | ⬇️ 6.42 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 80
       server: 104.18.26.90
@@ -670,8 +532,44 @@ proxies:
         headers:
             Host: blaze-can-118.blazecanada.site
         path: /?ed=2560
+    - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: 55
+      fast-open: true
+      name: "\U0001F1F3\U0001F1F1 NL 111 | ⬇️ 6.02 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 49003
+      protocol: udp
+      server: 51.159.226.1
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      up: 11
+    - name: "\U0001F1FA\U0001F1F8 US 119 | ⬇️ 8.48 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 80
+      server: 141.193.213.16
+      servername: us.laoyoutiao.link
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: /TelegramU0001F1E8U0001F1F3 @MxlShare+@WangCai2+/?ed
+    - name: "\U0001F1F7\U0001F1FA RU 121 | ⬇️ 7.87 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 45.67.215.29
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: hk.laoyoutiao.link
+        path: /
     - delay: 1011
-      name: "\U0001F1FA\U0001F1F8 US 134 | ⬇️ 7.13 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 126 | ⬇️ 9.29 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
       server: 199.34.230.213
@@ -684,432 +582,47 @@ proxies:
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
         path: /
       xudp: true
-    - auth: a16d62f6-048d-11f0-af5a-f23c93136cb3
-      name: "\U0001F1FA\U0001F1F8 US 138 | ⬇️ 8.60 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: a16d62f6-048d-11f0-af5a-f23c93136cb3
-      port: 1743
-      server: b9c3912b-t07z40-t1l1nh-d6ar.la.shifen.uk
-      sni: b9c3912b-t07z40-t1l1nh-d6ar.la.shifen.uk
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1FA\U0001F1F8 US 141 | ⬇️ 5.52 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - cipher: aes-256-cfb
+      country: ' CN'
+      name: "\U0001F1E8\U0001F1F3 CN 130 | ⬇️ 2.30 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+      port: 38388
+      server: 103.186.155.21
+      type: ss
+    - delay: 2211
+      name: "\U0001F1FA\U0001F1F8 US 132 | ⬇️ 7.62 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 80
-      server: 141.193.213.206
+      server: 141.193.213.53
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: /Telegram
+    - cipher: aes-256-cfb
+      country: ' CN'
+      name: "\U0001F1E8\U0001F1F3 CN 136 | ⬇️ 3.12 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+      port: 38388
+      server: 103.186.154.28
+      type: ss
+    - delay: 776
+      name: "\U0001F1FA\U0001F1F8 US 140 | ⬇️ 7.80 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 80
+      server: 141.193.213.114
       tls: false
       type: vless
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
             Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare+@WangCai2+/?ed=2560"
-    - delay: 1285
-      name: "\U0001F1FA\U0001F1F8 US 143 | ⬇️ 8.87 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 209.94.90.3
-      type: vless
-      udp: true
-      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-      ws-opts:
-        headers:
-            Host: bitget1.asdasd.click
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
-        path: /Telegram
-      xudp: true
-    - delay: 2372
-      name: "\U0001F1FA\U0001F1F8 US 150 | ⬇️ 7.14 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 216.24.57.3
-      tls: false
-      type: vless
-      udp: true
-      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-      ws-opts:
-        headers:
-            Host: bitget1.asdasd.click
-        path: /TelegramU0001F1E8U0001F1F3
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 154 | ⬇️ 7.86 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 63.141.128.3
-      tls: false
-      type: vless
-      udp: true
-      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-      ws-opts:
-        headers:
-            Host: bitget1.asdasd.click
-        path: "/telegram\U0001F1E8\U0001F1F3"
-    - delay: 1126
-      name: "\U0001F1FA\U0001F1F8 US 162 | ⬇️ 9.56 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: tg-fq521free
-      port: 443
-      server: 45.67.215.95
-      skip-cert-verify: false
-      sni: torjan.xn--xhq44j.eu.org
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            Host: torjan.xn--xhq44j.eu.org
-        path: /
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 166 | ⬇️ 6.05 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 50.62.175.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 169 | ⬇️ 7.73 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 45.40.149.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 170 | ⬇️ 6.32 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 50.62.198.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1E6 UA 174 | ⬇️ 7.01 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 45.67.215.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 175 | ⬇️ 7.41 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 45.40.145.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 176 | ⬇️ 8.17 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 66.81.247.216
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - name: "\U0001F1FA\U0001F1F8 US 183 | ⬇️ 5.61 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 135.84.79.177
-      servername: ip.langmanshanxi.top
-      type: vless
-      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-      ws-opts:
-        headers:
-            Host: ip.langmanshanxi.top
-        path: /Telegram
-    - alterId: 2
-      cipher: auto
-      country: ' HK'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1ED\U0001F1F0 HK 189 | ⬇️ 6.12 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: hkt.gotochinatown.net
-      skip-cert-verify: true
-      type: vmess
-      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-      ws-path: /
-    - cipher: aes-256-cfb
-      country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 191 | ⬇️ 2.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.154.32
-      type: ss
-    - alterId: 0
-      name: "\U0001F1FA\U0001F1F3 UN 192 | ⬇️ 5.36 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: tg-fq521free
-      port: 443
-      server: 194.76.18.129
-      skip-cert-verify: true
-      sni: torjan.xn--xhq44j.eu.org
-      tls: true
-      type: trojan
-      udp: true
-    - name: "\U0001F1FA\U0001F1F8 US 203 | ⬇️ 8.57 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 141.193.213.16
-      servername: us.laoyoutiao.link
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: /TelegramU0001F1E8U0001F1F3 @MxlShare+@WangCai2+/?ed
-    - name: "\U0001F1E8\U0001F1E6 CA 204 | ⬇️ 2.10 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8881
-      server: 141.147.10.210
-      servername: sv.ylka.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            host: sv.ylka.dpdns.org
-        path: /?ed=2560
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 205 | ⬇️ 10.47 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 72.167.25.216
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 214 | ⬇️ 7.72 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 63.141.128.216
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 215 | ⬇️ 5.88 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 63.141.128.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 216 | ⬇️ 6.74 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 72.167.242.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 218 | ⬇️ 6.91 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 50.62.172.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 219 | ⬇️ 2.10 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 45.40.153.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 220 | ⬇️ 4.17 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 45.40.146.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 223 | ⬇️ 5.25 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 66.81.247.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 224 | ⬇️ 5.84 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 45.40.147.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 227 | ⬇️ 6.62 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 50.62.174.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 228 | ⬇️ 8.71 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 50.62.195.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - delay: 1863
-      name: "\U0001F1FA\U0001F1F8 US 230 | ⬇️ 3.49 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 188.244.122.29
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: hk.laoyoutiao.link
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36
-        path: /
-      xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 231 | ⬇️ 7.28 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 45.40.151.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - alterId: 2
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8 US 237 | ⬇️ 4.11 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 30829
-      server: v29.heduian.link
-      skip-cert-verify: true
-      tls: false
-      type: vmess
-      udp: true
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-      ws-opts:
-        headers:
-            Host: v29.heduian.link
-        path: /oooo
-    - client-fingerprint: random
-      delay: 2212
-      name: "\U0001F1FA\U0001F1F8 US 239 | ⬇️ 2.17 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: 104.18.195.137
-      servername: 007.xingfu.qzz.io
-      tls: true
-      type: vless
-      uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-      ws-opts:
-        headers:
-            Host: 007.xingfu.qzz.io
-        path: /
-    - cipher: aes-256-cfb
-      country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 241 | ⬇️ 3.04 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.154.36
-      type: ss
+        path: /Telegram @MxlShare @WangCai2 /
     - delay: 2010
-      name: "\U0001F1FA\U0001F1F8 US 250 | ⬇️ 5.42 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 146 | ⬇️ 6.74 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
       server: 141.193.27.29
@@ -1122,12 +635,255 @@ proxies:
             User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36
         path: /
       xudp: true
+    - delay: 1285
+      name: "\U0001F1FA\U0001F1F8 US 151 | ⬇️ 6.30 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 209.94.90.3
+      type: vless
+      udp: true
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
+        path: /Telegram
+      xudp: true
+    - delay: 1166
+      name: "\U0001F1FA\U0001F1F8 US 153 | ⬇️ 7.99 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 45.67.215.213
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
+        path: /
+      xudp: true
+    - name: "\U0001F1F7\U0001F1FA RU 154 | ⬇️ 8.52 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 48da59f8-4814-4e0f-a6b4-342affcc7422
+      port: 40001
+      server: els1.dimoyun.top
+      skip-cert-verify: true
+      sni: els1.dimoyun.top
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 155 | ⬇️ 10.20 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2087
+      server: 161.145.150.26
+      servername: edgd.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edgd.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - delay: 1016
+      name: "\U0001F1FA\U0001F1F8 US 160 | ⬇️ 8.50 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 160.79.104.177
+      type: vless
+      udp: true
+      uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+      ws-opts:
+        headers:
+            Host: ip.langmanshanxi.top
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36
+        path: /telegram
+      xudp: true
+    - name: "\U0001F1E8\U0001F1E6 CA 161 | ⬇️ 8.83 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 587
+      server: 217.142.250.195
+      servername: sv.ylka.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            host: sv.ylka.dpdns.org
+        path: /?ed=2560
+    - name: "\U0001F1FA\U0001F1F8 US 167 | ⬇️ 8.92 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2087
+      server: 209.94.90.87
+      servername: edgd.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            Host: edgd.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - delay: 2624
+      name: "\U0001F1FA\U0001F1F8 US 176 | ⬇️ 8.26 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 86.38.214.20
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+            User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.3 Safari/534.24
+        path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2
+      xudp: true
+    - delay: 2220
+      name: "\U0001F1FA\U0001F1F8 US 177 | ⬇️ 2.27 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 108.165.216.213
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+        path: /
+    - name: "\U0001F1E8\U0001F1E6 CA 180 | ⬇️ 6.55 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 587
+      server: 217.142.250.195
+      servername: sv.ylka.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            host: sv.ylka.dpdns.org
+        path: /?ed=2560
+    - delay: 1189
+      name: "\U0001F1FA\U0001F1F8 US 183 | ⬇️ 4.42 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 147.185.161.213
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+        path: /
+    - delay: 1292
+      name: "\U0001F1FA\U0001F1F8 US 184 | ⬇️ 5.75 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 185.251.81.213
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36
+        path: /
+      xudp: true
+    - delay: 839
+      name: "\U0001F1FA\U0001F1F8 US 187 | ⬇️ 7.72 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 159.112.235.63
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+        path: /Telegram @WangCai2 /?ed=2560fp=chrome
+      xudp: true
+    - delay: 1580
+      name: "\U0001F1FA\U0001F1F8 US 188 | ⬇️ 7.31 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 46.254.92.2
+      tls: false
+      type: vless
+      udp: true
+      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: cf.d3z.net
+        max-early-data: 2560
+        path: /Telegram @WangCai2 /
     - client-fingerprint: chrome
-      name: "\U0001F1EF\U0001F1F5 JP 251 | ⬇️ 2.39 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 189 | ⬇️ 5.11 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 103.116.7.29
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: hk.laoyoutiao.link
+        path: /
+    - delay: 1313
+      name: "\U0001F1FA\U0001F1F8 US 192 | ⬇️ 6.01 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 45.131.5.213
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+        path: /
+    - delay: 1626
+      name: "\U0001F1FA\U0001F1F8 US 193 | ⬇️ 6.76 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 92.53.188.251
+      type: vless
+      udp: true
+      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+      ws-opts:
+        headers:
+            Host: cf.d3z.net
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+        path: /Telegram @WangCai2 /?ed=2560fp=chrome
+      xudp: true
+    - delay: 667
+      name: "\U0001F1FA\U0001F1F8 US 195 | ⬇️ 5.95 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 45.159.218.213
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+            User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.100 Safari/534.30
+        path: /
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 197 | ⬇️ 8.73 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: ttfang
       port: 2096
-      server: 103.245.229.194
+      server: 50.62.173.194
       skip-cert-verify: true
       sni: ttfang.fange.me
       type: trojan
@@ -1135,21 +891,50 @@ proxies:
         headers:
             Host: ttfang.fange.me
         path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1E9\U0001F1EA DE 252 | ⬇️ 3.00 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - cipher: aes-256-cfb
+      name: "\U0001F1FB\U0001F1F3 VN 198 | ⬇️ 2.09 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+      port: 38388
+      server: 103.186.154.23
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      country: ' CN'
+      name: "\U0001F1E8\U0001F1F3 CN 199 | ⬇️ 2.24 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+      port: 38388
+      server: 103.186.154.18
+      type: ss
+    - delay: 1433
+      name: "\U0001F1FA\U0001F1F8 US 200 | ⬇️ 3.89 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      password: ttfang
-      port: 2096
-      server: 91.206.71.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
+      port: 8880
+      server: 103.116.7.213
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
-            Host: ttfang.fange.me
-        path: Telegram
+            Host: jp.laoyoutiao.link
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
+        path: /
+      xudp: true
+    - delay: 1748
+      name: "\U0001F1FA\U0001F1F8 US 201 | ⬇️ 4.39 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 139.64.235.3
+      type: vless
+      udp: true
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+            User-Agent: Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36
+        path: /Telegram
+      xudp: true
     - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 254 | ⬇️ 6.88 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 202 | ⬇️ 7.95 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: ttfang
       port: 2096
@@ -1161,48 +946,259 @@ proxies:
         headers:
             Host: ttfang.fange.me
         path: Telegram
-    - delay: 764
-      name: "\U0001F1FA\U0001F1F8 US 255 | ⬇️ 9.04 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - delay: 1012
+      name: "\U0001F1FA\U0001F1F8 US 204 | ⬇️ 2.64 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
-      server: 199.34.229.213
+      server: 185.148.106.213
+      tls: false
       type: vless
       udp: true
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
       ws-opts:
         headers:
             Host: jp.laoyoutiao.link
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
         path: /
-      xudp: true
-    - delay: 1614
-      name: "\U0001F1FA\U0001F1F8 US 257 | ⬇️ 3.15 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 91.209.253.216
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-    - delay: 995
-      name: "\U0001F1FA\U0001F1F8 US 260 | ⬇️ 2.94 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - delay: 1221
+      name: "\U0001F1FA\U0001F1F8 US 205 | ⬇️ 4.00 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
-      server: 5.10.245.251
+      server: 190.93.244.251
+      tls: false
       type: vless
       udp: true
       uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
       ws-opts:
         headers:
             Host: cf.d3z.net
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+        path: /Telegram @WangCai2 /
+    - alterId: 0
+      name: "\U0001F1FA\U0001F1F3 UN 208 | ⬇️ 7.20 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: tg-fq521free
+      port: 443
+      server: 194.76.18.129
+      skip-cert-verify: true
+      sni: torjan.xn--xhq44j.eu.org
+      tls: true
+      type: trojan
+      udp: true
+    - delay: 2617
+      name: "\U0001F1FA\U0001F1F8 US 210 | ⬇️ 4.10 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 46.254.92.213
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+        path: /
+      xudp: true
+    - delay: 2214
+      name: "\U0001F1FA\U0001F1F8 US 216 | ⬇️ 5.24 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 192.65.217.29
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: hk.laoyoutiao.link
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
+        path: /
+      xudp: true
+    - delay: 2372
+      name: "\U0001F1FA\U0001F1F8 US 217 | ⬇️ 5.43 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 216.24.57.3
+      tls: false
+      type: vless
+      udp: true
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+        path: /TelegramU0001F1E8U0001F1F3
+    - name: "\U0001F1EF\U0001F1F5 JP 221 | ⬇️ 4.93 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2083
+      server: 103.116.7.103
+      servername: edgd.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edgd.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 225 | ⬇️ 3.89 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 63.141.128.3
+      tls: false
+      type: vless
+      udp: true
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+        path: "/telegram\U0001F1E8\U0001F1F3"
+    - delay: 1324
+      name: "\U0001F1FA\U0001F1F8 US 228 | ⬇️ 5.31 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 5.182.84.3
+      servername: bitget1.asdasd.click
+      tls: false
+      type: vless
+      udp: true
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+        path: /Telegram
+    - delay: 2519
+      name: "\U0001F1FA\U0001F1F8 US 231 | ⬇️ 4.34 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 170.114.45.213
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+            User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+        path: /
+      xudp: true
+    - name: "\U0001F1FA\U0001F1F8 US 234 | ⬇️ 4.32 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8443
+      server: 92.243.74.180
+      servername: edgd.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            Host: edgd.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - delay: 2327
+      name: "\U0001F1FA\U0001F1F8 US 235 | ⬇️ 3.21 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 185.251.82.20
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36
+        path: /
+      xudp: true
+    - name: "\U0001F1EF\U0001F1F5 JP 236 | ⬇️ 4.94 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2096
+      server: 103.116.7.220
+      servername: edgd.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edgd.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - name: "\U0001F1F0\U0001F1F7 KR 238 | ⬇️ 3.11 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 50000
+      server: 221.159.156.189
+      servername: sv1.ylka.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            host: sv1.ylka.dpdns.org
+        path: /?ed=2560
+    - name: "\U0001F1FA\U0001F1F8 US 240 | ⬇️ 2.25 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 50001
+      server: 221.139.39.51
+      servername: edgd.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            Host: edgd.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - delay: 1771
+      name: "\U0001F1FA\U0001F1F8 US 241 | ⬇️ 5.28 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 185.251.83.20
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
         path: /Telegram
       xudp: true
+    - name: "\U0001F1F0\U0001F1F7 KR 242 | ⬇️ 5.17 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 50001
+      server: 125.134.241.76
+      servername: sv1.ylka.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            host: sv1.ylka.dpdns.org
+        path: /?ed=2560
+    - name: "\U0001F1E9\U0001F1EA DE 251 | ⬇️ 3.80 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 45b46edb-679b-4ea5-befd-88c05bb94f80
+      port: 2056
+      server: de.eyucdn.xyz
+      skip-cert-verify: true
+      sni: de.eyucdn.xyz
+      type: hysteria2
     - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 261 | ⬇️ 8.68 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 257 | ⬇️ 7.09 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 31.43.179.29
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: hk.laoyoutiao.link
+        path: /TelegramU0001F1E8U0001F1F3
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 258 | ⬇️ 10.16 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: ttfang
       port: 2096
@@ -1215,11 +1211,195 @@ proxies:
             Host: ttfang.fange.me
         path: Telegram
     - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 262 | ⬇️ 8.82 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 261 | ⬇️ 10.04 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: ttfang
       port: 2096
-      server: 50.62.90.194
+      server: 50.62.89.194
+      skip-cert-verify: true
+      sni: ttfang.fange.me
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ttfang.fange.me
+        path: Telegram
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 262 | ⬇️ 9.25 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: ttfang
+      port: 2096
+      server: 45.40.153.194
+      skip-cert-verify: true
+      sni: ttfang.fange.me
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ttfang.fange.me
+        path: Telegram
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 265 | ⬇️ 9.82 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: ttfang
+      port: 2096
+      server: 45.40.146.194
+      skip-cert-verify: true
+      sni: ttfang.fange.me
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ttfang.fange.me
+        path: Telegram
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 270 | ⬇️ 11.96 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: ttfang
+      port: 2096
+      server: 50.62.198.194
+      skip-cert-verify: true
+      sni: ttfang.fange.me
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ttfang.fange.me
+        path: Telegram
+    - client-fingerprint: chrome
+      name: "\U0001F1F3\U0001F1F1 NL 272 | ⬇️ 7.26 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: ttfang
+      port: 2096
+      server: 45.149.12.194
+      skip-cert-verify: true
+      sni: ttfang.fange.me
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ttfang.fange.me
+        path: Telegram
+    - delay: 1284
+      name: "\U0001F1FA\U0001F1F8 US 274 | ⬇️ 8.25 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 155.46.167.29
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: hk.laoyoutiao.link
+            User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.10 (KHTML, like Gecko) Chrome/8.0.552.237 Safari/534.10
+        path: /
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F3 UN 275 | ⬇️ 2.45 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: ttfang
+      port: 2096
+      server: 5.10.247.194
+      skip-cert-verify: true
+      sni: ttfang.fange.me
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ttfang.fange.me
+        path: Telegram
+    - delay: 965
+      name: "\U0001F1FA\U0001F1F8 US 276 | ⬇️ 8.79 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 62.72.166.168
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: kjgx.laoyoutiao.link
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
+        max-early-data: 2560
+        path: /Telegram@WangCai2/
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 278 | ⬇️ 8.02 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 443
+      server: 162.159.9.55
+      servername: rayan-fg-4.sahel.filegear-sg.me
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee06e485-f3d1-46c0-97f4-e98040b828ed
+      ws-opts:
+        headers:
+            Host: rayan-fg-4.sahel.filegear-sg.me
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - delay: 2703
+      name: "\U0001F1FA\U0001F1F8 US 279 | ⬇️ 6.72 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 168.100.6.3
+      tls: false
+      type: vless
+      udp: true
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+        path: /Telegram
+    - delay: 1553
+      name: "\U0001F1FA\U0001F1F8 US 280 | ⬇️ 7.79 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 167.68.4.3
+      type: vless
+      udp: true
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36
+        path: /Telegram
+      xudp: true
+    - cipher: chacha20-ietf-poly1305
+      country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 281 | ⬇️ 4.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: qscavF5UviIL-8V-E4raBA
+      port: 2222
+      server: 62.60.233.173
+      type: ss
+    - client-fingerprint: randomized
+      name: "\U0001F1FA\U0001F1F8 US 283 | ⬇️ 11.42 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2083
+      server: 104.16.134.27
+      servername: vle.amclubsdns.dpdns.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+      ws-opts:
+        headers:
+            Host: vle.amclubsdns.dpdns.org
+        path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+    - delay: 2686
+      name: "\U0001F1FA\U0001F1F8 US 287 | ⬇️ 8.62 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: ttfang
+      port: 2096
+      server: 5.182.84.216
+      sni: ttfang.fange.me
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ttfang.fange.me
+        path: '%25252FTelegram'
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 293 | ⬇️ 8.09 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: ttfang
+      port: 2096
+      server: 45.40.145.194
       skip-cert-verify: true
       sni: ttfang.fange.me
       type: trojan
@@ -1228,7 +1408,7 @@ proxies:
             Host: ttfang.fange.me
         path: Telegram
     - delay: 1419
-      name: "\U0001F1FA\U0001F1F8 US 263 | ⬇️ 2.74 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 294 | ⬇️ 3.74 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: ttfang
       port: 2096
@@ -1239,23 +1419,23 @@ proxies:
         headers:
             Host: ttfang.fange.me
         path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 267 | ⬇️ 6.03 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1EE\U0001F1F3 IN 297 | ⬇️ 14.76 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: ttfang
-      port: 2096
-      server: 50.62.88.194
+      port: 443
+      server: 20.235.105.146
       skip-cert-verify: true
       sni: ttfang.fange.me
       type: trojan
+      udp: true
       ws-opts:
         headers:
             Host: ttfang.fange.me
-        path: Telegram
-    - name: "\U0001F1FA\U0001F1F8 US 270 | ⬇️ 3.41 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+        path: /
+    - name: "\U0001F1FA\U0001F1F8 US 298 | ⬇️ 7.56 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 8881
-      server: 141.147.10.210
+      port: 587
+      server: 217.142.250.195
       servername: sv.ylka.dpdns.org
       skip-cert-verify: true
       tls: true
@@ -1267,11 +1447,37 @@ proxies:
             Host: sv.ylka.dpdns.org
         path: /
     - client-fingerprint: chrome
-      name: "\U0001F1EB\U0001F1F7 FR 271 | ⬇️ 2.58 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 299 | ⬇️ 3.67 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: ttfang
       port: 2096
-      server: 45.80.111.194
+      server: 45.40.151.194
+      skip-cert-verify: true
+      sni: ttfang.fange.me
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ttfang.fange.me
+        path: Telegram
+    - name: "\U0001F1FA\U0001F1F8 US 300 | ⬇️ 12.15 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: tg-fq521free
+      port: 443
+      server: 216.24.57.30
+      skip-cert-verify: false
+      sni: torjan.xn--xhq44j.eu.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: torjan.xn--xhq44j.eu.org
+        path: /
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 301 | ⬇️ 9.86 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: ttfang
+      port: 2096
+      server: 50.62.175.194
       skip-cert-verify: true
       sni: ttfang.fange.me
       type: trojan
@@ -1280,7 +1486,47 @@ proxies:
             Host: ttfang.fange.me
         path: Telegram
     - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1E6 UA 278 | ⬇️ 6.20 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1EF\U0001F1F5 JP 303 | ⬇️ 3.58 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: ttfang
+      port: 2096
+      server: 89.116.46.216
+      skip-cert-verify: true
+      sni: ttfang.fange.me
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ttfang.fange.me
+        path: Telegram
+    - client-fingerprint: randomized
+      name: "\U0001F1FA\U0001F1F3 UN 304 | ⬇️ 3.31 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 443
+      server: 103.160.204.59
+      servername: vle.amclubsapp.dpdns.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+      ws-opts:
+        headers:
+            Host: vle.amclubsapp.dpdns.org
+        path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 306 | ⬇️ 7.67 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: ttfang
+      port: 2096
+      server: 50.62.90.194
+      skip-cert-verify: true
+      sni: ttfang.fange.me
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ttfang.fange.me
+        path: Telegram
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1E6 UA 308 | ⬇️ 6.76 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: ttfang
       port: 2096
@@ -1293,11 +1539,11 @@ proxies:
             Host: ttfang.fange.me
         path: Telegram
     - client-fingerprint: chrome
-      name: "\U0001F1E8\U0001F1E6 CA 279 | ⬇️ 2.12 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 309 | ⬇️ 7.97 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: ttfang
       port: 2096
-      server: 74.49.215.194
+      server: 50.62.88.194
       skip-cert-verify: true
       sni: ttfang.fange.me
       type: trojan
@@ -1305,208 +1551,10 @@ proxies:
         headers:
             Host: ttfang.fange.me
         path: Telegram
-    - name: "\U0001F1FA\U0001F1F8 US 280 | ⬇️ 3.96 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1FA\U0001F1F8 US 312 | ⬇️ 4.35 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 8880
-      server: 5.182.85.213
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: jp.laoyoutiao.link
-        path: /
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 281 | ⬇️ 7.96 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 45.40.150.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 286 | ⬇️ 8.66 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 50.62.88.216
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - delay: 945
-      name: "\U0001F1FA\U0001F1F8 US 290 | ⬇️ 3.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 77.37.33.216
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-    - delay: 717
-      name: "\U0001F1FA\U0001F1F8 US 292 | ⬇️ 2.91 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 45.80.111.29
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: hk.laoyoutiao.link
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36
-        path: /TelegramU0001F1E8U0001F1F3
-      xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 293 | ⬇️ 8.01 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 72.167.241.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - name: "\U0001F1FA\U0001F1F8 US 294 | ⬇️ 3.35 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: 162.159.153.184
-      servername: sv.ylka.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            host: sv.ylka.dpdns.org
-        path: /?ed=2560
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F3 UN 298 | ⬇️ 2.51 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 88.216.66.194
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - delay: 2178
-      name: "\U0001F1FA\U0001F1F8 US 301 | ⬇️ 10.52 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 141.193.213.213
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: /Telegram @MxlShare @WangCai2 /
-    - name: "\U0001F1FA\U0001F1F8 US 304 | ⬇️ 2.97 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 45.159.217.213
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: jp.laoyoutiao.link
-        max-early-data: 2048
-        path: /Telegram@V2ray_Alpha/
-    - client-fingerprint: chrome
-      delay: 1539
-      name: "\U0001F1F3\U0001F1F1 NL 315 | ⬇️ 6.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: 172.67.137.129
-      servername: INviNCIBle.fAfa20.shOP
-      tls: true
-      type: vless
-      udp: true
-      uuid: 376734bc-4db8-4317-b451-af0262cb01c7
-      ws-opts:
-        headers:
-            Host: INviNCIBle.fAfa20.shOP
-        path: /
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 321 | ⬇️ 8.61 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: ttfang
-      port: 2096
-      server: 72.167.230.216
-      skip-cert-verify: true
-      sni: ttfang.fange.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ttfang.fange.me
-        path: Telegram
-    - delay: 1367
-      name: "\U0001F1FA\U0001F1F8 US 323 | ⬇️ 2.14 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 45.159.219.213
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: jp.laoyoutiao.link
-            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
-        path: /
-      xudp: true
-    - name: "\U0001F1FA\U0001F1F8 US 329 | ⬇️ 2.38 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 195.13.54.213
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: jp.laoyoutiao.link
-        path: /
-    - delay: 1762
-      name: "\U0001F1FA\U0001F1F8 US 335 | ⬇️ 3.27 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 188.42.89.213
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: jp.laoyoutiao.link
-            User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
-        path: /
-      xudp: true
-    - name: "\U0001F1FA\U0001F1F8 US 336 | ⬇️ 2.26 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 50009
-      server: 221.158.11.177
+      port: 50001
+      server: 221.139.39.51
       servername: edgd.esslh.filegear-sg.me
       skip-cert-verify: true
       tls: true
@@ -1517,11 +1565,37 @@ proxies:
         headers:
             Host: edgd.esslh.filegear-sg.me
         path: /?ed=2560&proxyip=ts.hpc.tw
-    - delay: 518
-      name: "\U0001F1FA\U0001F1F8 US 337 | ⬇️ 2.75 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 313 | ⬇️ 9.49 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: ttfang
+      port: 2096
+      server: 45.40.148.194
+      skip-cert-verify: true
+      sni: ttfang.fange.me
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ttfang.fange.me
+        path: Telegram
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 314 | ⬇️ 8.58 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: ttfang
+      port: 2096
+      server: 50.62.198.216
+      skip-cert-verify: true
+      sni: ttfang.fange.me
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ttfang.fange.me
+        path: Telegram
+    - delay: 882
+      name: "\U0001F1FA\U0001F1F8 US 316 | ⬇️ 7.24 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
-      server: 25.129.196.19
+      server: 86.38.214.29
       type: vless
       udp: true
       uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -1529,7 +1603,45 @@ proxies:
         early-data-header-name: Sec-WebSocket-Protocol
         headers:
             Host: hk.laoyoutiao.link
-            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
         max-early-data: 2560
-        path: /telegram @pgkj666 /
+        path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /
       xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 317 | ⬇️ 10.61 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: ttfang
+      port: 2096
+      server: 45.40.144.194
+      skip-cert-verify: true
+      sni: ttfang.fange.me
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ttfang.fange.me
+        path: Telegram
+    - name: "\U0001F1FA\U0001F1F8 US 320 | ⬇️ 10.29 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 159.112.235.3
+      tls: false
+      type: vless
+      udp: true
+      uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+      ws-opts:
+        headers:
+            Host: bitget1.asdasd.click
+        path: /
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 321 | ⬇️ 9.48 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: ttfang
+      port: 2096
+      server: 72.167.242.194
+      skip-cert-verify: true
+      sni: ttfang.fange.me
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ttfang.fange.me
+        path: Telegram
