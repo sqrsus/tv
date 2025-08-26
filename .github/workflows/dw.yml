@@ -17,7 +17,7 @@ jobs:
         fetch-depth: 0
 
     - name: Create download directory
-      run: mkdir -p downloaded_files  # 创建目录存放文件
+      run: mkdir -p dw  # 创建目录存放文件
 
     - name: Download multiple files
       run: |
@@ -34,7 +34,7 @@ jobs:
         for filename in "${!files[@]}"; do
           url="${files[$filename]}"
           echo "Downloading $filename from $url"
-          curl -sSfLo "downloaded_files/$filename" "$url" || echo "Failed to download $filename"
+          curl -sSfLo "dw/$filename" "$url" || echo "Failed to download $filename"
         done
 
     - name: Commit and push changes
@@ -45,7 +45,7 @@ jobs:
         git config --global user.email "actions@github.com"
         
         # 添加所有下载的文件
-        git add downloaded_files/
+        git add dw/
         
         # 检查是否有文件变化
         if git diff --quiet --cached; then
