@@ -1,0 +1,58 @@
+name: Download and Update Multiple Files
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天UTC时间0点运行
+  workflow_dispatch:      # 允许手动触发
+
+jobs:
+  download-and-update:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GH_TOKEN }}
+        fetch-depth: 0
+
+    - name: Create download directory
+      run: mkdir -p downloaded_files  # 创建目录存放文件
+
+    - name: Download multiple files
+      run: |
+        # 定义要下载的文件列表（URL和保存文件名）
+        declare -A files=(
+          ["speed.yaml"]="https://bestsub.bestrui.ggff.net/share/bestsub/cdcefaa4-1f0d-462e-ba76-627b344989f2/speed.yaml"
+          ["openai.yaml"]="https://bestsub.bestrui.ggff.net/share/bestsub/cdcefaa4-1f0d-462e-ba76-627b344989f2/openai.yaml"
+          ["youtube.yaml"]="https://bestsub.bestrui.ggff.net/share/bestsub/cdcefaa4-1f0d-462e-ba76-627b344989f2/youtube.yaml"
+          ["netflix.yaml"]="https://bestsub.bestrui.ggff.net/share/bestsub/cdcefaa4-1f0d-462e-ba76-627b344989f2/netflix.yaml"
+          ["disney.yaml"]="https://bestsub.bestrui.ggff.net/share/bestsub/cdcefaa4-1f0d-462e-ba76-627b344989f2/disney.yaml"
+        )
+
+        # 下载所有文件
+        for filename in "${!files[@]}"; do
+          url="${files[$filename]}"
+          echo "Downloading $filename from $url"
+          curl -sSfLo "downloaded_files/$filename" "$url" || echo "Failed to download $filename"
+        done
+
+    - name: Commit and push changes
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        
+        # 添加所有下载的文件
+        git add downloaded_files/
+        
+        # 检查是否有文件变化
+        if git diff --quiet --cached; then
+          echo "No changes detected in any files"
+        else
+          # 获取变化的文件列表
+          changed_files=$(git diff --name-only --cached)
+          git commit -m "Update multiple files [$(date +'%Y-%m-%d %H:%M:%S')] - Changed: $(echo $changed_files | tr '\n' ' ')"
+          git push origin HEAD:${{ github.ref }}
+        fi
