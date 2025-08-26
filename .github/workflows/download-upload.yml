@@ -18,8 +18,11 @@ jobs:
 
     - name: Download file
       run: |
-        curl -sSfLo all.yaml "https://bestsub.bestrui.ggff.net/share/bestsub/cdcefaa4-1f0d-462e-ba76-627b344989f2/speed.yaml"  # -s静默 -S显示错误 -f失败时不保存 -L跟随重定向 -o指定输出文件
-
+        curl -sSfLo speed.yaml "https://bestsub.bestrui.ggff.net/share/bestsub/cdcefaa4-1f0d-462e-ba76-627b344989f2/speed.yaml"  # -s静默 -S显示错误 -f失败时不保存 -L跟随重定向 -o指定输出文件
+        curl -sSfLo openai.yaml "https://bestsub.bestrui.ggff.net/share/bestsub/cdcefaa4-1f0d-462e-ba76-627b344989f2/openai.yaml"
+        curl -sSfLo youtube.yaml "https://bestsub.bestrui.ggff.net/share/bestsub/cdcefaa4-1f0d-462e-ba76-627b344989f2/youtube.yaml"
+        curl -sSfLo netflix.yaml "https://bestsub.bestrui.ggff.net/share/bestsub/cdcefaa4-1f0d-462e-ba76-627b344989f2/netflix.yaml"
+        curl -sSfLo disney.yaml "https://bestsub.bestrui.ggff.net/share/bestsub/cdcefaa4-1f0d-462e-ba76-627b344989f2/netflix.yaml"
     - name: Commit and push changes
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}  # 再次声明以便git push使用
@@ -35,3 +38,4 @@ jobs:
           git commit -m "Update downloaded file [$(date +'%Y-%m-%d %H:%M:%S')]"
           git push origin HEAD:${{ github.ref }}
         fi
+
