@@ -1,0 +1,2117 @@
+proxy-providers:
+    ProviderALL:
+        url: https://cdplus.netlify.app/dw/speed.yaml
+        type: http
+        interval: 600
+        proxy: DIRECT
+        path: ./proxy_provider/ALL.yaml
+    ProviderOpenai:
+        url: https://cdplus.netlify.app/dw/openai.yaml
+        type: http
+        interval: 600
+        proxy: DIRECT
+        path: ./proxy_provider/Openai.yaml
+    ProviderYoutube:
+        url: https://cdplus.netlify.app/dw/youtube.yaml
+        type: http
+        interval: 600
+        proxy: DIRECT
+        path: ./proxy_provider/Youtube.yaml
+    ProviderNetflix:
+        url: https://cdplus.netlify.app/dw/netflix.yaml
+        type: http
+        proxy: DIRECT
+        path: ./proxy_provider/Netflix.yaml
+    ProviderDisney:
+        url: https://cdplus.netlify.app/dw/disney.yaml
+        type: http
+        interval: 600
+        proxy: DIRECT
+        path: ./proxy_provider/Disney.yaml
+port: 7890
+socks-port: 7891
+mixed-port: 10801
+redir-port: 7892
+tproxy-port: 7893
+allow-lan: true
+bind-address: "*"
+find-process-mode: strict
+mode: rule
+geox-url:
+    geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+    geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+    mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
+geo-auto-update: true
+geo-update-interval: 24
+log-level: silent
+ipv6: false
+external-controller: 0.0.0.0:9090 # 
+external-controller-tls: 0.0.0.0:9443
+external-controller-unix: mihomo.sock
+external-controller-pipe: \\.\pipe\mihomo
+external-ui: ui
+external-ui-url: "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip"
+external-doh-server: /dns-query
+global-client-fingerprint: chrome
+hosts:
+# '*.mihomo.dev': 127.0.0.1
+# '.dev': 127.0.0.1
+# 'alpha.mihomo.dev': '::1'
+# test.com: [1.1.1.1, 2.2.2.2]
+# home.lan: lan # lan 为特别字段，将加入本地所有网卡的地址
+# baidu.com: google.com # 只允许配置一个别名
+profile:
+    store-selected: false
+    store-fake-ip: true
+### 域名嗅探
+sniffer:
+    enable: true
+    sniff:
+        HTTP:
+            ports: [80, 8080-8880]
+            override-destination: true
+        TLS:
+            ports: [443, 8443]
+        QUIC:
+            ports: [443, 8443]
+    skip-domain:
+        - "Mijia Cloud"
+        - "+.push.apple.com"
+tun:
+    enable: true
+    stack: system
+    auto-route: true
+    auto-redirect: true
+    auto-detect-interface: true
+    dns-hijack:
+        - any:53
+        - tcp://any:53
+    device: mihomo
+    mtu: 9000
+    strict-route: false
+    gso: true
+    gso-max-size: 65536
+    udp-timeout: 300
+    iproute2-table-index: 2022
+    iproute2-rule-index: 9000
+    endpoint-independent-nat: false
+    route-exclude-address:
+        - 172.16.0.0/12
+        - fc00::/7
+dns:
+    enable: true
+    listen: 0.0.0.0:53
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    url-test: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
+    url-test-filter: {geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32]}
+proxy-groups:
+    - name: Proxy
+      type: select
+      interval: 300
+      url: https://gstatic.com/generate_204
+      lazy: true
+      timeout: 2000
+      max-failed-times: 3
+      proxies:
+        - "\U0001F64F 自动选择"
+        - "\U0001F4AA 手动选择"
+        - "\U0001F3A1负载均衡"
+        - "\U0001F1ED\U0001F1F0 香港节点"
+        - "\U0001F1EF\U0001F1F5 日本节点"
+        - "\U0001F1F0\U0001F1F7 韩国节点"
+        - "\U0001F1F8\U0001F1EC 新加坡节点"
+        - "\U0001F1FA\U0001F1F8 美国节点"
+        - "\U0001F1EC\U0001F1E7 英国节点"
+        - "\U0001F1EB\U0001F1F7 法国节点"
+        - "\U0001F1E9\U0001F1EA 德国节点"
+        - "\U0001F1E8\U0001F1E6 加拿大节点"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点"
+        - "\U0001F1F3\U0001F1F1 荷兰节点"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点"
+        - "\U0001F1F5\U0001F1F1 波兰节点"
+        - "\U0001F1EE\U0001F1F9 意大利节点"
+        - "\U0001F1EE\U0001F1F7 伊朗节点"
+      icon: https://cdn.jsdelivr.net/gh/mihomo-party-org/mihomo-party/resources/icon.png
+    - name: Cloudflare
+      type: select
+      interval: 300
+      url: https://gstatic.com/generate_204
+      lazy: true
+      timeout: 2000
+      max-failed-times: 3
+      proxies:
+        - Proxy
+        - DIRECT
+        - "\U0001F1ED\U0001F1F0 香港节点"
+        - "\U0001F1EF\U0001F1F5 日本节点"
+        - "\U0001F1F0\U0001F1F7 韩国节点"
+        - "\U0001F1F8\U0001F1EC 新加坡节点"
+        - "\U0001F1FA\U0001F1F8 美国节点"
+        - "\U0001F1EC\U0001F1E7 英国节点"
+        - "\U0001F1EB\U0001F1F7 法国节点"
+        - "\U0001F1E9\U0001F1EA 德国节点"
+        - "\U0001F1E8\U0001F1E6 加拿大节点"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点"
+        - "\U0001F1F3\U0001F1F1 荷兰节点"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点"
+        - "\U0001F1F5\U0001F1F1 波兰节点"
+        - "\U0001F1EE\U0001F1F9 意大利节点"
+        - "\U0001F1EE\U0001F1F7 伊朗节点"
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/cloudflare.png
+    - name: Bing
+      type: select
+      interval: 300
+      url: https://gstatic.com/generate_204
+      lazy: true
+      timeout: 2000
+      max-failed-times: 3
+      proxies:
+        - DIRECT
+        - Proxy
+        - "\U0001F1ED\U0001F1F0 香港节点"
+        - "\U0001F1EF\U0001F1F5 日本节点"
+        - "\U0001F1F0\U0001F1F7 韩国节点"
+        - "\U0001F1F8\U0001F1EC 新加坡节点"
+        - "\U0001F1FA\U0001F1F8 美国节点"
+        - "\U0001F1EC\U0001F1E7 英国节点"
+        - "\U0001F1EB\U0001F1F7 法国节点"
+        - "\U0001F1E9\U0001F1EA 德国节点"
+        - "\U0001F1E8\U0001F1E6 加拿大节点"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点"
+        - "\U0001F1F3\U0001F1F1 荷兰节点"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点"
+        - "\U0001F1F5\U0001F1F1 波兰节点"
+        - "\U0001F1EE\U0001F1F9 意大利节点"
+        - "\U0001F1EE\U0001F1F7 伊朗节点"
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/microsoft-bing.png
+    - name: Github
+      type: select
+      interval: 300
+      url: https://github.com
+      lazy: true
+      timeout: 2000
+      max-failed-times: 3
+      proxies:
+        - Proxy
+        - "\U0001F1ED\U0001F1F0 香港节点"
+        - "\U0001F1EF\U0001F1F5 日本节点"
+        - "\U0001F1F0\U0001F1F7 韩国节点"
+        - "\U0001F1F8\U0001F1EC 新加坡节点"
+        - "\U0001F1FA\U0001F1F8 美国节点"
+        - "\U0001F1EC\U0001F1E7 英国节点"
+        - "\U0001F1EB\U0001F1F7 法国节点"
+        - "\U0001F1E9\U0001F1EA 德国节点"
+        - "\U0001F1E8\U0001F1E6 加拿大节点"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点"
+        - "\U0001F1F3\U0001F1F1 荷兰节点"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点"
+        - "\U0001F1F5\U0001F1F1 波兰节点"
+        - "\U0001F1EE\U0001F1F9 意大利节点"
+        - "\U0001F1EE\U0001F1F7 伊朗节点"
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/github.png
+    - name: OpenAI
+      type: select
+      interval: 300
+      url: https://openai.com
+      lazy: true
+      timeout: 2000
+      max-failed-times: 3
+      proxies:
+        - "\U0001F64F 自动选择 openai"
+        - "\U0001F4AA 手动选择 openai"
+        - "\U0001F1FA\U0001F1F8 美国节点 openai"
+        - "\U0001F1ED\U0001F1F0 香港节点 openai"
+        - "\U0001F1F9\U0001F1FC 台湾节点 openai"
+        - "\U0001F1EF\U0001F1F5 日本节点 openai"
+        - "\U0001F1F0\U0001F1F7 韩国节点 openai"
+        - "\U0001F1F8\U0001F1EC 新加坡节点 openai"
+        - "\U0001F1EC\U0001F1E7 英国节点 openai"
+        - "\U0001F1EB\U0001F1F7 法国节点 openai"
+        - "\U0001F1E9\U0001F1EA 德国节点 openai"
+        - "\U0001F1E8\U0001F1E6 加拿大节点 openai"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点 openai"
+        - "\U0001F1F3\U0001F1F1 荷兰节点 openai"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点 openai"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点 openai"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点 openai"
+        - "\U0001F1F5\U0001F1F1 波兰节点 openai"
+        - "\U0001F1EE\U0001F1F9 意大利节点 openai"
+        - "\U0001F1EE\U0001F1F7 伊朗节点 openai"
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/chatgpt.png
+    - name: Netflix
+      type: select
+      interval: 300
+      url: https://netflix.com
+      lazy: true
+      timeout: 2000
+      max-failed-times: 3
+      proxies:
+        - "\U0001F64F 自动选择 netflix"
+        - "\U0001F4AA 手动选择 netflix"
+        - "\U0001F1FA\U0001F1F8 美国节点 netflix"
+        - "\U0001F1ED\U0001F1F0 香港节点 netflix"
+        - "\U0001F1F9\U0001F1FC 台湾节点 netflix"
+        - "\U0001F1EF\U0001F1F5 日本节点 netflix"
+        - "\U0001F1F0\U0001F1F7 韩国节点 netflix"
+        - "\U0001F1F8\U0001F1EC 新加坡节点 netflix"
+        - "\U0001F1EC\U0001F1E7 英国节点 netflix"
+        - "\U0001F1EB\U0001F1F7 法国节点 netflix"
+        - "\U0001F1E9\U0001F1EA 德国节点 netflix"
+        - "\U0001F1E8\U0001F1E6 加拿大节点 netflix"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点 netflix"
+        - "\U0001F1F3\U0001F1F1 荷兰节点 netflix"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点 netflix"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点 netflix"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点 netflix"
+        - "\U0001F1F5\U0001F1F1 波兰节点 netflix"
+        - "\U0001F1EE\U0001F1F9 意大利节点 netflix"
+        - "\U0001F1EE\U0001F1F7 伊朗节点 netflix"
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/netflix.png
+    - name: Disney+
+      type: select
+      interval: 300
+      url: https://disney.com
+      lazy: true
+      timeout: 2000
+      max-failed-times: 3
+      proxies:
+        - "\U0001F64F 自动选择 disney"
+        - "\U0001F4AA 手动选择 disney"
+        - "\U0001F1FA\U0001F1F8 美国节点 disney"
+        - "\U0001F1ED\U0001F1F0 香港节点 disney"
+        - "\U0001F1F9\U0001F1FC 台湾节点 disney"
+        - "\U0001F1EF\U0001F1F5 日本节点 disney"
+        - "\U0001F1F0\U0001F1F7 韩国节点 disney"
+        - "\U0001F1F8\U0001F1EC 新加坡节点 disney"
+        - "\U0001F1EC\U0001F1E7 英国节点 disney"
+        - "\U0001F1EB\U0001F1F7 法国节点 disney"
+        - "\U0001F1E9\U0001F1EA 德国节点 disney"
+        - "\U0001F1E8\U0001F1E6 加拿大节点 disney"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点 disney"
+        - "\U0001F1F3\U0001F1F1 荷兰节点 disney"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点 disney"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点 disney"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点 disney"
+        - "\U0001F1F5\U0001F1F1 波兰节点 disney"
+        - "\U0001F1EE\U0001F1F9 意大利节点 disney"
+        - "\U0001F1EE\U0001F1F7 伊朗节点 disney"
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/disney-plus.png
+    - name: YouTube
+      type: select
+      interval: 300
+      url: https://youtube.com
+      lazy: true
+      timeout: 2000
+      max-failed-times: 3
+      proxies:
+        - "\U0001F64F 自动选择 youtube"
+        - "\U0001F4AA 手动选择 youtube"
+        - "\U0001F1FA\U0001F1F8 美国节点 youtube"
+        - "\U0001F1ED\U0001F1F0 香港节点 youtube"
+        - "\U0001F1F9\U0001F1FC 台湾节点 youtube"
+        - "\U0001F1EF\U0001F1F5 日本节点 youtube"
+        - "\U0001F1F0\U0001F1F7 韩国节点 youtube"
+        - "\U0001F1F8\U0001F1EC 新加坡节点 youtube"
+        - "\U0001F1EC\U0001F1E7 英国节点 youtube"
+        - "\U0001F1EB\U0001F1F7 法国节点 youtube"
+        - "\U0001F1E9\U0001F1EA 德国节点 youtube"
+        - "\U0001F1E8\U0001F1E6 加拿大节点 youtube"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点 youtube"
+        - "\U0001F1F3\U0001F1F1 荷兰节点 youtube"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点 youtube"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点 youtube"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点 youtube"
+        - "\U0001F1F5\U0001F1F1 波兰节点 youtube"
+        - "\U0001F1EE\U0001F1F9 意大利节点 youtube"
+        - "\U0001F1EE\U0001F1F7 伊朗节点 youtube"
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/youtube.png
+    - name: TikTok
+      type: select
+      proxies:
+        - Proxy
+        - "\U0001F1ED\U0001F1F0 香港节点"
+        - "\U0001F1EF\U0001F1F5 日本节点"
+        - "\U0001F1F0\U0001F1F7 韩国节点"
+        - "\U0001F1F8\U0001F1EC 新加坡节点"
+        - "\U0001F1FA\U0001F1F8 美国节点"
+        - "\U0001F1EC\U0001F1E7 英国节点"
+        - "\U0001F1EB\U0001F1F7 法国节点"
+        - "\U0001F1E9\U0001F1EA 德国节点"
+        - "\U0001F1E8\U0001F1E6 加拿大节点"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点"
+        - "\U0001F1F3\U0001F1F1 荷兰节点"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点"
+        - "\U0001F1F5\U0001F1F1 波兰节点"
+        - "\U0001F1EE\U0001F1F9 意大利节点"
+        - "\U0001F1EE\U0001F1F7 伊朗节点"
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/tiktok.png
+    - name: Spotify
+      type: select
+      proxies:
+        - Proxy
+        - "\U0001F1ED\U0001F1F0 香港节点"
+        - "\U0001F1EF\U0001F1F5 日本节点"
+        - "\U0001F1F0\U0001F1F7 韩国节点"
+        - "\U0001F1F8\U0001F1EC 新加坡节点"
+        - "\U0001F1FA\U0001F1F8 美国节点"
+        - "\U0001F1EC\U0001F1E7 英国节点"
+        - "\U0001F1EB\U0001F1F7 法国节点"
+        - "\U0001F1E9\U0001F1EA 德国节点"
+        - "\U0001F1E8\U0001F1E6 加拿大节点"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点"
+        - "\U0001F1F3\U0001F1F1 荷兰节点"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点"
+        - "\U0001F1F5\U0001F1F1 波兰节点"
+        - "\U0001F1EE\U0001F1F9 意大利节点"
+        - "\U0001F1EE\U0001F1F7 伊朗节点"
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/spotify.png
+    - name: Telegram
+      type: select
+      url: https://telegram.org
+      interval: 300
+      timeout: 2000
+      max-failed-times: 3
+      proxies:
+        - Proxy
+        - "\U0001F1ED\U0001F1F0 香港节点"
+        - "\U0001F1EF\U0001F1F5 日本节点"
+        - "\U0001F1F0\U0001F1F7 韩国节点"
+        - "\U0001F1F8\U0001F1EC 新加坡节点"
+        - "\U0001F1FA\U0001F1F8 美国节点"
+        - "\U0001F1EC\U0001F1E7 英国节点"
+        - "\U0001F1EB\U0001F1F7 法国节点"
+        - "\U0001F1E9\U0001F1EA 德国节点"
+        - "\U0001F1E8\U0001F1E6 加拿大节点"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点"
+        - "\U0001F1F3\U0001F1F1 荷兰节点"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点"
+        - "\U0001F1F5\U0001F1F1 波兰节点"
+        - "\U0001F1EE\U0001F1F9 意大利节点"
+        - "\U0001F1EE\U0001F1F7 伊朗节点"
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/telegram.png
+    - name: Microsoft
+      type: select
+      proxies:
+        - Proxy
+        - DIRECT
+        - "\U0001F1ED\U0001F1F0 香港节点"
+        - "\U0001F1EF\U0001F1F5 日本节点"
+        - "\U0001F1F0\U0001F1F7 韩国节点"
+        - "\U0001F1F8\U0001F1EC 新加坡节点"
+        - "\U0001F1FA\U0001F1F8 美国节点"
+        - "\U0001F1EC\U0001F1E7 英国节点"
+        - "\U0001F1EB\U0001F1F7 法国节点"
+        - "\U0001F1E9\U0001F1EA 德国节点"
+        - "\U0001F1E8\U0001F1E6 加拿大节点"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点"
+        - "\U0001F1F3\U0001F1F1 荷兰节点"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点"
+        - "\U0001F1F5\U0001F1F1 波兰节点"
+        - "\U0001F1EE\U0001F1F9 意大利节点"
+        - "\U0001F1EE\U0001F1F7 伊朗节点"
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/microsoft.png
+    - name: Onedrive
+      type: select
+      proxies:
+        - DIRECT
+        - Proxy
+        - "\U0001F1ED\U0001F1F0 香港节点"
+        - "\U0001F1EF\U0001F1F5 日本节点"
+        - "\U0001F1F0\U0001F1F7 韩国节点"
+        - "\U0001F1F8\U0001F1EC 新加坡节点"
+        - "\U0001F1FA\U0001F1F8 美国节点"
+        - "\U0001F1EC\U0001F1E7 英国节点"
+        - "\U0001F1EB\U0001F1F7 法国节点"
+        - "\U0001F1E9\U0001F1EA 德国节点"
+        - "\U0001F1E8\U0001F1E6 加拿大节点"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点"
+        - "\U0001F1F3\U0001F1F1 荷兰节点"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点"
+        - "\U0001F1F5\U0001F1F1 波兰节点"
+        - "\U0001F1EE\U0001F1F9 意大利节点"
+        - "\U0001F1EE\U0001F1F7 伊朗节点"
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/microsoft-onedrive.png
+    - name: Apple
+      type: select
+      proxies:
+        - DIRECT
+        - Proxy
+        - "\U0001F1ED\U0001F1F0 香港节点"
+        - "\U0001F1EF\U0001F1F5 日本节点"
+        - "\U0001F1F0\U0001F1F7 韩国节点"
+        - "\U0001F1F8\U0001F1EC 新加坡节点"
+        - "\U0001F1FA\U0001F1F8 美国节点"
+        - "\U0001F1EC\U0001F1E7 英国节点"
+        - "\U0001F1EB\U0001F1F7 法国节点"
+        - "\U0001F1E9\U0001F1EA 德国节点"
+        - "\U0001F1E8\U0001F1E6 加拿大节点"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点"
+        - "\U0001F1F3\U0001F1F1 荷兰节点"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点"
+        - "\U0001F1F5\U0001F1F1 波兰节点"
+        - "\U0001F1EE\U0001F1F9 意大利节点"
+        - "\U0001F1EE\U0001F1F7 伊朗节点"
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/apple.png
+    - name: Gamer
+      type: select
+      include-all: true
+      filter: "^(?=.*((?i)游戏|\U0001F3AE|(\\b(GAME)\\b)))(?!.*((?i)回国|校园)).*$"
+      proxies:
+        - DIRECT
+        - Proxy
+      icon: https://cdn.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Game.png
+    - name: GlobalMedia
+      type: select
+      proxies:
+        - Proxy
+        - DIRECT
+        - "\U0001F1ED\U0001F1F0 香港节点"
+        - "\U0001F1EF\U0001F1F5 日本节点"
+        - "\U0001F1F0\U0001F1F7 韩国节点"
+        - "\U0001F1F8\U0001F1EC 新加坡节点"
+        - "\U0001F1FA\U0001F1F8 美国节点"
+        - "\U0001F1EC\U0001F1E7 英国节点"
+        - "\U0001F1EB\U0001F1F7 法国节点"
+        - "\U0001F1E9\U0001F1EA 德国节点"
+        - "\U0001F1E8\U0001F1E6 加拿大节点"
+        - "\U0001F1E6\U0001F1FA 澳大利亚节点"
+        - "\U0001F1F3\U0001F1F1 荷兰节点"
+        - "\U0001F1F7\U0001F1FA 俄罗斯节点"
+        - "\U0001F1ED\U0001F1FA 匈牙利节点"
+        - "\U0001F1FA\U0001F1E6 乌克兰节点"
+        - "\U0001F1F5\U0001F1F1 波兰节点"
+        - "\U0001F1EE\U0001F1F9 意大利节点"
+        - "\U0001F1EE\U0001F1F7 伊朗节点"
+      icon: https://cdn.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/ForeignMedia.png
+    - name: "\U0001F4AA 手动选择"
+      type: select
+      use:
+        - ProviderALL
+    - name: "\U0001F64F 自动选择"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      use:
+        - ProviderALL
+    - name: "\U0001F3A1负载均衡"
+      type: load-balance
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      strategy: sticky-sessions
+      use:
+        - ProviderALL
+    - name: "\U0001F4AA 手动选择 openai"
+      type: select
+      use:
+        - ProviderOpenai
+    - name: "\U0001F4AA 手动选择 netflix"
+      type: select
+      use:
+        - ProviderNetflix
+    - name: "\U0001F4AA 手动选择 disney"
+      type: select
+      use:
+        - ProviderDisney
+    - name: "\U0001F4AA 手动选择 youtube"
+      type: select
+      use:
+        - ProviderYoutube
+    - name: "\U0001F64F 自动选择 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      use:
+        - ProviderDisney
+    - name: "\U0001F64F 自动选择 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      use:
+        - ProviderYoutube
+    - name: "\U0001F64F 自动选择 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      use:
+        - ProviderNetflix
+    - name: "\U0001F64F 自动选择 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      use:
+        - ProviderOpenai
+    - name: "\U0001F1ED\U0001F1F0 香港节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1ED\U0001F1F0|香港|(\\b(HK|Hong)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1F9\U0001F1FC 台湾节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F9\U0001F1FC|台湾|(\\b(TW|Taiwan)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1EF\U0001F1F5 日本节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EF\U0001F1F5|日本|川日|东京|大阪|泉日|埼玉|(\\b(JP|Japan)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1F0\U0001F1F7 韩国节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F0\U0001F1F7|韩国|韓|首尔|(\\b(KR|Korea)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1F8\U0001F1EC 新加坡节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F8\U0001F1EC|新加坡|狮|(\\b(SG|Singapore)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1FA\U0001F1F8 美国节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1FA\U0001F1F8|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\\b(US|United States)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1EC\U0001F1E7 英国节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EC\U0001F1E7|英国|伦敦|(\\b(UK|United Kingdom)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1EB\U0001F1F7 法国节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EB\U0001F1F7|法国|(\\b(FR|France)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1E9\U0001F1EA 德国节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E9\U0001F1EA|德国|(\\b(DE|Germany)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1E8\U0001F1E6 加拿大节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E8\U0001F1E6|加拿大|(\\b(CA|Canada)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1E6\U0001F1FA 澳大利亚节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E6\U0001F1FA|澳大利亚|(\\b(AU|Australia)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1F3\U0001F1F1 荷兰节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F3\U0001F1F1|荷兰|(\\b(NL|Netherlands)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1F7\U0001F1FA 俄罗斯节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F7\U0001F1FA|俄罗斯|(\\b(RU|Russia)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1ED\U0001F1FA 匈牙利节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1ED\U0001F1FA|匈牙利|(\\b(HU|Hungary)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1FA\U0001F1E6 乌克兰节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1FA\U0001F1E6|乌克兰|(\\b(UA|Ukraine)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1F5\U0001F1F1 波兰节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F5\U0001F1F1|波兰|(\\b(PL|Poland)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1EE\U0001F1F9 意大利节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EE\U0001F1F9|意大利|(\\b(IT|Italy)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1EE\U0001F1F7 伊朗节点"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://gstatic.com/generate_204
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EE\U0001F1F7|伊朗|(\\b(IR|Iran)\\b))).*$"
+      use:
+        - ProviderALL
+    - name: "\U0001F1ED\U0001F1F0 香港节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1ED\U0001F1F0|香港|(\\b(HK|Hong)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F9\U0001F1FC 台湾节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F9\U0001F1FC|台湾|(\\b(TW|Taiwan)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EF\U0001F1F5 日本节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EF\U0001F1F5|日本|川日|东京|大阪|泉日|埼玉|(\\b(JP|Japan)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F0\U0001F1F7 韩国节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F0\U0001F1F7|韩国|韓|首尔|(\\b(KR|Korea)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F8\U0001F1EC 新加坡节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F8\U0001F1EC|新加坡|狮|(\\b(SG|Singapore)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1FA\U0001F1F8 美国节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1FA\U0001F1F8|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\\b(US|United States)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EC\U0001F1E7 英国节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EC\U0001F1E7|英国|伦敦|(\\b(UK|United Kingdom)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EB\U0001F1F7 法国节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EB\U0001F1F7|法国|(\\b(FR|France)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1E9\U0001F1EA 德国节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E9\U0001F1EA|德国|(\\b(DE|Germany)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1E8\U0001F1E6 加拿大节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E8\U0001F1E6|加拿大|(\\b(CA|Canada)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1E6\U0001F1FA 澳大利亚节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E6\U0001F1FA|澳大利亚|(\\b(AU|Australia)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F3\U0001F1F1 荷兰节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F3\U0001F1F1|荷兰|(\\b(NL|Netherlands)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F7\U0001F1FA 俄罗斯节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F7\U0001F1FA|俄罗斯|(\\b(RU|Russia)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1ED\U0001F1FA 匈牙利节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1ED\U0001F1FA|匈牙利|(\\b(HU|Hungary)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1FA\U0001F1E6 乌克兰节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1FA\U0001F1E6|乌克兰|(\\b(UA|Ukraine)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F5\U0001F1F1 波兰节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F5\U0001F1F1|波兰|(\\b(PL|Poland)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EE\U0001F1F9 意大利节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EE\U0001F1F9|意大利|(\\b(IT|Italy)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EE\U0001F1F7 伊朗节点 openai"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://openai.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EE\U0001F1F7|伊朗|(\\b(IR|Iran)\\b))).*$"
+      use:
+        - ProviderOpenai
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1ED\U0001F1F0 香港节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1ED\U0001F1F0|香港|(\\b(HK|Hong)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F9\U0001F1FC 台湾节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F9\U0001F1FC|台湾|(\\b(TW|Taiwan)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EF\U0001F1F5 日本节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EF\U0001F1F5|日本|川日|东京|大阪|泉日|埼玉|(\\b(JP|Japan)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F0\U0001F1F7 韩国节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F0\U0001F1F7|韩国|韓|首尔|(\\b(KR|Korea)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F8\U0001F1EC 新加坡节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F8\U0001F1EC|新加坡|狮|(\\b(SG|Singapore)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1FA\U0001F1F8 美国节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1FA\U0001F1F8|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\\b(US|United States)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EC\U0001F1E7 英国节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EC\U0001F1E7|英国|伦敦|(\\b(UK|United Kingdom)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EB\U0001F1F7 法国节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EB\U0001F1F7|法国|(\\b(FR|France)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1E9\U0001F1EA 德国节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E9\U0001F1EA|德国|(\\b(DE|Germany)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1E8\U0001F1E6 加拿大节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E8\U0001F1E6|加拿大|(\\b(CA|Canada)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1E6\U0001F1FA 澳大利亚节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E6\U0001F1FA|澳大利亚|(\\b(AU|Australia)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F3\U0001F1F1 荷兰节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F3\U0001F1F1|荷兰|(\\b(NL|Netherlands)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F7\U0001F1FA 俄罗斯节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F7\U0001F1FA|俄罗斯|(\\b(RU|Russia)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1ED\U0001F1FA 匈牙利节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1ED\U0001F1FA|匈牙利|(\\b(HU|Hungary)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1FA\U0001F1E6 乌克兰节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1FA\U0001F1E6|乌克兰|(\\b(UA|Ukraine)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F5\U0001F1F1 波兰节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F5\U0001F1F1|波兰|(\\b(PL|Poland)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EE\U0001F1F9 意大利节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EE\U0001F1F9|意大利|(\\b(IT|Italy)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EE\U0001F1F7 伊朗节点 netflix"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://netflix.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EE\U0001F1F7|伊朗|(\\b(IR|Iran)\\b))).*$"
+      use:
+        - ProviderNetflix
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1ED\U0001F1F0 香港节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1ED\U0001F1F0|香港|(\\b(HK|Hong)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F9\U0001F1FC 台湾节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F9\U0001F1FC|台湾|(\\b(TW|Taiwan)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EF\U0001F1F5 日本节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EF\U0001F1F5|日本|川日|东京|大阪|泉日|埼玉|(\\b(JP|Japan)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F0\U0001F1F7 韩国节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F0\U0001F1F7|韩国|韓|首尔|(\\b(KR|Korea)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F8\U0001F1EC 新加坡节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F8\U0001F1EC|新加坡|狮|(\\b(SG|Singapore)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1FA\U0001F1F8 美国节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1FA\U0001F1F8|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\\b(US|United States)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EC\U0001F1E7 英国节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EC\U0001F1E7|英国|伦敦|(\\b(UK|United Kingdom)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EB\U0001F1F7 法国节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EB\U0001F1F7|法国|(\\b(FR|France)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1E9\U0001F1EA 德国节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E9\U0001F1EA|德国|(\\b(DE|Germany)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1E8\U0001F1E6 加拿大节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E8\U0001F1E6|加拿大|(\\b(CA|Canada)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1E6\U0001F1FA 澳大利亚节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E6\U0001F1FA|澳大利亚|(\\b(AU|Australia)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F3\U0001F1F1 荷兰节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F3\U0001F1F1|荷兰|(\\b(NL|Netherlands)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F7\U0001F1FA 俄罗斯节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F7\U0001F1FA|俄罗斯|(\\b(RU|Russia)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1ED\U0001F1FA 匈牙利节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1ED\U0001F1FA|匈牙利|(\\b(HU|Hungary)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1FA\U0001F1E6 乌克兰节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1FA\U0001F1E6|乌克兰|(\\b(UA|Ukraine)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F5\U0001F1F1 波兰节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F5\U0001F1F1|波兰|(\\b(PL|Poland)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EE\U0001F1F9 意大利节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EE\U0001F1F9|意大利|(\\b(IT|Italy)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EE\U0001F1F7 伊朗节点 disney"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://disney.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EE\U0001F1F7|伊朗|(\\b(IR|Iran)\\b))).*$"
+      use:
+        - ProviderDisney
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1ED\U0001F1F0 香港节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1ED\U0001F1F0|香港|(\\b(HK|Hong)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F9\U0001F1FC 台湾节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F9\U0001F1FC|台湾|(\\b(TW|Taiwan)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EF\U0001F1F5 日本节点 youtube"
+      type: url-test
+      tolerance: 50
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EF\U0001F1F5|日本|川日|东京|大阪|泉日|埼玉|(\\b(JP|Japan)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F0\U0001F1F7 韩国节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F0\U0001F1F7|韩国|韓|首尔|(\\b(KR|Korea)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F8\U0001F1EC 新加坡节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F8\U0001F1EC|新加坡|狮|(\\b(SG|Singapore)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1FA\U0001F1F8 美国节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1FA\U0001F1F8|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\\b(US|United States)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EC\U0001F1E7 英国节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EC\U0001F1E7|英国|伦敦|(\\b(UK|United Kingdom)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EB\U0001F1F7 法国节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EB\U0001F1F7|法国|(\\b(FR|France)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1E9\U0001F1EA 德国节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E9\U0001F1EA|德国|(\\b(DE|Germany)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1E8\U0001F1E6 加拿大节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E8\U0001F1E6|加拿大|(\\b(CA|Canada)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1E6\U0001F1FA 澳大利亚节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1E6\U0001F1FA|澳大利亚|(\\b(AU|Australia)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F3\U0001F1F1 荷兰节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F3\U0001F1F1|荷兰|(\\b(NL|Netherlands)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F7\U0001F1FA 俄罗斯节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F7\U0001F1FA|俄罗斯|(\\b(RU|Russia)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1ED\U0001F1FA 匈牙利节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1ED\U0001F1FA|匈牙利|(\\b(HU|Hungary)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1FA\U0001F1E6 乌克兰节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1FA\U0001F1E6|乌克兰|(\\b(UA|Ukraine)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1F5\U0001F1F1 波兰节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1F5\U0001F1F1|波兰|(\\b(PL|Poland)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EE\U0001F1F9 意大利节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EE\U0001F1F9|意大利|(\\b(IT|Italy)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+    - name: "\U0001F1EE\U0001F1F7 伊朗节点 youtube"
+      type: url-test
+      tolerance: 100
+      interval: 60
+      lazy: true
+      url: https://youtube.com
+      disable-udp: false
+      timeout: 2000
+      max-failed-times: 3
+      filter: "^(?=.*((?i)\U0001F1EE\U0001F1F7|伊朗|(\\b(IR|Iran)\\b))).*$"
+      use:
+        - ProviderYoutube
+      proxies:
+        - REJECT
+      hidden: true
+rule-providers:
+    GlobalMedia:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
+        path: ./RuleSet/GlobalMedia.yaml
+    ChinaMedia:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+        path: ./RuleSet/ChinaMedia.yaml
+    Netflix:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix_Classical_No_Resolve.yaml
+        path: ./RuleSet/Netflix.yaml
+    Disney+:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Disney/Disney_No_Resolve.yaml
+        path: ./RuleSet/Disney+.yaml
+    YouTube:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube_No_Resolve.yaml
+        path: ./RuleSet/YouTube.yaml
+    Apple:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple_Classical_No_Resolve.yaml
+        path: ./RuleSet/Apple.yaml
+    Microsoft:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft_No_Resolve.yaml
+        path: ./RuleSet/Microsoft.yaml
+    Nintendo:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Nintendo/Nintendo.yaml
+        path: ./RuleSet/Nintendo.yaml
+    PlayStation:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/PlayStation/PlayStation.yaml
+        path: ./RuleSet/PlayStation.yaml
+    Epic:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Epic/Epic.yaml
+        path: ./RuleSet/Epic.yaml
+    Xbox:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Xbox/Xbox.yaml
+        path: ./RuleSet/Xbox.yaml
+    TikTok:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/TikTok/TikTok_No_Resolve.yaml
+        path: ./RuleSet/TikTok.yaml
+    Spotify:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Spotify/Spotify.yaml
+        path: ./RuleSet/Spotify.yaml
+    OpenAI:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI_No_Resolve.yaml
+        path: ./RuleSet/OpenAI.yaml
+    Proxy:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Proxy/Proxy_Classical_No_Resolve.yaml
+        path: ./RuleSet/Proxy.yaml
+    China:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ChinaMax/ChinaMax_Classical.yaml
+        path: ./RuleSet/China.yaml
+    Tencent:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Tencent/Tencent.yaml
+        path: ./RuleSet/Tencent.yaml
+    LAN:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Lan/Lan.yaml
+        path: ./RuleSet/LAN.yaml
+    Cloudflare:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Cloudflare/Cloudflare.yaml
+        path: ./RuleSet/Cloudflare.yaml
+    Onedrive:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OneDrive/OneDrive.yaml
+        path: ./RuleSet/Onedrive.yaml
+    Bing:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Bing/Bing.yaml
+        path: ./RuleSet/Bing.yaml
+    Github:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GitHub/GitHub.yaml
+        path: ./RuleSet/Github.yaml
+    Telegram:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Telegram/Telegram.yaml
+        path: ./RuleSet/Telegram.yaml
+rules:
+    - RULE-SET,ChinaMedia,DIRECT
+    - RULE-SET,China,DIRECT
+    - RULE-SET,LAN,DIRECT
+    - GEOIP,CN,DIRECT
+    - RULE-SET,ChinaMedia,DIRECT
+    - RULE-SET,China,DIRECT
+    - RULE-SET,LAN,DIRECT
+    - GEOIP,CN,DIRECT
+    - RULE-SET,OpenAI,OpenAI
+    - RULE-SET,Cloudflare,Cloudflare
+    - RULE-SET,Github,Github
+    - RULE-SET,Onedrive,Onedrive
+    - RULE-SET,Bing,Bing
+    - RULE-SET,Apple,Apple
+    - RULE-SET,Spotify,Spotify
+    - RULE-SET,TikTok,TikTok
+    - RULE-SET,Netflix,Netflix
+    - RULE-SET,Disney+,Disney+
+    - RULE-SET,YouTube,YouTube
+    - RULE-SET,Telegram,Telegram
+    - RULE-SET,Nintendo,Gamer
+    - RULE-SET,PlayStation,Gamer
+    - RULE-SET,Epic,Gamer
+    - RULE-SET,Xbox,Gamer
+    - RULE-SET,Microsoft,Microsoft
+    - RULE-SET,GlobalMedia,GlobalMedia
+    - RULE-SET,Proxy,Proxy
+    - MATCH,Proxy
+secret: ""
+unified-delay: false
+tcp-concurrent: true
+geodata-mode: false
+skip-auth-prefixes:
+    - 127.0.0.1/32
+authentication: []
+lan-allowed-ips:
+    - 0.0.0.0/0
+    - ::/0
+lan-disallowed-ips: []
