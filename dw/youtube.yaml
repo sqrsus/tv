@@ -1,24 +1,20 @@
 proxies:
-    - name: "\U0001F1E8\U0001F1F3 CN 001 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: NjEkAYYNqFKUbrksyW1COBtdpU
-      port: 2428
-      server: 47.239.220.214
-      skip-cert-verify: true
-      sni: bing.com
-      tls: false
-      type: hysteria2
-    - name: "\U0001F1ED\U0001F1F0 HK 002 | ⬇️ 2.57 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: XK52yierGckONMJWbJnuskD3unI
-      port: 12854
-      server: 47.242.195.121
-      skip-cert-verify: true
-      sni: bing.com
-      type: hysteria2
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 003 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1E8\U0001F1F3 CN 000 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
-      server: 91.193.58.163
+      server: 156.238.18.207
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: yd.laoyoutiao.link
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 001 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.54
       tls: false
       type: vless
       udp: true
@@ -26,18 +22,51 @@ proxies:
       ws-opts:
         early-data-header-name: Sec-WebSocket-Protocol
         headers:
-            Host: kjgx.laoyoutiao.link
-        max-early-data: 2560
+            Host: sg.laoyoutiao.link
+        max-early-data: 2048
+        path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2/"
+    - delay: 1202
+      name: "\U0001F1FA\U0001F1F8 US 003 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.166
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: sg.laoyoutiao.link
         path: /Telegram@WangCai2/
-    - name: "\U0001F1F8\U0001F1EC SG 004 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 3hszBhqVsUhqOOFWJlev6k6Tkc
-      port: 22509
-      server: 47.129.224.62
-      skip-cert-verify: true
-      sni: bing.com
-      type: hysteria2
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 004 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5ce34fd0-61aa-41e2-bd12-0ff425246be9
+      port: 10066
+      server: 59.126.32.59
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 005 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 26997e99-57a0-48e3-8aea-8cebab89fecd
+      port: 10107
+      server: 36.235.10.223
+      type: ss
+      udp: true
+    - delay: 2341
+      name: "\U0001F1FA\U0001F1F8 US 006 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.169
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+        path: /Telegram@WangCai2/?ed
     - delay: 2115
-      name: "\U0001F1FA\U0001F1F8 US 005 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 007 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
       server: 156.238.18.190
@@ -49,153 +78,92 @@ proxies:
         headers:
             Host: sg.laoyoutiao.link
         path: /Telegram@节点狂魔2/
-    - delay: 2439
-      name: "\U0001F1FA\U0001F1F8 US 006 | ⬇️ 3.70 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.168
-      tls: false
-      type: vless
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 008 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 26997e99-57a0-48e3-8aea-8cebab89fecd
+      port: 10027
+      server: 1.165.101.192
+      type: ss
       udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: jp.laoyoutiao.link
-        path: /Telegram@WangCai2/
-    - delay: 1702
-      name: "\U0001F1FA\U0001F1F8 US 007 | ⬇️ 3.22 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.6
-      tls: false
-      type: vless
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 009 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 517d8f0a-6636-42f2-8580-62c94779d7ba
+      port: 10005
+      server: 118.170.215.96
+      type: ss
       udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: /Telegram
-    - name: "\U0001F1F8\U0001F1EC SG 008 | ⬇️ 7.43 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 5OiuCsPmULZ0lJwts89fegLJE
-      port: 17193
-      server: 52.221.210.182
-      skip-cert-verify: true
-      sni: bing.com
-      type: hysteria2
-    - delay: 2164
-      name: "\U0001F1FA\U0001F1F8 US 009 | ⬇️ 4.11 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.28
-      tls: false
-      type: vless
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 010 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: c13cbbd6-3630-4800-bf20-bec5f81497e9
+      port: 10012
+      server: 114.46.88.93
+      type: ss
       udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: /Telegram
-    - delay: 1768
-      name: "\U0001F1FA\U0001F1F8 US 010 | ⬇️ 5.22 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.13
-      tls: false
-      type: vless
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 011 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 381a837c-e89b-4f84-9a7e-89685b7f1bea
+      port: 10134
+      server: 36.232.80.11
+      type: ss
       udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: yd.laoyoutiao.link
-        path: /Telegram @MxlShare @WangCai2 /
-    - alterId: 0
-      cipher: auto
-      country: ' HK'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1ED\U0001F1F0 HK 011 | ⬇️ 4.20 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-      servername: broadcastlv.chat.bilibili.com
-      skip-cert-verify: true
-      type: vmess
-      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-      ws-opts:
-        headers:
-            HOST: broadcastlv.chat.bilibili.com
-        path: /
-    - alterId: 2
-      cipher: auto
-      country: ' HK'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1ED\U0001F1F0 HK 012 | ⬇️ 3.91 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-      servername: broadcastlv.chat.bilibili.com
-      skip-cert-verify: true
-      type: vmess
-      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-      ws-opts:
-        headers:
-            HOST: broadcastlv.chat.bilibili.com
-        path: /
-    - alterId: 2
-      cipher: auto
-      country: ' HK'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1ED\U0001F1F0 HK 013 | ⬇️ 6.53 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: hkt.gotochinatown.net
-      skip-cert-verify: true
-      type: vmess
-      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-      ws-path: /
-    - delay: 910
-      name: "\U0001F1FA\U0001F1F8 US 014 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.123
-      tls: false
-      type: vless
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 012 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 1c2fa5ce-bb64-4e10-8b22-fa5d81c095fd
+      port: 10026
+      server: 118.170.218.123
+      type: ss
       udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: sg.laoyoutiao.link
-        path: /Telegram@节点狂魔2/
-    - delay: 1763
-      name: "\U0001F1FA\U0001F1F8 US 015 | ⬇️ 3.54 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.24
-      tls: false
-      type: vless
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 014 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 517d8f0a-6636-42f2-8580-62c94779d7ba
+      port: 10016
+      server: 118.170.221.6
+      type: ss
       udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: /Telegram
-    - delay: 1582
-      name: "\U0001F1FA\U0001F1F8 US 016 | ⬇️ 3.09 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.77
-      tls: false
-      type: vless
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 015 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 517d8f0a-6636-42f2-8580-62c94779d7ba
+      port: 10149
+      server: 36.232.83.98
+      type: ss
       udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: yd.laoyoutiao.link
-        path: /Telegram @MxlShare @WangCai2 /?ed
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 016 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5ce34fd0-61aa-41e2-bd12-0ff425246be9
+      port: 10151
+      server: 36.232.123.141
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 017 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: b79d6a0c-9b90-4f39-8755-b7f4f84d4042
+      port: 10074
+      server: 114.46.93.14
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 019 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 1c2fa5ce-bb64-4e10-8b22-fa5d81c095fd
+      port: 10065
+      server: 114.46.90.37
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 020 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 201818da-79ef-496a-9bd5-1eb01211d5b3
+      port: 10055
+      server: 36.234.118.152
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 021 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bc60ddcd-d5bc-4212-a319-7dd59e991d25
+      port: 10129
+      server: 114.35.114.182
+      type: ss
+      udp: true
     - delay: 1194
-      name: "\U0001F1FA\U0001F1F8 US 017 | ⬇️ 4.12 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 022 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 8880
       server: 156.238.18.66
@@ -208,29 +176,227 @@ proxies:
             Host: jp.laoyoutiao.link
         path: /Telegram@WangCai2/
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1F3 CN 018 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: da225031-226a-4ba1-9cd9-05839de438c0
-      port: 10105
-      server: 125.228.34.244
+      name: "\U0001F1E8\U0001F1F3 CN 023 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: b79d6a0c-9b90-4f39-8755-b7f4f84d4042
+      port: 10050
+      server: 125.231.68.107
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1F3 CN 019 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1E8\U0001F1F3 CN 024 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: 201818da-79ef-496a-9bd5-1eb01211d5b3
-      port: 10094
-      server: 1.170.11.60
+      port: 10038
+      server: 114.46.92.220
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1F3 CN 020 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 18442008-77d2-44eb-bb7d-cff1f8f5cc0f
-      port: 10137
-      server: 125.228.162.163
+      name: "\U0001F1E8\U0001F1F3 CN 025 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 201818da-79ef-496a-9bd5-1eb01211d5b3
+      port: 10110
+      server: 1.170.30.90
       type: ss
       udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 026 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bc60ddcd-d5bc-4212-a319-7dd59e991d25
+      port: 10008
+      server: 114.46.69.124
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 027 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 381a837c-e89b-4f84-9a7e-89685b7f1bea
+      port: 10078
+      server: 36.234.88.193
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 028 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 381a837c-e89b-4f84-9a7e-89685b7f1bea
+      port: 10058
+      server: 59.126.32.1
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 029 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 381a837c-e89b-4f84-9a7e-89685b7f1bea
+      port: 10071
+      server: 114.46.64.69
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 030 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: cc72685d-c4b6-4d37-9edb-606afa58e012
+      port: 10096
+      server: 36.235.8.177
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 031 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bc60ddcd-d5bc-4212-a319-7dd59e991d25
+      port: 10131
+      server: 36.232.106.237
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 032 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: cc72685d-c4b6-4d37-9edb-606afa58e012
+      port: 10123
+      server: 36.232.88.152
+      type: ss
+      udp: true
+    - delay: 1976
+      name: "\U0001F1FA\U0001F1F8 US 033 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.142
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+        path: /Telegram@WangCai2/
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 034 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bc60ddcd-d5bc-4212-a319-7dd59e991d25
+      port: 10081
+      server: 125.228.180.250
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 035 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 517d8f0a-6636-42f2-8580-62c94779d7ba
+      port: 10117
+      server: 36.235.20.162
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 036 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: b12d7bef-dbe6-4eca-bc40-9a2333dcf918
+      port: 10019
+      server: 125.229.191.102
+      type: ss
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 038 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.211
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
+    - name: "\U0001F1E8\U0001F1F3 CN 040 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.112
+      tls: false
+      type: vless
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
+    - name: "\U0001F1E8\U0001F1F3 CN 042 | ⬇️ 12.77 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 44333
+      server: 1.65.249.221
+      servername: edge.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edge.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - name: "\U0001F1FA\U0001F1F8 US 044 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8843
+      server: 47.79.90.82
+      servername: edge.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edge.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - delay: 2439
+      name: "\U0001F1FA\U0001F1F8 US 045 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.168
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: jp.laoyoutiao.link
+        path: /Telegram@WangCai2/
+    - name: "\U0001F1FA\U0001F1F8 US 046 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 12220
+      server: 154.37.216.159
+      servername: edge.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edge.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - name: "\U0001F1F8\U0001F1EC SG 047 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+      port: 22509
+      server: 47.129.224.62
+      skip-cert-verify: true
+      sni: bing.com
+      type: hysteria2
+    - delay: 2442
+      name: "\U0001F1FA\U0001F1F8 US 048 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.217
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: sg.laoyoutiao.link
+        path: /Telegram@WangCai2/
+    - alterId: 0
+      cipher: auto
+      country: SG
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1F8\U0001F1EC SG 049 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 443
+      server: singapore2.helloshuai.com
+      servername: singapore2.helloshuai.com
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      uuid: 14a79148-3d75-41d6-a998-2be9edef88cb
+      ws-opts:
+        headers:
+            HOST: singapore2.helloshuai.com
+        path: /39cb4/
     - alterId: 2
       cipher: auto
-      name: "\U0001F1ED\U0001F1F0 HK 021 | ⬇️ 4.80 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1ED\U0001F1F0 HK 050 | ⬇️ 6.86 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 80
       server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
@@ -242,28 +408,7 @@ proxies:
         headers:
             Host: broadcastlv.chat.bilibili.com
         path: /
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1F3 CN 022 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 201818da-79ef-496a-9bd5-1eb01211d5b3
-      port: 10023
-      server: 125.229.191.103
-      type: ss
-      udp: true
-    - client-fingerprint: randomized
-      name: "\U0001F1FA\U0001F1F8 US 023 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8443
-      server: 162.159.129.67
-      servername: vle.amclubsapp.dpdns.org
-      tls: true
-      type: vless
-      udp: true
-      uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-      ws-opts:
-        headers:
-            Host: vle.amclubsapp.dpdns.org
-        path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-    - name: "\U0001F1E8\U0001F1F3 CN 024 | ⬇️ 5.25 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1E8\U0001F1F3 CN 052 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: L60nS04NhsoMpN2DDGbnMqLP8DY
       port: 11243
       server: 47.76.83.25
@@ -271,40 +416,183 @@ proxies:
       sni: bing.com
       tls: false
       type: hysteria2
-    - client-fingerprint: randomized
-      name: "\U0001F1E9\U0001F1EA DE 027 | ⬇️ 11.85 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - cipher: rc4-md5
+      name: "\U0001F1E8\U0001F1F3 CN 053 | ⬇️ 21.94 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: aIMe3C
+      port: 48657
+      server: tw05.graniterapids.com
+      type: ss
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 056 | ⬇️ 9.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 8443
-      server: 162.159.129.67
-      servername: vle.amclubsdns.dpdns.org
+      port: 11563
+      server: 206.237.1.59
+      servername: edge.esslh.filegear-sg.me
+      skip-cert-verify: true
       tls: true
       type: vless
       udp: true
-      uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
       ws-opts:
         headers:
-            Host: vle.amclubsdns.dpdns.org
-        path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-    - alterId: 0
-      cipher: auto
-      country: ' HK'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1ED\U0001F1F0 HK 028 | ⬇️ 3.94 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+            host: edge.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - delay: 910
+      name: "\U0001F1FA\U0001F1F8 US 059 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 80
-      server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-      servername: broadcastlv.chat.bilibili.com
+      port: 8880
+      server: 156.238.18.123
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: sg.laoyoutiao.link
+        path: /Telegram@节点狂魔2/
+    - name: "\U0001F1E8\U0001F1F3 CN 062 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: NjEkAYYNqFKUbrksyW1COBtdpU
+      port: 2428
+      server: 47.239.220.214
       skip-cert-verify: true
-      type: vmess
-      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-      ws-headers:
-        HOST: broadcastlv.chat.bilibili.com
-      ws-path: /
-    - name: "\U0001F1FA\U0001F1F8 US 029 关注我的频道获取更多 t.me/TheBestSubGroup"
+      sni: bing.com
+      tls: false
+      type: hysteria2
+    - delay: 1768
+      name: "\U0001F1FA\U0001F1F8 US 063 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.13
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: yd.laoyoutiao.link
+        path: /Telegram @MxlShare @WangCai2 /
+    - delay: 1702
+      name: "\U0001F1FA\U0001F1F8 US 068 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.6
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: us.laoyoutiao.link
+        path: /Telegram
+    - name: "\U0001F1F0\U0001F1F7 KR 074 | ⬇️ 8.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 16013
+      server: 218.148.210.150
+      servername: edge.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edge.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - name: "\U0001F1FA\U0001F1F8 US 076 | ⬇️ 5.30 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 2053
       server: 64.49.14.41
+      servername: sw.bgm2024.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 55520747-311e-4015-83ce-be46e2060ce3
+      ws-opts:
+        headers:
+            Host: sw.bgm2024.dpdns.org
+        path: /
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 077 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 26997e99-57a0-48e3-8aea-8cebab89fecd
+      port: 10116
+      server: 1.170.47.148
+      type: ss
+      udp: true
+    - name: "\U0001F1F0\U0001F1F7 KR 080 | ⬇️ 7.24 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 21326
+      server: 175.208.20.229
+      servername: edge.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edge.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - name: "\U0001F1F0\U0001F1F7 KR 082 | ⬇️ 4.41 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 12526
+      server: 118.38.245.243
+      servername: edge.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edge.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - name: "\U0001F1F0\U0001F1F7 KR 083 | ⬇️ 6.14 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 50001
+      server: 121.146.53.235
+      servername: edge.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edge.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - name: "\U0001F1F0\U0001F1F7 KR 087 | ⬇️ 3.51 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 12270
+      server: 119.200.48.55
+      servername: edge.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edge.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - name: "\U0001F1ED\U0001F1F0 HK 088 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: XK52yierGckONMJWbJnuskD3unI
+      port: 12854
+      server: 47.242.195.121
+      skip-cert-verify: true
+      sni: bing.com
+      type: hysteria2
+    - cipher: rc4-md5
+      name: "\U0001F1ED\U0001F1F0 HK 111 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: aIMe3C
+      port: 48657
+      server: 118.184.136.180
+      type: ss
+      udp: true
+    - name: "\U0001F1F0\U0001F1F7 KR 112 | ⬇️ 2.29 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 26538
+      server: 211.216.189.208
       servername: bw.bgm2024.dpdns.org
       skip-cert-verify: true
       tls: true
@@ -315,59 +603,14 @@ proxies:
         headers:
             host: bw.bgm2024.dpdns.org
         path: /?ed=2560
-    - name: "\U0001F1FA\U0001F1F8 US 031 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 2053
-      server: 64.49.14.41
-      servername: sw.bgm2024.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
+    - cipher: rc4-md5
+      name: "\U0001F1EF\U0001F1F5 JP 133 | ⬇️ 20.27 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: aIMe3C
+      port: 48657
+      server: hr15.graniterapids.com
+      type: ss
       udp: true
-      uuid: 55520747-311e-4015-83ce-be46e2060ce3
-      ws-opts:
-        headers:
-            host: sw.bgm2024.dpdns.org
-        path: /?ed=2560
-    - client-fingerprint: randomized
-      name: "\U0001F1E9\U0001F1EA DE 032 | ⬇️ 7.71 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: 162.159.133.85
-      servername: vle.amclubsdns.dpdns.org
-      tls: true
-      type: vless
-      udp: true
-      uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-      ws-opts:
-        headers:
-            Host: vle.amclubsdns.dpdns.org
-        path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-    - name: "\U0001F1FA\U0001F1F8 US 035 | ⬇️ 8.80 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: d6b8011a-c725-435a-9fec-bf6d3530392c
-      port: 8443
-      server: 156.238.18.220
-      skip-cert-verify: true
-      sni: vle.amclubssss.dpdns.org
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            Host: vle.amclubssss.dpdns.org
-        path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-    - name: "\U0001F1E8\U0001F1F3 CN 039 | ⬇️ 4.73 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.222
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - name: "\U0001F1F8\U0001F1EC SG 046 | ⬇️ 3.82 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1F8\U0001F1EC SG 216 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: lPK6OZ9ouqyXrCghO6ohUbbN5g
       port: 33131
       server: 8.222.183.55
@@ -375,103 +618,7 @@ proxies:
       sni: bing.com
       tls: false
       type: hysteria2
-    - name: "\U0001F1FA\U0001F1F3 UN 052 | ⬇️ 5.83 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: RzQrEkAmnGs86IhmSVUk9Q5cn9M
-      port: 30308
-      server: 47.236.104.81
-      skip-cert-verify: true
-      sni: bing.com
-      type: hysteria2
-    - name: "\U0001F1F0\U0001F1F7 KR 092 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 50001
-      server: 115.136.160.13
-      servername: sw.bgm2024.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 55520747-311e-4015-83ce-be46e2060ce3
-      ws-opts:
-        headers:
-            host: sw.bgm2024.dpdns.org
-        path: /?ed=2560
-    - name: "\U0001F1FA\U0001F1F8 US 095 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 2053
-      server: 64.49.14.41
-      servername: sw.bgm2024.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 55520747-311e-4015-83ce-be46e2060ce3
-      ws-opts:
-        headers:
-            Host: sw.bgm2024.dpdns.org
-        path: /
-    - name: "\U0001F1F0\U0001F1F7 KR 096 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 26538
-      server: 211.216.189.208
-      servername: sw.bgm2024.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 55520747-311e-4015-83ce-be46e2060ce3
-      ws-opts:
-        headers:
-            host: sw.bgm2024.dpdns.org
-        path: /?ed=2560
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1EB\U0001F1EE FI 101 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: aObvLFQBhTQ1
-      port: 443
-      server: 81.177.214.214
-      type: ss
-    - name: "\U0001F1E8\U0001F1F3 CN 111 | ⬇️ 9.06 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.112
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - cipher: aes-256-cfb
-      country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 164 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.155.18
-      type: ss
-    - auth: 7607069f-8895-48c0-b866-22268ed06ba8
-      name: "\U0001F1F7\U0001F1FA RU 222 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 7607069f-8895-48c0-b866-22268ed06ba8
-      port: 40001
-      server: els2.dimoyun.top
-      skip-cert-verify: true
-      sni: els1.dimoyun.top
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1FA\U0001F1F8 US 282 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 26538
-      server: 211.216.189.208
-      servername: sw.bgm2024.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 55520747-311e-4015-83ce-be46e2060ce3
-      ws-opts:
-        headers:
-            Host: sw.bgm2024.dpdns.org
-        path: /
-    - name: "\U0001F1EE\U0001F1F3 IN 315 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1EE\U0001F1F3 IN 226 | ⬇️ 14.67 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: ttfang
       port: 443
@@ -484,10 +631,110 @@ proxies:
         headers:
             Host: ttfang.fange.me
         path: /
-    - name: "\U0001F1FA\U0001F1F8 US 335 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1FA\U0001F1F8 US 249 | ⬇️ 4.64 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 443
+      server: 141.147.176.157
+      servername: edge.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edge.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - name: "\U0001F1EB\U0001F1F7 FR 256 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 35333
+      server: 141.11.149.48
+      servername: edge.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edge.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - alterId: 2
+      cipher: auto
+      ip-version: dual
+      name: "\U0001F1FA\U0001F1F3 UN 280 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 30835
+      server: v35.heduian.link
+      type: vmess
+      udp: true
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      ws-opts:
+        headers:
+            host: baidu.com
+        path: /oooo
+    - name: "\U0001F1FA\U0001F1F8 US 293 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 80
+      server: 104.18.26.90
+      servername: blaze-can-118.blazecanada.site
+      skip-cert-verify: false
+      tls: false
+      type: vless
+      udp: true
+      uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
+      ws-opts:
+        headers:
+            Host: blaze-can-118.blazecanada.site
+        path: /?ed=2560
+    - name: "\U0001F1FA\U0001F1F8 US 298 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 10240
+      server: 34.81.140.124
+      servername: edge.esslh.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edge.esslh.filegear-sg.me
+        path: /?ed=2560&proxyip=ts.hpc.tw
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: edge
+      name: "\U0001F1F8\U0001F1EC SG 301 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: mgBXZEN33mAzVxdZYp8_LumlT9bF6LMYlu6UFDCargI
+        short-id: 98d321ab
+      server: 167.99.67.119
+      servername: sustainability.honda.asia
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: dead1bb8-e95a-4517-8ed2-e0694de80ba6
+    - name: "\U0001F1FA\U0001F1F8 US 343 | ⬇️ 2.95 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 26538
       server: 211.216.189.208
+      servername: sw.bgm2024.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 55520747-311e-4015-83ce-be46e2060ce3
+      ws-opts:
+        headers:
+            Host: sw.bgm2024.dpdns.org
+        path: /
+    - name: "\U0001F1FA\U0001F1F8 US 370 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2053
+      server: 64.49.14.41
       servername: bw.bgm2024.dpdns.org
       skip-cert-verify: true
       tls: true
@@ -498,3 +745,37 @@ proxies:
         headers:
             Host: bw.bgm2024.dpdns.org
         path: /
+    - delay: 1582
+      name: "\U0001F1FA\U0001F1F8 US 386 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8880
+      server: 156.238.18.77
+      tls: false
+      type: vless
+      udp: true
+      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+      ws-opts:
+        headers:
+            Host: yd.laoyoutiao.link
+        path: /Telegram @MxlShare @WangCai2 /?ed
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1ED\U0001F1F0 HK 397 | ⬇️ 7.80 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 80
+      server: hkt.gotochinatown.net
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+      ws-opts:
+        headers:
+            Host: hkt.gotochinatown.net
+        path: /
+    - cipher: rc4-md5
+      name: "\U0001F1EF\U0001F1F5 JP 533 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: aIMe3C
+      port: 48657
+      server: hr12.graniterapids.com
+      type: ss
+      udp: true
