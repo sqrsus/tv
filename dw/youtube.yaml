@@ -1,311 +1,82 @@
 proxies:
-    - name: "\U0001F1E8\U0001F1F3 CN 000 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.222
-      tls: false
-      type: vless
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: "Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    - delay: 559
-      name: "\U0001F1FA\U0001F1F8 US 001 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8880
-      server: 156.238.18.63
-      tls: false
-      type: vless
-      udp: true
-      uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-      ws-opts:
-        headers:
-            Host: us.laoyoutiao.link
-        path: /Telegram
-    - name: "\U0001F1FA\U0001F1F8 US 002 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: 47.76.218.163
-      servername: edge.esslh.filegear-sg.me
+    - cipher: chacha20-ietf
+      country: ' DO'
+      name: "\U0001F1EF\U0001F1F5 JP 000 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: asd123456
+      port: 8388
+      server: 154.197.26.237
+      type: ss
+    - alterId: 0
+      name: "\U0001F1EF\U0001F1F5 JP 001 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 253bc477d4e43c209f2d427272968280
+      port: 40950
+      server: 36.150.215.203
       skip-cert-verify: true
+      sni: www.baidu.com
       tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1FA\U0001F1F8 US 003 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: 47.76.218.163
-      servername: edge.esslh.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            Host: edge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1FA\U0001F1F8 US 005 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8843
-      server: 47.79.90.82
-      servername: edge.esslh.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            Host: edge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1FA\U0001F1F8 US 008 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8843
-      server: 47.79.90.82
-      servername: edge.esslh.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            Host: edge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - country: SG
-      delay: 2052
-      name: "\U0001F1F8\U0001F1EC SG 013 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 3hszBhqVsUhqOOFWJlev6k6Tkc
-      port: 22509
-      server: 47.129.224.62
-      skip-cert-verify: true
-      sni: bing.com
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1FA\U0001F1F8 US 015 | ⬇️ 3.87 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 50000
-      server: 14.42.206.205
-      servername: edge.esslh.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            Host: edge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1F0\U0001F1F7 KR 016 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 60002
-      server: 119.64.242.60
-      servername: fv.ylka.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            host: fv.ylka.dpdns.org
-        path: /?ed=2560
-    - name: "\U0001F1FA\U0001F1F8 US 017 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 12526
-      server: 118.38.245.243
-      servername: edge.esslh.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            Host: edge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1FA\U0001F1F8 US 020 | ⬇️ 2.32 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 50001
-      server: 49.143.180.18
-      servername: edge.esslh.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            Host: edge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1E8\U0001F1E6 CA 024 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 50000
-      server: 123.142.9.101
-      servername: fv.ylka.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            host: fv.ylka.dpdns.org
-        path: /?ed=2560
-    - name: "\U0001F1F0\U0001F1F7 KR 027 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: Aimer
-      port: 50000
-      server: 14.42.206.205
-      skip-cert-verify: true
-      sni: epge.esslh.filegear-sg.me
       type: trojan
       udp: true
-      ws-opts:
-        headers:
-            Host: epge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1FA\U0001F1F8 US 031 | ⬇️ 4.65 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 21326
-      server: 175.208.20.229
-      servername: edge.esslh.filegear-sg.me
-      skip-cert-verify: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1F8\U0001F1EC SG 002 | ⬇️ 2.70 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 8080
+      reality-opts:
+        public-key: LmdkJJjr6pRvyiyzEztiiH64mAVeHuV3Tm-JGUX1jic
+      server: vl1.cpddx.club
+      servername: www.bing.com
       tls: true
       type: vless
       udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            Host: edge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1FA\U0001F1F8 US 032 | ⬇️ 5.73 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 12270
-      server: 119.200.48.55
-      servername: edge.esslh.filegear-sg.me
+      uuid: fd8e74c3-fbd2-466e-9af4-d833e43bda41
+    - alterId: 0
+      name: "\U0001F1F8\U0001F1EC SG 003 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 253bc477d4e43c209f2d427272968280
+      port: 3043
+      server: 36.150.215.203
       skip-cert-verify: true
+      sni: www.baidu.com
       tls: true
-      type: vless
+      type: trojan
       udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            Host: edge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1FA\U0001F1F8 US 034 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 50000
-      server: 123.142.9.101
-      servername: fv.ylka.dpdns.org
+    - alterId: 0
+      name: "\U0001F1F8\U0001F1EC SG 004 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 253bc477d4e43c209f2d427272968280
+      port: 4397
+      server: 36.150.215.203
       skip-cert-verify: true
+      sni: www.baidu.com
       tls: true
-      type: vless
+      type: trojan
       udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            Host: fv.ylka.dpdns.org
-        path: /
-    - name: "\U0001F1FA\U0001F1F8 US 036 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 50000
-      server: 123.142.9.101
-      servername: jv.ylka.dpdns.org
+    - alterId: 0
+      name: "\U0001F1EF\U0001F1F5 JP 006 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 253bc477d4e43c209f2d427272968280
+      port: 3270
+      server: 36.150.215.203
       skip-cert-verify: true
+      sni: www.baidu.com
       tls: true
-      type: vless
+      type: trojan
       udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            Host: jv.ylka.dpdns.org
-        path: /
-    - name: "\U0001F1FA\U0001F1F8 US 038 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - alterId: 0
+      cipher: auto
+      country: HK
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1EC\U0001F1E7 GB 031 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 35333
-      server: 141.11.149.48
-      servername: edge.esslh.filegear-sg.me
+      port: 52512
+      server: aflzzul.meiquankongjian.com
+      servername: aflzzul.meiquankongjian.com
       skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      type: vmess
+      uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
       ws-opts:
         headers:
-            Host: edge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1FA\U0001F1F8 US 041 | ⬇️ 4.38 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 19443
-      server: 112.173.231.254
-      servername: edge.esslh.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            Host: edge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1FA\U0001F1F8 US 042 | ⬇️ 4.15 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 19443
-      server: 112.173.231.254
-      servername: edge.esslh.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            Host: edge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1FA\U0001F1F8 US 096 | ⬇️ 7.52 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 12270
-      server: 119.200.48.55
-      servername: edge.esslh.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            Host: edge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - cipher: chacha20-ietf-poly1305
-      country: US
-      name: "\U0001F1FA\U0001F1F8 US 110 | ⬇️ 4.83 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 5f4bfeb5-841f-432d-af81-9058f153caef
-      port: 51161
-      server: tw.miaolianyunapp.com
-      type: ss
-    - name: "\U0001F1FA\U0001F1F8 US 112 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 50000
-      server: 221.161.207.216
-      servername: jv.ylka.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            Host: jv.ylka.dpdns.org
-        path: /
-    - name: "\U0001F1EE\U0001F1F3 IN 151 关注我的频道获取更多 t.me/TheBestSubGroup"
+            HOST: aflzzul.meiquankongjian.com
+        path: /564dfa20/
+    - name: "\U0001F1EE\U0001F1F3 IN 077 | ⬇️ 5.23 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: ttfang
       port: 443
@@ -317,45 +88,4 @@ proxies:
       ws-opts:
         headers:
             Host: ttfang.fange.me
-        path: /
-    - name: "\U0001F1F0\U0001F1F7 KR 263 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: Aimer
-      port: 50000
-      server: 121.130.68.136
-      skip-cert-verify: true
-      sni: epge.esslh.filegear-sg.me
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            Host: epge.esslh.filegear-sg.me
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1FA\U0001F1F8 US 295 | ⬇️ 11.94 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 60002
-      server: 119.64.242.60
-      servername: jv.ylka.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            Host: jv.ylka.dpdns.org
-        path: /
-    - name: "\U0001F1FA\U0001F1F8 US 330 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 60002
-      server: 119.64.242.60
-      servername: fv.ylka.dpdns.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            Host: fv.ylka.dpdns.org
         path: /
