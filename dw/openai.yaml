@@ -1,118 +1,121 @@
 proxies:
-    - name: "\U0001F1F8\U0001F1EC SG 000 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 5OiuCsPmULZ0lJwts89fegLJE
-      port: 17193
-      server: 47.129.100.149
-      skip-cert-verify: true
-      sni: bing.com
-      type: hysteria2
-    - client-fingerprint: firefox
-      flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8 US 004 | ⬇️ 6.38 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: 0n_NS2q2bvgpgQt0-gNmGNXTH-B0aqaJdE1A40sjsyE
-      server: 64.81.117.172
-      servername: ts2.tc.mm.bing.net
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 001 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: be2c356f-fb47-4874-8958-a1572210042f
+      port: 10060
+      server: 125.231.66.145
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 003 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: fb99409f-560e-45bb-84ea-edf1796200f7
+      port: 10100
+      server: 1.170.8.182
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 004 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: dc977451-743a-490d-a5f8-817874635fce
+      port: 10099
+      server: 1.170.37.220
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 005 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8070e3b8-f49d-4934-811a-3203077852a1
+      port: 10031
+      server: 118.170.200.223
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 007 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: fb99409f-560e-45bb-84ea-edf1796200f7
+      port: 10043
+      server: 114.46.118.137
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 008 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: fc454ebd-591d-43ae-b0fd-ecee4cbe442a
+      port: 10023
+      server: 125.229.191.103
+      type: ss
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 010 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: e889ff36-a27f-477e-bcb5-f2ccdb361de5
+      port: 21085
+      ports: 21001-21099
+      server: yue-tw.yuetoto.net
       skip-cert-verify: false
+      sni: yue-tw.yuetoto.net
+      type: hysteria2
+    - name: "\U0001F1F0\U0001F1F7 KR 011 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: e889ff36-a27f-477e-bcb5-f2ccdb361de5
+      port: 21039
+      ports: 21001-21099
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      sni: yue-kr.yuetoto.net
+      type: hysteria2
+    - name: "\U0001F1E6\U0001F1EA AE 014 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: e889ff36-a27f-477e-bcb5-f2ccdb361de5
+      port: 21065
+      ports: 21001-21099
+      server: yue-tr.yuetoto.net
+      skip-cert-verify: false
+      sni: yue-tr.yuetoto.net
+      type: hysteria2
+    - name: "\U0001F1FA\U0001F1F3 UN 017 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: e889ff36-a27f-477e-bcb5-f2ccdb361de5
+      port: 21003
+      ports: 21001-21099
+      server: yue-tr.yuetoto.net
+      skip-cert-verify: false
+      sni: yue-tr.yuetoto.net
+      type: hysteria2
+    - auth: 8873807e-7932-4b31-b996-51621ae05865
+      name: "\U0001F1FA\U0001F1F8 US 019 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8873807e-7932-4b31-b996-51621ae05865
+      port: 37771
+      server: mg1.xiaohuolongjc.top
+      skip-cert-verify: true
+      sni: mg1.xiaohuolongjc.top
+      type: hysteria2
+      udp: true
+    - cipher: aes-256-cfb
+      country: ' CN'
+      name: "\U0001F1E8\U0001F1F3 CN 020 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+      port: 38388
+      server: 103.186.154.32
+      type: ss
+    - client-fingerprint: edge
+      flow: xtls-rprx-vision
+      name: "\U0001F1FA\U0001F1F8 US 021 | ⬇️ 9.52 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 10001
+      reality-opts:
+        public-key: T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4
+      server: 1002.952326.xyz
+      servername: www.python.org
       tls: true
       type: vless
-      uuid: 0cd07402-0edb-4890-808d-cd6f0e2625ee
-    - auth: 7607069f-8895-48c0-b866-22268ed06ba8
-      name: "\U0001F1FA\U0001F1F8 US 005 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 7607069f-8895-48c0-b866-22268ed06ba8
-      port: 40001
-      server: rb.dimoyun.top
-      skip-cert-verify: true
-      sni: rb.dimoyun.top
-      type: hysteria2
       udp: true
-    - alterId: 0
-      cipher: auto
-      country: ' US'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1FA\U0001F1F8 US 006 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 52511
-      server: aflzzul.meiquankongjian.com
-      servername: aflzzul.meiquankongjian.com
+      uuid: 9ccd5d9c-6c15-4d2a-b276-c6b6a009d091
+    - country: FR
+      name: "\U0001F1EB\U0001F1F7 FR 022 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: telegram-id-directvpn
+      port: 22223
+      server: 52.47.133.190
       skip-cert-verify: true
-      type: vmess
-      uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-      ws-opts:
-        headers:
-            HOST: aflzzul.meiquankongjian.com
-        path: /564dfa20/
-    - cipher: aes-256-cfb
-      country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 008 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.155.23
-      type: ss
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 55
-      fast-open: true
-      name: "\U0001F1FA\U0001F1F3 UN 010 关注我的频道获取更多 t.me/TheBestSubGroup"
-      port: 49003
-      protocol: udp
-      server: 51.159.226.1
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      up: 11
-    - cipher: aes-256-cfb
-      country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 012 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.154.20
-      type: ss
-    - name: "\U0001F1FA\U0001F1F8 US 014 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 16461a78-363c-457a-92f9-83b0a68edc37
-      port: 2056
-      server: zp1.eyucdn.xyz
-      skip-cert-verify: true
-      sni: zp1.eyujichang.xyz
-      type: hysteria2
-    - alterId: 2
-      cipher: auto
-      ip-version: dual
-      name: "\U0001F1E6\U0001F1FA AU 016 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 30835
-      server: v35.heduian.link
-      type: vmess
+      sni: trojan.burgerip.co.uk
+      type: trojan
       udp: true
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-      ws-opts:
-        headers:
-            host: baidu.com
-        path: /oooo
-    - alterId: 2
-      cipher: auto
-      name: "\U0001F1E8\U0001F1F3 CN 032 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 30806
-      server: v6.heduian.link
-      skip-cert-verify: false
-      tls: false
-      type: vmess
-      udp: true
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-      ws-opts:
-        headers:
-            Host: ocbc.com
-        path: /oooo
     - alpn:
         - h3
       auth_str: dongtaiwang.com
       down: 55 Mbps
-      name: "\U0001F1F3\U0001F1F1 NL 053 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1F3\U0001F1F1 NL 025 关注我的频道获取更多 t.me/TheBestSubGroup"
       port: 37519
       ports: 10000-20000
       server: 109.104.153.91
@@ -120,66 +123,32 @@ proxies:
       sni: apple.com
       type: hysteria
       up: 11 Mbps
-    - alterId: 2
-      cipher: auto
-      country: ' HK'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1ED\U0001F1F0 HK 055 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-      servername: broadcastlv.chat.bilibili.com
-      skip-cert-verify: true
-      type: vmess
-      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-      ws-opts:
-        headers:
-            HOST: broadcastlv.chat.bilibili.com
-        path: /
-    - country: ' US'
-      name: "\U0001F1FA\U0001F1F8 US 057 | ⬇️ 8.53 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
-      port: 1066
-      server: 194.104.147.74
-      skip-cert-verify: true
-      type: trojan
+    - name: "\U0001F1FA\U0001F1F3 UN 067 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: e889ff36-a27f-477e-bcb5-f2ccdb361de5
+      port: 21002
+      ports: 21001-21099
+      server: yue-ng.yuetoto.net
+      skip-cert-verify: false
+      sni: yue-ng.yuetoto.net
+      type: hysteria2
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1E9\U0001F1EA DE 072 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 443
+      reality-opts:
+        public-key: GyivnLvG6JEO7xV9PI12Z0XTLZJGClBHOcpHwSfrsj4
+        short-id: e3015cd4
+      server: 178.17.58.126
+      servername: outlook.office.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
       udp: true
-    - alterId: 2
-      cipher: auto
-      delay: 1602
-      name: "\U0001F1EC\U0001F1E7 GB 068 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 30836
-      server: v36.heduian.link
-      skip-cert-verify: true
-      tls: false
-      type: vmess
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-      ws-opts:
-        headers:
-            Host: v36.heduian.link
-        path: /oooo
-    - alterId: 0
-      cipher: auto
-      country: ' US'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1FA\U0001F1F8 US 074 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 52513
-      server: aflzzul.meiquankongjian.com
-      servername: aflzzul.meiquankongjian.com
-      skip-cert-verify: true
-      type: vmess
-      uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-      ws-opts:
-        headers:
-            HOST: aflzzul.meiquankongjian.com
-        path: /564dfa20/
+      uuid: 6035325d-399a-5148-9126-29cedfd5966a
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1F0\U0001F1F7 KR 086 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
-      port: 19852
-      server: mm.huawei-api.top
+      delay: 2076
+      name: "\U0001F1F9\U0001F1F7 TR 074 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: qscavF5UviIL-8V-E4raBA
+      port: 2222
+      server: 62.133.63.226
       type: ss

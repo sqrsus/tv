@@ -1,24 +1,75 @@
 proxies:
-    - name: "\U0001F1F8\U0001F1EC SG 000 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 5OiuCsPmULZ0lJwts89fegLJE
-      port: 17193
-      server: 47.129.100.149
-      skip-cert-verify: true
-      sni: bing.com
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 001 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: be2c356f-fb47-4874-8958-a1572210042f
+      port: 10060
+      server: 125.231.66.145
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 003 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: fb99409f-560e-45bb-84ea-edf1796200f7
+      port: 10100
+      server: 1.170.8.182
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 004 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: dc977451-743a-490d-a5f8-817874635fce
+      port: 10099
+      server: 1.170.37.220
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 005 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8070e3b8-f49d-4934-811a-3203077852a1
+      port: 10031
+      server: 118.170.200.223
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 007 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: fb99409f-560e-45bb-84ea-edf1796200f7
+      port: 10043
+      server: 114.46.118.137
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E8\U0001F1F3 CN 008 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: fc454ebd-591d-43ae-b0fd-ecee4cbe442a
+      port: 10023
+      server: 125.229.191.103
+      type: ss
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 010 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: e889ff36-a27f-477e-bcb5-f2ccdb361de5
+      port: 21085
+      ports: 21001-21099
+      server: yue-tw.yuetoto.net
+      skip-cert-verify: false
+      sni: yue-tw.yuetoto.net
       type: hysteria2
-    - country: TW
-      name: "\U0001F1F9\U0001F1FC TW 009 | ⬇️ 5.33 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 0d9154c94b184c65
-      port: 30010
-      server: zhw9527k.qt1999.xyz
+    - name: "\U0001F1F0\U0001F1F7 KR 011 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: e889ff36-a27f-477e-bcb5-f2ccdb361de5
+      port: 21039
+      ports: 21001-21099
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      sni: yue-kr.yuetoto.net
+      type: hysteria2
+    - name: "\U0001F1ED\U0001F1F0 HK 013 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 61189285-f603-468a-be97-60b0a005ad7f
+      port: 39765
+      server: cdntwa.xiaomispeed.com
       skip-cert-verify: true
-      sni: zhw9527k.qt1999.xyz
+      sni: cdntwa.xiaomispeed.com
       type: trojan
       udp: true
-    - cipher: aes-256-cfb
-      country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 012 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.154.20
-      type: ss
+    - name: "\U0001F1ED\U0001F1F0 HK 015 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: e889ff36-a27f-477e-bcb5-f2ccdb361de5
+      port: 21088
+      ports: 21001-21099
+      server: yue-hk.yuetoto.net
+      skip-cert-verify: false
+      sni: yue-hk.yuetoto.net
+      type: hysteria2
