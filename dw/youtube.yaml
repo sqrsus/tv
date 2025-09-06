@@ -1,308 +1,46 @@
 proxies:
-    - cipher: chacha20-ietf-poly1305
-      country: ' HK'
-      name: "\U0001F1EF\U0001F1F5 JP 000 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50202
-      server: hk03.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' HK'
-      name: "\U0001F1ED\U0001F1F0 HK 001 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50200
-      server: hk01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' TW'
-      name: "\U0001F1F9\U0001F1FC TW 004 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50757
-      server: tw03.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' AU'
-      name: "\U0001F1F8\U0001F1EC SG 005 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50226
-      server: sg09.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' TW'
-      name: "\U0001F1F9\U0001F1FC TW 011 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 53234
-      server: tw01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1F3 CN 012 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 245fb20c-8231-4228-b6f2-de138a4a6eb3
-      port: 10061
-      server: 118.170.198.195
-      type: ss
+    - country: ' JP'
+      name: "\U0001F1EF\U0001F1F5 JP 000 | ⬇️ 37.99 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 82d0fb76-b9ff-41c2-ba15-2aec44f78e7c
+      port: 23012
+      server: okanc.iepl.cac.cab
+      skip-cert-verify: true
+      type: trojan
       udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1F3 CN 013 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 73cd08a5-42f3-4807-8363-b7d14c1a1a56
-      port: 10048
-      server: 114.46.80.189
-      type: ss
+    - alterId: 0
+      cipher: auto
+      delay: 1514
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1E8\U0001F1F3 CN 001 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: none
+      port: 40762
+      server: 103.115.109.250
+      type: vmess
+      uuid: 35ce6e3a-4ddc-472c-9e9f-a34362c194e7
+    - cipher: auto
+      name: "\U0001F1F0\U0001F1F7 KR 003 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 16963
+      server: 203.227.62.199
+      tls: false
+      type: vless
+      uuid: 4280eeb2-a416-4788-8c61-ebd669c8a367
+      ws-opts:
+        path: /2123
+    - client-fingerprint: firefox
+      flow: xtls-rprx-vision
+      name: "\U0001F1EF\U0001F1F5 JP 014 | ⬇️ 31.13 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 53418
+      reality-opts:
+        public-key: WP1g1ZkhRy2hhRKj2mkndv7V5Ecd_90gqBH-J1e8yGE
+        short-id: e044d2a7
+      server: 47.79.85.119
+      servername: www.7-zip.org
+      skip-cert-verify: true
+      tfo: false
+      tls: true
+      type: vless
       udp: true
-    - cipher: chacha20-ietf-poly1305
-      country: ' AU'
-      name: "\U0001F1F8\U0001F1EC SG 014 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50226
-      server: sg09.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' AU'
-      name: "\U0001F1F8\U0001F1EC SG 015 | ⬇️ 4.64 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50218
-      server: sg01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' TW'
-      name: "\U0001F1F9\U0001F1FC TW 018 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 53234
-      server: tw01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' HK'
-      name: "\U0001F1EF\U0001F1F5 JP 020 | ⬇️ 3.06 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50208
-      server: hk09.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' AU'
-      name: "\U0001F1F8\U0001F1EC SG 021 | ⬇️ 5.07 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50221
-      server: sg04.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' MY'
-      name: "\U0001F1F2\U0001F1FE MY 022 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 53898
-      server: my01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' AU'
-      name: "\U0001F1F8\U0001F1EC SG 023 | ⬇️ 3.48 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50219
-      server: sg02.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' JP'
-      name: "\U0001F1EF\U0001F1F5 JP 024 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50216
-      server: jp07.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' JP'
-      name: "\U0001F1EF\U0001F1F5 JP 025 | ⬇️ 3.42 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50210
-      server: jp01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' JP'
-      name: "\U0001F1EF\U0001F1F5 JP 027 | ⬇️ 3.08 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50213
-      server: jp04.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' AU'
-      name: "\U0001F1F8\U0001F1EC SG 028 | ⬇️ 2.18 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50222
-      server: sg05.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' AU'
-      name: "\U0001F1F8\U0001F1EC SG 029 | ⬇️ 4.23 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50224
-      server: sg07.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' HK'
-      name: "\U0001F1ED\U0001F1F0 HK 030 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50208
-      server: hk09.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' ID'
-      name: "\U0001F1EE\U0001F1E9 ID 031 | ⬇️ 3.27 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50238
-      server: id01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' KH'
-      name: "\U0001F1F0\U0001F1ED KH 032 | ⬇️ 2.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50733
-      server: kh01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' TW'
-      name: "\U0001F1F9\U0001F1FC TW 033 | ⬇️ 3.56 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50235
-      server: tw02.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' JP'
-      name: "\U0001F1EF\U0001F1F5 JP 035 | ⬇️ 2.45 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50214
-      server: jp05.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' MY'
-      name: "\U0001F1F2\U0001F1FE MY 036 | ⬇️ 4.35 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 53898
-      server: my01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' JP'
-      name: "\U0001F1EF\U0001F1F5 JP 037 | ⬇️ 4.45 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50212
-      server: jp03.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' JP'
-      name: "\U0001F1EF\U0001F1F5 JP 038 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50216
-      server: jp07.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' JP'
-      name: "\U0001F1EF\U0001F1F5 JP 039 | ⬇️ 3.57 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50217
-      server: jp08.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' TW'
-      name: "\U0001F1F9\U0001F1FC TW 040 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50757
-      server: tw03.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' JP'
-      name: "\U0001F1EF\U0001F1F5 JP 041 | ⬇️ 2.04 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50214
-      server: jp05.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' AU'
-      name: "\U0001F1F8\U0001F1EC SG 044 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50222
-      server: sg05.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' IN'
-      name: "\U0001F1EE\U0001F1F3 IN 045 | ⬇️ 2.81 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50237
-      server: in01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' US'
-      name: "\U0001F1FA\U0001F1F8 US 046 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50246
-      server: kr01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' VN'
-      name: "\U0001F1FB\U0001F1F3 VN 047 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50233
-      server: vn01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' IN'
-      name: "\U0001F1EE\U0001F1F3 IN 048 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50237
-      server: in01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' AU'
-      name: "\U0001F1F8\U0001F1EC SG 052 | ⬇️ 4.19 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50223
-      server: sg06.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' HK'
-      name: "\U0001F1ED\U0001F1F0 HK 053 | ⬇️ 9.73 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 58456
-      server: hk11.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' US'
-      name: "\U0001F1FA\U0001F1F8 US 055 | ⬇️ 6.68 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50734
-      server: ru01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1F9\U0001F1FC TW 056 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 97984a4e-0c49-45a1-94c2-c9b7f81a6a78
-      port: 10065
-      server: 125.231.72.120
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' JP'
-      name: "\U0001F1EF\U0001F1F5 JP 057 | ⬇️ 10.92 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50212
-      server: jp03.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' CA'
-      name: "\U0001F1E8\U0001F1E6 CA 060 | ⬇️ 8.67 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50236
-      server: ca01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' TH'
-      name: "\U0001F1F9\U0001F1ED TH 078 | ⬇️ 7.14 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 53899
-      server: th01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' PH'
-      name: "\U0001F1F5\U0001F1ED PH 092 | ⬇️ 7.78 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50731
-      server: ph01.ssyhi.xyz
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: ' US'
-      name: "\U0001F1FA\U0001F1F8 US 124 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fffcfef7-07a9-4156-a0e3-da8453d69cba
-      port: 50246
-      server: kr01.ssyhi.xyz
-      type: ss
+      uuid: 948ee377-a1e6-4f1c-919d-2c9086918df9

@@ -1,219 +1,35 @@
 proxies:
-    - name: "\U0001F1FA\U0001F1F8 US 006 | ⬇️ 3.38 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 185.18.184.66
-      servername: hello.96xckkzx.workers.dev
-      type: vless
-      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-      ws-opts:
-        headers:
-            Host: hello.96xckkzx.workers.dev
-        path: /
-    - name: "\U0001F1F3\U0001F1F1 NL 007 | ⬇️ 11.34 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 185.18.184.66
-      servername: hello.96xckkzx.workers.dev
+    - name: "\U0001F1FA\U0001F1F8 US 007 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: gs4BXwT6SW
+      port: 10988
+      server: 154.26.192.123
+      type: http
+      username: fQ67Dpe5dU
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1FA\U0001F1F8 US 011 | ⬇️ 8.91 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 29090
+      reality-opts:
+        public-key: cBrf4kTogp3DtMVYS0co5kxvP1IcmcDAAOBP_c_nyCk
+      server: 64.81.30.8
+      servername: updates.cdn-apple.com
       skip-cert-verify: false
-      tls: false
+      tls: true
       type: vless
-      udp: true
-      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-      ws-opts:
-        headers:
-            Host: hello.96xckkzx.workers.dev
-        path: /
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 100
-      fast-open: true
-      name: "\U0001F1F3\U0001F1F1 NL 010 关注我的频道获取更多 t.me/TheBestSubGroup"
-      port: 37519
-      ports: 10000-20000
-      protocol: udp
-      server: 109.104.153.91
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      up: 80
-    - name: "\U0001F1FA\U0001F1F8 US 011 | ⬇️ 3.50 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      packet-encoding: xudp
-      port: 2082
-      server: 159.112.235.174
-      servername: workerr.schodog1.workers.dev
-      skip-cert-verify: false
-      tls: false
-      type: vless
-      udp: true
-      uuid: 47e9a0db-50c6-4522-8819-502c55b06dde
-      ws-opts:
-        headers:
-            Host: workerr.schodog1.workers.dev
-        path: /?ed=2048
-    - name: "\U0001F1F7\U0001F1FA RU 012 | ⬇️ 2.56 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      uuid: 1a753432-2403-4934-849d-96bbc5ab21b2
+    - name: "\U0001F1FA\U0001F1F8 US 016 | ⬇️ 3.27 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: hMAEPF
+      port: 34099
+      server: 38.34.22.220
+      type: http
+      username: kZXMC3Z1
+    - delay: 2629
+      name: "\U0001F1FA\U0001F1F8 US 035 | ⬇️ 2.58 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: slch2024
       port: 2096
-      server: 195.13.54.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - name: "\U0001F1F7\U0001F1FA RU 013 | ⬇️ 3.55 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 185.174.138.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - name: "\U0001F1F7\U0001F1FA RU 016 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 213.219.247.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - name: "\U0001F1F7\U0001F1FA RU 017 | ⬇️ 2.50 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 193.9.49.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - name: "\U0001F1FA\U0001F1F8 US 018 | ⬇️ 4.08 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 199.181.197.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - name: "\U0001F1F7\U0001F1FA RU 019 | ⬇️ 2.58 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 195.13.45.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - name: "\U0001F1FA\U0001F1F3 UN 021 | ⬇️ 3.91 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 185.251.81.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - name: "\U0001F1EC\U0001F1E7 GB 022 | ⬇️ 2.87 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 185.156.19.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - delay: 2421
-      name: "\U0001F1FA\U0001F1F8 US 023 | ⬇️ 2.49 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 185.18.184.195
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-    - name: "\U0001F1FA\U0001F1F3 UN 024 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 192.65.217.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - name: "\U0001F1FA\U0001F1F3 UN 025 | ⬇️ 2.79 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 185.176.24.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - delay: 1956
-      name: "\U0001F1FA\U0001F1F8 US 026 | ⬇️ 2.75 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 185.59.218.195
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-    - name: "\U0001F1EC\U0001F1E7 GB 027 | ⬇️ 2.55 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 188.244.122.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - name: "\U0001F1FA\U0001F1F3 UN 029 | ⬇️ 2.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 185.18.250.195
+      server: 195.26.229.195
       skip-cert-verify: false
       sni: ocost-dy.wmlefl.cc
       type: trojan
@@ -222,93 +38,7 @@ proxies:
         headers:
             Host: ocost-dy.wmlefl.cc
         path: /Telegram
-    - name: "\U0001F1FA\U0001F1F3 UN 030 | ⬇️ 2.34 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 185.176.26.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - delay: 1932
-      name: "\U0001F1FA\U0001F1F8 US 031 | ⬇️ 2.06 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 188.42.88.195
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-    - name: "\U0001F1EC\U0001F1E7 GB 032 | ⬇️ 5.01 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 193.124.224.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - name: "\U0001F1FA\U0001F1F8 US 033 | ⬇️ 2.17 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 209.46.30.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - delay: 1924
-      name: "\U0001F1FA\U0001F1F8 US 034 | ⬇️ 4.03 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 185.251.80.195
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-    - delay: 1951
-      name: "\U0001F1FA\U0001F1F8 US 035 | ⬇️ 10.23 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 185.148.104.195
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-    - name: "\U0001F1FA\U0001F1F3 UN 036 | ⬇️ 4.44 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 185.148.105.195
-      skip-cert-verify: false
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: /Telegram
-    - name: "\U0001F1FA\U0001F1F3 UN 037 | ⬇️ 3.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1FA\U0001F1F3 UN 036 | ⬇️ 2.88 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: slch2024
       port: 2096
@@ -320,88 +50,113 @@ proxies:
         headers:
             Host: ocost-dy.wmlefl.cc
         path: Telegram
-    - name: "\U0001F1F3\U0001F1F1 NL 038 | ⬇️ 3.39 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - delay: 817
+      name: "\U0001F1FA\U0001F1F8 US 040 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: slch2024
       port: 2096
-      server: 188.164.248.195
-      skip-cert-verify: true
-      sni: ocost-dy.wmlefl.cc
-      type: trojan
-      ws-opts:
-        headers:
-            Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - delay: 2047
-      name: "\U0001F1FA\U0001F1F8 US 042 | ⬇️ 3.43 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: slch2024
-      port: 2096
-      server: 185.238.228.195
+      server: 199.181.197.195
       sni: ocost-dy.wmlefl.cc
       type: trojan
       ws-opts:
         headers:
             Host: ocost-dy.wmlefl.cc
         path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-    - name: "\U0001F1E8\U0001F1E6 CA 046 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1FA\U0001F1F8 US 044 | ⬇️ 4.08 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: gA30l1F
+      port: 27207
+      server: 38.107.175.141
+      type: http
+      username: kZXMC3Z1
+    - delay: 1371
+      name: "\U0001F1FA\U0001F1F8 US 056 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: slch2024
       port: 2096
-      server: 205.233.181.195
-      skip-cert-verify: true
+      server: 209.46.30.195
       sni: ocost-dy.wmlefl.cc
       type: trojan
       ws-opts:
         headers:
             Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 054 关注我的频道获取更多 t.me/TheBestSubGroup"
-      port: 34045
-      reality-opts:
-        public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-        short-id: e8ab71d0
-      server: 172.233.201.93
-      servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+        path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+    - delay: 1498
+      name: "\U0001F1FA\U0001F1F8 US 061 | ⬇️ 4.42 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: slch2024
+      port: 2096
+      server: 185.251.81.195
       skip-cert-verify: false
-      tls: true
-      type: vless
+      sni: ocost-dy.wmlefl.cc
+      type: trojan
       udp: true
-      uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-    - name: "\U0001F1FA\U0001F1F3 UN 055 | ⬇️ 10.09 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      ws-opts:
+        headers:
+            Host: ocost-dy.wmlefl.cc
+        path: /Telegram
+    - delay: 2135
+      name: "\U0001F1FA\U0001F1F8 US 062 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: slch2024
+      port: 2096
+      server: 185.176.24.195
+      skip-cert-verify: false
+      sni: ocost-dy.wmlefl.cc
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: ocost-dy.wmlefl.cc
+        path: /Telegram
+    - delay: 1693
+      name: "\U0001F1FA\U0001F1F8 US 063 | ⬇️ 3.45 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: slch2024
       port: 2096
       server: 185.251.83.195
-      skip-cert-verify: true
+      skip-cert-verify: false
       sni: ocost-dy.wmlefl.cc
       type: trojan
+      udp: true
       ws-opts:
         headers:
             Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - name: "\U0001F1FA\U0001F1F3 UN 056 | ⬇️ 3.75 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+        path: /Telegram
+    - delay: 2792
+      name: "\U0001F1FA\U0001F1F8 US 067 | ⬇️ 3.10 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: slch2024
       port: 2096
-      server: 195.13.55.195
-      skip-cert-verify: true
+      server: 185.251.80.195
+      skip-cert-verify: false
       sni: ocost-dy.wmlefl.cc
       type: trojan
+      udp: true
       ws-opts:
         headers:
             Host: ocost-dy.wmlefl.cc
-        path: Telegram
-    - name: "\U0001F1FA\U0001F1F3 UN 062 关注我的频道获取更多 t.me/TheBestSubGroup"
+        path: /Telegram
+    - delay: 2841
+      name: "\U0001F1FA\U0001F1F8 US 068 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       password: slch2024
       port: 2096
-      server: 185.148.106.195
-      skip-cert-verify: true
+      server: 194.36.55.195
       sni: ocost-dy.wmlefl.cc
       type: trojan
       ws-opts:
         headers:
             Host: ocost-dy.wmlefl.cc
-        path: Telegram
+        path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
+    - delay: 1525
+      name: "\U0001F1FA\U0001F1F8 US 069 | ⬇️ 3.73 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: slch2024
+      port: 2096
+      server: 185.148.105.195
+      sni: ocost-dy.wmlefl.cc
+      type: trojan
+      ws-opts:
+        headers:
+            Host: ocost-dy.wmlefl.cc
+        path: '%25252FTelegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3'
