@@ -115,6 +115,23 @@ proxy-groups:
         - "\U0001F1EE\U0001F1F9 意大利节点"
 
       icon: https://cdn.jsdelivr.net/gh/mihomo-party-org/mihomo-party/resources/icon.png
+    - name: youtube
+      type: select
+      interval: 300
+      url: https://gstatic.com/generate_204
+      lazy: true
+      timeout: 2000
+      max-failed-times: 3
+      proxies:
+        - "\U0001F1ED\U0001F1F0 香港节点"
+        - "\U0001F1EF\U0001F1F5 日本节点"
+        - "\U0001F1FA\U0001F1F8 美国节点"
+        - "\U0001F1F8\U0001F1EC 新加坡节点"
+        - "\U0001F1EC\U0001F1E7 英国节点"
+        - "\U0001F1EB\U0001F1F7 法国节点"
+        - "\U0001F1E9\U0001F1EA 德国节点"
+        - Proxy
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/cloudflare.png
     - name: Cloudflare
       type: select
       interval: 300
@@ -136,10 +153,8 @@ proxy-groups:
         - "\U0001F1E8\U0001F1E6 加拿大节点"
         - "\U0001F1E6\U0001F1FA 澳大利亚节点"
         - "\U0001F1F3\U0001F1F1 荷兰节点"
-
         - "\U0001F1F5\U0001F1F1 波兰节点"
         - "\U0001F1EE\U0001F1F9 意大利节点"
-
       icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/cloudflare.png
     - name: "\U0001F4AA 手动选择"
       type: select
@@ -409,6 +424,14 @@ rule-providers:
         proxy: DIRECT
         url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft_No_Resolve.yaml
         path: ./RuleSet/Microsoft.yaml
+    YouTube:
+        type: http
+        behavior: classical
+        interval: 86400
+        format: yaml
+        proxy: DIRECT
+        url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube_No_Resolve.yaml
+        path: ./RuleSet/YouTube.yaml
     Cloudflare:
         type: http
         behavior: classical
