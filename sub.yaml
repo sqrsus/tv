@@ -97,23 +97,13 @@ proxy-groups:
       max-failed-times: 3
       proxies:
         - "\U0001F64F 自动选择"
-        - "\U0001F4AA 手动选择"
         - "\U0001F3A1负载均衡"
+        - "\U0001F4AA 手动选择"
         - "\U0001F1ED\U0001F1F0 香港节点"
         - "\U0001F1EF\U0001F1F5 日本节点"
         - "\U0001F1F0\U0001F1F7 韩国节点"
         - "\U0001F1F8\U0001F1EC 新加坡节点"
-        - "\U0001F1FA\U0001F1F8 美国节点"
-        - "\U0001F1EC\U0001F1E7 英国节点"
-        - "\U0001F1EB\U0001F1F7 法国节点"
-        - "\U0001F1E9\U0001F1EA 德国节点"
-        - "\U0001F1E8\U0001F1E6 加拿大节点"
-        - "\U0001F1E6\U0001F1FA 澳大利亚节点"
-        - "\U0001F1F3\U0001F1F1 荷兰节点"
-
-        - "\U0001F1F5\U0001F1F1 波兰节点"
-        - "\U0001F1EE\U0001F1F9 意大利节点"
-
+        - "\U0001F1FA\U0001F1F8 美国节点" 
       icon: https://cdn.jsdelivr.net/gh/mihomo-party-org/mihomo-party/resources/icon.png
     - name: youtube
       type: select
@@ -123,14 +113,13 @@ proxy-groups:
       timeout: 2000
       max-failed-times: 3
       proxies:
+        - "\U0001F64F 自动选择"
+        - "\U0001F3A1负载均衡"
+        - "\U0001F4AA 手动选择"
         - "\U0001F1ED\U0001F1F0 香港节点"
         - "\U0001F1EF\U0001F1F5 日本节点"
         - "\U0001F1FA\U0001F1F8 美国节点"
         - "\U0001F1F8\U0001F1EC 新加坡节点"
-        - "\U0001F1EC\U0001F1E7 英国节点"
-        - "\U0001F1EB\U0001F1F7 法国节点"
-        - "\U0001F1E9\U0001F1EA 德国节点"
-        - Proxy
       icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/cloudflare.png
     - name: Cloudflare
       type: select
@@ -140,21 +129,13 @@ proxy-groups:
       timeout: 2000
       max-failed-times: 3
       proxies:
-        - Proxy
         - DIRECT
         - "\U0001F1ED\U0001F1F0 香港节点"
         - "\U0001F1EF\U0001F1F5 日本节点"
         - "\U0001F1F0\U0001F1F7 韩国节点"
         - "\U0001F1F8\U0001F1EC 新加坡节点"
         - "\U0001F1FA\U0001F1F8 美国节点"
-        - "\U0001F1EC\U0001F1E7 英国节点"
-        - "\U0001F1EB\U0001F1F7 法国节点"
-        - "\U0001F1E9\U0001F1EA 德国节点"
-        - "\U0001F1E8\U0001F1E6 加拿大节点"
-        - "\U0001F1E6\U0001F1FA 澳大利亚节点"
-        - "\U0001F1F3\U0001F1F1 荷兰节点"
-        - "\U0001F1F5\U0001F1F1 波兰节点"
-        - "\U0001F1EE\U0001F1F9 意大利节点"
+        - Proxy
       icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/cloudflare.png
     - name: "\U0001F4AA 手动选择"
       type: select
@@ -192,18 +173,6 @@ proxy-groups:
       timeout: 2000
       max-failed-times: 3
       filter: "^(?=.*((?i)\U0001F1ED\U0001F1F0|香港|(\\b(HK|Hong)\\b))).*$"
-      use:
-        - ProviderALL
-    - name: "\U0001F1F9\U0001F1FC 台湾节点"
-      type: url-test
-      tolerance: 100
-      interval: 60
-      lazy: true
-      url: https://gstatic.com/generate_204
-      disable-udp: false
-      timeout: 2000
-      max-failed-times: 3
-      filter: "^(?=.*((?i)\U0001F1F9\U0001F1FC|台湾|(\\b(TW|Taiwan)\\b))).*$"
       use:
         - ProviderALL
     - name: "\U0001F1EF\U0001F1F5 日本节点"
@@ -254,103 +223,6 @@ proxy-groups:
       filter: "^(?=.*((?i)\U0001F1FA\U0001F1F8|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\\b(US|United States)\\b))).*$"
       use:
         - ProviderALL
-    - name: "\U0001F1EC\U0001F1E7 英国节点"
-      type: url-test
-      tolerance: 100
-      interval: 60
-      lazy: true
-      url: https://gstatic.com/generate_204
-      disable-udp: false
-      timeout: 2000
-      max-failed-times: 3
-      filter: "^(?=.*((?i)\U0001F1EC\U0001F1E7|英国|伦敦|(\\b(UK|United Kingdom)\\b))).*$"
-      use:
-        - ProviderALL
-    - name: "\U0001F1EB\U0001F1F7 法国节点"
-      type: url-test
-      tolerance: 100
-      interval: 60
-      lazy: true
-      url: https://gstatic.com/generate_204
-      disable-udp: false
-      timeout: 2000
-      max-failed-times: 3
-      filter: "^(?=.*((?i)\U0001F1EB\U0001F1F7|法国|(\\b(FR|France)\\b))).*$"
-      use:
-        - ProviderALL
-    - name: "\U0001F1E9\U0001F1EA 德国节点"
-      type: url-test
-      tolerance: 100
-      interval: 60
-      lazy: true
-      url: https://gstatic.com/generate_204
-      disable-udp: false
-      timeout: 2000
-      max-failed-times: 3
-      filter: "^(?=.*((?i)\U0001F1E9\U0001F1EA|德国|(\\b(DE|Germany)\\b))).*$"
-      use:
-        - ProviderALL
-    - name: "\U0001F1E8\U0001F1E6 加拿大节点"
-      type: url-test
-      tolerance: 100
-      interval: 60
-      lazy: true
-      url: https://gstatic.com/generate_204
-      disable-udp: false
-      timeout: 2000
-      max-failed-times: 3
-      filter: "^(?=.*((?i)\U0001F1E8\U0001F1E6|加拿大|(\\b(CA|Canada)\\b))).*$"
-      use:
-        - ProviderALL
-    - name: "\U0001F1E6\U0001F1FA 澳大利亚节点"
-      type: url-test
-      tolerance: 100
-      interval: 60
-      lazy: true
-      url: https://gstatic.com/generate_204
-      disable-udp: false
-      timeout: 2000
-      max-failed-times: 3
-      filter: "^(?=.*((?i)\U0001F1E6\U0001F1FA|澳大利亚|(\\b(AU|Australia)\\b))).*$"
-      use:
-        - ProviderALL
-    - name: "\U0001F1F3\U0001F1F1 荷兰节点"
-      type: url-test
-      tolerance: 100
-      interval: 60
-      lazy: true
-      url: https://gstatic.com/generate_204
-      disable-udp: false
-      timeout: 2000
-      max-failed-times: 3
-      filter: "^(?=.*((?i)\U0001F1F3\U0001F1F1|荷兰|(\\b(NL|Netherlands)\\b))).*$"
-      use:
-        - ProviderALL
-    - name: "\U0001F1F5\U0001F1F1 波兰节点"
-      type: url-test
-      tolerance: 100
-      interval: 60
-      lazy: true
-      url: https://gstatic.com/generate_204
-      disable-udp: false
-      timeout: 2000
-      max-failed-times: 3
-      filter: "^(?=.*((?i)\U0001F1F5\U0001F1F1|波兰|(\\b(PL|Poland)\\b))).*$"
-      use:
-        - ProviderALL
-    - name: "\U0001F1EE\U0001F1F9 意大利节点"
-      type: url-test
-      tolerance: 100
-      interval: 60
-      lazy: true
-      url: https://gstatic.com/generate_204
-      disable-udp: false
-      timeout: 2000
-      max-failed-times: 3
-      filter: "^(?=.*((?i)\U0001F1EE\U0001F1F9|意大利|(\\b(IT|Italy)\\b))).*$"
-      use:
-        - ProviderALL
-
 rule-providers:
     GlobalMedia:
         type: http
@@ -440,7 +312,6 @@ rule-providers:
         proxy: DIRECT
         url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Cloudflare/Cloudflare.yaml
         path: ./RuleSet/Cloudflare.yaml
-
 rules:
     - RULE-SET,ChinaMedia,DIRECT
     - RULE-SET,China,DIRECT
