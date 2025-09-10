@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐播放器 (桌面/移动端优化)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        :root {
+            --font-main: 'Noto Sans SC', 'Segoe UI', Arial, sans-serif;
+            --bg-gradient: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            --container-bg: rgba(255, 255, 255, 0.6);
+            --container-shadow: rgba(0, 0, 0, 0.1);
+            --backdrop-blur: 12px;
+            --text-color: #2c3e50;
+            --text-secondary-color: #7f8c8d;
+            --primary-color: #3498db;
+            --primary-color-dark: #2980b9;
+            --warning-color: #e74c3c;
+            --item-hover-bg: rgba(52, 152, 219, 0.1);
+            --item-current-bg: rgba(52, 152, 219, 0.2);
+            --item-current-text: var(--primary-color);
+            --border-color: rgba(0, 0, 0, 0.1);
+            --lyrics-highlight-bg: rgba(46, 204, 113, 0.15);
+            --lyrics-highlight-text: #27ae60;
+            --lyrics-highlight-shadow: rgba(46, 204, 113, 0.2);
+            --component-bg: rgba(255, 255, 255, 0.5);
+            --scrollbar-thumb-bg: rgba(0, 0, 0, 0.2);
+            --scrollbar-track-bg: transparent;
+        }
+
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            --container-bg: rgba(30, 30, 30, 0.6);
+            --container-shadow: rgba(0, 0, 0, 0.3);
+            --text-color: #ecf0f1;
+            --text-secondary-color: #95a5a6;
+            --primary-color: #5dade2;
+            --primary-color-dark: #3498db;
+            --item-hover-bg: rgba(93, 173, 226, 0.1);
+            --item-current-bg: rgba(93, 173, 226, 0.2);
+            --border-color: rgba(255, 255, 255, 0.15);
+            --lyrics-highlight-bg: rgba(26, 188, 156, 0.15);
+            --lyrics-highlight-text: #1abc9c;
+            --component-bg: rgba(44, 44, 44, 0.5);
+            --scrollbar-thumb-bg: rgba(255, 255, 255, 0.2);
+        }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--scrollbar-track-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-bg); border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary-color); }
+
+        body {
+            font-family: var(--font-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            background-image: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-color);
+            transition: background 0.5s, color 0.5s;
+        }
+
+        .container {
+            background: var(--container-bg);
+            backdrop-filter: blur(var(--backdrop-blur));
+            -webkit-backdrop-filter: blur(var(--backdrop-blur));
+            padding: 35px;
+            border-radius: 24px;
+            box-shadow: 0 15px 30px var(--container-shadow);
+            border: 1px solid var(--border-color);
+            width: 100%;
+            max-width: 850px;
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            gap: 20px;
+            transition: background 0.5s, box-shadow 0.5s;
+            height: 90vh;
+            max-height: 700px;
+        }
+
+        .header { text-align: center; position: relative; }
+        .header h1 { margin: 0; font-size: 2.2em; font-weight: 700; color: var(--primary-color); letter-spacing: 1px; }
+        .header .warning { color: var(--text-secondary-color); font-size: 0.9em; margin-top: 10px; font-style: italic; }
+        
+        .file-input-area {
+            background: var(--component-bg);
+            border: 2px dashed var(--border-color);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .file-input-area:hover, .file-input-area.dragover { border-color: var(--primary-color); background: var(--item-hover-bg); }
+        .file-input-area .file-input-label { display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--text-secondary-color); }
+        .file-input-label i { font-size: 2em; margin-bottom: 10px; color: var(--primary-color); }
+        
+        .view-toggle { display: none; }
+        .main-content { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; overflow: hidden; }
+        .playlist, .lyrics { background: var(--component-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--border-color); height: 100%; overflow-y: auto; }
+        
+        .playlist div { padding: 12px 15px; border-radius: 10px; transition: all 0.2s ease-in-out; cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .playlist div:hover { background-color: var(--item-hover-bg); color: var(--item-current-text); transform: translateX(5px); }
+        .playlist .current { color: var(--item-current-text); font-weight: 500; background-color: var(--item-current-bg); }
+        
+        .lyrics { text-align: center; font-size: 1.1em; line-height: 2.2; }
+        .lyrics div { white-space: pre-wrap; }
+        .lyrics .current { color: var(--lyrics-highlight-text); font-weight: 700; background-color: var(--lyrics-highlight-bg); transform: scale(1.05); box-shadow: 0 4px 15px var(--lyrics-highlight-shadow); }
+
+        .controls { display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; }
+        .controls button { background: var(--primary-color); color: white; border: none; border-radius: 50%; cursor: pointer; font-size: 1.2em; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; transition: all 0.2s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .controls button:hover { background: var(--primary-color-dark); transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0,0,0,0.15); }
+        .controls button:active { transform: translateY(0); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .controls button#loadOnlineBtn { width: auto; border-radius: 25px; padding: 0 25px; gap: 10px; }
+        .controls button:disabled { background: var(--text-secondary-color); cursor: not-allowed; transform: none; box-shadow: none; }
+        .controls audio { flex-grow: 1; min-width: 300px; }
+        
+        .loader { width: 20px; height: 20px; border: 3px solid var(--primary-color); border-bottom-color: transparent; border-radius: 50%; display: inline-block; box-sizing: border-box; animation: rotation 1s linear infinite; }
+        @keyframes rotation { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        
+        .theme-switch-wrapper { position: absolute; top: 0px; right: 0px; }
+        .theme-switch { display: inline-block; height: 24px; position: relative; width: 48px; }
+        .theme-switch input { display:none; }
+        .slider { background-color: #ccc; bottom: 0; cursor: pointer; left: 0; position: absolute; right: 0; top: 0; transition: .4s; border-radius: 24px; }
+        .slider:before { background-color: #fff; bottom: 3px; content: ""; height: 18px; left: 3px; position: absolute; transition: .4s; width: 18px; border-radius: 50%; }
+        .slider .fa-sun, .slider .fa-moon { position: absolute; top: 50%; transform: translateY(-50%); color: #fff; font-size: 12px; opacity: 0; transition: opacity 0.4s; }
+        .slider .fa-sun { left: 6px; opacity: 1; }
+        .slider .fa-moon { right: 6px; }
+        input:checked + .slider { background-color: var(--primary-color); }
+        input:checked + .slider:before { transform: translateX(24px); }
+        input:checked + .slider .fa-sun { opacity: 0; }
+        input:checked + .slider .fa-moon { opacity: 1; }
+
+        @media (max-width: 768px) {
+            body { padding: 0; }
+            .container {
+                padding: 15px;
+                gap: 15px;
+                grid-template-rows: auto auto auto 1fr auto;
+                border-radius: 0;
+                border: none;
+                height: 100vh;
+                max-height: none;
+            }
+            .header h1 { font-size: 1.8em; }
+            .file-input-area { padding: 15px; }
+            .file-input-label i { font-size: 1.8em; }
+            
+            .view-toggle { display: flex; gap: 10px; }
+            .view-toggle button { flex-grow: 1; background: var(--component-bg); color: var(--text-secondary-color); border: 1px solid var(--border-color); padding: 10px; border-radius: 10px; font-size: 0.9em; font-family: inherit; cursor: pointer; transition: all 0.3s ease; }
+            .view-toggle button.active { background: var(--primary-color); color: white; font-weight: 500; border-color: var(--primary-color); }
+            
+            .main-content { display: flex; grid-template-columns: none; }
+            .playlist, .lyrics { width: 100%; flex-shrink: 0; }
+            .mobile-hidden { display: none !important; }
+            .lyrics { line-height: 1.8; font-size: 1em; }
+            .controls { flex-wrap: wrap; gap: 10px; align-items: center; }
+            .controls audio { order: -1; width: 100%; min-width: unset; }
+            .controls button { font-size: 1.1em; width: 48px; height: 48px; }
+            .controls button#loadOnlineBtn { flex-grow: 1; width: auto; max-width: 180px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox"><input type="checkbox" id="checkbox" /><div class="slider"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></div></label>
+        </div>
+        <h1>音乐播放器</h1>
+        <div class="warning">支持本地音乐与在线雷达探索</div>
+    </div>
+    
+    <div class="file-input-area" id="fileDropArea">
+        <input type="file" id="fileInput" multiple accept="audio/*,.lrc,.txt" style="display: none;">
+        <label for="fileInput" class="file-input-label"><i class="fas fa-folder-plus"></i><span>点击选择 或 拖放本地音乐文件至此</span></label>
+    </div>
+    
+    <div class="view-toggle">
+        <button id="showPlaylistBtn" class="active">播放列表</button>
+        <button id="showLyricsBtn">歌词</button>
+    </div>
+
+    <div class="main-content">
+        <div class="playlist" id="playlist">请选择本地音乐或探索在线雷达</div>
+        <div class="lyrics mobile-hidden" id="lyrics">歌词将在此处同步显示</div>
+    </div>
+
+    <div class="controls">
+        <button onclick="playPrevious()" title="上一曲"><i class="fas fa-backward-step"></i></button>
+        <audio id="audioPlayer" controls></audio>
+        <button onclick="playNext()" title="下一曲"><i class="fas fa-forward-step"></i></button>
+        <button id="loadOnlineBtn" title="聚合所有雷达，探索新音乐">
+            <span class="btn-text"><i class="fas fa-satellite-dish"></i> 探索雷达</span>
+            <span class="loader" style="display: none;"></span>
+        </button>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.7/jsmediatags.min.js"></script>
+<script>
+    const dom = {
+        playlist: document.getElementById('playlist'),
+        lyrics: document.getElementById('lyrics'),
+        audioPlayer: document.getElementById('audioPlayer'),
+        themeToggle: document.getElementById('checkbox'),
+        loadOnlineBtn: document.getElementById('loadOnlineBtn'),
+        fileInput: document.getElementById('fileInput'),
+        fileDropArea: document.getElementById('fileDropArea'),
+        showPlaylistBtn: document.getElementById('showPlaylistBtn'),
+        showLyricsBtn: document.getElementById('showLyricsBtn'),
+    };
+    
+    // --- [修改] API配置，移除163 API和切换逻辑 ---
+    const API = {
+        name: 'GD Studio API',
+        baseUrl: 'https://music-api.gdstudio.xyz/api.php',
+        getList: async () => {
+            const keyword = '热门'; 
+            const url = `${API.baseUrl}?types=search&source=netease,kuwo&name=${encodeURIComponent(keyword)}&count=100`;
+            const response = await fetch(url);
+            if (!response.ok) throw new Error('API request failed');
+            const data = await response.json();
+            if (!Array.isArray(data) || data.length === 0) throw new Error('No songs found');
+            return data.map(song => ({
+                id: song.id,
+                name: song.name,
+                artists: [{ name: song.artist.join(' / ') }],
+                source: song.source,
+                lyric_id: song.lyric_id, // 保存歌词ID
+            }));
+        },
+        getSongUrl: (song) => `${API.baseUrl}?types=url&id=${song.id}&source=${song.source || 'netease'}&br=320000`,
+        getLyric: (song) => `${API.baseUrl}?types=lyric&id=${song.lyric_id || song.id}&source=${song.source || 'netease'}`,
+    };
+
+    const state = {
+        isOnlineMode: false,
+        audioFiles: [],
+        lyricsFiles: {},
+        onlineSongs: [],
+        currentTrackIndex: -1,
+        currentAudioUrl: null,
+        lyricsData: [],
+        currentLyricLine: -1,
+    };
+
+    window.addEventListener('load', setupInteractions);
+    dom.audioPlayer.addEventListener('ended', autoPlayNext);
+    dom.audioPlayer.addEventListener('timeupdate', syncLyrics);
+
+    function setupInteractions() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.body.classList.toggle('dark-mode', savedTheme === 'dark');
+            dom.themeToggle.checked = savedTheme === 'dark';
+        }
+        dom.themeToggle.addEventListener('change', (e) => {
+            const isDark = e.target.checked;
+            document.body.classList.toggle('dark-mode', isDark);
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+
+        dom.loadOnlineBtn.addEventListener('click', exploreOnlineMusic);
+        dom.fileInput.addEventListener('change', (e) => processFiles(e.target.files));
+        dom.fileDropArea.addEventListener('dragover', (e) => { e.preventDefault(); e.currentTarget.classList.add('dragover'); });
+        dom.fileDropArea.addEventListener('dragleave', (e) => e.currentTarget.classList.remove('dragover'));
+        dom.fileDropArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            e.currentTarget.classList.remove('dragover');
+            processFiles(e.dataTransfer.files);
+        });
+        
+        dom.showPlaylistBtn.addEventListener('click', () => switchMobileView('playlist'));
+        dom.showLyricsBtn.addEventListener('click', () => switchMobileView('lyrics'));
+    }
+    
+    // --- [修改] 重构探索在线音乐功能，直接调用API ---
+    async function exploreOnlineMusic() {
+        state.isOnlineMode = true;
+        if (window.innerWidth <= 768) switchMobileView('playlist');
+
+        const btnText = dom.loadOnlineBtn.querySelector('.btn-text');
+        const loader = dom.loadOnlineBtn.querySelector('.loader');
+        
+        dom.loadOnlineBtn.disabled = true;
+        btnText.style.display = 'none';
+        loader.style.display = 'inline-block';
+        dom.playlist.innerHTML = `<div>正在聚合雷达歌单...</div>`;
+        
+        try {
+            const songs = await API.getList();
+            shuffleArray(songs);
+            state.onlineSongs = songs;
+            renderOnlinePlaylist();
+            if (state.onlineSongs.length > 0) findAndPlayOnlineSong(0);
+
+        } catch (error) {
+            console.error("加载在线歌曲时发生错误:", error);
+            dom.playlist.innerHTML = "<div>加载失败，API源不可用。</div>";
+        } finally {
+            dom.loadOnlineBtn.disabled = false;
+            btnText.style.display = 'inline-block';
+            loader.style.display = 'none';
+        }
+    }
+    
+    // --- [修改] 重构播放在线歌曲功能，直接调用API ---
+    async function playOnlineSong(index) {
+        state.isOnlineMode = true;
+        state.currentTrackIndex = index;
+        updatePlaylistHighlight();
+        resetLyrics();
+
+        const song = state.onlineSongs[index];
+        dom.lyrics.innerHTML = `<div>正在加载: ${song.name}</div>`;
+        
+        // 1. 获取播放地址
+        const urlEndpoint = API.getSongUrl(song);
+        const urlData = await fetch(urlEndpoint).then(res => res.json());
+
+        const audioUrl = urlData.url?.replace(/^http:/, 'https');
+        if (!audioUrl) throw new Error('无效的播放地址');
+
+        dom.audioPlayer.src = audioUrl;
+        dom.audioPlayer.load();
+        dom.audioPlayer.play();
+
+        // 2. 获取歌词
+        try {
+            const lyricEndpoint = API.getLyric(song);
+            const lyricData = await fetch(lyricEndpoint).then(res => res.json());
+
+            if (lyricData.lyric) {
+                displayLyrics(lyricData.lyric);
+            } else {
+                dom.lyrics.innerHTML = '<div>未找到在线歌词。</div>';
+            }
+        } catch (lyricError) {
+             dom.lyrics.innerHTML = '<div>歌词加载失败。</div>';
+        }
+    }
+
+    function renderOnlinePlaylist() {
+        dom.playlist.innerHTML = state.onlineSongs.map((s, i) =>
+            `<div id="track-item-${i}" onclick="findAndPlayOnlineSong(${i})">
+                ${s.name} - ${s.artists.map(a => a.name).join('/')}
+            </div>`
+        ).join('') || "<div>列表为空</div>";
+    }
+    
+    // --- 以下是其他函数，保持不变 ---
+
+    function switchMobileView(view) {
+        if (window.innerWidth > 768) return;
+        if (view === 'playlist') {
+            dom.showPlaylistBtn.classList.add('active');
+            dom.showLyricsBtn.classList.remove('active');
+            dom.playlist.classList.remove('mobile-hidden');
+            dom.lyrics.classList.add('mobile-hidden');
+        } else {
+            dom.showPlaylistBtn.classList.remove('active');
+            dom.showLyricsBtn.classList.add('active');
+            dom.playlist.classList.add('mobile-hidden');
+            dom.lyrics.classList.remove('mobile-hidden');
+        }
+    }
+    
+    function playPrevious() {
+        if (state.currentTrackIndex <= 0) return;
+        const newIndex = state.currentTrackIndex - 1;
+        state.isOnlineMode ? findAndPlayOnlineSong(newIndex) : playAudio(newIndex);
+    }
+
+    function playNext() {
+        const limit = state.isOnlineMode ? state.onlineSongs.length : state.audioFiles.length;
+        if (state.currentTrackIndex >= limit - 1) {
+            dom.lyrics.innerHTML = '<div>已是列表最后一首。</div>';
+            return;
+        }
+        const newIndex = state.currentTrackIndex + 1;
+        state.isOnlineMode ? findAndPlayOnlineSong(newIndex) : playAudio(newIndex);
+    }
+    
+    function autoPlayNext() { playNext(); }
+    
+    function processFiles(files) {
+        if (files.length === 0) return;
+        state.isOnlineMode = false;
+        if (window.innerWidth <= 768) switchMobileView('playlist');
+        let newFilesAdded = false;
+        for (const file of files) {
+            const ext = file.name.split('.').pop().toLowerCase();
+            const baseName = file.name.split('.').slice(0, -1).join('.');
+            if (['mp3', 'wav', 'ogg', 'm4a', 'flac', 'aac', 'wma'].includes(ext)) {
+                if (!state.audioFiles.some(f => f.name === file.name)) {
+                    state.audioFiles.push(file);
+                    newFilesAdded = true;
+                }
+            } else if (['lrc', 'txt'].includes(ext)) {
+                state.lyricsFiles[baseName] = file;
+            }
+        }
+        if (newFilesAdded) renderLocalPlaylist();
+        if (state.audioFiles.length > 0 && dom.audioPlayer.paused) playAudio(0);
+    }
+
+    function playAudio(index) {
+        if (index < 0 || index >= state.audioFiles.length) return;
+        if (state.currentAudioUrl) URL.revokeObjectURL(state.currentAudioUrl);
+        
+        state.isOnlineMode = false;
+        state.currentTrackIndex = index;
+        updatePlaylistHighlight();
+        
+        const audioFile = state.audioFiles[index];
+        state.currentAudioUrl = URL.createObjectURL(audioFile);
+        dom.audioPlayer.src = state.currentAudioUrl;
+        dom.audioPlayer.load();
+        dom.audioPlayer.play();
+        
+        resetLyrics();
+        loadLyricsForFile(audioFile);
+    }
+
+    async function findAndPlayOnlineSong(startIndex) {
+        for (let i = startIndex; i < state.onlineSongs.length; i++) {
+            try {
+                await playOnlineSong(i);
+                return;
+            } catch (error) {
+                console.warn(`第 ${i + 1} 首 (${state.onlineSongs[i].name}) 尝试失败，跳过...`, error.message);
+            }
+        }
+        dom.lyrics.innerHTML = '<div>抱歉，当前列表中的歌曲均无法播放。</div>';
+    }
+
+    function renderLocalPlaylist() {
+        dom.playlist.innerHTML = state.audioFiles.map((f, i) => `<div id="track-item-${i}" onclick="playAudio(${i})">${f.name}</div>`).join('') || "<div>请选择本地音乐</div>";
+    }
+
+    function updatePlaylistHighlight() {
+        const items = dom.playlist.querySelectorAll('div');
+        let currentItem = null;
+        items.forEach((item, index) => {
+            const isCurrent = index === state.currentTrackIndex;
+            item.classList.toggle('current', isCurrent);
+            if (isCurrent) currentItem = item;
+        });
+        if (currentItem) {
+            currentItem.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+        }
+    }
+
+    function resetLyrics() {
+        state.lyricsData = [];
+        state.currentLyricLine = -1;
+        dom.lyrics.innerHTML = '<div>...</div>';
+    }
+
+     async function loadLyricsForFile(audioFile) {
+        const baseName = audioFile.name.split('.').slice(0, -1).join('.');
+        const lyricsFile = state.lyricsFiles[baseName];
+        if (lyricsFile) {
+            const reader = new FileReader();
+            reader.onload = (e) => displayLyrics(e.target.result);
+            reader.readAsText(lyricsFile);
+        } else {
+             readEmbeddedLyrics(audioFile);
+        }
+    }
+    
+    function readEmbeddedLyrics(file) {
+        jsmediatags.read(file, {
+            onSuccess: (tag) => {
+                const lyricsText = tag.tags.USLT?.data ?? tag.tags.SYLT?.data ?? tag.tags.lyrics;
+                if (lyricsText) {
+                    displayLyrics(lyricsText);
+                } else {
+                    dom.lyrics.innerHTML = '<div>未找到任何歌词。</div>';
+                }
+            },
+            onError: () => {
+                dom.lyrics.innerHTML = '<div>读取内嵌歌词失败。</div>';
+            }
+        });
+    }
+
+    function parseLrc(text) {
+        if (!text) return [];
+        const lines = text.split('\n');
+        const result = [];
+        const timeRegex = /\[(\d{2}):(\d{2})[.:](\d{2,3})\]/g;
+        for (const line of lines) {
+            const textContent = line.replace(timeRegex, '').trim();
+            if (textContent) {
+                let match;
+                timeRegex.lastIndex = 0; 
+                while ((match = timeRegex.exec(line)) !== null) {
+                    const minutes = parseInt(match[1], 10);
+                    const seconds = parseInt(match[2], 10);
+                    const milliseconds = parseInt(match[3].padEnd(3, '0'), 10);
+                    result.push({
+                        time: minutes * 60 + seconds + milliseconds / 1000,
+                        text: textContent
+                    });
+                }
+            }
+        }
+        return result.sort((a, b) => a.time - b.time);
+    }
+
+    function displayLyrics(lrcText) {
+        state.lyricsData = parseLrc(lrcText);
+        if (state.lyricsData.length > 0) {
+            dom.lyrics.innerHTML = state.lyricsData.map((item, index) => `<div id="lyric-line-${index}">${item.text}</div>`).join('');
+        } else {
+            dom.lyrics.innerHTML = lrcText.split('\n').map(line => `<div>${line || '&nbsp;'}</div>`).join('');
+        }
+        state.currentLyricLine = -1;
+        syncLyrics();
+    }
+
+    function syncLyrics() {
+        if (state.lyricsData.length === 0 || dom.audioPlayer.paused) return;
+        const currentTime = dom.audioPlayer.currentTime;
+        let newIndex = state.lyricsData.findIndex((line, i) => {
+            const nextLine = state.lyricsData[i + 1];
+            return currentTime >= line.time && (nextLine ? currentTime < nextLine.time : true);
+        });
+        if (newIndex !== -1 && newIndex !== state.currentLyricLine) {
+            const prevLine = document.getElementById(`lyric-line-${state.currentLyricLine}`);
+            if (prevLine) prevLine.classList.remove('current');
+            const currentLine = document.getElementById(`lyric-line-${newIndex}`);
+            if (currentLine) {
+                currentLine.classList.add('current');
+                if (dom.lyrics.offsetParent !== null) {
+                    currentLine.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+            state.currentLyricLine = newIndex;
+        }
+    }
+
+    function shuffleArray(array) {
+        let currentIndex = array.length, randomIndex;
+        while (currentIndex != 0) {
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+            [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+        }
+        return array;
+    }
+</script>
+</body>
+</html>
