@@ -1,71 +1,1077 @@
 proxies:
-    - alterId: 0
-      cipher: auto
-      client-fingerprint: ""
-      delay: 632
-      name: "\U0001F1E8\U0001F1F3 CN 005 关注我的频道获取更多 t.me/TheBestSubGroup"
-      port: 40762
-      server: 103.115.109.250
-      tls: false
-      type: vmess
-      uuid: 35ce6e3a-4ddc-472c-9e9f-a34362c194e7
-    - name: "\U0001F1E8\U0001F1F3 CN 008 | ⬇️ 13.15 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 35951
-      server: 36.50.90.241
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
+    - auth: 827c75e2-57e9-481d-a531-0aeea4cffed4
+      name: "\U0001F1F8\U0001F1EC SG 001 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 827c75e2-57e9-481d-a531-0aeea4cffed4
+      port: 8080
+      server: sg05.453521.xyz
+      skip-cert-verify: false
+      sni: sg05.453521.xyz
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 005 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39981
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 006 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39981
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 007 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39945
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - cipher: aes-128-gcm
+      client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7 KR 008 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: VXPipi29nxMO
+      plugin: obfs
+      plugin-opts:
+        host: 182039459a34f64238143cd31ddebbc914362.taobao.com
+        mode: http
+      port: 1052
+      server: kr2.qiangdong.xyz
+      tfo: false
+      type: ss
+    - cipher: chacha20-ietf-poly1305
+      delay: 476
+      name: "\U0001F1E8\U0001F1F3 CN 011 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 21f8bea0-d32a-4f6c-9c9d-c73dcc95cdfe
+      port: 10143
+      server: 36.232.80.100
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      delay: 386
+      name: "\U0001F1E8\U0001F1F3 CN 012 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8220c028-6220-4bf2-b430-48dee74b2c7d
+      port: 10021
+      server: 118.170.222.48
+      type: ss
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 013 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39979
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 014 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39992
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 015 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39964
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 016 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39907
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 017 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39909
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 019 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39936
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 020 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39915
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 021 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39999
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 023 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39946
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 024 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39984
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 025 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39978
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 026 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39920
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 027 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39908
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 028 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39936
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 029 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39950
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 030 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39901
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 031 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39977
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 032 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39904
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 033 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39938
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 034 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39944
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 035 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39996
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 037 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39942
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 038 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39904
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 039 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39902
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 040 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39901
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 041 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39986
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 043 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39910
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 044 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39914
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 045 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39986
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 046 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39957
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 048 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39998
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 049 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39916
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 050 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39963
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 051 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39911
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 053 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39925
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 054 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39962
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 055 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39990
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 056 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39938
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 057 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39933
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 058 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39932
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 059 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39981
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 060 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39973
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 061 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39980
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 062 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39997
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 063 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39921
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 064 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39924
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 065 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39946
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 066 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39914
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 067 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39979
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 068 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39936
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 069 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39960
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 070 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39969
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 071 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39994
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 072 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39989
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 073 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39915
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 074 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39964
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1E9\U0001F1EA DE 075 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39930
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 076 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39995
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 077 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39921
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 078 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39959
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 079 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39908
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 080 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39905
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 081 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39991
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 082 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39949
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 083 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39977
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 084 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39909
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 085 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39935
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 086 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39955
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 087 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39947
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 088 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39952
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1EE\U0001F1F6 IQ 089 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39939
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 091 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39911
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 092 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39921
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 094 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39923
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 095 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39978
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 096 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39957
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 097 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39935
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 098 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39907
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 099 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39958
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 100 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39904
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 102 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39944
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 103 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39967
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 104 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39963
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 105 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39987
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 106 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39988
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 107 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39948
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 108 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39982
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 110 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39916
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 111 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39973
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 112 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39997
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 113 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39932
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 114 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39977
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 115 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39956
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 116 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39992
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 117 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39911
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: 55
+      fast-open: true
+      name: "\U0001F1EB\U0001F1F7 FR 118 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 35511
+      protocol: udp
+      server: 62.210.127.217
       skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      up: 11
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 119 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39903
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      auth_str: dongtaiwang.com
+      delay: 2049
+      down: 55
+      name: "\U0001F1F3\U0001F1F1 NL 120 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 37519
+      protocol: udp
+      server: 109.104.153.91
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      udp: true
+      up: 11
+    - client-fingerprint: random
+      flow: xtls-rprx-vision
+      name: "\U0001F1FA\U0001F1F8 US 122 | ⬇️ 3.58 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 17779
+      reality-opts:
+        public-key: zM_4XVYflnr-VmBsc06Qk_KzaUABAriVqqKEsEBb2C8
+        short-id: ea7bf16e8eb5769d
+      server: 38.244.39.95
+      servername: learn.microsoft.com
+      skip-cert-verify: false
       tls: true
       type: vless
+      uuid: a83d7ca8-9ff7-3c65-ace5-b2f53dd5b1dc
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 123 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39958
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - name: "\U0001F1EB\U0001F1F7 FR 011 | ⬇️ 14.43 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 10008
-      server: 62.106.70.181
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 126 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39974
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 127 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39998
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 128 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39909
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 129 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39922
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 130 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39918
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 131 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39917
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 132 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39912
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - delay: 2159
+      name: "\U0001F1E9\U0001F1EA DE 133 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: salamander
+      obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+      password: 7b60cab2-e71f-476e-ba03-9d8068d6e8ef
+      port: 25784
+      server: dehub.xg-hub.icu
       skip-cert-verify: true
-      tls: true
-      type: vless
+      sni: dehub.xg-hub.icu
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - name: "\U0001F1FA\U0001F1F8 US 012 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 51002
-      server: 45.66.130.58
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-      skip-cert-verify: true
-      tls: true
-      type: vless
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 134 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39989
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - name: "\U0001F1EF\U0001F1F5 JP 013 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8899
-      server: 47.74.57.181
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-      skip-cert-verify: true
-      tls: true
-      type: vless
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 135 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39925
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - name: "\U0001F1ED\U0001F1F0 HK 016 | ⬇️ 6.97 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - delay: 2634
+      name: "\U0001F1FA\U0001F1F8 US 136 | ⬇️ 2.70 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: a1a37563-3bd9-45d0-b6a5-be921b623391
       port: 443
       server: hk2.8b1c7c70-ecf1-6891-9fa7-68a86662f902.9d8f269f96b25232-759cbb36d6548597.kaufen
@@ -73,359 +1079,430 @@ proxies:
       sni: 829D7BDE-64B9-E759-C661-78BC73E582A0.1c2871ba-6025-61e2-e87f-a5c9e0ac8c1d.9d8f269f96b25232-759cbb36d6548597.kaufen
       type: trojan
       udp: true
-    - name: "\U0001F1EF\U0001F1F5 JP 018 | ⬇️ 7.61 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: a1a37563-3bd9-45d0-b6a5-be921b623391
-      port: 443
-      server: jp2.8b1c7c70-ecf1-6891-9fa7-68a86662f902.9d8f269f96b25232-759cbb36d6548597.kaufen
-      skip-cert-verify: true
-      sni: 829D7BDE-64B9-E759-C661-78BC73E582A0.1c2871ba-6025-61e2-e87f-a5c9e0ac8c1d.9d8f269f96b25232-759cbb36d6548597.kaufen
-      type: trojan
-      udp: true
-    - name: "\U0001F1FA\U0001F1F8 US 020 | ⬇️ 7.38 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: a1a37563-3bd9-45d0-b6a5-be921b623391
-      port: 443
-      server: us2.8b1c7c70-ecf1-6891-9fa7-68a86662f902.9d8f269f96b25232-759cbb36d6548597.kaufen
-      skip-cert-verify: true
-      sni: 829D7BDE-64B9-E759-C661-78BC73E582A0.1c2871ba-6025-61e2-e87f-a5c9e0ac8c1d.9d8f269f96b25232-759cbb36d6548597.kaufen
-      type: trojan
-      udp: true
-    - alterId: 0
-      cipher: auto
-      delay: 923
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1FA\U0001F1F8 US 022 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: none
-      port: 6503
-      server: 193.124.24.230
-      type: vmess
-      uuid: ade0486c-fe64-4815-9895-78de66553a2c
-    - alterId: 0
-      cipher: auto
-      delay: 1348
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1FA\U0001F1F8 US 023 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: none
-      port: 6514
-      server: 193.124.24.230
-      type: vmess
-      uuid: cecc9594-e9bd-40ab-9d82-65418694630f
-    - alterId: 0
-      cipher: auto
-      country: ' US'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1FA\U0001F1F8 US 025 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: none
-      port: 6512
-      server: 193.124.24.230
-      type: vmess
-      uuid: 97d61bb7-eee5-42c6-e299-ce1414b77218
-    - alterId: 0
-      cipher: auto
-      delay: 662
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1FA\U0001F1F8 US 026 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: none
-      port: 6513
-      server: 193.124.24.230
-      type: vmess
-      uuid: 651d7ad8-db2f-46a9-ec68-ef7054774fc0
-    - alterId: 0
-      cipher: auto
-      country: ' US'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1FA\U0001F1F8 US 027 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: none
-      port: 6508
-      server: 193.124.24.230
-      type: vmess
-      uuid: c93bf634-6a68-4117-fc6c-bd8b2e13e83e
-    - alterId: 0
-      cipher: auto
-      delay: 640
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1FA\U0001F1F8 US 028 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: none
-      port: 6505
-      server: 193.124.24.230
-      type: vmess
-      uuid: f77456b5-5a82-45ba-a941-1a83c09a1f41
-    - name: "\U0001F1FA\U0001F1F8 US 034 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 9444
-      server: 34.92.248.117
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - cipher: aes-256-cfb
-      country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 035 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.154.24
-      type: ss
-    - cipher: aes-256-cfb
-      country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 036 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.155.25
-      type: ss
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F8\U0001F1EC SG 038 | ⬇️ 6.70 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: tcp
-      port: 10764
-      reality-opts:
-        public-key: sobCxpDnTvjPyP4psWwi_lkSUCdCLPcuIB-MJPhxllk
-        short-id: 46bb0ee0
-      server: 213.35.111.119
-      servername: www.apple.com
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 137 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39958
+      server: hk02.1mao.me
       skip-cert-verify: false
-      tls: true
-      type: vless
+      sni: hk02.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
-    - cipher: aes-256-cfb
-      country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 039 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.155.23
-      type: ss
-    - name: "\U0001F1EF\U0001F1F5 JP 043 | ⬇️ 14.60 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 18788
-      server: 146.56.157.15
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 138 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39902
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: 55
+      fast-open: true
+      name: "\U0001F1F3\U0001F1F1 NL 140 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 49003
+      protocol: udp
+      server: 51.159.226.1
       skip-cert-verify: true
-      tls: true
-      type: vless
+      sni: apple.com
+      type: hysteria
+      up: 11
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 143 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39942
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - cipher: aes-256-cfb
-      country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 050 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.154.36
-      type: ss
-    - name: "\U0001F1F0\U0001F1F7 KR 055 | ⬇️ 3.54 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 12351
-      server: 112.160.1.110
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 146 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39916
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 147 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39984
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 148 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39946
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 149 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39989
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 150 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39969
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: IQ
+      name: "\U0001F1FA\U0001F1F3 UN 151 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39954
+      server: ylk.1mao.me
+      skip-cert-verify: false
+      sni: ylk.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 152 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39951
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 154 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 253bc477d4e43c209f2d427272968280
+      port: 1924
+      server: 36.156.102.77
       skip-cert-verify: true
-      tls: true
-      type: vless
+      sni: 23.45.86.28
+      type: trojan
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 155 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39954
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - name: "\U0001F1EF\U0001F1F5 JP 068 | ⬇️ 11.71 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 37043
-      server: 141.147.178.249
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 156 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39901
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 157 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39985
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 158 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39928
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: FR
+      delay: 2313
+      name: "\U0001F1EB\U0001F1F7 FR 159 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: telegram-id-directvpn
+      port: 22223
+      server: 13.37.163.45
       skip-cert-verify: true
-      tls: true
-      type: vless
+      sni: trojan.burgerip.co.uk
+      type: trojan
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - name: "\U0001F1F7\U0001F1FA RU 078 | ⬇️ 6.92 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 2087
-      server: 92.243.75.49
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 160 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39984
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 162 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39976
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 166 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39908
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 167 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39988
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 171 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39991
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 172 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39906
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 173 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39995
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1F3\U0001F1F1 NL 174 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: salamander
+      obfs-password: Telegram-->@Ln2Ray
+      password: Telegram-->@Ln2Ray
+      port: 45000
+      server: gavazn.lnmarketplace.net
       skip-cert-verify: true
-      tls: true
-      type: vless
+      sni: gavazn.55994421.xyz
+      tls: false
+      type: hysteria2
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 187 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39959
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - name: "\U0001F1E8\U0001F1F3 CN 088 | ⬇️ 9.09 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 2096
-      server: 154.211.8.220
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 189 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39905
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 190 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39979
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 191 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39976
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 192 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39934
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 203 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39945
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 205 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39970
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 229 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5CBqBh6MeDq6GajcilBiDg==
+      port: 61001
+      server: 192.227.152.86
       skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - name: "\U0001F1FA\U0001F1F8 US 089 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 4333
-      server: 166.0.198.184
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
+      sni: 192-227-152-86.nip.io
+      tls: false
+      type: hysteria2
+    - name: "\U0001F1EF\U0001F1F5 JP 230 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: salamander
+      obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+      password: 7b60cab2-e71f-476e-ba03-9d8068d6e8ef
+      port: 25781
+      server: jphub.xg-hub.icu
       skip-cert-verify: true
-      tls: true
-      type: vless
+      sni: jphub.xg-hub.icu
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 234 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39903
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
+      udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1F3 CN 106 | ⬇️ 7.71 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1E7\U0001F1F7 BR 237 | ⬇️ 7.85 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: 5d9d2a9c-ceb6-4c9b-8db5-2c0d0ba22fbf
       port: 36177
       server: del.papermsg.com
       type: ss
-    - cipher: aes-256-cfb
-      name: "\U0001F1EC\U0001F1E7 GB 109 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: f8f7aCzcPKbsF8p3
-      port: 989
-      server: 185.153.197.5
-      type: ss
-    - name: "\U0001F1E8\U0001F1F3 CN 110 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 12365
-      server: 8.222.154.58
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-      skip-cert-verify: true
-      tls: true
-      type: vless
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 238 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39938
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - name: "\U0001F1E8\U0001F1F3 CN 112 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 20800
-      server: 183.178.254.158
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-      skip-cert-verify: true
-      tls: true
-      type: vless
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 251 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39954
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - name: "\U0001F1F0\U0001F1F7 KR 115 | ⬇️ 7.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 11434
-      server: 119.198.127.26
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-      skip-cert-verify: true
-      tls: true
-      type: vless
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 260 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39947
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - name: "\U0001F1EF\U0001F1F5 JP 117 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 9811
-      server: 43.134.191.217
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-      skip-cert-verify: true
-      tls: true
-      type: vless
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 269 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39994
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - name: "\U0001F1F0\U0001F1F7 KR 121 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 10180
-      server: 59.23.31.244
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-      skip-cert-verify: true
-      tls: true
-      type: vless
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 270 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39918
+      server: jp.1mao.me
+      skip-cert-verify: false
+      sni: jp.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - name: "\U0001F1EC\U0001F1E7 GB 130 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: 5.144.176.131
-      servername: nl1.xvless.online
-      skip-cert-verify: true
-      tls: true
-      type: vless
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 273 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39910
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 94a028e2-b2f8-5019-ade4-5e462ee6ae1e
-      ws-opts:
-        headers:
-            host: nl1.xvless.online
-        path: /vless
-    - name: "\U0001F1FA\U0001F1F8 US 132 | ⬇️ 6.99 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8443
-      server: 104.129.167.255
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
+    - name: "\U0001F1E8\U0001F1F3 CN 283 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 253bc477d4e43c209f2d427272968280
+      port: 9160
+      server: 36.156.102.77
       skip-cert-verify: true
-      tls: true
-      type: vless
+      sni: 23.45.86.28
+      type: trojan
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 290 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39955
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - name: "\U0001F1FA\U0001F1F3 UN 133 | ⬇️ 3.53 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: 185.188.147.79
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-      skip-cert-verify: true
-      tls: true
-      type: vless
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 291 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39924
+      server: mg.1mao.me
+      skip-cert-verify: false
+      sni: mg.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
     - alterId: 2
       cipher: auto
-      name: "\U0001F1FA\U0001F1F8 US 134 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1EE\U0001F1F9 IT 293 | ⬇️ 3.92 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 30824
-      server: v24.heduian.link
+      port: 30805
+      server: v5.heduian.link
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      ws-opts:
+        headers:
+            Host: v5.heduian.link
+        path: /oooo
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1EF\U0001F1F5 JP 295 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 30806
+      server: v6.heduian.link
       skip-cert-verify: false
       tls: false
       type: vmess
@@ -433,25 +1510,38 @@ proxies:
       uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
       ws-opts:
         headers:
-            Host: v24.heduian.link
+            Host: ocbc.com
         path: /oooo
-    - name: "\U0001F1FA\U0001F1F8 US 136 | ⬇️ 6.78 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 18650
-      server: 152.70.82.101
-      servername: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-      skip-cert-verify: true
-      tls: true
-      type: vless
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 298 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39997
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
       udp: true
-      uuid: 019931aa-7f0a-821e-5769-1d7800969d32
-      ws-opts:
-        headers:
-            host: 0000yhv0isl1mpt5cndd.cdu9m7washx.mrs.wq2h5qddvaj.v2kddjzpi4oo.gp1n47j.kibwh.qk9lzis9t.f0z9t.9ox.k7kyvd5yxrjsn6ulir5oa8bda.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 300 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39919
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 302 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8e0cd6cf-f31e-48aa-ba6d-8399c4e1abaf
+      port: 39983
+      server: hk02.1mao.me
+      skip-cert-verify: false
+      sni: hk02.1mao.me
+      type: hysteria2
+      udp: true
     - alterId: 2
       cipher: auto
-      name: "\U0001F1F3\U0001F1F1 NL 138 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1F3\U0001F1F1 NL 305 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 30830
       server: v30.heduian.link
