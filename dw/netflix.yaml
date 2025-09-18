@@ -1,32 +1,42 @@
 proxies:
-    - name: "\U0001F1EF\U0001F1F5 JP 004 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: pFibFRwNeR
-      port: 52770
-      server: 8.221.142.181
-      type: http
-      username: a9I0VZgxP6
-    - name: "\U0001F1EF\U0001F1F5 JP 005 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: auh2qWZuNd
-      port: 6770
-      server: 8.216.33.14
-      type: http
-      username: TcIVARdTgR
-    - name: "\U0001F1FA\U0001F1F8 US 007 | ⬇️ 4.58 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 6fe3a600-4bcf-4040-81eb-ccd29231db2b
-      port: 30001
-      server: 155.117.19.221
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1EF\U0001F1F5 JP 011 | ⬇️ 14.63 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 27a263cc-184b-4fb2-872b-5f8db6fc21aa
+      port: 13215
+      server: cokecloudjp.cokecloud.top
+      type: ss
+      udp: true
+    - auth: 102f34e6-7042-48c6-9877-a89ccef7f69b
+      name: "\U0001F1FA\U0001F1F8 US 012 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 102f34e6-7042-48c6-9877-a89ccef7f69b
+      port: 37011
+      server: yg.foldjc.top
       skip-cert-verify: true
-      tfo: false
+      sni: yg.foldjc.top
       type: hysteria2
-    - name: "\U0001F1FA\U0001F1F8 US 010 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: gs4BXwT6SW
-      port: 10988
-      server: 154.26.192.123
+      udp: true
+    - auth: Yet-Another-Public-Config-1
+      name: "\U0001F1F3\U0001F1F1 NL 016 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: salamander
+      obfs-password: Yet-Another-Public-Config-1
+      password: Yet-Another-Public-Config-1
+      port: 35000
+      server: yapc-1.adamhayward.co.uk
+      skip-cert-verify: false
+      sni: YAPC-1.afshin.ir
+      type: hysteria2
+    - name: "\U0001F1F0\U0001F1F7 KR 017 | ⬇️ 9.55 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: test.+
+      port: 30446
+      server: testkr3.ssv.vc
+      skip-cert-verify: true
+      tls: true
       type: http
-      username: fQ67Dpe5dU
+      udp: true
+      username: test
     - client-fingerprint: qq
       flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8 US 014 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 018 关注我的频道获取更多 t.me/TheBestSubGroup"
       port: 34074
       reality-opts:
         public-key: zimSAAs4SyUKAR-MTMaw08PuI7skyi1U5Peb6VGJwjY
@@ -38,55 +48,122 @@ proxies:
       type: vless
       udp: true
       uuid: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8 US 015 关注我的频道获取更多 t.me/TheBestSubGroup"
-      port: 8880
+    - cipher: chacha20-ietf
+      name: "\U0001F1ED\U0001F1F0 HK 019 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: plain
+      obfs-param: 45672222545.microsoft.com
+      password: bxsnucrgk6hfish
+      port: 5953
+      protocol: auth_aes128_sha1
+      protocol-param: 222545:TIvS2C
+      server: yd-06.paofunlink.com
+      type: ssr
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 020 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: gs4BXwT6SW
+      port: 10988
+      server: 154.26.192.123
+      type: http
+      username: fQ67Dpe5dU
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1FA\U0001F1F8 US 021 | ⬇️ 13.29 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 27a263cc-184b-4fb2-872b-5f8db6fc21aa
+      port: 40793
+      server: cokecloudjp.cokecloud.top
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1FA\U0001F1F8 US 024 | ⬇️ 14.81 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 27a263cc-184b-4fb2-872b-5f8db6fc21aa
+      port: 17318
+      server: cokecloudjp.cokecloud.top
+      type: ss
+      udp: true
+    - client-fingerprint: firefox
+      name: "\U0001F1FA\U0001F1F8 US 031 | ⬇️ 7.44 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 10001
       reality-opts:
-        public-key: zQw1fAQByQ8nSFvliZS4NsIWdhfzMnRMnK_xCFRwFQQ
-      server: 155.117.19.221
-      servername: aws.amazon.com
+        public-key: 1ltSdo2K6D9EEwebaDQPCb5ypbURcXyO9HsX4RUbbUo
+        short-id: 1a24af87
+      server: 172.233.153.209
+      servername: yahoo.com
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: f2f00a89-cc9d-450f-b8bb-0d5b2d4c5a65
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8 US 026 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: tcp
-      port: 8880
+      uuid: e4412006-94f2-4f3c-b568-22a3e31dc264
+    - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: 100
+      fast-open: true
+      name: "\U0001F1F3\U0001F1F1 NL 041 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 37519
+      ports: 10000-20000
+      protocol: udp
+      server: 109.104.153.91
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      up: 80
+    - name: "\U0001F1FA\U0001F1F8 US 077 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: ZYxVNDT9pS
+      port: 6770
+      server: 47.254.121.69
+      type: http
+      username: HlZHOwkdIL
+    - auth: 5fe87ec5-d448-43e6-ba81-f7a63bc0eb10
+      name: "\U0001F1FA\U0001F1F8 US 087 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe87ec5-d448-43e6-ba81-f7a63bc0eb10
+      port: 5555
+      server: wrb1.wanlidag.top
+      skip-cert-verify: true
+      sni: wrb1.wanlidag.top
+      type: hysteria2
+      udp: true
+    - client-fingerprint: firefox
+      name: "\U0001F1FA\U0001F1F8 US 095 | ⬇️ 9.00 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 10001
       reality-opts:
-        public-key: zQw1fAQByQ8nSFvliZS4NsIWdhfzMnRMnK_xCFRwFQQ
-      server: 155.117.19.221
-      servername: aws.amazon.com
+        public-key: 1ltSdo2K6D9EEwebaDQPCb5ypbURcXyO9HsX4RUbbUo
+        short-id: 1a24af87
+      server: 172.233.153.209
+      servername: yahoo.com
       skip-cert-verify: false
       tls: true
       type: vless
-      uuid: f2f00a89-cc9d-450f-b8bb-0d5b2d4c5a65
-    - client-fingerprint: randomized
-      name: "\U0001F1FA\U0001F1F8 US 129 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 2053
-      server: 141.101.120.3
-      servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-      tls: true
-      type: vless
       udp: true
-      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-        max-early-data: 2048
-        path: /
+      uuid: e4412006-94f2-4f3c-b568-22a3e31dc264
     - auth: Yet-Another-Public-Config-1
-      name: "\U0001F1F3\U0001F1F1 NL 147 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1F3\U0001F1F1 NL 121 关注我的频道获取更多 t.me/TheBestSubGroup"
       obfs: salamander
       obfs-password: Yet-Another-Public-Config-1
       password: Yet-Another-Public-Config-1
-      port: 36600
+      port: 36300
       server: yapc-1.adamhayward.co.uk
       skip-cert-verify: false
       sni: YAPC-1.afshin.ir
       type: hysteria2
+    - auth: Yet-Another-Public-Config-1
+      name: "\U0001F1F3\U0001F1F1 NL 139 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: salamander
+      obfs-password: Yet-Another-Public-Config-1
+      password: Yet-Another-Public-Config-1
+      port: 35200
+      server: yapc-1.adamhayward.co.uk
+      skip-cert-verify: false
+      sni: YAPC-1.afshin.ir
+      type: hysteria2
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1FA\U0001F1F8 US 157 | ⬇️ 3.33 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 443
+      reality-opts:
+        public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+      server: usa4.worldunlocked.org
+      servername: yahoo.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 5187e249-b0dc-490e-ab89-cb3bbff55cb3
