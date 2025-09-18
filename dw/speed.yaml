@@ -1,157 +1,55 @@
 proxies:
-    - name: "\U0001F1E8\U0001F1F3 CN 000 | ⬇️ 19.50 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8b6f8337-ccc6-4a5b-8aa4-df221d59d9a3
-      port: 32027
-      server: 94a5070b-cff9-4b4d-9223-c7bb66ea49a0.bnsepserv.com
-      skip-cert-verify: true
-      sni: w1.ding-doc.com
-      type: trojan
+    - cipher: chacha20-ietf
+      name: "\U0001F1E8\U0001F1F3 CN 003 | ⬇️ 5.68 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: plain
+      obfs-param: 45672222545.microsoft.com
+      password: bxsnucrgk6hfish
+      port: 1075
+      protocol: auth_aes128_sha1
+      protocol-param: 222545:TIvS2C
+      server: yd-03.paofunlink.com
+      type: ssr
       udp: true
-    - name: "\U0001F1E8\U0001F1F3 CN 002 | ⬇️ 16.73 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8b6f8337-ccc6-4a5b-8aa4-df221d59d9a3
-      port: 32037
-      server: 94a5070b-cff9-4b4d-9223-c7bb66ea49a0.bnsepserv.com
+    - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: 55
+      fast-open: true
+      name: "\U0001F1EB\U0001F1F7 FR 045 | ⬇️ 2.04 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 35511
+      protocol: udp
+      server: 62.210.127.217
       skip-cert-verify: true
-      sni: w1.ding-doc.com
-      type: trojan
+      sni: apple.com
+      type: hysteria
+      up: 11
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1ED\U0001F1F0 HK 082 | ⬇️ 5.58 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 102826c0-8ad3-4417-8843-6da0f5c80cfe
+      port: 35603
+      server: gw.liangyuandianwan.com
+      type: ss
       udp: true
-    - name: "\U0001F1F8\U0001F1EC SG 003 | ⬇️ 12.52 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8b6f8337-ccc6-4a5b-8aa4-df221d59d9a3
-      port: 34007
-      server: c5574bec-5eda-4bd9-a326-ea83e63f80ac.bnsepserv.com
+    - name: "\U0001F1E9\U0001F1EA DE 166 | ⬇️ 2.15 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 55953
+      server: 195.201.35.91
       skip-cert-verify: true
-      sni: w1.ding-doc.com
-      type: trojan
-      udp: true
-    - name: "\U0001F1F5\U0001F1ED PH 004 | ⬇️ 6.48 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8b6f8337-ccc6-4a5b-8aa4-df221d59d9a3
-      port: 34013
-      server: c5574bec-5eda-4bd9-a326-ea83e63f80ac.bnsepserv.com
-      skip-cert-verify: true
-      sni: w1.ding-doc.com
-      type: trojan
-      udp: true
-    - name: "\U0001F1F0\U0001F1F7 KR 010 | ⬇️ 17.52 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8b6f8337-ccc6-4a5b-8aa4-df221d59d9a3
-      port: 34005
-      server: c5574bec-5eda-4bd9-a326-ea83e63f80ac.bnsepserv.com
-      skip-cert-verify: true
-      sni: w1.ding-doc.com
-      type: trojan
-      udp: true
-    - name: "\U0001F1E8\U0001F1F3 CN 012 | ⬇️ 11.38 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8b6f8337-ccc6-4a5b-8aa4-df221d59d9a3
-      port: 34031
-      server: c5574bec-5eda-4bd9-a326-ea83e63f80ac.bnsepserv.com
-      skip-cert-verify: true
-      sni: w1.ding-doc.com
-      type: trojan
-      udp: true
-    - name: "\U0001F1FA\U0001F1F8 US 013 | ⬇️ 3.93 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 6fe3a600-4bcf-4040-81eb-ccd29231db2b
-      port: 30001
-      server: 155.117.19.221
-      skip-cert-verify: true
-      tfo: false
-      type: hysteria2
-    - name: "\U0001F1E6\U0001F1FA AU 014 | ⬇️ 11.23 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8b6f8337-ccc6-4a5b-8aa4-df221d59d9a3
-      port: 34023
-      server: c5574bec-5eda-4bd9-a326-ea83e63f80ac.bnsepserv.com
-      skip-cert-verify: true
-      sni: w1.ding-doc.com
-      type: trojan
-      udp: true
-    - country: UA
-      name: "\U0001F1FA\U0001F1E6 UA 015 | ⬇️ 2.19 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 79dc600a-b63b-4406-bd79-f5f7fb0c0e52
-      port: 43454
-      server: gytr.aifjj.asia
-      skip-cert-verify: true
-      sni: gytr.aifjj.asia
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1EE\U0001F1F3 IN 017 | ⬇️ 11.37 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8b6f8337-ccc6-4a5b-8aa4-df221d59d9a3
-      port: 34024
-      server: c5574bec-5eda-4bd9-a326-ea83e63f80ac.bnsepserv.com
-      skip-cert-verify: true
-      sni: w1.ding-doc.com
-      type: trojan
-      udp: true
-    - name: "\U0001F1EE\U0001F1F3 IN 018 | ⬇️ 11.89 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8b6f8337-ccc6-4a5b-8aa4-df221d59d9a3
-      port: 32017
-      server: 94a5070b-cff9-4b4d-9223-c7bb66ea49a0.bnsepserv.com
-      skip-cert-verify: true
-      sni: w1.ding-doc.com
-      type: trojan
-      udp: true
-    - name: "\U0001F1EE\U0001F1F3 IN 045 | ⬇️ 11.92 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8b6f8337-ccc6-4a5b-8aa4-df221d59d9a3
-      port: 34017
-      server: c5574bec-5eda-4bd9-a326-ea83e63f80ac.bnsepserv.com
-      skip-cert-verify: true
-      sni: w1.ding-doc.com
-      type: trojan
-      udp: true
-    - name: "\U0001F1E8\U0001F1F3 CN 066 | ⬇️ 17.36 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8b6f8337-ccc6-4a5b-8aa4-df221d59d9a3
-      port: 34011
-      server: c5574bec-5eda-4bd9-a326-ea83e63f80ac.bnsepserv.com
-      skip-cert-verify: true
-      sni: w1.ding-doc.com
-      type: trojan
-      udp: true
-    - name: "\U0001F1F9\U0001F1F7 TR 076 | ⬇️ 18.50 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8b6f8337-ccc6-4a5b-8aa4-df221d59d9a3
-      port: 32026
-      server: 94a5070b-cff9-4b4d-9223-c7bb66ea49a0.bnsepserv.com
-      skip-cert-verify: true
-      sni: w1.ding-doc.com
-      type: trojan
-      udp: true
-    - name: "\U0001F1F0\U0001F1F7 KR 111 | ⬇️ 3.42 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: test.+
-      port: 30446
-      server: testkr3.ssv.vc
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: test
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1FB\U0001F1F3 VN 114 | ⬇️ 3.35 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: vn4.viefast.net
       tls: false
-      type: vmess
+      type: vless
       udp: true
-      uuid: 9e76767d-4bfa-4f04-a800-42e2f63afed2
-      ws-opts:
-        headers:
-            Host: www.linemo.jp
-        path: /viefast
-    - name: "\U0001F1ED\U0001F1F0 HK 196 | ⬇️ 32.36 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8b6f8337-ccc6-4a5b-8aa4-df221d59d9a3
-      port: 34029
-      server: c5574bec-5eda-4bd9-a326-ea83e63f80ac.bnsepserv.com
-      skip-cert-verify: true
-      sni: w1.ding-doc.com
-      type: trojan
-      udp: true
+      uuid: 745b7c9e-4c5b-4221-b472-625230375e42
     - alterId: 2
       cipher: auto
-      country: ' HK'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1ED\U0001F1F0 HK 223 | ⬇️ 2.17 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1ED\U0001F1F0 HK 213 | ⬇️ 5.93 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 80
       server: hkt.gotochinatown.net
+      skip-cert-verify: false
+      tls: false
       type: vmess
-      udp: true
       uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-      ws-opts: {}
+      ws-opts:
+        headers:
+            Host: hkt.gotochinatown.net
+        path: /
