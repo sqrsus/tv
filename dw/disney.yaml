@@ -1,42 +1,87 @@
 proxies:
-    - cipher: chacha20-ietf
-      country: ' SG'
-      name: "\U0001F1F8\U0001F1EC SG 004 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: asd123456
-      port: 8388
-      server: 103.36.91.32
-      type: ss
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 000 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21064
+      server: yue-hk.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 003 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21005
+      server: yue-hk.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 009 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21048
+      server: yue-tw.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 010 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21059
+      server: yue-tw.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 011 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21027
+      server: yue-tw.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 012 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21045
+      server: yue-tw.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 013 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21014
+      server: yue-tw.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 014 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21003
+      server: yue-tw.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 015 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21061
+      server: yue-tw.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 017 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21040
+      server: yue-tw.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
       udp: true
     - alterId: 2
       cipher: auto
-      country: ' HK'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1ED\U0001F1F0 HK 006 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-      servername: broadcastlv.chat.bilibili.com
-      skip-cert-verify: true
-      type: vmess
-      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-      ws-opts:
-        headers:
-            HOST: broadcastlv.chat.bilibili.com
-        path: /
-    - allowInsecure: "1"
-      name: "\U0001F1ED\U0001F1F0 HK 007 | ⬇️ 17.21 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: tcp
-      password: 253bc477d4e43c209f2d427272968280
-      port: 4451
-      server: 36.151.251.6
-      skip-cert-verify: true
-      sni: www.baidu.com
-      tls: true
-      type: trojan
-    - alterId: 2
-      cipher: auto
-      name: "\U0001F1ED\U0001F1F0 HK 009 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1ED\U0001F1F0 HK 018 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 80
       server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
@@ -49,12 +94,173 @@ proxies:
         headers:
             Host: broadcastlv.chat.bilibili.com
         path: /
-    - auth: b7a237e3-577d-442d-a0e5-8d6a94a40291
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 020 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21057
+      server: yue-tw.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 023 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21015
+      server: yue-hk.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 024 | ⬇️ 2.72 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21052
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 026 | ⬇️ 3.20 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21012
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 027 | ⬇️ 2.01 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21030
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 028 | ⬇️ 4.01 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21037
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 029 | ⬇️ 2.93 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21096
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 031 | ⬇️ 5.12 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21029
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 032 | ⬇️ 5.17 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21065
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 033 | ⬇️ 2.58 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21092
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 034 | ⬇️ 3.17 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21029
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 036 | ⬇️ 2.52 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21018
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 037 | ⬇️ 4.86 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21030
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 038 | ⬇️ 2.83 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21036
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 039 | ⬇️ 5.19 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21005
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 040 | ⬇️ 3.09 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21059
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 041 | ⬇️ 4.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21040
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 042 | ⬇️ 4.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21070
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 043 | ⬇️ 3.25 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21028
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 044 | ⬇️ 5.09 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21086
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - auth: 794283d6-0e98-4849-87a4-c93f8eb8c39b
+      delay: 1722
       down: 100
-      name: "\U0001F1ED\U0001F1F0 HK 010 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1E8\U0001F1F3 CN 045 关注我的频道获取更多 t.me/TheBestSubGroup"
       obfs: salamander
       obfs-password: zTCsHcttqdA0PniW
-      password: b7a237e3-577d-442d-a0e5-8d6a94a40291
+      password: 794283d6-0e98-4849-87a4-c93f8eb8c39b
       port: 21333
       server: xg.xfy003.cfd
       skip-cert-verify: false
@@ -62,40 +268,328 @@ proxies:
       type: hysteria2
       udp: true
       up: 50
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 046 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21023
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 047 | ⬇️ 2.31 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21027
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 048 | ⬇️ 2.85 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21062
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 049 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21093
+      server: yue-hk.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 050 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21016
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 051 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21081
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 052 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21035
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 053 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21074
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 054 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21054
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 055 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21031
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 056 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21024
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 057 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21090
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 058 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21085
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 059 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21040
+      server: yue-hk.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 060 | ⬇️ 7.69 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21044
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 061 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21033
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 062 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21051
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 063 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21082
+      server: yue-tw.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
     - alterId: 2
       cipher: auto
       country: ' HK'
       h2-opts: {}
       http-opts: {}
-      name: "\U0001F1ED\U0001F1F0 HK 013 | ⬇️ 5.31 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1ED\U0001F1F0 HK 064 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 80
-      server: hkt.gotochinatown.net
+      server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+      servername: broadcastlv.chat.bilibili.com
       skip-cert-verify: true
       type: vmess
       uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-      ws-path: /
-    - cipher: chacha20-ietf
-      name: "\U0001F1E8\U0001F1F3 CN 014 | ⬇️ 19.87 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      obfs: plain
-      obfs-param: 45672222545.microsoft.com
-      password: bxsnucrgk6hfish
-      port: 1076
-      protocol: auth_aes128_sha1
-      protocol-param: 222545:TIvS2C
-      server: yd-03.paofunlink.com
-      type: ssr
-      udp: true
-    - auth: 2d926502-dd31-48d1-878f-5a0a1d916add
-      name: "\U0001F1FA\U0001F1F8 US 020 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 2d926502-dd31-48d1-878f-5a0a1d916add
-      port: 14558
-      server: tw.xilucloud.top
-      skip-cert-verify: true
-      sni: tw.xilucloud.top
+      ws-opts:
+        headers:
+            HOST: broadcastlv.chat.bilibili.com
+        path: /
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 065 | ⬇️ 8.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21091
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
       type: hysteria2
       udp: true
-    - name: "\U0001F1F9\U0001F1FC TW 021 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 066 | ⬇️ 6.49 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21050
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 067 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21099
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 068 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21002
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 069 | ⬇️ 7.38 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21055
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 070 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21083
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 071 | ⬇️ 6.50 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21064
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 072 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21001
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 073 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21039
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 074 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21086
+      server: yue-tw.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 076 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21070
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 077 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21077
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 079 | ⬇️ 7.47 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21088
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 080 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21093
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 081 | ⬇️ 7.08 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21037
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 082 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21049
+      server: yue-hk.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 083 | ⬇️ 6.82 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21032
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 084 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21049
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: KR
+      name: "\U0001F1F0\U0001F1F7 KR 096 | ⬇️ 12.02 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21069
+      server: yue-kr.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 098 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21040
+      server: jp.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1F9\U0001F1FC TW 102 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: exaxgqkKkd0TAMrCxeonWg==
       port: 1443
       server: twmoon1-cdn-route.couldflare-cdn.com
@@ -103,56 +597,53 @@ proxies:
       tls: true
       type: http
       username: mrwdfNTD8M79LCukCieldrqZWqs=
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1F3 CN 022 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 102826c0-8ad3-4417-8843-6da0f5c80cfe
-      port: 35603
-      server: gw.liangyuandianwan.com
-      type: ss
-      udp: true
-    - alpn:
-        - h3
-      auth: b22f44be-11bc-483c-b5fa-69be7b59edd8
-      name: "\U0001F1FA\U0001F1F8 US 024 | ⬇️ 9.26 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: b22f44be-11bc-483c-b5fa-69be7b59edd8
-      port: 63482
-      server: 154.50.110.85
-      skip-cert-verify: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 103 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21012
+      server: yue-hk.yuetoto.net
+      skip-cert-verify: false
       type: hysteria2
       udp: true
-    - name: "\U0001F1E8\U0001F1F3 CN 026 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 104 | ⬇️ 3.03 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21096
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 105 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: 76nlxJLO35
       port: 36855
       server: 172.93.165.193
       type: http
       username: xZedCGy2A5
-    - name: "\U0001F1FA\U0001F1F8 US 027 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 106 | ⬇️ 4.20 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21017
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 113 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21071
+      server: yue-hk.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 116 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: gs4BXwT6SW
       port: 10988
       server: 154.26.192.123
       type: http
       username: fQ67Dpe5dU
-    - name: "\U0001F1F0\U0001F1F7 KR 028 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: test.+
-      port: 30446
-      server: testkr3.ssv.vc
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: test
-    - auth: c0ce5ad6-e8eb-40ad-a51e-fba07ca8c2f0
-      name: "\U0001F1ED\U0001F1F0 HK 029 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: c0ce5ad6-e8eb-40ad-a51e-fba07ca8c2f0
-      port: 14558
-      server: hk.xilucloud.top
-      skip-cert-verify: true
-      sni: hk.xilucloud.top
-      type: hysteria2
-      udp: true
     - client-fingerprint: qq
       flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8 US 031 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 119 关注我的频道获取更多 t.me/TheBestSubGroup"
       port: 34074
       reality-opts:
         public-key: zimSAAs4SyUKAR-MTMaw08PuI7skyi1U5Peb6VGJwjY
@@ -164,245 +655,640 @@ proxies:
       type: vless
       udp: true
       uuid: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
-    - auth: d9fb3813-3757-4cf2-9cee-f3eb70fe5373
-      name: "\U0001F1ED\U0001F1F0 HK 046 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: d9fb3813-3757-4cf2-9cee-f3eb70fe5373
-      port: 37013
-      server: tw.foldjc.top
-      skip-cert-verify: true
-      sni: tw.foldjc.top
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1FA\U0001F1F8 US 078 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 185.18.184.66
-      servername: hello.96xckkzx.workers.dev
-      type: vless
-      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-      ws-opts:
-        headers:
-            Host: hello.96xckkzx.workers.dev
-        path: /
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 094 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 104.24.148.115
-      type: vless
-      uuid: 9f0eae34-97c1-4c07-8a55-438379981334
-      ws-opts:
-        headers:
-            Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-        path: /
-    - auth: 79dc600a-b63b-4406-bd79-f5f7fb0c0e52
-      client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 125 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 79dc600a-b63b-4406-bd79-f5f7fb0c0e52
-      port: 30203
-      server: gyus.aifjj.asia
-      skip-cert-verify: true
-      sni: gysg.aifjj.asia
-      type: hysteria2
-    - alterId: 2
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8 US 133 | ⬇️ 3.42 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 30808
-      server: v8.heduian.link
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 121 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21022
+      server: yue-hk.yuetoto.net
       skip-cert-verify: false
-      tls: false
-      type: vmess
-      udp: true
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-      ws-opts:
-        headers:
-            Host: baidu.com
-        path: /oooo
-    - auth: 79dc600a-b63b-4406-bd79-f5f7fb0c0e52
-      client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 136 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 79dc600a-b63b-4406-bd79-f5f7fb0c0e52
-      port: 30250
-      server: gyus.aifjj.asia
-      skip-cert-verify: true
-      sni: gyus.aifjj.asia
       type: hysteria2
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8 US 156 | ⬇️ 6.16 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      port: 8443
-      reality-opts:
-        public-key: XgQPLMVHvbUKTzcAZPBDGZ_mDhaZRiAJEk7c4-7UzR4
-      server: 172.245.251.10
-      servername: www.ieee.org
-      skip-cert-verify: false
-      tls: true
-      type: vless
       udp: true
-      uuid: 9b3d65ab-576c-4750-9cb3-bb41c12c085e
-    - encryption: none
-      name: "\U0001F1FA\U0001F1F8 US 176 | ⬇️ 4.39 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: wwwopensignalcom-goodspeed-8xx.pages.dev.
-      servername: WwW.OPENSIgnaL.cOm.NaynaY09.dynv6.nET
-      tls: true
-      type: vless
-      uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-      ws-opts:
-        headers:
-            Host: WwW.OPENSIgnaL.cOm.NaynaY09.dynv6.nET
-        path: //
-    - auth: 79dc600a-b63b-4406-bd79-f5f7fb0c0e52
-      client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 177 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 79dc600a-b63b-4406-bd79-f5f7fb0c0e52
-      port: 30204
-      server: gyus.aifjj.asia
-      skip-cert-verify: true
-      sni: gysg.aifjj.asia
-      type: hysteria2
-    - alterId: 0
-      name: "\U0001F1FA\U0001F1F8 US 204 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      password: Aimer
-      port: 2053
-      server: 167.68.4.199
-      skip-cert-verify: true
-      sni: epge.muarua.filegear-sg.me
-      tls: true
-      type: trojan
-      udp: true
-    - auth: 79dc600a-b63b-4406-bd79-f5f7fb0c0e52
-      client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 211 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 79dc600a-b63b-4406-bd79-f5f7fb0c0e52
-      port: 30205
-      server: gyus.aifjj.asia
-      skip-cert-verify: true
-      sni: gysg.aifjj.asia
-      type: hysteria2
-    - name: "\U0001F1FA\U0001F1F8 US 217 | ⬇️ 8.80 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 2096
-      server: 185.207.197.253
-      servername: vlesspro.llengcugit.sbs
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 6e433a29-22ac-4061-ae8b-f1731715d0d9
-      ws-opts:
-        headers:
-            Host: vlesspro.llengcugit.sbs
-        path: /Telegram@freecodes/
-    - name: "\U0001F1EA\U0001F1F8 ES 218 | ⬇️ 7.45 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1ED\U0001F1F0 HK 122 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: 9e76767d-4bfa-4f04-a800-42e2f63afed2
       port: 443
-      server: es.viefast.net
+      server: k2.viefast.net
       skip-cert-verify: true
       sni: csapp.catch.net.tw
       type: trojan
       udp: true
-    - cipher: chacha20-ietf-poly1305
-      country: RU
-      name: "\U0001F1F7\U0001F1FA RU 219 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: oC9c1kPkYbkg
-      port: 443
-      server: 83.217.9.210
-      type: ss
-    - alterId: 0
-      cipher: auto
-      country: ZZ
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1FA\U0001F1F8 US 222 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: codepen.io
-      servername: farid.1.berozha.ir
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 123 | ⬇️ 2.66 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21011
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1F0\U0001F1F7 KR 128 | ⬇️ 14.79 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: test.+
+      port: 30446
+      server: testkr3.ssv.vc
       skip-cert-verify: true
       tls: true
-      type: vmess
-      uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-      ws-opts:
-        headers:
-            HOST: farid.1.berozha.ir
-        path: /us.kkp.me.eu.org/aa
-    - auth: e4fc0a9c-ea21-4c3e-9ffd-0c1138f0e8f3
+      type: http
+      udp: true
+      username: test
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 132 | ⬇️ 2.86 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21079
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 140 | ⬇️ 2.91 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21026
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 141 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21025
+      server: yue-hk.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 145 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21097
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 158 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21019
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 160 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21052
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 161 | ⬇️ 2.39 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21033
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: DE
+      name: "\U0001F1E9\U0001F1EA DE 162 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21073
+      server: es.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 163 | ⬇️ 2.28 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21034
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 164 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21099
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 165 | ⬇️ 2.35 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21014
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 167 | ⬇️ 3.88 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21024
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 178 | ⬇️ 2.11 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21015
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 179 | ⬇️ 2.18 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21070
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 185 | ⬇️ 2.15 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21002
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 189 | ⬇️ 2.94 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21072
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 197 | ⬇️ 4.37 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21036
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 199 | ⬇️ 2.60 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21054
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - auth: a42750ef-1954-4f6b-b7cd-5565e9f9aa93
       down: 100
-      name: "\U0001F1EF\U0001F1F5 JP 225 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1EF\U0001F1F5 JP 201 关注我的频道获取更多 t.me/TheBestSubGroup"
       obfs: salamander
       obfs-password: zTCsHcttqdA0PniW
-      password: e4fc0a9c-ea21-4c3e-9ffd-0c1138f0e8f3
-      port: 44234
+      password: a42750ef-1954-4f6b-b7cd-5565e9f9aa93
+      port: 44266
       server: rb1.xfy003.cfd
       skip-cert-verify: false
       sni: rb1.xfy003.cfd
       type: hysteria2
       udp: true
       up: 50
-    - auth: 79dc600a-b63b-4406-bd79-f5f7fb0c0e52
-      client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 233 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 79dc600a-b63b-4406-bd79-f5f7fb0c0e52
-      port: 30249
-      server: gyus.aifjj.asia
-      skip-cert-verify: true
-      sni: gyus.aifjj.asia
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 209 | ⬇️ 2.69 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21068
+      server: us.mxlk.net
+      skip-cert-verify: false
       type: hysteria2
-    - auth: 79dc600a-b63b-4406-bd79-f5f7fb0c0e52
-      client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 240 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 79dc600a-b63b-4406-bd79-f5f7fb0c0e52
-      port: 30248
-      server: gyus.aifjj.asia
-      skip-cert-verify: true
-      sni: gyus.aifjj.asia
-      type: hysteria2
-    - alterId: 0
-      cipher: auto
-      country: US
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1FA\U0001F1F8 US 260 | ⬇️ 11.41 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: cf.fovi.tk
-      servername: foxlux.fovi.tk
-      skip-cert-verify: true
-      tls: true
-      type: vmess
-      uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-      ws-opts:
-        headers:
-            HOST: foxlux.fovi.tk
-        path: /eisasqa
-    - encryption: none
-      name: "\U0001F1FA\U0001F1F8 US 268 | ⬇️ 7.60 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: backus1.dh03.shop
-      servername: backus1.dh03.shop
-      tls: true
-      type: vless
-      uuid: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-      ws-opts:
-        headers:
-            Host: backus1.dh03.shop
-        path: /higate
-    - client-fingerprint: chrome
+      udp: true
+    - client-fingerprint: random
       flow: xtls-rprx-vision
-      name: "\U0001F1EC\U0001F1F7 GR 294 | ⬇️ 6.47 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      port: 443
+      name: "\U0001F1FA\U0001F1F8 US 210 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 17779
       reality-opts:
-        public-key: Mjz6Gz75xTMe9ZU08h0y-A_VgRQ6tnt3qoOzdEn1k1M
-        short-id: 0fa84b90
-      server: 185.39.207.121
-      servername: outlook.office.com
+        public-key: zM_4XVYflnr-VmBsc06Qk_KzaUABAriVqqKEsEBb2C8
+        short-id: ea7bf16e8eb5769d
+      server: 38.244.39.95
+      servername: learn.microsoft.com
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: 6035325d-399a-5148-9126-29cedfd5966a
+      uuid: a83d7ca8-9ff7-3c65-ace5-b2f53dd5b1dc
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 225 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21029
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 234 | ⬇️ 2.76 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21004
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 249 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21040
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 251 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21014
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 256 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21058
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 259 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21070
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 275 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21031
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 276 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21027
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 315 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21088
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 323 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21009
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 326 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21018
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 338 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21028
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 339 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21028
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 346 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21078
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 358 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21035
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 389 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21065
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: DE
+      name: "\U0001F1E9\U0001F1EA DE 390 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21048
+      server: es.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: DE
+      name: "\U0001F1E9\U0001F1EA DE 401 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21011
+      server: es.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 402 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21088
+      server: yue-hk.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: DE
+      name: "\U0001F1E9\U0001F1EA DE 409 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21036
+      server: es.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 415 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21012
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 416 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21006
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: DE
+      name: "\U0001F1E9\U0001F1EA DE 423 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21025
+      server: es.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F3 UN 426 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 443
+      server: 64.110.104.30
+      servername: 1749023174552.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: 1749023174552.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
+        path: /
+    - country: DE
+      name: "\U0001F1E9\U0001F1EA DE 429 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21045
+      server: es.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 431 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21064
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 435 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21067
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: DE
+      name: "\U0001F1E9\U0001F1EA DE 445 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21097
+      server: es.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 457 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21066
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: DE
+      name: "\U0001F1E9\U0001F1EA DE 459 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21066
+      server: es.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 467 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21022
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: DE
+      name: "\U0001F1E9\U0001F1EA DE 469 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21080
+      server: es.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 473 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21033
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1E9\U0001F1EA DE 474 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 6666
+      reality-opts:
+        public-key: S_2bepGaT7EHeH5DdyEgio421RTgrAvvOOQiaq8zV0g
+        short-id: b525ecd2fc
+      server: 188.68.53.100
+      servername: Tgju.org
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 0abf9050-c7be-464d-80af-24094c2b97de
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 480 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21087
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 482 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8443
+      server: 108.165.152.82
+      servername: 1750926573911.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            host: 1750926573911.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
+        path: /telegram@v2ray_alpha/?ed=2048
+    - name: "\U0001F1FA\U0001F1F8 US 492 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: hUap75t
+      port: 37324
+      server: 38.93.204.236
+      type: http
+      username: kZXMC3Z1
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 493 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21074
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: DE
+      name: "\U0001F1E9\U0001F1EA DE 494 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21096
+      server: es.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 496 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21096
+      server: yue-us.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 508 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21069
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 509 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21051
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 533 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21054
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - auth: 8266d28c-4792-4e7f-a3a7-4bcba6d4fe04
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 549 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 8266d28c-4792-4e7f-a3a7-4bcba6d4fe04
+      port: 37771
+      server: dg1.xiaohuolongjc.top
+      skip-cert-verify: false
+      sni: dg1.xiaohuolongjc.top
+      type: hysteria2
+    - client-fingerprint: chrome
+      name: "\U0001F1E8\U0001F1ED CH 584 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+      server: 171.22.16.161
+      servername: www.starwars.com
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+    - client-fingerprint: chrome
+      name: "\U0001F1E6\U0001F1FA AU 591 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+      server: 160.187.111.222
+      servername: images-na.ssl-images-amazon.com
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 601 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3a22e735-7ade-474b-a526-ac9134a0821a
+      port: 21016
+      server: us.mxlk.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1E8\U0001F1E6 CA 632 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 42557
+      reality-opts:
+        public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
+        short-id: f430927d
+      server: 140.238.147.101
+      servername: www.yahoo.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
+    - country: HK
+      name: "\U0001F1ED\U0001F1F0 HK 634 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: bfdaa95f-2503-412b-9c07-c9a5c58a1996
+      port: 21056
+      server: yue-hk.yuetoto.net
+      skip-cert-verify: false
+      type: hysteria2
+      udp: true
