@@ -1,41 +1,50 @@
 proxies:
-    - mport: 50000-53000
-      name: "\U0001F1EF\U0001F1F5 JP 002 | ⬇️ 6.22 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
-      port: 50000
-      ports: 50000-53000
-      server: 131.186.42.162
-      skip-cert-verify: true
-      sni: www.microsoft.com
-      type: hysteria2
-      udp: true
-    - mport: 50000-53000
-      name: "\U0001F1F0\U0001F1F7 KR 004 | ⬇️ 12.19 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
-      port: 50000
-      ports: 50000-53000
-      server: 152.70.246.135
-      skip-cert-verify: true
-      sni: www.hoyoverse.com
-      type: hysteria2
-      udp: true
-    - alterId: 2
+    - alterId: 0
       cipher: auto
-      name: "\U0001F1ED\U0001F1F0 HK 005 | ⬇️ 4.48 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 80
-      server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
-      skip-cert-verify: false
-      tls: false
+      country: ' HK'
+      h2-opts: {}
+      http-opts:
+        method: GET
+        path:
+            - /
+      name: "\U0001F1ED\U0001F1F0 HK 000 | ⬇️ 3.14 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: http
+      port: 36821
+      server: 47.238.145.58
       type: vmess
-      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-      ws-opts:
-        headers:
-            Host: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
-        path: /
+      uuid: ced629ce-9861-4f55-a1be-c0505fa6c5bf
+    - alterId: 0
+      cipher: auto
+      country: ' HK'
+      h2-opts: {}
+      http-opts:
+        method: GET
+        path:
+            - /
+      name: "\U0001F1ED\U0001F1F0 HK 001 | ⬇️ 3.68 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: http
+      port: 31212
+      server: 47.242.90.210
+      type: vmess
+      uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
+    - client-fingerprint: ios
+      flow: xtls-rprx-vision
+      name: "\U0001F1EF\U0001F1F5 JP 015 | ⬇️ 15.54 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: DGzXhLIUE3NQXX-IVo5YCSeANn1vECVBdnw7dtC0sTQ
+        short-id: 92388f50ce26394f
+      server: c8217-b2a.h2.49d2.dje11.1.b297.djjsvip.cfd
+      servername: iosapps.itunes.apple.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 5fe1cb5d-5411-4836-a773-28cce83be3fc
     - mport: 50000-53000
-      name: "\U0001F1F0\U0001F1F7 KR 006 | ⬇️ 13.05 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
+      name: "\U0001F1F0\U0001F1F7 KR 021 | ⬇️ 8.81 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
       port: 50000
       ports: 50000-53000
       server: 146.56.180.104
@@ -43,73 +52,66 @@ proxies:
       sni: www.hoyoverse.com
       type: hysteria2
       udp: true
-    - name: "\U0001F1EC\U0001F1E7 GB 008 | ⬇️ 6.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
-      port: 65535
-      server: 132.145.52.10
+    - cipher: chacha20-ietf
+      country: ' SG'
+      name: "\U0001F1F8\U0001F1EC SG 023 | ⬇️ 33.58 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: asd123456
+      port: 8388
+      server: 103.36.91.32
+      type: ss
+      udp: true
+    - mport: 50000-53000
+      name: "\U0001F1F0\U0001F1F7 KR 026 | ⬇️ 9.10 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
+      port: 50000
+      ports: 50000-53000
+      server: 152.70.246.135
+      skip-cert-verify: true
+      sni: www.hoyoverse.com
+      type: hysteria2
+      udp: true
+    - alterId: 0
+      cipher: auto
+      country: ' US'
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1FA\U0001F1F8 US 027 | ⬇️ 4.49 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: none
+      port: 14827
+      server: 154.201.73.39
+      type: vmess
+      uuid: 4abcc4f8-c147-4c5b-fd7d-e3824eb4c473
+    - mport: 50000-53000
+      name: "\U0001F1EF\U0001F1F5 JP 028 | ⬇️ 6.21 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
+      port: 50000
+      ports: 50000-53000
+      server: 131.186.42.162
       skip-cert-verify: true
       sni: www.microsoft.com
       type: hysteria2
       udp: true
-    - name: "\U0001F1E9\U0001F1EA DE 011 | ⬇️ 3.81 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
+    - name: "\U0001F1E9\U0001F1EA DE 030 | ⬇️ 7.67 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
       port: 1
       server: 138.2.179.192
       skip-cert-verify: true
       sni: www.bing.com
       type: hysteria2
       udp: true
-    - client-fingerprint: firefox
-      flow: xtls-rprx-vision
-      name: "\U0001F1F8\U0001F1EC SG 014 | ⬇️ 5.59 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: M51jwGjuvXEvLryflRZNkXY2ggCA7y8jVmrSVHX1xX4
-        short-id: 9d5d84da
-      server: c8217-b2a.h2.49d2.dje11.5.b297.djjsvip.cfd
-      servername: osxapps.itunes.apple.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
-    - name: "\U0001F1F0\U0001F1F7 KR 018 | ⬇️ 5.58 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 49888
-      server: 144.24.84.212
-      servername: kejiland.freewarp.eu.org
-      tls: true
-      type: vless
-      udp: true
-      uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: kejiland.freewarp.eu.org
-        max-early-data: 2560
-        path: /snippets/ip=proxyip.fxxk.dedyn.io:443
-    - name: "\U0001F1E8\U0001F1E6 CA 019 | ⬇️ 4.67 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
-      port: 65535
-      server: 40.233.77.86
-      skip-cert-verify: true
-      sni: www.microsoft.com
-      type: hysteria2
-      udp: true
     - mport: 50000-53000
-      name: "\U0001F1FA\U0001F1F8 US 020 | ⬇️ 3.25 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
+      name: "\U0001F1FA\U0001F1F8 US 032 | ⬇️ 5.63 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
       port: 50000
       ports: 50000-53000
-      server: 144.24.54.157
+      server: 141.148.131.27
       skip-cert-verify: true
       sni: www.bing.com
       type: hysteria2
       udp: true
     - mport: 50000-53000
-      name: "\U0001F1E6\U0001F1FA AU 021 | ⬇️ 6.90 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
+      name: "\U0001F1E6\U0001F1FA AU 033 | ⬇️ 6.15 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
       port: 50000
       ports: 50000-53000
       server: 159.13.38.138
@@ -117,19 +119,46 @@ proxies:
       sni: www.hoyoverse.com
       type: hysteria2
       udp: true
+    - name: "\U0001F1ED\U0001F1F0 HK 037 | ⬇️ 6.85 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2083
+      server: 45.207.158.29
+      servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+      ws-opts:
+        headers:
+            Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+        path: /snippets
+    - alterId: 2
+      cipher: auto
+      country: ' HK'
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1ED\U0001F1F0 HK 038 | ⬇️ 4.64 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 80
+      server: hkt.gotochinatown.net
+      skip-cert-verify: true
+      type: vmess
+      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+      ws-path: /
     - mport: 50000-53000
-      name: "\U0001F1F8\U0001F1EA SE 026 | ⬇️ 4.88 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
+      name: "\U0001F1FA\U0001F1F8 US 040 | ⬇️ 5.73 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
       port: 50000
       ports: 50000-53000
-      server: 129.151.193.163
+      server: 141.148.158.54
       skip-cert-verify: true
-      sni: www.microsoft.com
+      sni: www.bing.com
       type: hysteria2
       udp: true
     - mport: 50000-53000
-      name: "\U0001F1FA\U0001F1F8 US 029 | ⬇️ 3.47 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
+      name: "\U0001F1FA\U0001F1F8 US 042 | ⬇️ 5.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
       port: 50000
       ports: 50000-53000
       server: 132.226.30.123
@@ -138,124 +167,18 @@ proxies:
       type: hysteria2
       udp: true
     - mport: 50000-53000
-      name: "\U0001F1FA\U0001F1F8 US 035 | ⬇️ 2.72 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
+      name: "\U0001F1FA\U0001F1F8 US 043 | ⬇️ 5.69 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
       port: 50000
       ports: 50000-53000
-      server: 141.148.131.27
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1F0\U0001F1F7 KR 036 | ⬇️ 2.36 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 50001
-      server: 211.107.143.176
-      servername: saas.cfliu.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 8d5911d9-f9f9-484f-8f67-5729ab5fd1af
-      ws-opts:
-        headers:
-            host: saas.cfliu.filegear-sg.me
-        path: /snippets?ip=tw.tp81.netlib.re:81
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 041 | ⬇️ 5.33 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: MNd_-vj6neDNen-_YVgwveB7rqb_TYLcvDswZfqInSk
-        short-id: efdf9145
-      server: c8217-b2a.h2.49d2.dje11.2.b297.djjsvip.cfd
-      servername: iosapps.itunes.apple.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
-    - mport: 50000-53000
-      name: "\U0001F1FA\U0001F1F8 US 066 | ⬇️ 2.47 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
-      port: 50000
-      ports: 50000-53000
-      server: 141.148.158.54
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1EF\U0001F1F5 JP 069 | ⬇️ 5.79 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 18788
-      server: 146.56.157.15
-      servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
-      ws-opts:
-        headers:
-            host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-        path: /snippets?ip=proxyip:port(443)
-    - name: "\U0001F1EC\U0001F1E7 GB 084 | ⬇️ 3.90 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
-      port: 65535
-      server: 132.145.28.17
-      skip-cert-verify: true
-      sni: www.microsoft.com
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1EE\U0001F1F3 IN 090 | ⬇️ 2.10 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
-      port: 53
-      server: 144.24.146.216
-      skip-cert-verify: true
-      sni: www.hoyoverse.com
-      type: hysteria2
-      udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5 JP 098 | ⬇️ 9.34 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: qlBYFB8cKmiEu7tCx8kbrH0WZTFeSCT-pE2LicmLx2w
-        short-id: 5f0ca794
-      server: c8217-b2a.h2.49d2.dje11.3.b297.djjsvip.cfd
-      servername: iosapps.itunes.apple.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
-    - name: "\U0001F1FA\U0001F1F8 US 100 | ⬇️ 2.81 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: xn--ktff-jt6hr36l.tencentapp.cn
-      servername: 1758413499362.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-      ws-opts:
-        headers:
-            host: 1758413499362.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
-        path: /snippets/ip=tw.tp81.netlib.re:81?ed=2560
-    - name: "\U0001F1E9\U0001F1EA DE 121 | ⬇️ 7.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
-      port: 1
-      server: 152.70.176.68
+      server: 144.24.54.157
       skip-cert-verify: true
       sni: www.bing.com
       type: hysteria2
       udp: true
     - mport: 50000-53000
-      name: "\U0001F1FA\U0001F1F8 US 129 | ⬇️ 3.49 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
+      name: "\U0001F1FA\U0001F1F8 US 045 | ⬇️ 5.66 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
       port: 50000
       ports: 50000-53000
       server: 129.153.71.226
@@ -263,24 +186,45 @@ proxies:
       sni: www.microsoft.com
       type: hysteria2
       udp: true
-    - name: "\U0001F1EF\U0001F1F5 JP 134 | ⬇️ 2.57 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 54584
-      server: 168.138.192.16
-      servername: kejiland.freewarp.eu.org
+    - name: "\U0001F1F0\U0001F1F7 KR 051 | ⬇️ 5.80 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: test.+
+      port: 30446
+      server: testkr3.ssv.vc
+      skip-cert-verify: true
       tls: true
-      type: vless
+      type: http
       udp: true
-      uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: kejiland.freewarp.eu.org
-        max-early-data: 2560
-        path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+      username: test
     - mport: 50000-53000
-      name: "\U0001F1F2\U0001F1FD MX 219 | ⬇️ 2.43 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
+      name: "\U0001F1F8\U0001F1EA SE 053 | ⬇️ 8.83 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
+      port: 50000
+      ports: 50000-53000
+      server: 129.151.193.163
+      skip-cert-verify: true
+      sni: www.microsoft.com
+      type: hysteria2
+      udp: true
+    - auth: 07502194-d80e-4f7e-92df-e549f1212b85
+      name: "\U0001F1FA\U0001F1F8 US 054 | ⬇️ 3.71 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 07502194-d80e-4f7e-92df-e549f1212b85
+      port: 30303
+      server: oracleus.yuwan.link
+      skip-cert-verify: true
+      sni: v3-prime-xg-web-pc.ixigua.com
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1E8\U0001F1E6 CA 055 | ⬇️ 8.21 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
+      port: 65535
+      server: 40.233.77.86
+      skip-cert-verify: true
+      sni: www.microsoft.com
+      type: hysteria2
+      udp: true
+    - mport: 50000-53000
+      name: "\U0001F1F2\U0001F1FD MX 059 | ⬇️ 7.48 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
       port: 50000
       ports: 50000-53000
       server: 140.84.178.54
@@ -288,42 +232,84 @@ proxies:
       sni: www.microsoft.com
       type: hysteria2
       udp: true
-    - alterId: 2
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8 US 240 | ⬇️ 14.35 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1FA\U0001F1F8 US 064 | ⬇️ 4.88 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 9yedrr
+      port: 61885
+      server: 38.246.240.208
+      type: http
+      username: kZXMC3Z1
+    - name: "\U0001F1F0\U0001F1F7 KR 065 | ⬇️ 14.25 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 30829
-      server: v29.heduian.link
+      port: 18788
+      server: 146.56.157.15
+      servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+      ws-opts:
+        headers:
+            Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+        path: /snippets?ip=proxyip:port(443)
+    - name: "\U0001F1E9\U0001F1EA DE 066 | ⬇️ 10.07 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
+      port: 1
+      server: 152.70.176.68
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1EC\U0001F1E7 GB 067 | ⬇️ 8.27 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
+      port: 65535
+      server: 132.145.28.17
+      skip-cert-verify: true
+      sni: www.microsoft.com
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 072 | ⬇️ 5.91 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: ZYxVNDT9pS
+      port: 6770
+      server: 47.254.121.69
+      type: http
+      username: HlZHOwkdIL
+    - name: "\U0001F1E9\U0001F1EA DE 074 | ⬇️ 6.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 443
+      server: 91.107.245.98
       skip-cert-verify: false
       tls: false
-      type: vmess
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      type: vless
+      uuid: 98a4587a-b33f-43c2-af75-5c041d97deaf
       ws-opts:
-        headers:
-            Host: ocbc.com
-        path: /oooo
-    - name: "\U0001F1FA\U0001F1F3 UN 243 | ⬇️ 2.02 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+        early-data-header-name: Sec-WebSocket-Protocol
+        max-early-data: 2048
+        path: /fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 082 | ⬇️ 7.83 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 22735
-      server: 140.83.57.183
+      port: 10001
+      server: 142.171.192.140
       servername: kejiland.freewarp.eu.org
-      skip-cert-verify: true
+      skip-cert-verify: false
       tls: true
       type: vless
-      udp: true
-      uuid: 01996549-6892-dbf0-0453-f700236936bd
+      uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
       ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
         headers:
-            host: kejiland.freewarp.eu.org
-        path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
-    - name: "\U0001F1EF\U0001F1F5 JP 252 | ⬇️ 3.39 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+            Host: kejiland.freewarp.eu.org
+        max-early-data: 2560
+        path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 090 | ⬇️ 7.96 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 45638
-      server: 138.2.10.149
+      port: 123
+      server: 74.48.136.41
       servername: kejiland.freewarp.eu.org
+      skip-cert-verify: false
       tls: true
       type: vless
-      udp: true
       uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
       ws-opts:
         early-data-header-name: Sec-WebSocket-Protocol
@@ -333,7 +319,7 @@ proxies:
         path: /snippets/ip=proxyip.fxxk.dedyn.io:443
     - client-fingerprint: chrome
       delay: 2245
-      name: "\U0001F1E9\U0001F1EA DE 320 | ⬇️ 2.56 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1E9\U0001F1EA DE 096 | ⬇️ 8.51 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 2087
       server: 104.26.12.31
@@ -346,20 +332,188 @@ proxies:
         headers:
             Host: 0000bldeqtt93cv2ia9d.9qhfz.0mdhvs60.d2dl09xr.isqhyop.inv1w8h.w8qr7n1t9pl.ornd3ui.t5clre6qc35.7bl5kpqtymz3.687d4r1yy2wmyc5.neib.cn
         path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - mport: 50000-53000
-      name: "\U0001F1E6\U0001F1EA AE 321 | ⬇️ 2.47 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
-      port: 50000
-      ports: 50000-53000
-      server: 139.185.34.29
+    - name: "\U0001F1FA\U0001F1F8 US 110 | ⬇️ 9.06 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 17628
+      server: 142.171.75.222
+      servername: kejiland.freewarp.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 01996549-6892-dbf0-0453-f700236936bd
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: kejiland.freewarp.eu.org
+        max-early-data: 2560
+        path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+    - name: "\U0001F1EC\U0001F1E7 GB 115 | ⬇️ 8.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
+      port: 65535
+      server: 132.145.52.10
       skip-cert-verify: true
-      sni: www.hoyoverse.com
+      sni: www.microsoft.com
       type: hysteria2
       udp: true
-    - name: "\U0001F1FA\U0001F1F8 US 323 | ⬇️ 2.10 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - country: IR
+      name: "\U0001F1EE\U0001F1F7 IR 144 | ⬇️ 5.82 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4726d2b4-f2b1-42b7-8ea4-154158e7cb2d
+      port: 14568
+      server: pepslgy2.pepsl.top
+      skip-cert-verify: true
+      sni: pepslgy2.pepsl.top
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1F8\U0001F1EC SG 161 | ⬇️ 3.22 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: tXA14Qlh
+      port: 45235
+      server: 47.237.20.174
+      type: http
+      username: kZXMC3Z1
+    - alterId: 0
+      cipher: auto
+      country: BE
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1E7\U0001F1EA BE 188 | ⬇️ 7.12 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 16957
-      server: 150.230.214.172
+      port: 443
+      server: 57.128.189.240
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+      ws-opts:
+        path: /linkvws
+    - alterId: 0
+      cipher: auto
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1EC\U0001F1E7 GB 193 | ⬇️ 10.16 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 443
+      server: 51.75.160.237
+      tls: true
+      type: vmess
+      uuid: 3adba462-318f-4a6c-ad7a-2923bc74f207
+      ws-opts:
+        headers:
+            Host: blazE-Uk-237.BLaZEsERVERs1.sItE
+        path: /linkvkwss
+    - alterId: 0
+      cipher: auto
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1EC\U0001F1E7 GB 196 | ⬇️ 9.31 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 443
+      server: 51.75.161.102
+      tls: true
+      type: vmess
+      uuid: 1805c3ae-ed84-4e7e-8ca2-fe9acd0897b0
+      ws-opts:
+        headers:
+            Host: bLAZe-UK-102.bLaZESErvErS1.Site
+        path: /linkvkwss
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 US 207 | ⬇️ 5.02 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 36818
+      server: 141.148.153.223
+      servername: kejiland.freewarp.eu.org
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: 01996549-6892-dbf0-0453-f700236936bd
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: kejiland.freewarp.eu.org
+        max-early-data: 2560
+        path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+    - name: "\U0001F1F8\U0001F1EC SG 215 | ⬇️ 8.85 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 43254
+      server: 138.2.89.238
+      servername: kejiland.freewarp.eu.org
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 01996549-6892-dbf0-0453-f700236936bd
+      ws-opts:
+        headers:
+            Host: kejiland.freewarp.eu.org
+        path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
+    - name: "\U0001F1FA\U0001F1F8 US 227 | ⬇️ 9.34 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 57239
+      server: 141.148.164.46
+      servername: kejiland.freewarp.eu.org
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: kejiland.freewarp.eu.org
+        max-early-data: 2560
+        path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+    - name: "\U0001F1F8\U0001F1EC SG 233 | ⬇️ 8.89 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 43254
+      server: 138.2.89.238
+      servername: kejiland.freewarp.eu.org
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 01996549-6892-dbf0-0453-f700236936bd
+      ws-opts:
+        headers:
+            Host: kejiland.freewarp.eu.org
+        path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
+    - cipher: aes-256-cfb
+      country: SK
+      delay: 623
+      name: "\U0001F1F8\U0001F1F0 SK 242 | ⬇️ 8.95 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: f8f7aCzcPKbsF8p3
+      port: 989
+      server: 156.146.40.194
+      type: ss
+    - name: "\U0001F1EE\U0001F1F3 IN 244 | ⬇️ 13.83 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2053
+      server: 65.20.74.136
+      servername: kejiland.freewarp.eu.org
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 01996549-6892-dbf0-0453-f700236936bd
+      ws-opts:
+        headers:
+            Host: kejiland.freewarp.eu.org
+        path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+    - name: "\U0001F1EF\U0001F1F5 JP 246 | ⬇️ 11.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 18650
+      server: 152.70.82.101
+      servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+      ws-opts:
+        headers:
+            Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+        path: /snippets
+    - name: "\U0001F1EF\U0001F1F5 JP 252 | ⬇️ 10.59 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 22735
+      server: 140.83.57.183
       servername: kejiland.freewarp.eu.org
       skip-cert-verify: true
       tls: true
@@ -368,11 +522,340 @@ proxies:
       uuid: 01996549-6892-dbf0-0453-f700236936bd
       ws-opts:
         headers:
-            host: kejiland.freewarp.eu.org
+            Host: kejiland.freewarp.eu.org
+        path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+    - name: "\U0001F1EF\U0001F1F5 JP 257 | ⬇️ 10.51 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 22735
+      server: 140.83.57.183
+      servername: kejiland.freewarp.eu.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 01996549-6892-dbf0-0453-f700236936bd
+      ws-opts:
+        headers:
+            Host: kejiland.freewarp.eu.org
+        path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+    - name: "\U0001F1ED\U0001F1F0 HK 261 | ⬇️ 7.75 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2096
+      server: 154.211.8.220
+      servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+      ws-opts:
+        headers:
+            Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+        path: /snippets
+    - cipher: chacha20-ietf-poly1305
+      country: RU
+      name: "\U0001F1F7\U0001F1FA RU 263 | ⬇️ 2.58 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: AIlKLws5WOwElkhke1F1yc
+      port: 1235
+      server: sakura.outlinekeys.net
+      type: ss
+    - name: "\U0001F1F8\U0001F1EC SG 275 | ⬇️ 7.71 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2087
+      server: 92.243.75.49
+      servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+      ws-opts:
+        headers:
+            Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+        path: /snippets
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1EF\U0001F1F5 JP 276 | ⬇️ 31.67 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: qlBYFB8cKmiEu7tCx8kbrH0WZTFeSCT-pE2LicmLx2w
+        short-id: 5f0ca794
+      server: c8217-b2a.h2.49d2.dje11.3.b297.djjsvip.cfd
+      servername: iosapps.itunes.apple.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 5fe1cb5d-5411-4836-a773-28cce83be3fc
+    - name: "\U0001F1EF\U0001F1F5 JP 278 | ⬇️ 3.72 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 45681
+      server: 150.230.5.34
+      servername: kejiland.freewarp.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 01996549-6892-dbf0-0453-f700236936bd
+      ws-opts:
+        headers:
+            Host: kejiland.freewarp.eu.org
+        path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+    - name: "\U0001F1FA\U0001F1F8 US 285 | ⬇️ 4.71 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8443
+      server: 142.171.166.116
+      servername: kejiland.freewarp.eu.org
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+      ws-opts:
+        headers:
+            Host: kejiland.freewarp.eu.org
+        path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+    - name: "\U0001F1FA\U0001F1F8 US 286 | ⬇️ 8.68 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 443
+      server: 38.180.51.120
+      servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+      ws-opts:
+        headers:
+            Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+        path: /snippets?ip=proxyip:port(443)&nat64=6to4
+    - name: "\U0001F1FA\U0001F1F8 US 289 | ⬇️ 10.61 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8443
+      server: 92.243.74.3
+      servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+      ws-opts:
+        headers:
+            Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+        path: /snippets?ip=proxyip:port(443)&nat64=6to4
+    - name: "\U0001F1FA\U0001F1F8 US 294 | ⬇️ 5.67 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8443
+      server: 142.171.166.116
+      servername: kejiland.freewarp.eu.org
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+      ws-opts:
+        headers:
+            Host: kejiland.freewarp.eu.org
+        path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+    - mport: 50000-53000
+      name: "\U0001F1E7\U0001F1F7 BR 302 | ⬇️ 6.77 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
+      port: 50000
+      ports: 50000-53000
+      server: 144.22.129.240
+      skip-cert-verify: true
+      sni: www.microsoft.com
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1FF\U0001F1E6 ZA 317 | ⬇️ 4.43 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
+      port: 65535
+      server: 129.151.169.64
+      skip-cert-verify: true
+      sni: www.microsoft.com
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1E9\U0001F1EA DE 337 | ⬇️ 10.54 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8080
+      server: cafearz.com
+      skip-cert-verify: false
+      tls: false
+      type: vless
+      uuid: 4182c59d-3b09-4bc9-ef7a-71e5628749e8
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: shad.ir.de.test.digicyber.click.
+        max-early-data: 1024
+        path: /olem/ws
+    - name: "\U0001F1E6\U0001F1F9 AT 355 | ⬇️ 4.68 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2053
+      server: 77.73.131.77
+      servername: kejiland.freewarp.eu.org
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+      ws-opts:
+        headers:
+            Host: kejiland.freewarp.eu.org
         path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      auth_str: dongtaiwang.com
+      delay: 2655
+      down: "100"
+      name: "\U0001F1EB\U0001F1F7 FR 374 | ⬇️ 9.12 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: ""
+      port: 15010
+      protocol: ""
+      server: 195.154.200.40
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      up: "100"
+    - mport: 50000-53000
+      name: "\U0001F1E6\U0001F1EA AE 377 | ⬇️ 7.35 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
+      port: 50000
+      ports: 50000-53000
+      server: 139.185.32.100
+      skip-cert-verify: true
+      sni: www.hoyoverse.com
+      type: hysteria2
+      udp: true
+    - mport: 50000-53000
+      name: "\U0001F1E6\U0001F1EA AE 379 | ⬇️ 7.65 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 5fe1cb5d-5411-4836-a773-28cce83be3fc
+      port: 50000
+      ports: 50000-53000
+      server: 139.185.34.29
+      skip-cert-verify: true
+      sni: www.hoyoverse.com
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1EC\U0001F1E7 GB 386 | ⬇️ 2.79 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2053
+      server: 193.124.41.165
+      servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+      ws-opts:
+        headers:
+            Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+        path: /snippets?ip=proxyip:port(443)&nat64=6to4
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      auth_str: dongtaiwang.com
+      country: FR
+      delay: 1787
+      down: "55"
+      name: "\U0001F1F3\U0001F1F1 NL 401 | ⬇️ 6.17 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 49003
+      protocol: udp
+      server: 51.159.226.1
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      udp: true
+      up: "11"
+    - name: "\U0001F1FB\U0001F1F3 VN 418 | ⬇️ 5.55 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: "1234"
+      port: 8900
+      server: 160.30.54.67
+      type: http
+      username: "1234"
+    - name: "\U0001F1FA\U0001F1F3 UN 428 | ⬇️ 6.04 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4xdfi6v
+      port: 54679
+      server: 160.30.54.67
+      type: http
+      username: kZXMC3Z1
+    - name: "\U0001F1F8\U0001F1EC SG 440 | ⬇️ 8.24 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 12365
+      server: 8.222.154.58
+      servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+      ws-opts:
+        headers:
+            Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+        path: /snippets?ip=proxyip:port(443)
+    - client-fingerprint: random
+      flow: xtls-rprx-vision
+      name: "\U0001F1E9\U0001F1EA DE 460 | ⬇️ 7.39 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp123
+      port: 443
+      reality-opts:
+        _spider-x: /ufMsqbRRCQJoKnX
+        public-key: _5ngG8UIgCSB3JaCrHYxDypOHiT_jvmT2MMc2nK7RnE
+        short-id: 95fbfb92b5
+      server: 45.157.232.28
+      servername: www.vk.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: id1255643060
+    - cipher: aes-256-cfb
+      name: "\U0001F1F3\U0001F1F1 NL 462 | ⬇️ 2.34 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: f8f7aCzcPKbsF8p3
+      port: 989
+      server: 51.15.17.169
+      type: ss
+    - client-fingerprint: random
+      flow: xtls-rprx-vision
+      name: "\U0001F1F7\U0001F1FA RU 466 | ⬇️ 7.34 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 443
+      reality-opts:
+        _spider-x: /zzJsU3OCeeVFZnD
+        public-key: A-U_DOnPUG78d0XFfSnj-P8vfvAxyn5cbE5PgN4zxBg
+        short-id: defc
+      server: 84.54.31.41
+      servername: vk.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: id1255643060
+    - name: "\U0001F1EC\U0001F1E7 GB 473 | ⬇️ 6.65 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2053
+      server: 86.110.56.71
+      servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+      ws-opts:
+        headers:
+            Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+        path: /snippets?ip=proxyip:port(443)&nat64=6to4
+    - name: "\U0001F1FA\U0001F1F3 UN 484 | ⬇️ 5.65 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2020
+      server: 89.22.239.42
+      servername: kejiland.freewarp.eu.org
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+      ws-opts:
+        headers:
+            Host: kejiland.freewarp.eu.org
+        path: /snippets/ip=proxyip.fxxk.dedyn.io:443
     - client-fingerprint: safari
       flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1F3 CN 348 | ⬇️ 3.82 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1E8\U0001F1F3 CN 489 | ⬇️ 8.88 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: tcp
       port: 443
       reality-opts:
@@ -384,51 +867,23 @@ proxies:
       tls: true
       type: vless
       udp: true
-      uuid: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
-    - name: "\U0001F1EF\U0001F1F5 JP 372 | ⬇️ 2.69 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      uuid: 5fe1cb5d-5411-4836-a773-28cce83be3fc
+    - name: "\U0001F1FA\U0001F1F3 UN 500 | ⬇️ 2.01 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 37043
-      server: 141.147.178.249
-      servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
-      ws-opts:
-        headers:
-            host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-        path: /snippets?ip=proxyip:port(443)
-    - name: "\U0001F1FA\U0001F1F8 US 404 | ⬇️ 2.39 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 18650
-      server: 152.70.82.101
-      servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
-      ws-opts:
-        headers:
-            Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-        path: /snippets?ip=proxyip:port(443)&nat64=6to4
-    - client-fingerprint: ios
-      name: "\U0001F1FA\U0001F1F8 US 417 | ⬇️ 2.36 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: 185.133.35.106
-      servername: d-us4.djwstlsweb.top
+      port: 2020
+      server: 89.22.239.42
+      servername: kejiland.freewarp.eu.org
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
+      uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
       ws-opts:
         headers:
-            Host: d-us4.djwstlsweb.top
-        path: /djjc/us4
+            Host: kejiland.freewarp.eu.org
+        path: /snippets/ip=proxyip.fxxk.dedyn.io:443
     - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 450 | ⬇️ 2.19 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 511 | ⬇️ 10.64 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 443
       server: 185.133.35.106
@@ -437,8 +892,40 @@ proxies:
       tls: true
       type: vless
       udp: true
-      uuid: 8f37feb5-aa0e-4df0-a2c3-a803cccd8947
+      uuid: 5fe1cb5d-5411-4836-a773-28cce83be3fc
       ws-opts:
         headers:
             Host: d-us1.djwstlsweb.top
         path: /djjc/us1
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      auth_str: dongtaiwang.com
+      country: FR
+      delay: 2780
+      down: "55"
+      name: "\U0001F1EB\U0001F1F7 FR 524 | ⬇️ 2.39 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 35511
+      protocol: udp
+      server: 62.210.127.217
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      udp: true
+      up: "11"
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      auth_str: dongtaiwang.com
+      country: FR
+      delay: 2780
+      down: 55 Mbps
+      name: "\U0001F1EB\U0001F1F7 FR 527 | ⬇️ 2.33 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 50011
+      protocol: udp
+      server: 62.210.127.217
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      udp: true
+      up: 11 Mbps
