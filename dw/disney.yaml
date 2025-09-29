@@ -1,174 +1,53 @@
 proxies:
-    - cipher: chacha20-ietf
-      delay: 188
-      name: "\U0001F1E8\U0001F1F3 CN 000 关注我的频道获取更多 t.me/TheBestSubGroup"
-      obfs: plain
-      obfs-param: ""
-      password: MAYING
-      port: 1429
-      protocol: auth_aes128_md5
-      protocol-param: 21138:3veJGX
-      server: hneyoxqhenuf.dnsfailover.org
-      type: ssr
+    - cipher: aes-256-cfb
+      country: ' KR'
+      name: "\U0001F1F0\U0001F1F7 KR 004 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: qwerREWQ@@
+      port: 4652
+      server: 218.237.185.230
+      type: ss
+    - cipher: aes-256-cfb
+      country: ' KR'
+      name: "\U0001F1F0\U0001F1F7 KR 005 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: qwerREWQ@@
+      port: 2520
+      server: 121.170.203.147
+      type: ss
       udp: true
-    - cipher: chacha20-ietf
-      delay: 332
-      name: "\U0001F1F8\U0001F1EC SG 001 | ⬇️ 16.48 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      obfs: plain
-      obfs-param: ""
-      password: MAYING
-      port: 1456
-      protocol: auth_aes128_md5
-      protocol-param: 21138:3veJGX
-      server: 106.126.3.24
-      type: ssr
-      udp: true
-    - name: "\U0001F1E8\U0001F1F3 CN 008 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 6008
-      server: 103.115.64.159
-      servername: getsub.saas.classelivre.eu.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 019984df-e8d5-10ee-435f-9143d7beb674
-      ws-opts:
-        headers:
-            host: getsub.saas.classelivre.eu.org
-        path: /snippets?ip=proxyip.oracle.cmliussss.net&nat64=6to4
-    - name: "\U0001F1E8\U0001F1F3 CN 012 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 76nlxJLO35
-      port: 36855
-      server: 172.93.165.193
-      type: http
-      username: xZedCGy2A5
-    - name: "\U0001F1FA\U0001F1F8 US 014 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: gs4BXwT6SW
-      port: 10988
-      server: 154.26.192.123
-      type: http
-      username: fQ67Dpe5dU
-    - cipher: chacha20-ietf
-      delay: 1186
-      name: "\U0001F1E9\U0001F1EA DE 042 | ⬇️ 7.39 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      obfs: plain
-      obfs-param: ""
-      password: MAYING
-      port: 1394
-      protocol: auth_aes128_md5
-      protocol-param: 21138:3veJGX
-      server: hneyoxqhenuf.dnsfailover.org
-      type: ssr
-      udp: true
-    - alpn:
-        - h3
-      client-fingerprint: random
-      name: "\U0001F1FA\U0001F1F8 US 045 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 2083
-      server: 162.159.142.252
-      servername: fei.634676.xyz
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: d2965257-0536-4811-a0d5-cdce54e90326
-      ws-opts:
-        headers:
-            Host: fei.634676.xyz
-        path: /?ed=2560
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8 US 091 | ⬇️ 13.11 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: tcp
-      port: 63976
-      reality-opts:
-        public-key: iy5mreXY2_NrUiX0ARFkaT1arsuleQ_SJh0dpIQjP1s
-      server: 113.192.61.19
-      servername: www.iij.ad.jp
-      tls: true
-      type: vless
-      udp: true
-      uuid: 9772ecf2-6732-4bfb-a8b1-f48af577c76c
-    - alpn:
-        - h3
-      client-fingerprint: random
-      name: "\U0001F1FA\U0001F1F8 US 183 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 2083
-      server: 162.159.142.252
-      servername: fei.634676.xyz
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: d2965257-0536-4811-a0d5-cdce54e90326
-      ws-opts:
-        headers:
-            Host: fei.634676.xyz
-        path: /?ed=2560
-    - country: US
-      delay: 814
-      name: "\U0001F1FA\U0001F1F8 US 204 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 2096
-      server: 166.62.111.32
-      servername: kejiland.freewarp.eu.org
-      tls: true
-      type: vless
-      udp: true
-      uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-      ws-opts:
-        headers:
-            Host: kejiland.freewarp.eu.org
-        path: /snippets
-    - name: "\U0001F1F0\U0001F1F7 KR 230 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8443
-      server: 158.180.82.203
-      servername: kejiland.freewarp.eu.org
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-      ws-opts:
-        headers:
-            Host: kejiland.freewarp.eu.org
-        path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
-    - country: RU
-      delay: 1323
-      name: "\U0001F1E9\U0001F1EA DE 281 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
+    - alterId: 0
+      cipher: auto
+      country: ' US'
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1FA\U0001F1F8 US 020 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: none
+      port: 46100
+      server: 156.238.226.207
+      type: vmess
+      uuid: 71dbcca9-1116-4bb0-c641-12f50b9ce41e
+    - cipher: aes-256-gcm
+      country: ' HK'
+      name: "\U0001F1ED\U0001F1F0 HK 163 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: ccf426f1fe78
+      plugin: v2ray-plugin
+      plugin-opts:
+        host: newroot2v1.dsjsapp.com
+        mode: websocket
+        mux: true
+        path: /zksuapgx
+        skip-cert-verify: false
+        tls: true
       port: 443
-      server: 91.201.113.193
-      servername: kejiland.freewarp.eu.org
-      tls: true
-      type: vless
-      udp: true
-      uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-      ws-opts:
-        headers:
-            Host: kejiland.freewarp.eu.org
-        path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
-    - name: "\U0001F1F7\U0001F1FA RU 311 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 2053
-      server: 89.169.160.84
-      servername: kejiland.freewarp.eu.org
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-      ws-opts:
-        headers:
-            Host: kejiland.freewarp.eu.org
-        path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
-    - name: "\U0001F1E8\U0001F1F3 CN 319 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: wanghui1
-      port: 3000
-      server: 43.252.229.243
-      type: http
-      username: wanghui1
+      server: 103.103.245.158
+      type: ss
+    - cipher: aes-128-gcm
+      country: ' KR'
+      name: "\U0001F1F0\U0001F1F7 KR 192 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: VXPipi29nxMO
+      plugin: obfs
+      plugin-opts:
+        host: 182039459a34f64238143cd31ddebbc914362.taobao.com
+        mode: http
+      port: 1052
+      server: kr2.qiangdong.xyz
+      type: ss
