@@ -1,53 +1,427 @@
 proxies:
-    - cipher: chacha20-ietf
-      country: ' SG'
-      name: "\U0001F1F8\U0001F1EC SG 000 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: asd123456
-      port: 8388
-      server: 103.36.91.32
-      type: ss
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 000 | ⬇️ 3.01 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: none
+      port: 11507
+      server: 189.1.226.65
+      tls: false
+      type: vmess
+      uuid: 5941c7a8-5f82-4a98-c06d-3c3f2003ef50
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 002 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 47492
+      server: 103.243.25.213
+      tls: false
+      type: vmess
+      uuid: 3d33835a-5d02-4c48-8030-d301c05048ef
+      ws-opts:
+        path: /arki?ed=2048
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 003 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 21533
+      server: 103.243.25.213
+      tls: false
+      type: vmess
+      uuid: 6d4e2341-e33d-428d-bc70-1461592ab1a2
+      ws-opts:
+        path: /arki?ed=2048
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F8\U0001F1EC SG 004 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: none
+      port: 8009
+      server: 166.108.232.40
+      tls: false
+      type: vmess
+      uuid: a9a0b976-3850-4461-b3e8-cb1d6a7875be
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1EF\U0001F1F5 JP 005 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 34221
+      server: 47.74.10.111
+      tls: false
+      type: vmess
+      uuid: 07a5f229-899d-43dd-beb0-f1412a2a85fd
+      ws-opts:
+        path: /arki?ed=2048
+    - name: "\U0001F1F8\U0001F1EC SG 011 | ⬇️ 3.41 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: a54ad565-1853-4954-98ab-1b1bd2f5f724
+      port: 11094
+      ports: 11001-11099
+      server: fq-sg.mxtn.net
+      skip-cert-verify: false
+      sni: fq-sg.mxtn.net
+      type: hysteria2
+    - name: "\U0001F1F8\U0001F1EC SG 012 | ⬇️ 3.18 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: a54ad565-1853-4954-98ab-1b1bd2f5f724
+      port: 11033
+      ports: 11001-11099
+      server: fq-sg.mxtn.net
+      skip-cert-verify: false
+      sni: fq-sg.mxtn.net
+      type: hysteria2
+    - cipher: auto
+      name: "\U0001F1F8\U0001F1EC SG 016 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: none
+      port: 44674
+      server: 95.134.244.251
+      tls: false
+      type: vless
+      uuid: 465628cf-c229-4045-cb55-5a968b7dbd8f
+    - name: "\U0001F1E8\U0001F1F3 CN 017 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 8080
+      server: 183.240.179.94
+      skip-cert-verify: true
+      tls: false
+      type: vless
       udp: true
+      uuid: b1e5c3d2-7a49-4f88-8c3d-5a1e9b7c4d20
+    - name: "\U0001F1EF\U0001F1F5 JP 019 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: a54ad565-1853-4954-98ab-1b1bd2f5f724
+      port: 11010
+      ports: 11001-11099
+      server: fq-jp.mxtn.net
+      skip-cert-verify: false
+      sni: fq-jp.mxtn.net
+      type: hysteria2
+    - name: "\U0001F1EF\U0001F1F5 JP 024 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: a54ad565-1853-4954-98ab-1b1bd2f5f724
+      port: 11046
+      ports: 11001-11099
+      server: fq-jp.mxtn.net
+      skip-cert-verify: false
+      sni: fq-jp.mxtn.net
+      type: hysteria2
+    - alterId: 0
+      cipher: auto
+      country: BE
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1EF\U0001F1F5 JP 025 | ⬇️ 6.48 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 68
+      server: awsjp2.iamlazy.vip
+      servername: tms.dingtalk.com
+      skip-cert-verify: true
+      type: vmess
+      uuid: f1d9d662-7fc9-4995-b047-05c98ad05286
+      ws-opts:
+        headers:
+            HOST: tms.dingtalk.com
+        path: /?ed=2048
+    - cipher: auto
+      name: "\U0001F1F8\U0001F1EC SG 027 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: none
+      port: 8010
+      server: 166.108.232.40
+      tls: false
+      type: vless
+      uuid: b3886a5c-21e7-4573-fa9c-222a090101f3
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F2\U0001F1FE MY 031 | ⬇️ 9.93 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 10704
+      server: 47.250.134.82
+      tls: false
+      type: vmess
+      uuid: 218839b5-a009-44ed-bc02-4124ecf7838c
+      ws-opts:
+        path: /arki?ed=2048
     - cipher: aes-256-cfb
-      country: ' KR'
-      name: "\U0001F1F0\U0001F1F7 KR 005 关注我的频道获取更多 t.me/TheBestSubGroup"
+      country: KR
+      delay: 2959
+      name: "\U0001F1F0\U0001F1F7 KR 034 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: qwerREWQ@@
       port: 2520
       server: 121.170.203.147
       type: ss
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1EF\U0001F1F5 JP 038 | ⬇️ 5.15 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: none
+      port: 51629
+      server: 43.165.184.30
+      tls: false
+      type: vmess
+      uuid: f2315052-70b5-4a9a-ccbd-e98c0a148940
+    - client-fingerprint: chrome
+      name: "\U0001F1EF\U0001F1F5 JP 043 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 20157
+      reality-opts:
+        _spider-x: /
+        public-key: hkVAcMVDaKtZkG7u0oMfipdNf1E-yQLOkc_IZs4zk08
+        short-id: "24"
+      server: 59.138.63.214
+      servername: www.yahoo.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: f04e49a5-12c2-48c4-a13d-83c4bb6d8ffa
+    - alpn:
+        - h3
+      client-fingerprint: random
+      name: "\U0001F1FA\U0001F1F8 US 046 | ⬇️ 14.88 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2083
+      server: 162.159.142.252
+      servername: fei.634676.xyz
+      skip-cert-verify: false
+      tls: true
+      type: vless
       udp: true
+      uuid: d2965257-0536-4811-a0d5-cdce54e90326
+      ws-opts:
+        headers:
+            Host: fei.634676.xyz
+        path: /?ed=2560
+    - alterId: 0
+      cipher: auto
+      http-opts:
+        method: GET
+        path:
+            - /
+      name: "\U0001F1F8\U0001F1EC SG 049 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: http
+      port: 80
+      server: 8.219.71.207
+      tls: false
+      type: vmess
+      uuid: 976b3310-a6eb-4ee5-b3a2-0958dec852f9
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1EF\U0001F1F5 JP 052 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: none
+      port: 13470
+      server: 103.93.76.157
+      tls: false
+      type: vmess
+      uuid: 78a67329-f6d2-49a8-a276-430d9cd50ff6
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F2\U0001F1FE MY 053 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 25352
+      server: 47.250.80.147
+      tls: false
+      type: vmess
+      uuid: 52a3040c-bcb5-4849-8f33-070c94e3c1c2
+      ws-opts:
+        path: /arki?ed=2048
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1EF\U0001F1F5 JP 054 | ⬇️ 2.86 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: none
+      port: 12996
+      server: 103.93.76.145
+      tls: false
+      type: vmess
+      uuid: 969053ca-7473-47a0-b21d-ed1a2e1575e7
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F2\U0001F1FE MY 056 | ⬇️ 2.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: none
+      port: 34457
+      server: 23.27.240.160
+      tls: false
+      type: vmess
+      uuid: 7a87514e-49bb-40f3-9185-4009d191aa8a
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 057 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: none
+      port: 11455
+      server: 47.243.245.143
+      tls: false
+      type: vmess
+      uuid: 06e10e0b-57ae-48db-a37a-f2fd207e3b11
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F2\U0001F1FE MY 058 | ⬇️ 4.88 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 65311
+      server: 47.250.134.82
+      tls: false
+      type: vmess
+      uuid: 52726251-70b3-40b1-ae99-e3b8db6a1537
+      ws-opts:
+        path: /arki?ed=2048
+    - alpn:
+        - h3
+      client-fingerprint: random
+      name: "\U0001F1FA\U0001F1F8 US 063 | ⬇️ 9.26 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2083
+      server: 162.159.142.252
+      servername: fei.634676.xyz
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: d2965257-0536-4811-a0d5-cdce54e90326
+      ws-opts:
+        headers:
+            Host: fei.634676.xyz
+        path: /?ed=2560
+    - name: "\U0001F1F0\U0001F1F7 KR 066 | ⬇️ 2.72 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: a54ad565-1853-4954-98ab-1b1bd2f5f724
+      port: 11011
+      ports: 11001-11099
+      server: fq-kr.mxtn.net
+      skip-cert-verify: false
+      sni: fq-kr.mxtn.net
+      type: hysteria2
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F8\U0001F1EC SG 067 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 54054
+      server: 47.236.111.41
+      tls: false
+      type: vmess
+      uuid: 64568f40-c9ba-44ad-9390-ef5d2b0adc96
+      ws-opts:
+        path: /arki?ed=2048
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F2\U0001F1FE MY 068 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 28301
+      server: 47.250.38.57
+      tls: false
+      type: vmess
+      uuid: 667e2cb0-16bb-495a-930e-934adcb43dd6
+      ws-opts:
+        path: /arki?ed=2048
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F8\U0001F1EC SG 069 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 47327
+      server: 47.236.30.148
+      tls: false
+      type: vmess
+      uuid: 095764b2-a50a-44cd-8e20-d15b3e4ce96b
+      ws-opts:
+        path: /arki?ed=2048
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F2\U0001F1FE MY 070 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 54183
+      server: 47.250.38.57
+      tls: false
+      type: vmess
+      uuid: c35c53b9-e922-47b8-a767-a4ced9d7e8ec
+      ws-opts:
+        path: /arki?ed=2048
+    - cipher: auto
+      name: "\U0001F1EF\U0001F1F5 JP 072 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 28008
+      server: 103.93.76.157
+      tls: false
+      type: vless
+      uuid: ba11eedf-b03f-452e-b7cb-b1bf92c82b49
+      ws-opts:
+        path: /
+    - cipher: 2022-blake3-aes-256-gcm
+      name: "\U0001F1EF\U0001F1F5 JP 074 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: tvfJ1dskO7ZoSqNJL1ku516Z4SG3oFE31koW+wA+Ii0=:J6QRG9TfsabK4lRw+nvV0a9WVhF6hCqnUGObiSgvn+E=
+      port: 20155
+      server: 59.138.63.214
+      type: ss
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F2\U0001F1FE MY 089 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 49010
+      server: 47.254.255.25
+      tls: false
+      type: vmess
+      uuid: 2d61c1a7-a9ea-45c3-97ef-aa275b4e470e
+      ws-opts:
+        path: /arki?ed=2048
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F2\U0001F1FE MY 094 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 17199
+      server: 47.250.85.161
+      tls: false
+      type: vmess
+      uuid: 16bb5574-7c94-428f-baf0-39fe7894a41c
+      ws-opts:
+        path: /arki?ed=2048
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F0\U0001F1F7 KR 114 | ⬇️ 2.20 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: none
+      port: 56867
+      server: 130.162.152.253
+      tls: false
+      type: vmess
+      uuid: 5206bb9f-2cbc-44ac-de2a-471439a23707
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 118 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 7883
+      server: 103.243.25.213
+      tls: false
+      type: vmess
+      uuid: a3688a34-88ce-4178-96ac-a5a0607d08be
+      ws-opts:
+        path: /arki?ed=2048
     - cipher: aes-256-cfb
       country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 022 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1E8\U0001F1F3 CN 135 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
       port: 38388
-      server: 103.186.154.227
+      server: 103.186.154.212
       type: ss
-    - cipher: aes-256-cfb
-      country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 066 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.154.12
-      type: ss
-    - cipher: aes-256-cfb
-      country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 094 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.154.233
-      type: ss
-    - country: ' NL'
-      name: "\U0001F1F3\U0001F1F1 NL 103 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: installshield
+    - cipher: chacha20-ietf-poly1305
+      country: UA
+      name: "\U0001F1FA\U0001F1F8 US 137 | ⬇️ 7.79 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: UEz3lCgyrS2nL9xJAgboy1
       port: 8443
-      server: 38.180.249.177
-      skip-cert-verify: true
-      type: trojan
-      udp: true
-    - cipher: aes-256-cfb
-      country: ' CN'
-      name: "\U0001F1E8\U0001F1F3 CN 186 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.154.232
+      server: 213.111.132.100
       type: ss
+    - name: "\U0001F1F0\U0001F1F7 KR 173 | ⬇️ 17.75 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: test.+
+      port: 30446
+      server: testkr3.ssv.vc
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: test
+    - cipher: auto
+      name: "\U0001F1EF\U0001F1F5 JP 212 | ⬇️ 11.01 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 36003
+      server: 141.11.138.192
+      tls: false
+      type: vless
+      uuid: 6a08090f-4e15-49c8-c442-b9c4ab26d196
+      ws-opts:
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1EF\U0001F1F5 JP 262 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 34029
+      server: 47.74.10.111
+      tls: false
+      type: vmess
+      uuid: 2e80d0c8-16c8-420a-b86c-c2e7e2e4f764
+      ws-opts:
+        path: /arki?ed=2048
