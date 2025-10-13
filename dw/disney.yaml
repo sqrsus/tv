@@ -1,11 +1,16 @@
 proxies:
-    - cipher: aes-256-gcm
-      country: CN
-      name: "\U0001F1FA\U0001F1F8 US 002 | ⬇️ 6.21 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 0199d1da-58ad-75dd-bd17-8f09b8be98cd
-      port: 45579
-      server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-      type: ss
+    - alterId: 2
+      cipher: auto
+      country: ' HK'
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1ED\U0001F1F0 HK 000 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 80
+      server: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
+      skip-cert-verify: true
+      type: vmess
+      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
     - alterId: 0
       cipher: auto
       country: HK
@@ -14,58 +19,17 @@ proxies:
         method: GET
         path:
             - /
-      name: "\U0001F1ED\U0001F1F0 HK 003 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1ED\U0001F1F0 HK 005 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: http
       port: 35436
       server: 103.30.78.138
       skip-cert-verify: true
       type: vmess
       uuid: 084928cf-ed55-42e8-b686-b8e271dfb0ce
-    - auth: 5f89ac2a-b6d6-4c66-98d8-39c4d552138c
-      name: "\U0001F1F3\U0001F1F1 NL 030 关注我的频道获取更多 t.me/TheBestSubGroup"
-      obfs: salamander
-      obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-      password: 5f89ac2a-b6d6-4c66-98d8-39c4d552138c
-      port: 35000
-      server: 206.71.158.41
-      skip-cert-verify: true
-      sni: jnir.pichondan.com
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1EB\U0001F1F7 FR 043 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8443
-      server: 51.91.249.93
-      servername: fei.634676.xyz
-      tls: true
-      type: vless
-      udp: true
-      uuid: d2965257-0536-4811-a0d5-cdce54e90326
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: fei.634676.xyz
-        max-early-data: 2560
-        path: /
-    - name: "\U0001F1EB\U0001F1F7 FR 045 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 8443
-      server: 51.91.251.144
-      servername: fei.634676.xyz
-      tls: true
-      type: vless
-      udp: true
-      uuid: d2965257-0536-4811-a0d5-cdce54e90326
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: fei.634676.xyz
-        max-early-data: 2560
-        path: /
-    - name: "\U0001F1E9\U0001F1EA DE 053 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1EB\U0001F1F7 FR 007 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 443
-      server: 148.251.134.94
+      server: 37.59.97.136
       servername: fei.634676.xyz
       tls: true
       type: vless
@@ -77,10 +41,37 @@ proxies:
             Host: fei.634676.xyz
         max-early-data: 2560
         path: /
-    - name: "\U0001F1EB\U0001F1F7 FR 068 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - alterId: 0
+      cipher: auto
+      country: SE
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1FA\U0001F1F8 US 011 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 35500
+      server: 148.135.184.84
+      skip-cert-verify: true
+      type: vmess
+      uuid: 869b6722-799d-4d3b-b930-bebd42fd1e28
+    - name: "\U0001F1EB\U0001F1F7 FR 022 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 8443
+      server: 51.91.251.43
+      servername: fei.634676.xyz
+      tls: true
+      type: vless
+      udp: true
+      uuid: d2965257-0536-4811-a0d5-cdce54e90326
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: fei.634676.xyz
+        max-early-data: 2560
+        path: /
+    - name: "\U0001F1E9\U0001F1EA DE 024 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
       port: 2053
-      server: 141.94.222.33
+      server: 152.228.134.184
       servername: fei.634676.xyz
       tls: true
       type: vless
@@ -92,18 +83,62 @@ proxies:
             Host: fei.634676.xyz
         max-early-data: 2560
         path: /
-    - name: "\U0001F1FA\U0001F1F8 US 087 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - auth: Yet-Another-Public-Config-1
+      name: "\U0001F1F3\U0001F1F1 NL 082 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: salamander
+      obfs-password: Yet-Another-Public-Config-1
+      password: Yet-Another-Public-Config-1
+      port: 36600
+      server: 206.71.158.37
+      skip-cert-verify: false
+      sni: YAPC-1.afshin.ir
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1E9\U0001F1EA DE 084 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 2096
-      server: 154.218.15.253
-      servername: gaosir.unfeeling.sbs
+      port: 2083
+      server: 188.245.92.220
+      servername: fei.634676.xyz
       tls: true
       type: vless
       udp: true
-      uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+      uuid: d2965257-0536-4811-a0d5-cdce54e90326
       ws-opts:
         early-data-header-name: Sec-WebSocket-Protocol
         headers:
-            Host: gaosir.unfeeling.sbs
+            Host: fei.634676.xyz
         max-early-data: 2560
-        path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2/"
+        path: /
+    - cipher: aes-256-gcm
+      country: US
+      name: "\U0001F1FA\U0001F1F8 US 086 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 065922f9-56cc-4ee1-8053-f4e0166e5db8
+      port: 443
+      server: 192.142.18.127
+      type: ss
+    - name: "\U0001F1EB\U0001F1F7 FR 088 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 2053
+      server: 141.94.222.3
+      servername: fei.634676.xyz
+      tls: true
+      type: vless
+      udp: true
+      uuid: d2965257-0536-4811-a0d5-cdce54e90326
+      ws-opts:
+        early-data-header-name: Sec-WebSocket-Protocol
+        headers:
+            Host: fei.634676.xyz
+        max-early-data: 2560
+        path: /
+    - auth: Telegram-->@Ln2Ray
+      name: "\U0001F1F3\U0001F1F1 NL 107 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: salamander
+      obfs-password: Telegram-->@Ln2Ray
+      password: Telegram-->@Ln2Ray
+      port: 45000
+      server: gavazn.lnmarketplace.net
+      skip-cert-verify: false
+      sni: gavazn.55994421.xyz
+      type: hysteria2
+      udp: true
