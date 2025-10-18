@@ -1,30 +1,92 @@
 proxies:
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1E6 CA 016 | ⬇️ 2.28 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-      plugin: obfs
-      plugin-opts:
-        host: (TG @WangCai2)26af988:57468
-        mode: tls
-        tls: false
-      port: 2377
-      server: 5.44.249.42
-      type: ss
+    - auth: 3e00baa4-425d-4645-9a3c-5018d7417fcf
+      name: "\U0001F1F8\U0001F1EC SG 004 | ⬇️ 15.14 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3e00baa4-425d-4645-9a3c-5018d7417fcf
+      port: 30001
+      server: sg-nb-01.linlujs.pw
+      skip-cert-verify: false
+      sni: sg-nb-01.linlujs.pw
+      type: hysteria2
+      udp: true
+    - auth: 3e00baa4-425d-4645-9a3c-5018d7417fcf
+      name: "\U0001F1F8\U0001F1EC SG 005 | ⬇️ 13.81 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3e00baa4-425d-4645-9a3c-5018d7417fcf
+      port: 24785
+      server: sg-nb-02.linlujs.pw
+      skip-cert-verify: false
+      sni: sg-nb-02.linlujs.pw
+      type: hysteria2
+      udp: true
+    - auth: 431026c8-7397-11ed-a8bf-f23c91cfbbc9
+      client-fingerprint: chrome
+      name: "\U0001F1ED\U0001F1F0 HK 008 | ⬇️ 7.26 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 431026c8-7397-11ed-a8bf-f23c91cfbbc9
+      port: 443
+      server: 81acfc45-t46kg0-t4vaxk-1la2q.hk2.hyhuawei.com
+      skip-cert-verify: false
+      type: hysteria2
+    - auth: 3e00baa4-425d-4645-9a3c-5018d7417fcf
+      name: "\U0001F1E8\U0001F1F3 CN 012 | ⬇️ 12.61 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3e00baa4-425d-4645-9a3c-5018d7417fcf
+      port: 30044
+      server: tw-me-03.linlujs.pw
+      skip-cert-verify: false
+      sni: tw-me-03.linlujs.pw
+      type: hysteria2
+      udp: true
+    - auth: c74a3fe8-a7be-40c9-899c-c0c6223f7f80
+      name: "\U0001F1E8\U0001F1F3 CN 046 | ⬇️ 13.13 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: c74a3fe8-a7be-40c9-899c-c0c6223f7f80
+      port: 30099
+      server: tw-me-04.linlujs.pw
+      skip-cert-verify: false
+      sni: tw-me-04.linlujs.pw
+      type: hysteria2
       udp: true
     - alterId: 2
       cipher: auto
-      name: "\U0001F1FA\U0001F1F8 US 078 | ⬇️ 3.11 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1ED\U0001F1F0 HK 070 | ⬇️ 9.92 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 30829
-      server: v29.heduian.link
-      servername: ocbc.com
+      port: 80
+      server: hkt.gotochinatown.net
+      skip-cert-verify: false
+      tls: false
       type: vmess
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      udp: true
+      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+    - auth: f0da1113-4f84-4a98-a194-344c38f6418b
+      name: "\U0001F1FA\U0001F1F8 US 072 | ⬇️ 6.92 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: f0da1113-4f84-4a98-a194-344c38f6418b
+      port: 14568
+      server: pepslgy2.pepsl.top
+      skip-cert-verify: true
+      sni: pepslgy2.pepsl.top
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 083 | ⬇️ 9.92 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 35951
+      server: 36.50.90.241
+      servername: gaosir.unfeeling.sbs
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
       ws-opts:
         headers:
-            Host: ocbc.com
-        path: /oooo
-    - name: "\U0001F1E8\U0001F1E6 CA 125 | ⬇️ 5.07 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+            host: gaosir.unfeeling.sbs
+        path: telegram@freecodes/?ed=2560
+    - auth: 3e00baa4-425d-4645-9a3c-5018d7417fcf
+      name: "\U0001F1FA\U0001F1F8 US 087 | ⬇️ 5.02 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3e00baa4-425d-4645-9a3c-5018d7417fcf
+      port: 25411
+      server: us-nb-03.linlujs.pw
+      skip-cert-verify: false
+      sni: us-nb-03.linlujs.pw
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1F0\U0001F1F7 KR 093 | ⬇️ 5.47 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: test.+
       port: 30446
       server: testkr3.ssv.vc
@@ -33,3 +95,91 @@ proxies:
       type: http
       udp: true
       username: test
+    - auth: 75625029-ca84-470b-adba-90aac4af97c9
+      name: "\U0001F1FA\U0001F1F8 US 102 | ⬇️ 4.73 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 75625029-ca84-470b-adba-90aac4af97c9
+      port: 25438
+      server: us-nb-05.linlujs.pw
+      skip-cert-verify: false
+      sni: us-nb-05.linlujs.pw
+      type: hysteria2
+      udp: true
+    - alterId: 2
+      cipher: auto
+      country: HK
+      delay: 2065
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1E8\U0001F1F3 CN 110 | ⬇️ 3.50 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 80
+      server: 09f05870-t35j40-tdnzz0-1qtp7.hk3.p5pv.com
+      servername: broadcastlv.chat.bilibili.com
+      skip-cert-verify: true
+      type: vmess
+      uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
+      ws-opts:
+        headers:
+            HOST: broadcastlv.chat.bilibili.com
+        path: /
+    - name: "\U0001F1F3\U0001F1F1 NL 170 | ⬇️ 3.13 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: e1191c4d-5a2c-406e-977f-63cb7e0aba2c
+      port: 443
+      server: 104.21.33.216
+      sni: joss.krikkrik.xyz
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: joss.krikkrik.xyz
+        path: /Free-VPN-CF-Geo-Project/DE3
+    - name: "\U0001F1FB\U0001F1F3 VN 180 | ⬇️ 2.12 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4xdfi6v
+      port: 54679
+      server: 160.30.54.67
+      type: http
+      username: kZXMC3Z1
+    - name: "\U0001F1FB\U0001F1F3 VN 189 | ⬇️ 2.17 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: "1234"
+      port: 8900
+      server: 160.30.54.67
+      type: http
+      username: "1234"
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      auth_str: dongtaiwang.com
+      delay: 960
+      down: 55
+      name: "\U0001F1F3\U0001F1F1 NL 194 | ⬇️ 3.53 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 49003
+      protocol: udp
+      server: 51.159.226.1
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      udp: true
+      up: 11
+    - auth: c74a3fe8-a7be-40c9-899c-c0c6223f7f80
+      name: "\U0001F1E8\U0001F1F3 CN 213 | ⬇️ 13.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: c74a3fe8-a7be-40c9-899c-c0c6223f7f80
+      port: 30009
+      server: tw-me-01.linlujs.pw
+      skip-cert-verify: false
+      sni: tw-me-01.linlujs.pw
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 214 | ⬇️ 2.44 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      password: d0728e94-82c2-456b-b5d4-eeab540599df
+      port: 443
+      server: 172.67.192.215
+      skip-cert-verify: false
+      sni: joss.krikkrik.xyz
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: joss.krikkrik.xyz
+        path: /Free-VPN-CF-Geo-Project/AE5
