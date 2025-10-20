@@ -1,32 +1,14 @@
 proxies:
-    - name: "\U0001F1FA\U0001F1F8 US 006 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1FA\U0001F1F8 US 005 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: gs4BXwT6SW
       port: 10988
       server: 154.26.192.123
       type: http
       username: fQ67Dpe5dU
-    - name: "\U0001F1F0\U0001F1F7 KR 007 | ⬇️ 13.81 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: test.+
-      port: 30446
-      server: testkr3.ssv.vc
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: test
-    - auth: c689428b-ee4f-4cd7-a8d1-13adc99e0163
-      name: "\U0001F1FA\U0001F1F8 US 012 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: c689428b-ee4f-4cd7-a8d1-13adc99e0163
-      port: 54265
-      server: banmabanmabanmabanmabanmabanma1.wanlidag.top
-      skip-cert-verify: true
-      sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1F0\U0001F1F7 KR 041 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1F7\U0001F1FA RU 022 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 10042
-      server: 220.118.109.204
+      port: 2096
+      server: 188.42.145.253
       servername: gaosir.unfeeling.sbs
       skip-cert-verify: false
       tls: true
@@ -36,4 +18,33 @@ proxies:
       ws-opts:
         headers:
             Host: gaosir.unfeeling.sbs
-        path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
+        path: /freecodes@节点狂魔/?ed=2560
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1FA\U0001F1F8 US 030 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 443
+      reality-opts:
+        public-key: O53KcL6eOfBmpyfB5rM9qPDI-ZCe8hhHgYzdsZZ0b2Q
+      server: 54.219.42.163
+      servername: dash.cloudflare.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: da640c05-1831-4c6f-a2c8-ff8ff9c18b0c
+    - cipher: aes-256-gcm
+      client-fingerprint: chrome
+      name: "\U0001F1E8\U0001F1F3 CN 053 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 2b5fad3874e5
+      plugin: v2ray-plugin
+      plugin-opts:
+        host: hk6v1.dsjsapp.com
+        mode: websocket
+        mux: true
+        path: /aqwshiog
+        skip-cert-verify: false
+        tls: true
+      port: 443
+      server: 156.251.179.135
+      tfo: false
+      type: ss
