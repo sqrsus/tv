@@ -3,7 +3,7 @@ proxies:
       alpn:
         - h3
       congestion-controller: bbr
-      name: "\U0001F1FA\U0001F1F8 US 000 | ⬇️ 10.84 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 000 | ⬇️ 6.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
       port: 19945
       server: 143.20.156.166
@@ -16,7 +16,7 @@ proxies:
       encryption: none
       grpc-opts:
         grpc-service-name: grpc
-      name: "\U0001F1FA\U0001F1F8 US 001 | ⬇️ 7.13 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F3 UN 001 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: grpc
       port: 39806
       reality-opts:
@@ -28,7 +28,7 @@ proxies:
       tls: true
       type: vless
       uuid: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
-    - name: "\U0001F1FA\U0001F1F8 US 002 | ⬇️ 11.74 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1FA\U0001F1F8 US 002 | ⬇️ 5.94 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       obfs: salamander
       obfs-password: wmufVmhTEkFcZ3qLakL9yQ==
       password: C298rctP35EiQTjISVZZ0zU42qOKn7aYjkjiTozTcRg=
@@ -38,7 +38,7 @@ proxies:
       sni: www.microsoft.com
       tfo: false
       type: hysteria2
-    - name: "\U0001F1FA\U0001F1F8 US 003 | ⬇️ 9.25 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1FA\U0001F1F8 US 003 | ⬇️ 8.17 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: 2nAT+01BpO97AjDtFTmSo63Pg/5bFhFV7AOdFitWOtE=
       port: 40724
       server: 143.20.156.166
@@ -46,34 +46,23 @@ proxies:
       sni: www.microsoft.com
       tfo: false
       type: hysteria2
-    - cipher: aes-256-gcm
-      name: "\U0001F1FA\U0001F1F8 US 004 | ⬇️ 6.26 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: bhs1dSfnlpEkTpcJCrwWjdRYf1A6VCpV
-      port: 38175
-      server: 143.20.156.166
-      type: ss
     - cipher: 2022-blake3-aes-256-gcm
-      name: "\U0001F1FA\U0001F1F8 US 005 | ⬇️ 5.76 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 004 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: hB3NTNpEI57K49x4WlfQCaWYECMOzhy9p2+BCMI+Q4Q=
       port: 27592
       server: 143.20.156.166
       type: ss
-    - alterId: 0
-      cipher: auto
+    - cipher: aes-256-gcm
+      country: US
       name: "\U0001F1FA\U0001F1F8 US 006 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 35085
+      password: bhs1dSfnlpEkTpcJCrwWjdRYf1A6VCpV
+      port: 38175
       server: 143.20.156.166
-      tls: false
-      type: vmess
-      uuid: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
-      ws-opts:
-        headers: {}
-        path: /vm
+      type: ss
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8 US 007 | ⬇️ 6.50 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 007 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: tcp
       port: 21908
       reality-opts:
@@ -85,8 +74,20 @@ proxies:
       tls: true
       type: vless
       uuid: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 008 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 35085
+      server: 143.20.156.166
+      tls: false
+      type: vmess
+      uuid: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
+      ws-opts:
+        headers: {}
+        path: /vm
     - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 008 | ⬇️ 6.87 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1FA\U0001F1F8 US 009 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
       port: 19398
       reality-opts:
@@ -95,3 +96,19 @@ proxies:
       server: 143.20.156.166
       sni: www.microsoft.com
       type: trojan
+    - cipher: chacha20-ietf-poly1305
+      country: US
+      name: "\U0001F1FA\U0001F1F8 US 015 | ⬇️ 5.72 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: kqkU8OiUygFAmf4Lh92JAM
+      port: 41447
+      server: 172.237.82.133
+      type: ss
+    - name: "\U0001F1F0\U0001F1F7 KR 029 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: test.+
+      port: 30446
+      server: testkr3.ssv.vc
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: test
