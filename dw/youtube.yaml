@@ -1,109 +1,861 @@
 proxies:
-    - allowInsecure: "1"
-      alpn:
-        - h3
-      congestion-controller: bbr
-      name: "\U0001F1FA\U0001F1F8 US 000 | ⬇️ 6.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
-      port: 19945
-      server: 143.20.156.166
-      skip-cert-verify: true
-      sni: www.microsoft.com
-      type: tuic
-      uuid: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
-      version: 5
-    - client-fingerprint: chrome
-      encryption: none
-      grpc-opts:
-        grpc-service-name: grpc
-      name: "\U0001F1FA\U0001F1F3 UN 001 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: grpc
-      port: 39806
-      reality-opts:
-        public-key: B1ssSU4djJwxF3bBPLb5pFnncgRlgavpjVjy_1tvRBU
-        short-id: 085a4d15a4f6f070
-      server: 143.20.156.166
-      servername: www.microsoft.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
-    - name: "\U0001F1FA\U0001F1F8 US 002 | ⬇️ 5.94 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      obfs: salamander
-      obfs-password: wmufVmhTEkFcZ3qLakL9yQ==
-      password: C298rctP35EiQTjISVZZ0zU42qOKn7aYjkjiTozTcRg=
-      port: 38326
-      server: 143.20.156.166
-      skip-cert-verify: true
-      sni: www.microsoft.com
-      tfo: false
-      type: hysteria2
-    - name: "\U0001F1FA\U0001F1F8 US 003 | ⬇️ 8.17 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 2nAT+01BpO97AjDtFTmSo63Pg/5bFhFV7AOdFitWOtE=
-      port: 40724
-      server: 143.20.156.166
-      skip-cert-verify: true
-      sni: www.microsoft.com
-      tfo: false
-      type: hysteria2
-    - cipher: 2022-blake3-aes-256-gcm
-      name: "\U0001F1FA\U0001F1F8 US 004 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: hB3NTNpEI57K49x4WlfQCaWYECMOzhy9p2+BCMI+Q4Q=
-      port: 27592
-      server: 143.20.156.166
-      type: ss
-    - cipher: aes-256-gcm
-      country: US
-      name: "\U0001F1FA\U0001F1F8 US 006 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: bhs1dSfnlpEkTpcJCrwWjdRYf1A6VCpV
-      port: 38175
-      server: 143.20.156.166
-      type: ss
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8 US 007 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: tcp
-      port: 21908
-      reality-opts:
-        public-key: B1ssSU4djJwxF3bBPLb5pFnncgRlgavpjVjy_1tvRBU
-        short-id: 085a4d15a4f6f070
-      server: 143.20.156.166
-      servername: www.microsoft.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
     - alterId: 0
       cipher: auto
-      name: "\U0001F1FA\U0001F1F8 US 008 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 35085
-      server: 143.20.156.166
-      tls: false
+      country: ' HK'
+      h2-opts: {}
+      http-opts:
+        method: GET
+        path:
+            - /
+      name: "\U0001F1ED\U0001F1F0 HK 001 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: http
+      port: 31212
+      server: 47.242.90.210
       type: vmess
-      uuid: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
-      ws-opts:
-        headers: {}
-        path: /vm
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 009 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
-      port: 19398
-      reality-opts:
-        public-key: B1ssSU4djJwxF3bBPLb5pFnncgRlgavpjVjy_1tvRBU
-        short-id: 085a4d15a4f6f070
-      server: 143.20.156.166
-      sni: www.microsoft.com
+      uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
+    - alterId: 0
+      cipher: auto
+      country: BR
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1E7\U0001F1F7 BR 002 | ⬇️ 2.85 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: none
+      port: 11507
+      server: 189.1.226.65
+      skip-cert-verify: true
+      type: vmess
+      uuid: 5941c7a8-5f82-4a98-c06d-3c3f2003ef50
+    - name: "\U0001F1ED\U0001F1F0 HK 004 | ⬇️ 30.27 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: f418bc36-6fc5-4565-bb1d-b86fa01fea6c
+      port: 30003
+      server: lazy.rsqpq.cn
+      skip-cert-verify: true
+      sni: lazy.rsqpq.cn
       type: trojan
-    - cipher: chacha20-ietf-poly1305
-      country: US
-      name: "\U0001F1FA\U0001F1F8 US 015 | ⬇️ 5.72 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: kqkU8OiUygFAmf4Lh92JAM
-      port: 41447
-      server: 172.237.82.133
-      type: ss
-    - name: "\U0001F1F0\U0001F1F7 KR 029 关注我的频道获取更多 t.me/TheBestSubGroup"
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 007 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18087
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 008 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18039
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 010 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18082
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 011 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18023
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 013 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18064
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 014 | ⬇️ 2.00 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18063
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 018 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18053
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 019 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18070
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 020 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18042
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 022 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18015
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 024 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18004
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 027 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18075
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 029 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18029
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 033 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18046
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 035 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18077
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 036 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18092
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 037 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18003
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 040 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18016
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 042 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18080
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 043 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18014
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 044 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18071
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 045 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18051
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 047 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18088
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 048 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18050
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 049 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18066
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 050 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18090
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 051 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18062
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 052 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18059
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 054 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18054
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 058 | ⬇️ 2.09 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18045
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 061 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18034
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 063 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18044
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 065 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18001
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 066 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18076
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 067 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18007
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 068 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18006
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 069 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18097
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 070 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18078
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 071 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18095
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 072 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18057
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 073 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18036
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 074 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18038
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 076 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18019
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 079 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18073
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 081 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18037
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 082 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18065
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 083 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18000
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 087 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18074
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 090 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18026
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 093 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18056
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 094 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18068
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 099 | ⬇️ 2.51 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18049
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 101 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18002
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 103 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18061
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 104 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18084
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 105 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18017
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 106 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18009
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 107 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18030
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 108 | ⬇️ 2.46 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18005
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 110 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18094
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 111 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18035
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 113 | ⬇️ 2.32 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18089
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 117 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18011
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 119 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18032
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 120 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18027
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 122 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18093
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 125 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18083
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 127 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18067
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 128 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18024
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 129 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18018
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 132 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18012
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 134 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18043
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 135 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18025
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 137 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18028
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 138 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18031
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 143 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18008
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 148 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18098
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 151 | ⬇️ 4.22 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18013
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 152 | ⬇️ 5.27 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18055
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 157 | ⬇️ 8.56 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18047
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 178 | ⬇️ 10.63 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18085
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 181 | ⬇️ 10.97 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18058
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 192 | ⬇️ 8.47 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18091
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 193 | ⬇️ 8.53 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18020
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 219 | ⬇️ 4.73 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18040
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 221 | ⬇️ 3.21 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18081
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 224 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18052
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 231 | ⬇️ 3.30 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18010
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 249 | ⬇️ 8.15 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18069
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 256 | ⬇️ 6.55 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18021
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 265 | ⬇️ 4.63 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18022
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 267 | ⬇️ 4.76 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18072
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 275 | ⬇️ 3.66 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18096
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 290 | ⬇️ 3.98 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18033
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 291 | ⬇️ 3.13 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18048
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 292 | ⬇️ 19.98 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: f418bc36-6fc5-4565-bb1d-b86fa01fea6c
+      port: 38002
+      server: lazy.rsqpq.cn
+      skip-cert-verify: true
+      sni: lazy.rsqpq.cn
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 293 | ⬇️ 3.77 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18079
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 296 | ⬇️ 3.89 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18099
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' SG'
+      name: "\U0001F1F8\U0001F1EC SG 297 | ⬇️ 9.14 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: G9CHhXltVx
+      port: 12646
+      server: 96.9.213.108
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - country: ' IR'
+      name: "\U0001F1EE\U0001F1F7 IR 299 | ⬇️ 4.43 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+      port: 18041
+      server: jp01.weyaf9sdoh2h.space
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 302 | ⬇️ 10.70 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: f418bc36-6fc5-4565-bb1d-b86fa01fea6c
+      port: 38101
+      server: lazy.rsqpq.cn
+      skip-cert-verify: true
+      sni: lazy.rsqpq.cn
+      type: trojan
+      udp: true
+    - alterId: 0
+      cipher: auto
+      country: ' HK'
+      h2-opts: {}
+      http-opts:
+        method: GET
+        path:
+            - /
+      name: "\U0001F1ED\U0001F1F0 HK 306 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: http
+      port: 10086
+      server: 103.243.26.209
+      type: vmess
+      uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
+    - name: "\U0001F1F0\U0001F1F7 KR 315 | ⬇️ 11.58 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: test.+
       port: 30446
       server: testkr3.ssv.vc
