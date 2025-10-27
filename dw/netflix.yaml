@@ -1,115 +1,154 @@
 proxies:
-    - allowInsecure: "1"
-      alpn:
+    - alpn:
         - h3
       congestion-controller: bbr
-      name: "\U0001F1FA\U0001F1F8 US 000 | ⬇️ 6.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
-      port: 19945
-      server: 143.20.156.166
+      name: "\U0001F1FA\U0001F1F8 US 000 | ⬇️ 18.69 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: ysJpLBx46OMWWkkMCW0pywU6
+      port: 10012
+      server: 143.20.156.251
       skip-cert-verify: true
-      sni: www.microsoft.com
+      sni: www.bing.com
       type: tuic
-      uuid: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
+      udp-relay-mode: native
+      uuid: dad58782-ffd5-48bd-994c-7b82555c1384
       version: 5
-    - client-fingerprint: chrome
-      encryption: none
-      grpc-opts:
-        grpc-service-name: grpc
-      name: "\U0001F1FA\U0001F1F3 UN 001 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: grpc
-      port: 39806
-      reality-opts:
-        public-key: B1ssSU4djJwxF3bBPLb5pFnncgRlgavpjVjy_1tvRBU
-        short-id: 085a4d15a4f6f070
-      server: 143.20.156.166
-      servername: www.microsoft.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      uuid: 11ee8f77-d5bd-41e1-9ad7-f176b98bc1b0
-    - name: "\U0001F1FA\U0001F1F8 US 002 | ⬇️ 5.94 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1FA\U0001F1F8 US 001 | ⬇️ 16.28 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: dad58782-ffd5-48bd-994c-7b82555c1384
+      port: 10013
+      server: 143.20.156.251
+      skip-cert-verify: true
+      sni: www.bing.com
+      tfo: false
+      type: hysteria2
+    - name: "\U0001F1ED\U0001F1F0 HK 004 | ⬇️ 3.83 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       obfs: salamander
-      obfs-password: wmufVmhTEkFcZ3qLakL9yQ==
-      password: C298rctP35EiQTjISVZZ0zU42qOKn7aYjkjiTozTcRg=
-      port: 38326
-      server: 143.20.156.166
-      skip-cert-verify: true
-      sni: www.microsoft.com
-      tfo: false
+      obfs-password: QqvCBoJpDEflbOYm
+      password: e40c0f5e-d548-41f6-bc28-23690c0afcb9
+      port: 20000
+      server: hk2.mutoujs.top
+      skip-cert-verify: false
+      sni: hk2.mutoujs.top
       type: hysteria2
-    - name: "\U0001F1FA\U0001F1F8 US 003 | ⬇️ 8.17 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 2nAT+01BpO97AjDtFTmSo63Pg/5bFhFV7AOdFitWOtE=
-      port: 40724
-      server: 143.20.156.166
-      skip-cert-verify: true
-      sni: www.microsoft.com
-      tfo: false
+    - name: "\U0001F1ED\U0001F1F0 HK 007 | ⬇️ 13.66 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: salamander
+      obfs-password: kiHzafi1yxI2j6sW
+      password: e40c0f5e-d548-41f6-bc28-23690c0afcb9
+      port: 20000
+      server: hk3.mutoujs.top
+      skip-cert-verify: false
+      sni: hk3.mutoujs.top
       type: hysteria2
-    - cipher: 2022-blake3-aes-256-gcm
-      name: "\U0001F1FA\U0001F1F8 US 004 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: hB3NTNpEI57K49x4WlfQCaWYECMOzhy9p2+BCMI+Q4Q=
-      port: 27592
-      server: 143.20.156.166
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      country: US
-      name: "\U0001F1FA\U0001F1F8 US 005 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: vrV64r9gL2RlG96kd9YOkM
-      port: 6579
-      server: 172.237.82.96
-      type: ss
-    - auth: fd6ba56f-da38-4d84-b0bd-9ef3ed776396
-      name: "\U0001F1FA\U0001F1F8 US 013 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: fd6ba56f-da38-4d84-b0bd-9ef3ed776396
-      port: 54265
-      server: banmabanmabanmabanmabanmabanma5.wanlidag.top
-      skip-cert-verify: true
-      sni: banmabanmabanmabanmabanmabanma5.wanlidag.top
+    - auth: a16d62f6-048d-11f0-af5a-f23c93136cb3
+      name: "\U0001F1FA\U0001F1F8 US 012 | ⬇️ 5.23 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: a16d62f6-048d-11f0-af5a-f23c93136cb3
+      port: 1743
+      server: b9c3912b-t07z40-t1l1nh-d6ar.la.shifen.uk
+      sni: b9c3912b-t07z40-t1l1nh-d6ar.la.shifen.uk
       type: hysteria2
       udp: true
-    - name: "\U0001F1FA\U0001F1F8 US 014 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - alpn:
+        - h3
+      disable-sni: false
+      name: "\U0001F1E8\U0001F1E6 CA 016 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: a13a6ce4-cafa-4b26-a710-a03aa91c5418
+      port: 52434
+      reduce-rtt: false
+      request-timeout: 0
+      server: 40.233.77.57
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: tuic
+      uuid: a13a6ce4-cafa-4b26-a710-a03aa91c5418
+      version: 5
+    - name: "\U0001F1FA\U0001F1F8 US 021 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: gs4BXwT6SW
       port: 10988
       server: 154.26.192.123
       type: http
       username: fQ67Dpe5dU
-    - cipher: chacha20-ietf-poly1305
-      country: US
-      name: "\U0001F1FA\U0001F1F8 US 015 | ⬇️ 5.72 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: kqkU8OiUygFAmf4Lh92JAM
-      port: 41447
-      server: 172.237.82.133
-      type: ss
-    - cipher: aes-256-gcm
-      country: ' US'
-      name: "\U0001F1FA\U0001F1F8 US 018 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 2b5fad3874e5
-      plugin: v2ray-plugin
-      plugin-opts:
-        host: hk6v1.dsjsapp.com
-        mode: websocket
-        mux: true
-        path: /aqwshiog
-        skip-cert-verify: false
-        tls: true
-      port: 443
-      server: 156.251.179.135
-      type: ss
-    - name: "\U0001F1FA\U0001F1F8 US 022 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 90b2223f-78c9-4bfc-9c7c-407e964ef00a
-      port: 24100
-      server: n002.xunxunmimisbs.sbs
-      skip-cert-verify: false
-      sni: us01.xxxxyyyysbs.sbs
-      type: trojan
-      udp: true
-    - auth: dbbf7649-439d-4d2e-9436-8b1a174d038f
-      name: "\U0001F1FA\U0001F1F8 US 023 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: dbbf7649-439d-4d2e-9436-8b1a174d038f
-      port: 54265
-      server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+    - name: "\U0001F1F0\U0001F1F7 KR 023 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: test.+
+      port: 30446
+      server: testkr3.ssv.vc
       skip-cert-verify: true
-      sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+      tls: true
+      type: http
+      udp: true
+      username: test
+    - client-fingerprint: firefox
+      flow: xtls-rprx-vision
+      name: "\U0001F1FA\U0001F1F8 US 029 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: B4XtFNjMBeOIgVxMaYHZcYlvKi9gwThzKBRy70ZAYgA
+      server: 64.81.39.95
+      servername: download.amd.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: a8a18bda-d6a4-4e72-9c35-c44827317366
+    - name: "\U0001F1FA\U0001F1F8 US 035 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: salamander
+      obfs-password: cwcy8RPDNKFfuCCP
+      password: e40c0f5e-d548-41f6-bc28-23690c0afcb9
+      port: 30000
+      server: mg3.mutoujs.top
+      skip-cert-verify: false
+      sni: mg3.mutoujs.top
       type: hysteria2
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1FA\U0001F1F8 US 039 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 26129
+      reality-opts:
+        public-key: 5N5K8oHDAiN23svc_KlSC5xhnYoNvcEWXHtr7ECh-H8
+      server: 198.2.251.111
+      servername: aws.amazon.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      uuid: b02ea0a1-7485-4b81-b6d9-c670a2dc8f99
+    - alterId: 0
+      cipher: auto
+      country: ZZ
+      h2-opts: {}
+      http-opts: {}
+      name: "\U0001F1FA\U0001F1F8 US 040 | ⬇️ 2.96 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 33254
+      server: 23.136.164.34
+      skip-cert-verify: true
+      type: vmess
+      uuid: 6ad27475-b638-45b1-de1a-208152b16085
+      ws-opts:
+        path: /6ad27475
+    - name: "\U0001F1FA\U0001F1F8 US 051 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: salamander
+      obfs-password: DAnBPK1GxOdklGbv
+      password: e40c0f5e-d548-41f6-bc28-23690c0afcb9
+      port: 20000
+      server: mg4.mutoujs.top
+      skip-cert-verify: false
+      sni: mg4.mutoujs.top
+      type: hysteria2
+    - name: "\U0001F1FA\U0001F1F8 US 054 关注我的频道获取更多 t.me/TheBestSubGroup"
+      obfs: salamander
+      obfs-password: CBUfj671qRCz40wJ
+      password: e40c0f5e-d548-41f6-bc28-23690c0afcb9
+      port: 30000
+      server: mg1.mutoujs.top
+      skip-cert-verify: false
+      sni: mg1.mutoujs.top
+      type: hysteria2
+    - alterId: 0
+      name: "\U0001F1FA\U0001F1F8 US 056 | ⬇️ 6.82 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: BxceQaOe
+      port: 26373
+      server: 36.150.215.241
+      skip-cert-verify: true
+      tls: true
+      type: trojan
       udp: true
