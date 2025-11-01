@@ -1,24 +1,170 @@
 proxies:
-    - name: "\U0001F1FA\U0001F1F8 US 003 | ⬇️ 9.50 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 7RmEtd
-      port: 23916
-      server: 38.244.54.62
-      type: http
-      username: kZXMC3Z1
-    - name: "\U0001F1F0\U0001F1F7 KR 019 | ⬇️ 5.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: test.+
-      port: 30446
-      server: testkr3.ssv.vc
+    - auth: 767ed51d-2358-4981-9447-a807c1419e93
+      name: "\U0001F1E9\U0001F1EA DE 002 | ⬇️ 2.93 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 767ed51d-2358-4981-9447-a807c1419e93
+      port: 50000
+      ports: 50000-53000
+      server: 193.122.12.150
       skip-cert-verify: true
-      tls: true
-      type: http
+      sni: fastcdn.hoyoverse.com
+      type: hysteria2
       udp: true
-      username: test
-    - name: "\U0001F1F8\U0001F1EC SG 030 | ⬇️ 8.44 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: tcp
-      password: BxceQaOe
-      port: 2088
-      server: 36.150.215.197
+    - auth: 767ed51d-2358-4981-9447-a807c1419e93
+      name: "\U0001F1F0\U0001F1F7 KR 003 | ⬇️ 9.96 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 767ed51d-2358-4981-9447-a807c1419e93
+      port: 50000
+      ports: 50000-53000
+      server: 144.24.75.201
       skip-cert-verify: true
-      type: trojan
+      sni: fastcdn.hoyoverse.com
+      type: hysteria2
+      udp: true
+    - auth: 767ed51d-2358-4981-9447-a807c1419e93
+      name: "\U0001F1EB\U0001F1F7 FR 006 | ⬇️ 3.75 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 767ed51d-2358-4981-9447-a807c1419e93
+      port: 50000
+      ports: 50000-53000
+      server: 89.168.32.96
+      skip-cert-verify: true
+      sni: www.microsoft.com
+      type: hysteria2
+      udp: true
+    - auth: 3085fcf8-a69c-11ec-bd7c-f23c913c8d2b
+      name: "\U0001F1ED\U0001F1F0 HK 008 | ⬇️ 4.49 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3085fcf8-a69c-11ec-bd7c-f23c913c8d2b
+      port: 443
+      ports: 30000-60000
+      server: 50ca28ec-t50740-tnsc3a-1f0gu.hk1.hyhuawei.com
+      sni: 50ca28ec-t50740-tnsc3a-1f0gu.hk1.hyhuawei.com
+      type: hysteria2
+      udp: true
+    - auth: 767ed51d-2358-4981-9447-a807c1419e93
+      name: "\U0001F1FA\U0001F1F8 US 009 | ⬇️ 3.27 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 767ed51d-2358-4981-9447-a807c1419e93
+      port: 50000
+      ports: 50000-53000
+      server: 129.153.202.4
+      skip-cert-verify: true
+      sni: fastcdn.hoyoverse.com
+      type: hysteria2
+      udp: true
+    - auth: 767ed51d-2358-4981-9447-a807c1419e93
+      name: "\U0001F1FA\U0001F1F8 US 011 | ⬇️ 4.81 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 767ed51d-2358-4981-9447-a807c1419e93
+      port: 50000
+      ports: 50000-53000
+      server: 167.234.222.167
+      skip-cert-verify: true
+      sni: fastcdn.hoyoverse.com
+      type: hysteria2
+      udp: true
+    - auth: 7699767c-44ae-11ef-80c7-f23c91cfbbc9
+      name: "\U0001F1FA\U0001F1F8 US 012 | ⬇️ 3.61 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 7699767c-44ae-11ef-80c7-f23c91cfbbc9
+      port: 443
+      ports: 30000-60000
+      server: bef311cd-t53wg0-teivih-1rz31.us.hyhuawei.com
+      sni: bef311cd-t53wg0-teivih-1rz31.us.hyhuawei.com
+      type: hysteria2
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 013 | ⬇️ 11.49 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 13231
+      server: cdn2.ttcdn.top
+      skip-cert-verify: true
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 702dfadc-c14b-48ed-a345-bfc340774717
+    - alpn:
+        - h3
+      auth: dcdd09ad-4519-46f7-8107-4c4290a9b2a3
+      name: "\U0001F1E8\U0001F1E6 CA 015 | ⬇️ 3.24 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: dcdd09ad-4519-46f7-8107-4c4290a9b2a3
+      port: 13805
+      server: 40.233.115.110
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+      udp: true
+    - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: 55
+      fast-open: true
+      name: "\U0001F1F3\U0001F1F1 NL 016 | ⬇️ 2.42 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 49003
+      protocol: udp
+      server: 51.159.226.1
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      up: 11
+    - auth: 767ed51d-2358-4981-9447-a807c1419e93
+      name: "\U0001F1E9\U0001F1EA DE 017 | ⬇️ 6.01 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 767ed51d-2358-4981-9447-a807c1419e93
+      port: 50000
+      ports: 50000-53000
+      server: 138.2.182.211
+      skip-cert-verify: true
+      sni: fastcdn.hoyoverse.com
+      type: hysteria2
+      udp: true
+    - auth: 3eb83f07-e01c-4574-85c1-4f182a070c71
+      name: "\U0001F1FA\U0001F1F8 US 021 | ⬇️ 2.64 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3eb83f07-e01c-4574-85c1-4f182a070c71
+      port: 54265
+      server: banmabanmabanmabanmabanmabanma5.wanlidag.top
+      skip-cert-verify: true
+      sni: banmabanmabanmabanmabanmabanma5.wanlidag.top
+      type: hysteria2
+      udp: true
+    - auth: 767ed51d-2358-4981-9447-a807c1419e93
+      name: "\U0001F1EA\U0001F1F8 ES 023 | ⬇️ 3.65 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 767ed51d-2358-4981-9447-a807c1419e93
+      port: 50000
+      ports: 50000-53000
+      server: 158.179.214.33
+      skip-cert-verify: true
+      sni: fastcdn.hoyoverse.com
+      type: hysteria2
+      udp: true
+    - auth: 767ed51d-2358-4981-9447-a807c1419e93
+      name: "\U0001F1FA\U0001F1F8 US 029 | ⬇️ 5.43 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 767ed51d-2358-4981-9447-a807c1419e93
+      port: 50000
+      ports: 50000-53000
+      server: 192.9.130.104
+      skip-cert-verify: true
+      sni: fastcdn.hoyoverse.com
+      type: hysteria2
+      udp: true
+    - auth: 07502194-d80e-4f7e-92df-e549f1212b85
+      name: "\U0001F1FA\U0001F1F8 US 034 | ⬇️ 2.76 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 07502194-d80e-4f7e-92df-e549f1212b85
+      port: 30303
+      server: oracleus.yuwan.link
+      skip-cert-verify: true
+      sni: v3-prime-xg-web-pc.ixigua.com
+      type: hysteria2
+      udp: true
+    - auth: 7699767c-44ae-11ef-80c7-f23c91cfbbc9
+      name: "\U0001F1ED\U0001F1F0 HK 039 | ⬇️ 3.63 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 7699767c-44ae-11ef-80c7-f23c91cfbbc9
+      port: 443
+      ports: 30000-60000
+      server: 77dae819-t53wg0-teivih-1rz31.hk2.hyhuawei.com
+      sni: 77dae819-t53wg0-teivih-1rz31.hk2.hyhuawei.com
+      type: hysteria2
+      udp: true
+    - auth: 767ed51d-2358-4981-9447-a807c1419e93
+      name: "\U0001F1F8\U0001F1EC SG 045 | ⬇️ 2.99 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 767ed51d-2358-4981-9447-a807c1419e93
+      port: 50000
+      ports: 50000-53000
+      server: 140.245.48.123
+      skip-cert-verify: true
+      sni: www.microsoft.com
+      type: hysteria2
       udp: true

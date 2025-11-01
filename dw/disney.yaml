@@ -1,50 +1,121 @@
 proxies:
-    - name: "\U0001F1FA\U0001F1F8 US 003 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - alpn:
+        - h2
+      grpc-opts:
+        grpc-service-name: db
+      name: "\U0001F1E8\U0001F1F3 CN 001 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: grpc
+      password: 3f5bc61547b1f0d9
+      port: 443
+      server: 125.227.86.46
+      skip-cert-verify: true
+      sni: TG.WangCai2
+      type: trojan
+      udp: true
+    - auth: 279c1c1c-6189-46a4-beba-66c7c294afc9
+      name: "\U0001F1FA\U0001F1F8 US 007 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 279c1c1c-6189-46a4-beba-66c7c294afc9
+      port: 54265
+      server: banmabanmabanmabanmabanmabanma3.wanlidag.top
+      skip-cert-verify: true
+      sni: banmabanmabanmabanmabanmabanma3.wanlidag.top
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8 US 010 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: gs4BXwT6SW
       port: 10988
       server: 154.26.192.123
       type: http
       username: fQ67Dpe5dU
-    - name: "\U0001F1F0\U0001F1F7 KR 006 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: test.+
-      port: 30446
-      server: testkr3.ssv.vc
+    - auth: 767ed51d-2358-4981-9447-a807c1419e93
+      name: "\U0001F1FA\U0001F1F8 US 011 | ⬇️ 4.81 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 767ed51d-2358-4981-9447-a807c1419e93
+      port: 50000
+      ports: 50000-53000
+      server: 167.234.222.167
       skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: test
-    - auth: 53275353-175d-4aea-901b-8bba12c7453d
-      client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8 US 009 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 53275353-175d-4aea-901b-8bba12c7453d
-      port: 54265
-      server: banmabanmabanmabanmabanmabanma1.wanlidag.top
-      skip-cert-verify: false
-      sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+      sni: fastcdn.hoyoverse.com
       type: hysteria2
-    - cipher: chacha20-ietf-poly1305
-      country: RU
-      name: "\U0001F1F7\U0001F1FA RU 018 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: WjfN0ncDH8Saa7DfIIrjuR
-      port: 65262
-      server: 62.133.63.21
-      type: ss
+      udp: true
     - alterId: 0
       cipher: auto
-      country: US
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1FA\U0001F1F8 US 021 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 33995
-      server: 154.17.230.67
-      servername: us.nbee.pp.ua
+      name: "\U0001F1FA\U0001F1F8 US 013 | ⬇️ 11.49 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 13231
+      server: cdn2.ttcdn.top
       skip-cert-verify: true
-      tls: true
+      tls: false
       type: vmess
-      uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-      ws-opts:
-        headers:
-            HOST: us.nbee.pp.ua
-        path: /aa
+      udp: true
+      uuid: 702dfadc-c14b-48ed-a345-bfc340774717
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8 US 014 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 13231
+      server: cdn1.ttcdn.top
+      skip-cert-verify: true
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 702dfadc-c14b-48ed-a345-bfc340774717
+    - alpn:
+        - h3
+      auth: dcdd09ad-4519-46f7-8107-4c4290a9b2a3
+      name: "\U0001F1E8\U0001F1E6 CA 015 | ⬇️ 3.24 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: dcdd09ad-4519-46f7-8107-4c4290a9b2a3
+      port: 13805
+      server: 40.233.115.110
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+      udp: true
+    - alpn:
+        - h2
+      grpc-opts:
+        grpc-service-name: db
+      name: "\U0001F1E8\U0001F1F3 CN 018 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: grpc
+      password: 0a9f1f5a397bd427
+      port: 443
+      server: 125.227.86.47
+      skip-cert-verify: true
+      sni: TG.WangCai2
+      type: trojan
+      udp: true
+    - name: "\U0001F1E8\U0001F1F3 CN 019 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 76nlxJLO35
+      port: 36855
+      server: 172.93.165.193
+      type: http
+      username: xZedCGy2A5
+    - auth: 3eb83f07-e01c-4574-85c1-4f182a070c71
+      name: "\U0001F1FA\U0001F1F8 US 021 | ⬇️ 2.64 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 3eb83f07-e01c-4574-85c1-4f182a070c71
+      port: 54265
+      server: banmabanmabanmabanmabanmabanma5.wanlidag.top
+      skip-cert-verify: true
+      sni: banmabanmabanmabanmabanmabanma5.wanlidag.top
+      type: hysteria2
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F0\U0001F1F7 KR 033 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 21617
+      server: cdn1.ttcdn.top
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 9848862b-298e-4394-91e6-fc77254dc7b7
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1EF\U0001F1F5 JP 052 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 51623
+      reality-opts:
+        public-key: ln4RiHk9_Ea_EyeI2GpZfzilPyrqKYDBqis09esVECo
+        short-id: 6ba85179e30d4fc2
+      server: softbank88.xzcloudnode.sbs
+      servername: itunes.apple.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 8129a335-37d4-4932-8dca-ac4358ce60b7

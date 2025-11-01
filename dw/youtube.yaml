@@ -1,5 +1,28 @@
 proxies:
-    - name: "\U0001F1F0\U0001F1F7 KR 006 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - alpn:
+        - h2
+      grpc-opts:
+        grpc-service-name: db
+      name: "\U0001F1E8\U0001F1F3 CN 001 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: grpc
+      password: 3f5bc61547b1f0d9
+      port: 443
+      server: 125.227.86.46
+      skip-cert-verify: true
+      sni: TG.WangCai2
+      type: trojan
+      udp: true
+    - auth: 767ed51d-2358-4981-9447-a807c1419e93
+      name: "\U0001F1F0\U0001F1F7 KR 003 | ⬇️ 9.96 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 767ed51d-2358-4981-9447-a807c1419e93
+      port: 50000
+      ports: 50000-53000
+      server: 144.24.75.201
+      skip-cert-verify: true
+      sni: fastcdn.hoyoverse.com
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1F0\U0001F1F7 KR 026 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: test.+
       port: 30446
       server: testkr3.ssv.vc
@@ -8,25 +31,34 @@ proxies:
       type: http
       udp: true
       username: test
-    - name: "\U0001F1ED\U0001F1F0 HK 014 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: BxceQaOe
-      port: 443
-      server: 58.152.53.3
-      skip-cert-verify: true
-      type: trojan
-    - alterId: 2
-      cipher: auto
-      country: ' HK'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1ED\U0001F1F0 HK 017 | ⬇️ 5.51 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - name: "\U0001F1F8\U0001F1EC SG 031 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: ws
-      port: 80
-      server: cf6a54ef-sv2sg0-swxjgn-1la2q.hk.p5pv.com
-      servername: broadcastlv.chat.bilibili.com
+      password: 1b26d982-fd68-44f4-bf6d-22fe17a9249a
+      port: 20230
+      server: sg006.421421.xyz
       skip-cert-verify: true
+      sni: www.alibaba.com
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: www.alibaba.com
+        path: /
+    - allowInsecure: "1"
+      name: "\U0001F1F8\U0001F1EC SG 032 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      password: BxceQaOe
+      port: 9713
+      server: 36.150.215.197
+      skip-cert-verify: true
+      tls: true
+      type: trojan
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1F0\U0001F1F7 KR 033 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 21617
+      server: cdn1.ttcdn.top
+      tls: false
       type: vmess
-      uuid: 431026c8-7397-11ed-a8bf-f23c91cfbbc9
-      ws-headers:
-        HOST: broadcastlv.chat.bilibili.com
-      ws-path: /
+      udp: true
+      uuid: 9848862b-298e-4394-91e6-fc77254dc7b7
