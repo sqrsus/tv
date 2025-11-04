@@ -1,32 +1,101 @@
 proxies:
     - alterId: 0
-      name: "\U0001F1ED\U0001F1F0 HK 000 关注我的频道获取更多 t.me/TheBestSubGroup"
+      name: "\U0001F1E8\U0001F1F3 CN 000 | ⬇️ 35.59 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: BxceQaOe
-      port: 4556
+      port: 194
       server: 36.151.192.242
       skip-cert-verify: true
       tls: true
       type: trojan
       udp: true
-    - alterId: 1
-      cipher: auto
-      country: ' BE'
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1EF\U0001F1F5 JP 003 | ⬇️ 5.48 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - client-fingerprint: safari
+      flow: xtls-rprx-vision
+      name: "\U0001F1ED\U0001F1F0 HK 001 关注我的频道获取更多 t.me/TheBestSubGroup"
       network: tcp
-      port: 28783
-      server: vznsd-g01.jp06-jz-vm0.entry.fr0528.art
-      skip-cert-verify: true
+      port: 36666
+      reality-opts:
+        public-key: cqCSxloJscJ3ZrNUlkSKkUFZ7SZ6vzQNszGolW_o7HY
+        short-id: 6da03029
+      server: hk4.cv1168.com
+      servername: www.python.org
       tls: true
-      type: vmess
-      uuid: 763e08a1-c289-3a41-aa80-e63a56bc1447
-    - alterId: 0
-      name: "\U0001F1F8\U0001F1EC SG 008 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: BxceQaOe
-      port: 51825
-      server: 36.150.215.197
-      skip-cert-verify: true
+      type: vless
+      udp: true
+      uuid: aae56c24-7511-4526-9708-3fcbd804253c
+    - client-fingerprint: safari
+      flow: xtls-rprx-vision
+      name: "\U0001F1ED\U0001F1F0 HK 002 | ⬇️ 5.35 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      port: 36666
+      reality-opts:
+        public-key: cqCSxloJscJ3ZrNUlkSKkUFZ7SZ6vzQNszGolW_o7HY
+        short-id: 6da03029
+      server: hk2.cv1168.com
+      servername: www.python.org
+      skip-cert-verify: false
       tls: true
+      type: vless
+      udp: true
+      uuid: aae56c24-7511-4526-9708-3fcbd804253c
+    - name: "\U0001F1E8\U0001F1F3 CN 005 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: adbac894-90b9-4913-b77e-a715a8d4ebc8
+      port: 20021
+      server: oss-cn-shanghai.letssepub.com
+      skip-cert-verify: false
+      sni: dingding-doc.com
       type: trojan
       udp: true
+    - auth: 33629870-e57e-11ec-bb74-f23c9164ca5d
+      name: "\U0001F1ED\U0001F1F0 HK 006 | ⬇️ 6.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 33629870-e57e-11ec-bb74-f23c9164ca5d
+      port: 443
+      ports: 30000-60000
+      server: a980d1ad-t55r40-th3q8a-1iyov.hk2.hyhuawei.com
+      sni: a980d1ad-t55r40-th3q8a-1iyov.hk2.hyhuawei.com
+      type: hysteria2
+      udp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1ED\U0001F1F0 HK 014 | ⬇️ 10.22 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: BxceQaOe
+      port: 4556
+      server: 36.151.192.242
+      skip-cert-verify: true
+      type: trojan
+    - name: "\U0001F1F0\U0001F1F7 KR 029 | ⬇️ 7.94 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: test.+
+      port: 30446
+      server: testkr3.ssv.vc
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: test
+    - country: ' HK'
+      name: "\U0001F1ED\U0001F1F0 HK 036 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: BxceQaOe
+      port: 443
+      server: 58.152.53.3
+      skip-cert-verify: true
+      type: trojan
+      udp: true
+    - client-fingerprint: safari
+      flow: xtls-rprx-vision
+      name: "\U0001F1ED\U0001F1F0 HK 049 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 36666
+      reality-opts:
+        public-key: cqCSxloJscJ3ZrNUlkSKkUFZ7SZ6vzQNszGolW_o7HY
+        short-id: 6da03029
+      server: hk1.cv1168.com
+      servername: www.python.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: aae56c24-7511-4526-9708-3fcbd804253c
+    - name: "\U0001F1E8\U0001F1F3 CN 063 | ⬇️ 13.97 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: b443f03b-f189-4fa1-85b1-c21f3256c06d
+      port: 30002
+      server: hinet-tw-01-ddns.sakuraikaede.com
+      skip-cert-verify: false
+      sni: hinet.eessgrgrgrgr.cloudns.nz
+      tfo: false
+      type: hysteria2
