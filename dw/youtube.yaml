@@ -1,86 +1,21 @@
 proxies:
-    - cipher: chacha20-ietf
-      country: ' HK'
-      name: "\U0001F1ED\U0001F1F0 HK 000 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: asd123456
-      port: 8388
-      server: 103.149.182.191
-      type: ss
-    - cipher: aes-128-gcm
-      name: "\U0001F1E8\U0001F1F3 CN 002 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: I1qrYxOXxPYCOkhT
-      port: 50449
-      server: tw3.web3sp.com
-      type: ss
-      udp: true
-    - name: "\U0001F1F9\U0001F1FC TW 005 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: exaxgqkKkd0TAMrCxeonWg==
-      port: 1443
-      server: twmoon1-cdn-route.couldflare-cdn.com
-      tls: true
-      type: http
-      udp: true
-      username: mrwdfNTD8M79LCukCieldrqZWqs=
-    - name: "\U0001F1F0\U0001F1F7 KR 017 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: test.+
-      port: 30446
-      server: testkr3.ssv.vc
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: test
-    - cipher: aes-128-gcm
-      name: "\U0001F1F8\U0001F1EC SG 018 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: I1qrYxOXxPYCOkhT
-      port: 50239
-      server: sg2.web3sp.com
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1F8\U0001F1EC SG 003 | ⬇️ 3.49 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 0f908ebc-ab40-4c54-8880-9dbb8be773ad
+      port: 35601
+      server: gw.liangyuandianwan.com
       type: ss
       udp: true
     - alterId: 0
       cipher: auto
-      country: HK
+      country: ' JP'
       h2-opts: {}
       http-opts: {}
-      name: "\U0001F1FA\U0001F1F8 US 031 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: 219.76.13.166
-      servername: aa.nbee.pp.ua
+      name: "\U0001F1EF\U0001F1F5 JP 012 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: tcp
+      port: 55568
+      server: q8vj6.4m4ow5.no8u9m8.vm331.cn
       skip-cert-verify: true
-      tls: true
       type: vmess
-      uuid: ffde381b-4a30-41d4-90eb-151f228b06ea
-      ws-opts:
-        headers:
-            HOST: aa.nbee.pp.ua
-        path: /qq
-    - alterId: 0
-      cipher: auto
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1F0\U0001F1F7 KR 036 | ⬇️ 3.73 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 2096
-      server: dv4.789900.xyz
-      servername: dv4.789900.xyz
-      tls: true
-      type: vmess
-      udp: true
-      uuid: 0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05
-      ws-opts:
-        headers:
-            Host: dv4.789900.xyz
-        path: /0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05-vm
-    - auth: 72aaf68b-fca5-48fa-9ba3-b0a6fb9990d2
-      down: 30
-      name: "\U0001F1EF\U0001F1F5 JP 053 | ⬇️ 3.40 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 72aaf68b-fca5-48fa-9ba3-b0a6fb9990d2
-      port: 38508
-      ports: 30000-40000
-      server: akjp1um.mmaccc.top
-      skip-cert-verify: true
-      sni: akjp1um.mmaccc.top
-      type: hysteria2
-      udp: true
-      up: 30
+      uuid: 0e05355a-dd6c-4d3a-8106-8e1e2c4927bd
+      ws-path: /
