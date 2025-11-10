@@ -1,79 +1,18 @@
 proxies:
-    - congestion-controller: bbr
-      disable-sni: false
-      name: "\U0001F1E8\U0001F1F3 CN 001 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 4e084535-bd62-458b-84a2-a0dc57c957aa
-      port: 15065
-      reduce-rtt: false
-      request-timeout: 0
-      server: twtuic01.yydzx.xyz
-      sni: twtuic01.yydzx.xyz
-      type: tuic
-      uuid: 4e084535-bd62-458b-84a2-a0dc57c957aa
-      version: 5
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1ED\U0001F1F0 HK 002 | ⬇️ 2.84 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: bb36e1eb-a3c1-40ad-9e15-9c6177b80a37
-      port: 55407
-      server: slur.izenny.com
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "\U0001F1EF\U0001F1F5 JP 006 | ⬇️ 33.76 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 06e77766-366c-4850-be70-eda8ca94edce
-      port: 41950
-      server: hk.tc.gameupload.org
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E8\U0001F1F3 CN 014 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: e6119e77-5023-4310-8e22-89e635e0a2f8
-      port: 11371
-      server: dxzx.flyby-world.top
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1F8\U0001F1EC SG 015 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: e6119e77-5023-4310-8e22-89e635e0a2f8
-      port: 35209
-      server: dxzx.flyby-world.top
-      type: ss
-      udp: true
-    - name: "\U0001F1E8\U0001F1F3 CN 017 关注我的频道获取更多 t.me/TheBestSubGroup"
+    - country: ' HK'
+      name: "\U0001F1ED\U0001F1F0 HK 001 | ⬇️ 2.89 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
       password: BxceQaOe
-      port: 2753
-      server: 36.150.215.244
+      port: 1251
+      server: 36.150.215.247
       skip-cert-verify: true
-      sni: t.me%2Fripaojiedian
       type: trojan
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1F2\U0001F1FD MX 032 | ⬇️ 5.65 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: cfaaf35d-789a-42bd-8488-eb20accde058
-      port: 48907
-      server: slur.izenny.com
-      type: ss
       udp: true
-    - alterId: 0
-      cipher: auto
-      flow: ""
-      name: "\U0001F1EE\U0001F1E9 ID 050 关注我的频道获取更多 t.me/TheBestSubGroup"
-      network: ws
-      port: 443
-      server: 1762596741.bilibiliapp.cn
-      servername: lxjm8z0tq.speed.ydnxyd.cccp.useraaca.pp.ua
+    - name: "\U0001F1F0\U0001F1F7 KR 008 | ⬇️ 4.47 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: test.+
+      port: 30446
+      server: testkr3.ssv.vc
+      skip-cert-verify: true
       tls: true
-      type: vmess
+      type: http
       udp: true
-      uuid: f744cd83-ecc4-46c5-a2ad-cf3dfa9e12a0
-      ws-opts:
-        headers:
-            Host: lxjm8z0tq.speed.ydnxyd.cccp.useraaca.pp.ua
-        path: /
-    - name: "\U0001F1FA\U0001F1F8 US 054 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: 1c0b6e0a-9af9-4116-bc0f-a7d04bc20d2e
-      port: 21114
-      server: xinrelibao.xuwuge.xyz
-      skip-cert-verify: true
-      sni: apple.com
-      type: trojan
-      udp: true
+      username: test
