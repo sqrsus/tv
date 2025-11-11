@@ -1,18 +1,157 @@
 proxies:
-    - country: ' HK'
-      name: "\U0001F1ED\U0001F1F0 HK 001 | ⬇️ 2.89 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: BxceQaOe
-      port: 1251
-      server: 36.150.215.247
-      skip-cert-verify: true
-      type: trojan
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 001 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 20292
+      server: 47.243.90.125
+      tls: false
+      type: vmess
+      uuid: 57f5c2bd-bb79-4fd8-eea1-a84d1ddf3a21
+      ws-opts:
+        path: /
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 003 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4755EC42-C521-419B-AFAF-6476E0B95A77
+      port: 7374
+      server: jp4.dexlos.com
+      skip-cert-verify: false
+      sni: jp4.dexlos.com
+      type: hysteria2
       udp: true
-    - name: "\U0001F1F0\U0001F1F7 KR 008 | ⬇️ 4.47 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
-      password: test.+
-      port: 30446
-      server: testkr3.ssv.vc
-      skip-cert-verify: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 005 | ⬇️ 8.68 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4755EC42-C521-419B-AFAF-6476E0B95A77
+      port: 19163
+      server: jp10.dexlos.com
+      skip-cert-verify: false
+      sni: jp10.dexlos.com
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 007 | ⬇️ 7.76 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4755EC42-C521-419B-AFAF-6476E0B95A77
+      port: 11339
+      server: jp6.dexlos.com
+      skip-cert-verify: false
+      sni: jp6.dexlos.com
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 008 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4755EC42-C521-419B-AFAF-6476E0B95A77
+      port: 3643
+      server: tw2.dexlos.com
+      skip-cert-verify: false
+      sni: tw2.dexlos.com
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 009 | ⬇️ 7.42 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4755EC42-C521-419B-AFAF-6476E0B95A77
+      port: 5033
+      server: jp3.dexlos.com
+      skip-cert-verify: false
+      sni: jp3.dexlos.com
+      type: hysteria2
+      udp: true
+    - country: US
+      name: "\U0001F1FA\U0001F1F8 US 010 | ⬇️ 7.82 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4755EC42-C521-419B-AFAF-6476E0B95A77
+      port: 1753
+      server: jp1.dexlos.com
+      skip-cert-verify: false
+      sni: jp1.dexlos.com
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 014 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4755EC42-C521-419B-AFAF-6476E0B95A77
+      port: 13252
+      server: tw7.dexlos.com
+      skip-cert-verify: false
+      sni: tw7.dexlos.com
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 015 | ⬇️ 6.29 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4755EC42-C521-419B-AFAF-6476E0B95A77
+      port: 17269
+      server: jp9.dexlos.com
+      skip-cert-verify: false
+      sni: jp9.dexlos.com
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 016 | ⬇️ 5.66 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4755EC42-C521-419B-AFAF-6476E0B95A77
+      port: 9362
+      server: jp5.dexlos.com
+      skip-cert-verify: false
+      sni: jp5.dexlos.com
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 017 | ⬇️ 5.89 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4755EC42-C521-419B-AFAF-6476E0B95A77
+      port: 1204
+      server: tw1.dexlos.com
+      skip-cert-verify: false
+      sni: tw1.dexlos.com
+      type: hysteria2
+      udp: true
+    - country: JP
+      name: "\U0001F1EF\U0001F1F5 JP 018 | ⬇️ 6.11 MB/s 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4755EC42-C521-419B-AFAF-6476E0B95A77
+      port: 15498
+      server: jp8.dexlos.com
+      skip-cert-verify: false
+      sni: jp8.dexlos.com
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 019 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4755EC42-C521-419B-AFAF-6476E0B95A77
+      port: 5562
+      server: tw3.dexlos.com
+      skip-cert-verify: false
+      sni: tw3.dexlos.com
+      type: hysteria2
+      udp: true
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 021 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4755EC42-C521-419B-AFAF-6476E0B95A77
+      port: 7279
+      server: tw4.dexlos.com
+      skip-cert-verify: false
+      sni: tw4.dexlos.com
+      type: hysteria2
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E8\U0001F1F3 CN 023 关注我的频道获取更多 t.me/TheBestSubGroup"
+      network: ws
+      port: 20292
+      server: 47.242.77.252
+      tls: false
+      type: vmess
+      uuid: 57f5c2bd-bb79-4fd8-eea1-a84d1ddf3a21
+      ws-opts:
+        path: /
+    - name: "\U0001F1F8\U0001F1EC SG 065 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: ae992e0c-b9ea-11f0-bf55-f23c913c8d2b
+      port: 443
+      server: 7bdd4b92-t5kkg0-tdhz1n-1m952.sg.oshuawei.com
+      sni: 7bdd4b92-t5kkg0-tdhz1n-1m952.sg.oshuawei.com
       tls: true
       type: http
+      username: ae992e0c-b9ea-11f0-bf55-f23c913c8d2b
+    - country: TW
+      name: "\U0001F1F9\U0001F1FC TW 068 关注我的频道获取更多 t.me/TheBestSubGroup"
+      password: 4755EC42-C521-419B-AFAF-6476E0B95A77
+      port: 9786
+      server: tw5.dexlos.com
+      skip-cert-verify: false
+      sni: tw5.dexlos.com
+      type: hysteria2
       udp: true
-      username: test
