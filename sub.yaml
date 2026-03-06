@@ -129,13 +129,13 @@ proxy-groups:
       timeout: 2000
       max-failed-times: 3
       proxies:
-        - DIRECT
+        - Proxy
         - "\U0001F1ED\U0001F1F0 香港节点"
         - "\U0001F1EF\U0001F1F5 日本节点"
         - "\U0001F1F0\U0001F1F7 韩国节点"
         - "\U0001F1F8\U0001F1EC 新加坡节点"
         - "\U0001F1FA\U0001F1F8 美国节点"
-        - Proxy
+
       icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/cloudflare.png
     - name: "\U0001F4AA 手动选择"
       type: select
