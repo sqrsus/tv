@@ -28,7 +28,7 @@ permissions:
   contents: read
 
 env:
-  SOURCE_REPO: YuriPlanet/vera20k
+  SOURCE_REPO: sqrsus/vera20k
   # rust-lld ships with rustup and links much faster than link.exe. Linking the
   # C runtime statically removes the program's need for VCRUNTIME140.dll.
   CARGO_TARGET_X86_64_PC_WINDOWS_MSVC_LINKER: rust-lld
