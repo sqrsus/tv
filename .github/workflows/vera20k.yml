@@ -1,0 +1,159 @@
+name: Build vera20k (manual)
+
+# Cross-repo release workflow.
+#
+# This workflow lives in YOUR repository, but it builds the source code that
+# lives in a SEPARATE repository (YuriPlanet/vera20k). Because the two are
+# different repos, the default `actions/checkout` would fetch THIS repo (which
+# has no Cargo.toml) and `cargo` would fail with
+# "cargo manifest path '.../Cargo.toml' does not exist" (the doubled
+# `.../craft/craft/Cargo.toml` in the logs is a working-directory override
+# pointing one level below that wrong, empty checkout).
+#
+# The fix: explicitly check out the SOURCE repo at the chosen ref, build
+# Windows x64 only, and publish the pre-release into THIS (workflow) repo.
+#
+# Trigger: manual (workflow_dispatch) with a `ref` input = the vera20k tag or
+# branch to build (e.g. v0.1.0). A `push: tags` trigger is intentionally NOT
+# used: tags pushed to vera20k do not fire workflows in this repo.
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Ref of YuriPlanet/vera20k to build (tag like v0.1.0, or a branch)'
+        required: true
+        default: 'main'
+
+permissions:
+  contents: read
+
+env:
+  SOURCE_REPO: YuriPlanet/vera20k
+  # rust-lld ships with rustup and links much faster than link.exe. Linking the
+  # C runtime statically removes the program's need for VCRUNTIME140.dll.
+  CARGO_TARGET_X86_64_PC_WINDOWS_MSVC_LINKER: rust-lld
+  CARGO_TARGET_X86_64_PC_WINDOWS_MSVC_RUSTFLAGS: -C target-feature=+crt-static
+
+jobs:
+  build:
+    name: build (${{ matrix.target }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            target: windows-x64
+    # Surface Cargo.toml metadata to dependent jobs (publish uses pkg_name).
+    outputs:
+      pkg_name: ${{ steps.meta.outputs.name }}
+      pkg_version: ${{ steps.meta.outputs.version }}
+    defaults:
+      run:
+        # The source checkout lands at the workspace root, so all cargo/paths
+        # resolve here. No repo-relative working-directory override.
+        working-directory: ${{ github.workspace }}
+    steps:
+      - name: Check out the SOURCE repo (cross-repo)
+        uses: actions/checkout@v7
+        with:
+          repository: ${{ env.SOURCE_REPO }}
+          ref: ${{ github.event.inputs.ref }}
+          # For a PRIVATE source repo, add: token: ${{ secrets.RELEASE_TOKEN }}
+      - name: Check out with LF line endings
+        if: runner.os == 'Windows'
+        run: git config --global core.autocrlf false
+      - name: Read package metadata from Cargo.toml
+        id: meta
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Read [package] name/version from the SOURCE repo's Cargo.toml at root.
+          name="$(sed -n 's/^name = "\([^"]*\)"$/\1/p' Cargo.toml | head -n 1)"
+          version="$(sed -n 's/^version = "\([^"]*\)"$/\1/p' Cargo.toml | head -n 1)"
+          if [ -z "$name" ] || [ -z "$version" ]; then
+            echo "Failed to read name/version from Cargo.toml" >&2
+            exit 1
+          fi
+          echo "name=$name" >> "$GITHUB_OUTPUT"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+      - name: Require the ref to match the Cargo.toml version
+        if: startsWith(github.event.inputs.ref, 'v')
+        shell: bash
+        run: |
+          if [ "v${{ steps.meta.outputs.version }}" != "${{ github.event.inputs.ref }}" ]; then
+            echo "Ref ${{ github.event.inputs.ref }} does not match Cargo.toml version ${{ steps.meta.outputs.version }} (expected v${{ steps.meta.outputs.version }})" >&2
+            exit 1
+          fi
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-about@0.9.2
+      - name: Third-party license notices
+        shell: bash
+        run: |
+          mkdir -p dist
+          cargo about generate --locked --fail -c .github/release/about.toml \
+            -o dist/THIRD_PARTY_LICENSES.html .github/release/about.hbs
+      - uses: Swatinem/rust-cache@v2
+      - name: Build the game
+        run: cargo build --release --locked --bin ${{ steps.meta.outputs.name }}
+      - name: Package
+        shell: bash
+        run: |
+          set -euo pipefail
+          name="${{ steps.meta.outputs.name }}"
+          cv="${{ steps.meta.outputs.version }}"
+          ref="${{ github.event.inputs.ref }}"
+          # Archive version: keep the `v` prefix when building a tag (matches the
+          # release tag), otherwise use the bare Cargo.toml version.
+          if [[ "$ref" == v* ]]; then arc_ver="v$cv"; else arc_ver="$cv"; fi
+          pkgname="$name-$arc_ver-${{ matrix.target }}"
+          mkdir -p "dist/$pkgname"
+          cp "target/release/$name.exe" config.toml.example LICENSE-GPL \
+            dist/THIRD_PARTY_LICENSES.html "dist/$pkgname/"
+          sed "s/@VERSION@/$arc_ver/" .github/release/README.txt.in > "dist/$pkgname/README.txt"
+          cd "dist/$pkgname"
+          7z a -tzip "../$pkgname.zip" ./* > /dev/null
+      - uses: actions/upload-artifact@v7
+        with:
+          name: ${{ matrix.target }}
+          path: |
+            dist/*.zip
+          if-no-files-found: error
+
+  publish:
+    if: startsWith(github.event.inputs.ref, 'v')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      # Publishing into THIS repo, so the default GITHUB_TOKEN needs write.
+      contents: write
+      id-token: write
+      attestations: write
+    defaults:
+      run:
+        working-directory: ${{ github.workspace }}
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          path: dist
+          merge-multiple: true
+      - uses: actions/attest@v4
+        with:
+          subject-path: dist/${{ needs.build.outputs.pkg_name }}-*
+      - name: Create the pre-release in THIS repository
+        env:
+          # Default token can write to the workflow repo itself; no PAT needed.
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd dist
+          sha256sum ${{ needs.build.outputs.pkg_name }}-* > SHA256SUMS.txt
+          # The build ref (e.g. v0.1.0) belongs to the SOURCE repo (vera20k), not
+          # this workflow repo, so we do NOT use --verify-tag: gh will create the
+          # tag in this repo from its default branch. The release artifacts still
+          # come from the vera20k source we checked out.
+          gh release create "${{ github.event.inputs.ref }}" \
+            --prerelease --generate-notes --title "${{ needs.build.outputs.pkg_name }} ${{ github.event.inputs.ref }}" ./*
