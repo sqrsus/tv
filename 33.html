@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雨夜便利店街角 · 微缩模型</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #111; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        #info {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: rgba(255,255,255,0.5);
+            font-size: 12px;
+            pointer-events: none;
+            z-index: 100;
+            text-shadow: 0 0 10px rgba(0,0,0,0.8);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">雨夜便利店 · 微缩街角 | 拖拽旋转 / 滚轮缩放</div>
+
+    <!-- 引入 Three.js 和 OrbitControls -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.126.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.126.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        // --- 初始化场景、相机、渲染器 ---
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x0a0f1a); // 深邃雨夜背景
+        scene.fog = new THREE.FogExp2(0x0a0f1a, 0.008); // 薄雾增强景深感
+
+        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(12, 8, 18);
+        camera.lookAt(4, 2, 4);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        renderer.outputEncoding = THREE.sRGBEncoding;
+        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 1.2;
+        document.body.appendChild(renderer.domElement);
+
+        // --- 控制器 (无UI，自然交互) ---
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.target.set(4, 2, 4);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.autoRotate = true;
+        controls.autoRotateSpeed = 0.8;
+        controls.enableZoom = true;
+        controls.zoomSpeed = 1.0;
+        controls.minDistance = 8;
+        controls.maxDistance = 30;
+        controls.maxPolarAngle = Math.PI / 2.2; // 限制角度避免看到地底
+
+        // --- 灯光系统 ---
+        // 环境光 (雨夜冷色基调)
+        const ambientLight = new THREE.AmbientLight(0x404c66);
+        scene.add(ambientLight);
+
+        // 主光源 - 模拟远处街灯冷光
+        const dirLight = new THREE.DirectionalLight(0xaaccff, 0.6);
+        dirLight.position.set(-8, 15, 10);
+        dirLight.castShadow = true;
+        dirLight.receiveShadow = true;
+        dirLight.shadow.mapSize.width = 1024;
+        dirLight.shadow.mapSize.height = 1024;
+        dirLight.shadow.camera.near = 1;
+        dirLight.shadow.camera.far = 40;
+        dirLight.shadow.camera.left = -15;
+        dirLight.shadow.camera.right = 15;
+        dirLight.shadow.camera.top = 15;
+        dirLight.shadow.camera.bottom = -15;
+        scene.add(dirLight);
+
+        // 便利店内部暖光 (点光源阵列)
+        const storeLight1 = new THREE.PointLight(0xffcc88, 1.2, 20);
+        storeLight1.position.set(4, 3.5, 4.5);
+        scene.add(storeLight1);
+        const storeLight2 = new THREE.PointLight(0xffaa66, 1.0, 18);
+        storeLight2.position.set(2, 3.5, 5);
+        scene.add(storeLight2);
+        const storeLight3 = new THREE.PointLight(0xffbb77, 0.8, 15);
+        storeLight3.position.set(5.5, 3.5, 3.5);
+        scene.add(storeLight3);
+        
+        // 便利店招牌暖光
+        const signLight = new THREE.PointLight(0xffaa55, 1.5, 12);
+        signLight.position.set(4.5, 5.5, 6.8);
+        scene.add(signLight);
+
+        // 路灯 (冷白)
+        const streetLampLight = new THREE.PointLight(0xddeeff, 0.9, 25);
+        streetLampLight.position.set(1, 6, 1);
+        scene.add(streetLampLight);
+
+        // 自动贩卖机光
+        const vendingLight = new THREE.PointLight(0xaaccff, 0.5, 8);
+        vendingLight.position.set(8, 2.5, 1.5);
+        scene.add(vendingLight);
+
+        // --- 创建地面底座 (正方形) ---
+        const baseSize = 12;
+        const baseGeo = new THREE.BoxGeometry(baseSize, 0.3, baseSize);
+        const baseMat = new THREE.MeshStandardMaterial({ 
+            color: 0x3a4a5a, 
+            roughness: 0.6, 
+            metalness: 0.2,
+            emissive: new THREE.Color(0x1a1f2a)
+        });
+        const base = new THREE.Mesh(baseGeo, baseMat);
+        base.position.set(4, -0.15, 4); // 让底座中心位于场景中央偏右下
+        base.receiveShadow = true;
+        base.castShadow = true;
+        scene.add(base);
+
+        // 底座边缘装饰线 (增强模型感)
+        const edgeGeo = new THREE.BoxGeometry(baseSize + 0.1, 0.05, baseSize + 0.1);
+        const edgeMat = new THREE.MeshStandardMaterial({ color: 0x2a3a4a, roughness: 0.4 });
+        const edge = new THREE.Mesh(edgeGeo, edgeMat);
+        edge.position.set(4, 0.02, 4);
+        edge.receiveShadow = true;
+        scene.add(edge);
+
+        // 地面细节：斑马线、排水沟、积水反光 (使用平面)
+        const groundMat = new THREE.MeshStandardMaterial({ color: 0x2a3a4a, roughness: 0.8, emissive: new THREE.Color(0x0a0f1a) });
+        const ground = new THREE.Mesh(new THREE.PlaneGeometry(baseSize-0.4, baseSize-0.4), groundMat);
+        ground.rotation.x = -Math.PI / 2;
+        ground.position.set(4, 0.01, 4);
+        ground.receiveShadow = true;
+        scene.add(ground);
+
+        // 积水反光斑块 (半透明面片，模拟湿润)
+        const puddleMat = new THREE.MeshStandardMaterial({ 
+            color: 0x88aaff, 
+            emissive: new THREE.Color(0x224466),
+            transparent: true, 
+            opacity: 0.25,
+            roughness: 0.1,
+            metalness: 0.8
+        });
+        const puddlePositions = [
+            [2.5, 0.02, 6.5], [5.5, 0.02, 6.8], [1.8, 0.02, 2.2], [6.2, 0.02, 1.8], [3.5, 0.02, 3.2]
+        ];
+        puddlePositions.forEach(pos => {
+            const puddle = new THREE.Mesh(new THREE.CircleGeometry(0.6, 8), puddleMat);
+            puddle.rotation.x = -Math.PI / 2;
+            puddle.position.set(pos[0], pos[1], pos[2]);
+            puddle.receiveShadow = false;
+            scene.add(puddle);
+        });
+
+        // 斑马线 (条纹)
+        const stripeMat = new THREE.MeshStandardMaterial({ color: 0xccccdd, emissive: new THREE.Color(0x224466), roughness: 0.7 });
+        for (let i = 0; i < 5; i++) {
+            const stripe = new THREE.Mesh(new THREE.BoxGeometry(0.25, 0.02, 0.8), stripeMat);
+            stripe.position.set(6.5, 0.03, 2.0 + i * 0.8);
+            stripe.receiveShadow = true;
+            scene.add(stripe);
+        }
+
+        // --- 便利店主体建筑 (视觉中心) ---
+        const storeGroup = new THREE.Group();
+        storeGroup.position.set(4, 0.15, 4); // 底座上
+
+        // 建筑主体 (左侧墙面、右侧墙面、屋顶)
+        const wallMat = new THREE.MeshStandardMaterial({ color: 0x8a9aa8, roughness: 0.5, metalness: 0.1 });
+        const wallMatDark = new THREE.MeshStandardMaterial({ color: 0x6a7a88, roughness: 0.6 });
+        
+        // 左侧墙 (带窗户区域)
+        const leftWall = new THREE.Mesh(new THREE.BoxGeometry(0.3, 3.2, 4.5), wallMat);
+        leftWall.position.set(-1.4, 1.7, 0.5);
+        leftWall.castShadow = true;
+        leftWall.receiveShadow = true;
+        storeGroup.add(leftWall);
+
+        // 右侧墙 (大部分是玻璃)
+        const rightWall = new THREE.Mesh(new THREE.BoxGeometry(0.3, 3.2, 4.5), wallMat);
+        rightWall.position.set(1.4, 1.7, 0.5);
+        rightWall.castShadow = true;
+        rightWall.receiveShadow = true;
+        storeGroup.add(rightWall);
+
+        // 后墙
+        const backWall = new THREE.Mesh(new THREE.BoxGeometry(2.8, 3.2, 0.3), wallMatDark);
+        backWall.position.set(0, 1.7, -1.8);
+        backWall.castShadow = true;
+        backWall.receiveShadow = true;
+        storeGroup.add(backWall);
+
+        // 屋顶
+        const roof = new THREE.Mesh(new THREE.BoxGeometry(3.0, 0.2, 4.8), new THREE.MeshStandardMaterial({ color: 0x5a6a78, roughness: 0.7 }));
+        roof.position.set(0, 3.4, 0.5);
+        roof.castShadow = true;
+        roof.receiveShadow = true;
+        storeGroup.add(roof);
+
+        // 雨棚 (屋檐)
+        const awningMat = new THREE.MeshStandardMaterial({ color: 0xccaa88, roughness: 0.6 });
+        const awning = new THREE.Mesh(new THREE.BoxGeometry(3.2, 0.1, 1.2), awningMat);
+        awning.position.set(0, 2.8, 2.0);
+        awning.castShadow = true;
+        awning.receiveShadow = true;
+        storeGroup.add(awning);
+
+        // 玻璃橱窗 (大面积，透明并带淡蓝反光)
+        const glassMat = new THREE.MeshStandardMaterial({ 
+            color: 0xaaccff, 
+            emissive: new THREE.Color(0x335577), 
+            transparent: true, 
+            opacity: 0.35,
+            roughness: 0.1,
+            metalness: 0.9
+        });
+        // 前侧玻璃 (留出门的位置)
+        const glassFrontLeft = new THREE.Mesh(new THREE.BoxGeometry(1.2, 2.5, 0.1), glassMat);
+        glassFrontLeft.position.set(-0.9, 1.6, 2.1);
+        glassFrontLeft.castShadow = false;
+        glassFrontLeft.receiveShadow = true;
+        storeGroup.add(glassFrontLeft);
+
+        const glassFrontRight = new THREE.Mesh(new THREE.BoxGeometry(1.2, 2.5, 0.1), glassMat);
+        glassFrontRight.position.set(0.9, 1.6, 2.1);
+        glassFrontRight.castShadow = false;
+        glassFrontRight.receiveShadow = true;
+        storeGroup.add(glassFrontRight);
+
+        // 侧面玻璃 (右侧)
+        const glassSide = new THREE.Mesh(new THREE.BoxGeometry(0.1, 2.5, 3.0), glassMat);
+        glassSide.position.set(1.55, 1.6, 0.8);
+        glassSide.castShadow = false;
+        glassSide.receiveShadow = true;
+        storeGroup.add(glassSide);
+
+        // 自动门 (透明玻璃带边框)
+        const doorMat = new THREE.MeshStandardMaterial({ color: 0x88aadd, emissive: new THREE.Color(0x224466), transparent: true, opacity: 0.4, roughness: 0.1 });
+        const door = new THREE.Mesh(new THREE.BoxGeometry(1.0, 2.2, 0.1), doorMat);
+        door.position.set(0, 1.4, 2.15);
+        door.castShadow = false;
+        storeGroup.add(door);
+        // 门边框
+        const doorFrameMat = new THREE.MeshStandardMaterial({ color: 0xccccdd });
+        const doorFrameTop = new THREE.Mesh(new THREE.BoxGeometry(1.0, 0.05, 0.15), doorFrameMat);
+        doorFrameTop.position.set(0, 2.5, 2.15);
+        storeGroup.add(doorFrameTop);
+        const doorFrameBottom = new THREE.Mesh(new THREE.BoxGeometry(1.0, 0.05, 0.15), doorFrameMat);
+        doorFrameBottom.position.set(0, 0.3, 2.15);
+        storeGroup.add(doorFrameBottom);
+        const doorFrameLeft = new THREE.Mesh(new THREE.BoxGeometry(0.05, 2.2, 0.15), doorFrameMat);
+        doorFrameLeft.position.set(-0.5, 1.4, 2.15);
+        storeGroup.add(doorFrameLeft);
+        const doorFrameRight = new THREE.Mesh(new THREE.BoxGeometry(0.05, 2.2, 0.15), doorFrameMat);
+        doorFrameRight.position.set(0.5, 1.4, 2.15);
+        storeGroup.add(doorFrameRight);
+
+        // 便利店招牌 (顶部灯箱)
+        const signMat = new THREE.MeshStandardMaterial({ color: 0xffaa66, emissive: new THREE.Color(0xff8844), roughness: 0.3 });
+        const signBoard = new THREE.Mesh(new THREE.BoxGeometry(2.5, 0.6, 0.2), signMat);
+        signBoard.position.set(0, 3.9, 2.1);
+        signBoard.castShadow = true;
+        storeGroup.add(signBoard);
+        // 招牌文字 (简单方块模拟)
+        const signTextMat = new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: new THREE.Color(0xffaa66) });
+        for (let i = -1; i <= 1; i++) {
+            const textBlock = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.3, 0.05), signTextMat);
+            textBlock.position.set(i * 0.7, 3.9, 2.2);
+            storeGroup.add(textBlock);
+        }
+
+        // 店内灯箱 (内部发光)
+        const innerLightBox = new THREE.Mesh(new THREE.BoxGeometry(2.2, 0.1, 0.5), new THREE.MeshStandardMaterial({ color: 0xffeedd, emissive: new THREE.Color(0xffcc88) }));
+        innerLightBox.position.set(0, 3.2, 0.5);
+        storeGroup.add(innerLightBox);
+
+        scene.add(storeGroup);
+
+        // --- 便利店内部陈设 (透过玻璃可见) ---
+        const interiorGroup = new THREE.Group();
+        interiorGroup.position.set(4, 0.15, 4); // 与便利店同位置
+
+        // 地板
+        const floorMat = new THREE.MeshStandardMaterial({ color: 0xddccbb, emissive: new THREE.Color(0x332211), roughness: 0.7 });
+        const floor = new THREE.Mesh(new THREE.BoxGeometry(2.6, 0.05, 4.0), floorMat);
+        floor.position.set(0, 0.03, 0.3);
+        floor.receiveShadow = true;
+        interiorGroup.add(floor);
+
+        // 货架1 (饮料柜) - 左侧靠墙
+        const shelfMat = new THREE.MeshStandardMaterial({ color: 0xccccdd });
+        const drinkShelf = new THREE.Mesh(new THREE.BoxGeometry(0.2, 1.8, 2.0), shelfMat);
+        drinkShelf.position.set(-1.2, 0.9, 0.8);
+        drinkShelf.castShadow = true;
+        drinkShelf.receiveShadow = true;
+        interiorGroup.add(drinkShelf);
+        // 饮料瓶 (彩色小方块)
+        const drinkColors = [0xff4444, 0x44ff44, 0x4444ff, 0xffaa00, 0xff44ff, 0x44ffff];
+        for (let i = 0; i < 6; i++) {
+            for (let j = 0; j < 3; j++) {
+                const bottle = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.2, 0.1), new THREE.MeshStandardMaterial({ color: drinkColors[i], emissive: drinkColors[i], emissiveIntensity: 0.3 }));
+                bottle.position.set(-1.05, 0.3 + j * 0.5, -0.1 + i * 0.35);
+                bottle.castShadow = true;
+                interiorGroup.add(bottle);
+            }
+        }
+
+        // 货架2 (零食/饭团) - 中央
+        const snackShelf = new THREE.Mesh(new THREE.BoxGeometry(1.2, 1.5, 0.8), shelfMat);
+        snackShelf.position.set(0.2, 0.75, -0.2);
+        snackShelf.castShadow = true;
+        snackShelf.receiveShadow = true;
+        interiorGroup.add(snackShelf);
+        // 零食小包
+        const snackColors = [0xffaa44, 0x44aaff, 0xff6644, 0x66ff44];
+        for (let i = 0; i < 4; i++) {
+            const snack = new THREE.Mesh(new THREE.BoxGeometry(0.2, 0.15, 0.15), new THREE.MeshStandardMaterial({ color: snackColors[i], emissive: snackColors[i], emissiveIntensity: 0.2 }));
+            snack.position.set(-0.2 + i * 0.35, 0.3, 0.2);
+            snack.castShadow = true;
+            interiorGroup.add(snack);
+        }
+
+        // 收银台
+        const counterMat = new THREE.MeshStandardMaterial({ color: 0xbbaa99 });
+        const counter = new THREE.Mesh(new THREE.BoxGeometry(1.0, 0.8, 0.6), counterMat);
+        counter.position.set(0.6, 0.4, 1.2);
+        counter.castShadow = true;
+        counter.receiveShadow = true;
+        interiorGroup.add(counter);
+        // 收银机
+        const register = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.2, 0.2), new THREE.MeshStandardMaterial({ color: 0x444444 }));
+        register.position.set(0.6, 0.9, 1.2);
+        register.castShadow = true;
+        interiorGroup.add(register);
+
+        // 关东煮柜台 (靠近门)
+        const odenMat = new THREE.MeshStandardMaterial({ color: 0xccbbaa });
+        const oden = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.5, 0.4), odenMat);
+        oden.position.set(-0.6, 0.25, 1.6);
+        oden.castShadow = true;
+        oden.receiveShadow = true;
+        interiorGroup.add(oden);
+
+        // 咖啡机
+        const coffeeMachine = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.4, 0.25), new THREE.MeshStandardMaterial({ color: 0x333333 }));
+        coffeeMachine.position.set(0.8, 0.8, 1.6);
+        coffeeMachine.castShadow = true;
+        interiorGroup.add(coffeeMachine);
+
+        // 杂志架 (靠前窗)
+        const magazineMat = new THREE.MeshStandardMaterial({ color: 0xddccbb });
+        const magazineRack = new THREE.Mesh(new THREE.BoxGeometry(0.8, 0.8, 0.2), magazineMat);
+        magazineRack.position.set(1.2, 0.4, 2.0);
+        magazineRack.castShadow = true;
+        magazineRack.receiveShadow = true;
+        interiorGroup.add(magazineRack);
+        // 杂志
+        const magColors = [0xffaa88, 0x88aaff, 0xaaff88];
+        for (let i = 0; i < 3; i++) {
+            const mag = new THREE.Mesh(new THREE.BoxGeometry(0.15, 0.25, 0.02), new THREE.MeshStandardMaterial({ color: magColors[i] }));
+            mag.position.set(1.0 + i * 0.2, 0.5, 2.1);
+            mag.castShadow = true;
+            interiorGroup.add(mag);
+        }
+
+        // 店内海报
+        const posterMat = new THREE.MeshStandardMaterial({ color: 0xffdd88, emissive: new THREE.Color(0xaa8833) });
+        const poster = new THREE.Mesh(new THREE.PlaneGeometry(0.5, 0.7), posterMat);
+        poster.position.set(-0.2, 2.0, -1.65);
+        poster.rotation.y = 0;
+        interiorGroup.add(poster);
+
+        // 后场门
+        const backDoor = new THREE.Mesh(new THREE.BoxGeometry(0.8, 1.5, 0.1), new THREE.MeshStandardMaterial({ color: 0x6a5a4a }));
+        backDoor.position.set(0.8, 0.75, -1.7);
+        backDoor.castShadow = true;
+        interiorGroup.add(backDoor);
+
+        scene.add(interiorGroup);
+
+        // --- 外部街角元素 ---
+
+        // 自动贩卖机 (右侧)
+        const vendingGroup = new THREE.Group();
+        vendingGroup.position.set(8.2, 0.8, 1.8);
+        const vendingBody = new THREE.Mesh(new THREE.BoxGeometry(0.8, 1.6, 0.6), new THREE.MeshStandardMaterial({ color: 0x3366aa, emissive: new THREE.Color(0x112244) }));
+        vendingBody.castShadow = true;
+        vendingBody.receiveShadow = true;
+        vendingGroup.add(vendingBody);
+        // 贩卖机发光面板
+        const vendingPanel = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.8, 0.1), new THREE.MeshStandardMaterial({ color: 0xaaccff, emissive: new THREE.Color(0x4488ff) }));
+        vendingPanel.position.set(0, 0.2, 0.35);
+        vendingGroup.add(vendingPanel);
+        scene.add(vendingGroup);
+
+        // 自行车 (左侧)
+        const bikeGroup = new THREE.Group();
+        bikeGroup.position.set(-1.5, 0.3, 6.5);
+        // 车轮
+        const wheelMat = new THREE.MeshStandardMaterial({ color: 0x222222 });
+        const wheel1 = new THREE.Mesh(new THREE.TorusGeometry(0.25, 0.05, 8, 16), wheelMat);
+        wheel1.rotation.y = Math.PI / 2;
+        wheel1.position.set(-0.4, 0.25, 0);
+        wheel1.castShadow = true;
+        bikeGroup.add(wheel1);
+        const wheel2 = new THREE.Mesh(new THREE.TorusGeometry(0.25, 0.05, 8, 16), wheelMat);
+        wheel2.rotation.y = Math.PI / 2;
+        wheel2.position.set(0.4, 0.25, 0);
+        wheel2.castShadow = true;
+        bikeGroup.add(wheel2);
+        // 车架
+        const frameMat = new THREE.MeshStandardMaterial({ color: 0xaa4444 });
+        const frame1 = new THREE.Mesh(new THREE.BoxGeometry(0.8, 0.05, 0.05), frameMat);
+        frame1.position.set(0, 0.4, 0);
+        frame1.rotation.z = 0.2;
+        frame1.castShadow = true;
+        bikeGroup.add(frame1);
+        scene.add(bikeGroup);
+
+        // 雨伞架 (便利店门口)
+        const umbrellaMat = new THREE.MeshStandardMaterial({ color: 0xcccccc });
+        const umbrellaStand = new THREE.Mesh(new THREE.BoxGeometry(0.4, 0.4, 0.4), umbrellaMat);
+        umbrellaStand.position.set(3.2, 0.3, 7.0);
+        umbrellaStand.castShadow = true;
+        umbrellaStand.receiveShadow = true;
+        scene.add(umbrellaStand);
+        // 伞
+        for (let i = 0; i < 3; i++) {
+            const umbrella = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.1, 0.8, 6), new THREE.MeshStandardMaterial({ color: 0xaa88ff }));
+            umbrella.position.set(3.2 + (i-1)*0.15, 0.7, 7.0);
+            umbrella.castShadow = true;
+            scene.add(umbrella);
+        }
+
+        // 垃圾桶
+        const trashMat = new THREE.MeshStandardMaterial({ color: 0x557788 });
+        const trash = new THREE.Mesh(new THREE.CylinderGeometry(0.25, 0.3, 0.6, 8), trashMat);
+        trash.position.set(6.5, 0.45, 6.8);
+        trash.castShadow = true;
+        trash.receiveShadow = true;
+        scene.add(trash);
+
+        // 路灯 (电线杆 + 灯)
+        const poleMat = new THREE.MeshStandardMaterial({ color: 0x555555 });
+        const pole = new THREE.Mesh(new THREE.CylinderGeometry(0.08, 0.1, 5, 6), poleMat);
+        pole.position.set(1, 2.65, 1);
+        pole.castShadow = true;
+        pole.receiveShadow = true;
+        scene.add(pole);
+   
